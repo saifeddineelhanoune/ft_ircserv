@@ -46,6 +46,11 @@ class Server {
         void cmdPrivmsg(int fd, std::vector<std::string>& args);
         void cmdPart(int fd, std::vector<std::string>& args);
         void cmdQuit(int fd, std::vector<std::string>& args);
+        // Channel operator commands
+        void cmdKick(int fd, std::vector<std::string>& args);
+        void cmdInvite(int fd, std::vector<std::string>& args);
+        void cmdTopic(int fd, std::vector<std::string>& args);
+        void cmdMode(int fd, std::vector<std::string>& args);
     public:
         void startServer();
         Server(std::string passwd, int port);
