@@ -8,12 +8,12 @@ bool isStringDigits(std::string str)
     }
     return true;
 }
+
 bool IsValidPort(long val, int& _tport)
 {
-    
-    if ( val <= 0 || val > 65535)
+    if (val <= 0 || val > 65535)
     {
-        std::cerr << "Error: Port is not valid" << std::endl;
+        Logger::error("Port is not valid. Must be between 1 and 65535");
         return false;
     }
         
@@ -25,7 +25,7 @@ bool IsValidPass(std::string _pass, std::string& passwd)
 {    
     if (_pass.length() < 8)
     {
-        std::cerr << "Error: Password is too short" << std::endl;
+        Logger::error("Password is too short (minimum 8 characters)");
         return false;
     }
 
@@ -41,12 +41,12 @@ bool IsValidPass(std::string _pass, std::string& passwd)
     
     if (!(Lower && Upper && Digit && Special))
     {
-        std::cerr << "Error: Password is not valid" << std::endl;
-        std::cerr << "- At least 8 characters" << std::endl;
-        std::cerr << "- At least 1 lowercase letter (a-z)" << std::endl;
-        std::cerr << "- At least 1 uppercase letter (A-Z)" << std::endl;
-        std::cerr << "- At least 1 digit (0-9)" << std::endl;
-        std::cerr << "- At least 1 special character" << std::endl;
+        Logger::error("Password does not meet complexity requirements:");
+        Logger::error("- At least 8 characters");
+        Logger::error("- At least 1 lowercase letter (a-z)");
+        Logger::error("- At least 1 uppercase letter (A-Z)");
+        Logger::error("- At least 1 digit (0-9)");
+        Logger::error("- At least 1 special character");
         return false;
     }
         

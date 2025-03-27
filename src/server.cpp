@@ -8,13 +8,20 @@ Server::Server(std::string passwd, int port) {
     data.serverInfo.sin_family = AF_INET;
     data.serverInfo.sin_addr.s_addr = INADDR_ANY;
     data.serverInfo.sin_port = htons(port);
+    
+    // Set default log level
+    Logger::setLogLevel(INFO);
+    
+    std::ostringstream portStr;
+    portStr << port;
+    Logger::info("Initializing IRC server on port " + portStr.str());
 
     if (IsValidPass(passwd, data.passwd) == false) {
-        std::cerr << "Error: Invalid password" << std::endl;
+        Logger::error("Invalid password");
         exit(1);
     }
     if (IsValidPort(port, data.port) == false) {
-        std::cerr << "Error: Invalid port" << std::endl;
+        Logger::error("Invalid port");
         exit(1);
     }
 
@@ -29,9 +36,12 @@ Server::Server(std::string passwd, int port) {
     commands["INVITE"] = &Server::cmdInvite;
     commands["TOPIC"] = &Server::cmdTopic;
     commands["MODE"] = &Server::cmdMode;
+    
+    Logger::info("Command handlers registered successfully");
 }
 
 Server::~Server() {
+    Logger::info("Shutting down server");
     close(data.socket);
     std::vector<struct pollfd>::iterator it = pollfds.begin();
     while (it != pollfds.end()) {
@@ -41,19 +51,25 @@ Server::~Server() {
 }
 
 void Server::createSocket() {
+    Logger::debug("Creating server socket");
     data.socket = socket(AF_INET, SOCK_STREAM, 0);
     if (data.socket == -1) {
-        std::cerr << "Error creating socket" << std::endl;
+        Logger::error("Failed to create socket");
         exit(1);
     }
     if (bind(data.socket, (struct sockaddr*)&data.serverInfo, sizeof(data.serverInfo)) == -1) {
-        std::cerr << "Error binding socket" << std::endl;
+        std::ostringstream portStr;
+        portStr << data.port;
+        Logger::error("Failed to bind socket to port " + portStr.str());
         exit(1);
     }
     if (listen(data.socket, 5) == -1) {
-        std::cerr << "Error listening on socket" << std::endl;
+        Logger::error("Failed to listen on socket");
         exit(1);
     }
+    std::ostringstream portStr;
+    portStr << data.port;
+    Logger::info("Server socket created and listening on port " + portStr.str());
 }
 
 void Server::startListen() {
@@ -62,9 +78,12 @@ void Server::startListen() {
     pfd.events = POLLIN;
     pollfds.push_back(pfd);
     data.poll = 1;
+    
+    Logger::info("Server is now accepting connections");
+    
     while (data.poll) {
         if (poll(&pollfds[0], pollfds.size(), -1) == -1) {
-            std::cerr << "Error polling" << std::endl;
+            Logger::error("Poll failed");
             exit(1);
         }
         std::vector<struct pollfd>::iterator it = pollfds.begin();
@@ -73,15 +92,10 @@ void Server::startListen() {
                 if (it->fd == data.socket) {
                     int newfd = accept(data.socket, NULL, NULL);
                     if (newfd == -1) {
-                        std::cerr << "Error accepting connection" << std::endl;
+                        Logger::error("Failed to accept new connection");
                         exit(1);
                     }
                     welcomeClient();
-                    // struct pollfd pfd;
-                    // pfd.fd = newfd;
-                    // pfd.events = POLLIN;
-                    // pollfds.push_back(pfd);
-
                 } else {
                     ReadEvent(it->fd);
                 }
@@ -95,6 +109,7 @@ void Server::startListen() {
 }
 
 void Server::startServer() {
+    Logger::info("Starting IRC server");
     createSocket();
     startListen();
 }

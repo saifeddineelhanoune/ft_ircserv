@@ -4,21 +4,27 @@
 
 void Server::cmdNick(int fd, std::vector<std::string>& args) {
     if (args.size() < 2) {
+        Logger::warning(fd, "NICK command received with insufficient parameters");
         clients[fd].response = "461 * NICK :Not enough parameters\r\n";
         return;
     }
     
+    std::string oldNick = clients[fd].getNick();
+    std::string newNick = args[1];
+    
     // Check if nickname is already in use
     std::map<int, Client>::iterator it;
     for (it = clients.begin(); it != clients.end(); ++it) {
-        if (it->second.getNick() == args[1]) {
-            clients[fd].response = "433 * " + args[1] + " :Nickname is already in use\r\n";
+        if (it->second.getNick() == newNick) {
+            Logger::warning(fd, "Nickname '" + newNick + "' is already in use");
+            clients[fd].response = "433 * " + newNick + " :Nickname is already in use\r\n";
             return;
         }
     }
     
-    clients[fd].setNick(args[1]);
-    clients[fd].response = ":" + clients[fd].getNick() + " NICK :" + args[1] + "\r\n";
+    clients[fd].setNick(newNick);
+    clients[fd].response = ":" + oldNick + " NICK :" + newNick + "\r\n";
+    Logger::info(fd, "Nickname set: " + newNick);
 }
 
 void Server::cmdUser(int fd, std::vector<std::string>& args) {
@@ -51,11 +57,13 @@ void Server::cmdPass(int fd, std::vector<std::string>& args) {
 
 void Server::cmdJoin(int fd, std::vector<std::string>& args) {
     if (args.size() < 2) {
+        Logger::warning(fd, "JOIN command received with insufficient parameters");
         clients[fd].response = "461 * JOIN :Not enough parameters\r\n";
         return;
     }
     
     if (!clients[fd].getAuth()) {
+        Logger::warning(fd, "Unauthenticated client attempted to JOIN channel");
         clients[fd].response = "464 * :You must authenticate first\r\n";
         return;
     }
@@ -65,9 +73,12 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
         channelName = "#" + channelName;
     }
     
+    Logger::debug(fd, "Processing JOIN request for channel: " + channelName);
+    
     // Check if channel has a key and if the provided key is correct
     if (channels.find(channelName) != channels.end() && !channels[channelName].getKey().empty()) {
         if (args.size() < 3 || args[2] != channels[channelName].getKey()) {
+            Logger::warning(fd, "Incorrect key provided for channel: " + channelName);
             clients[fd].response = "475 " + channelName + " :Cannot join channel (+k) - bad key\r\n";
             return;
         }
@@ -76,6 +87,7 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
     // Check if channel is invite-only and user is invited
     if (channels.find(channelName) != channels.end() && channels[channelName].isInviteOnly()) {
         if (!channels[channelName].isInvited(fd)) {
+            Logger::warning(fd, "Client attempted to join invite-only channel without invitation: " + channelName);
             clients[fd].response = "473 " + channelName + " :Cannot join channel (+i) - you must be invited\r\n";
             return;
         }
@@ -85,6 +97,7 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
     if (channels.find(channelName) != channels.end() && 
         channels[channelName].getUserLimit() > 0 && 
         channels[channelName].getUsers().size() >= (size_t)channels[channelName].getUserLimit()) {
+        Logger::warning(fd, "Client attempted to join full channel: " + channelName);
         clients[fd].response = "471 " + channelName + " :Cannot join channel (+l) - channel is full\r\n";
         return;
     }
@@ -93,6 +106,7 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
     
     // Create channel if it doesn't exist
     if (isNewChannel) {
+        Logger::info("Creating new channel: " + channelName);
         Channel newChannel;
         channels[channelName] = newChannel;
     }
@@ -102,16 +116,21 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
     // Make the first user who joins a channel an operator
     if (isNewChannel || channels[channelName].getUsers().size() == 1) {
         channels[channelName].addOperator(fd);
+        Logger::info(fd, "User granted operator status on channel: " + channelName);
     }
     
-    std::string response = ":" + clients[fd].getNick() + " JOIN " + channelName + "\r\n";
+    std::string nick = clients[fd].getNick();
+    std::string response = ":" + nick + " JOIN " + channelName + "\r\n";
     broadcastToChannel(channelName, response, -1);
+    
+    Logger::info(fd, "User " + nick + " joined channel: " + channelName);
     
     // Send channel topic to the user
     std::string topic = channels[channelName].getTopic();
     if (!topic.empty()) {
-        std::string topicResponse = "332 " + clients[fd].getNick() + " " + channelName + " :" + topic + "\r\n";
+        std::string topicResponse = "332 " + nick + " " + channelName + " :" + topic + "\r\n";
         clients[fd].response = topicResponse;
+        Logger::debug(fd, "Sent topic to user: " + topic);
     }
 }
 
@@ -213,12 +232,19 @@ void Server::welcomeClient()
     
     if (fd_c < 0)
     { 
-        std::cerr << "Error accepting client" << std::endl;
+        Logger::error("Failed to accept client connection");
         return;
     }
     
-    std::ostringstream oss;
-    oss << "Client accepted FD: " << fd_c;
+    std::string ip = inet_ntoa(client_addr.sin_addr);
+    int port = ntohs(client_addr.sin_port);
+    
+    std::ostringstream fdStr, portStr;
+    fdStr << fd_c;
+    portStr << port;
+    
+    Logger::info("New client connection accepted: FD=" + fdStr.str() + 
+                 " IP=" + ip + " Port=" + portStr.str());
     
     clients[fd_c] = Client(fd_c, client_addr);
     sockaddr_in addr = clients[fd_c].getAddr();
@@ -233,6 +259,10 @@ void Server::welcomeClient()
     _fd.fd = fd_c;
     _fd.events = POLLIN;
     pollfds.push_back(_fd);
+    
+    std::ostringstream fdStr2;
+    fdStr2 << fd_c;
+    Logger::debug("Client added to poll list: FD=" + fdStr2.str());
 }
 
 void Server::broadcastToChannel(const std::string& channel, const std::string& message, int excludeFd) {
@@ -247,11 +277,13 @@ void Server::broadcastToChannel(const std::string& channel, const std::string& m
 
 void Server::cmdKick(int fd, std::vector<std::string>& args) {
     if (args.size() < 3) {
+        Logger::warning(fd, "KICK command received with insufficient parameters");
         clients[fd].response = "461 * KICK :Not enough parameters\r\n";
         return;
     }
     
     if (!clients[fd].getAuth()) {
+        Logger::warning(fd, "Unauthenticated client attempted to use KICK command");
         clients[fd].response = "464 * :You must authenticate first\r\n";
         return;
     }
@@ -260,14 +292,19 @@ void Server::cmdKick(int fd, std::vector<std::string>& args) {
     std::string targetNick = args[2];
     std::string reason = args.size() > 3 ? args[3] : "No reason specified";
     
+    Logger::debug(fd, "Processing KICK request: channel=" + channelName + 
+                  " target=" + targetNick + " reason=" + reason);
+    
     // Check if channel exists
     if (channels.find(channelName) == channels.end()) {
+        Logger::warning(fd, "Attempted to KICK from non-existent channel: " + channelName);
         clients[fd].response = "403 " + channelName + " :No such channel\r\n";
         return;
     }
     
     // Check if user is an operator
     if (!channels[channelName].isOperator(fd)) {
+        Logger::warning(fd, "Non-operator attempted to use KICK command on channel: " + channelName);
         clients[fd].response = "482 " + channelName + " :You're not channel operator\r\n";
         return;
     }
@@ -284,16 +321,22 @@ void Server::cmdKick(int fd, std::vector<std::string>& args) {
     }
     
     if (targetFd == -1) {
+        Logger::warning(fd, "Attempted to KICK non-existent user from channel: " + 
+                        targetNick + " from " + channelName);
         clients[fd].response = "441 " + targetNick + " " + channelName + " :They aren't on that channel\r\n";
         return;
     }
     
     // Broadcast kick message to channel
-    std::string kickMsg = ":" + clients[fd].getNick() + " KICK " + channelName + " " + targetNick + " :" + reason + "\r\n";
+    std::string kickerNick = clients[fd].getNick();
+    std::string kickMsg = ":" + kickerNick + " KICK " + channelName + " " + targetNick + " :" + reason + "\r\n";
     broadcastToChannel(channelName, kickMsg, -1);
     
     // Remove the user from the channel
     channels[channelName].removeUser(&clients[targetFd]);
+    
+    Logger::info(fd, "User " + kickerNick + " kicked " + targetNick + 
+                 " from channel " + channelName + " (Reason: " + reason + ")");
 }
 
 void Server::cmdInvite(int fd, std::vector<std::string>& args) {

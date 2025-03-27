@@ -8,17 +8,18 @@ void    Server::ReadEvent(int fd)
     ret = read(fd, buffer, 1024);
     if (ret == 0)
     {
-        std::cerr << "Client disconnected" << std::endl;
+        Logger::info(fd, "Client disconnected");
         close(fd);
         return;
     }
     if (ret == -1)
     {
-        std::cerr << "Error reading from client" << std::endl;
+        Logger::error(fd, "Error reading from client");
         close(fd);
         return;
     }
     std::string command(buffer);
+    Logger::debug(fd, "Received command: " + command);
     handleCommands(fd, command);
 }
 
@@ -27,16 +28,19 @@ void    Server::WriteEvent(int fd)
     std::map<int, Client>::iterator it = clients.find(fd);
     if (it == clients.end())
     {
-        std::cerr << "Error: Client not found" << std::endl;
+        std::ostringstream fdStr;
+        fdStr << fd;
+        Logger::error("Client not found: " + fdStr.str());
         return;
     }
     int ret = write(fd, it->second.response.c_str(), it->second.response.length());
     if (ret == -1)
     {
-        std::cerr << "Error writing to client" << std::endl;
+        Logger::error(fd, "Error writing to client");
         close(fd);
         return;
     }
+    Logger::debug(fd, "Sent response: " + it->second.response);
     it->second.response.clear();
 }
 
@@ -50,10 +54,18 @@ void    Server::handleCommands(int fd, std::string command)
         lastPos = pos + 1;
     }
     args.push_back(command.substr(lastPos));
+    
+    if (args.empty() || args[0].empty()) {
+        Logger::warning(fd, "Received empty command");
+        return;
+    }
+    
+    Logger::debug(fd, "Processing command: " + args[0]);
+    
     std::map<std::string, CommandHandler>::iterator it = commands.find(args[0]);
     if (it == commands.end())
     {
-        std::cerr << "Error: Invalid command" << std::endl;
+        Logger::warning(fd, "Invalid command: " + args[0]);
         return;
     }
     (this->*(it->second))(fd, args);

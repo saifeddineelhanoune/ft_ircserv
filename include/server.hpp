@@ -15,6 +15,7 @@
 #include <cstdlib>
 #include "client.hpp"
 #include "channel.hpp"
+#include "logger.hpp"
 
 struct servData
 {
