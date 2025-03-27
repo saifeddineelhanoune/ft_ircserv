@@ -25,6 +25,10 @@ Server::Server(std::string passwd, int port) {
     commands["PRIVMSG"] = &Server::cmdPrivmsg;
     commands["PART"] = &Server::cmdPart;
     commands["QUIT"] = &Server::cmdQuit;
+    commands["KICK"] = &Server::cmdKick;
+    commands["INVITE"] = &Server::cmdInvite;
+    commands["TOPIC"] = &Server::cmdTopic;
+    commands["MODE"] = &Server::cmdMode;
 }
 
 Server::~Server() {
