@@ -14,6 +14,9 @@ class Client
     int         fd;
     sockaddr_in     _addr;
     bool        Auth;
+    bool    pass;
+    bool    user;
+    bool    nick;
         std::string Nick;
         std::string User;
     public :
@@ -27,7 +30,14 @@ class Client
         std::string getUser();
         bool    getAuth();
         int     getFd() const;
+        bool    getPassauth();
+        bool    getUserauth();
+        bool    getNickauth();
+        void    setPassauth();
+        void    setUserauth();
+        void    setNickauth();
         sockaddr_in getAddr();
+        void    sendResponse();
         void    setAddr(sockaddr_in addr);
         std::string response;
     };

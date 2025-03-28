@@ -208,7 +208,6 @@ void Server::welcomeClient()
 {
     struct sockaddr_in client_addr;
     socklen_t client_len = sizeof(client_addr);
-    
     int fd_c = accept(data.socket, (struct sockaddr*)&client_addr, &client_len);
     
     if (fd_c < 0)
@@ -217,12 +216,12 @@ void Server::welcomeClient()
         return;
     }
     
+    std::cout << "Client accepted" << std::endl;
     std::ostringstream oss;
     oss << "Client accepted FD: " << fd_c;
-    
+    std::cout << oss.str() << std::endl;
     clients[fd_c] = Client(fd_c, client_addr);
     sockaddr_in addr = clients[fd_c].getAddr();
-
     char host[NI_MAXHOST];
     char service[NI_MAXSERV];
     getnameinfo((struct sockaddr*)&addr, sizeof(client_addr), 
@@ -232,6 +231,7 @@ void Server::welcomeClient()
     struct pollfd _fd;
     _fd.fd = fd_c;
     _fd.events = POLLIN;
+    // client[fd_c].auth = false;
     pollfds.push_back(_fd);
 }
 

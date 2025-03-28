@@ -46,17 +46,28 @@ void Server::createSocket() {
         std::cerr << "Error creating socket" << std::endl;
         exit(1);
     }
-    if (bind(data.socket, (struct sockaddr*)&data.serverInfo, sizeof(data.serverInfo)) == -1) {
+
+    int opt = 1;
+    if (setsockopt(data.socket, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt)) == -1) {
+        std::cerr << "Error setting socket options" << std::endl;
+        exit(1);
+    }
+
+    if (bind(data.socket, (struct sockaddr *)&data.serverInfo, sizeof(data.serverInfo)) == -1) {
         std::cerr << "Error binding socket" << std::endl;
         exit(1);
     }
+
     if (listen(data.socket, 5) == -1) {
         std::cerr << "Error listening on socket" << std::endl;
         exit(1);
     }
+
+    std::cout << "Server created on port " << data.port << std::endl;
 }
 
 void Server::startListen() {
+    std::cout << "Server started on port " << data.port << std::endl;
     struct pollfd pfd;
     pfd.fd = data.socket;
     pfd.events = POLLIN;
@@ -67,31 +78,16 @@ void Server::startListen() {
             std::cerr << "Error polling" << std::endl;
             exit(1);
         }
-        std::vector<struct pollfd>::iterator it = pollfds.begin();
-        while (it != pollfds.end()) {
-            if (it->revents & POLLIN) {
-                if (it->fd == data.socket) {
-                    int newfd = accept(data.socket, NULL, NULL);
-                    if (newfd == -1) {
-                        std::cerr << "Error accepting connection" << std::endl;
-                        exit(1);
-                    }
+        for (size_t i = 0; i < pollfds.size(); i++) {
+            if (pollfds[i].revents & POLLIN) {
+                if (pollfds[i].fd == data.socket) {
                     welcomeClient();
-                    // struct pollfd pfd;
-                    // pfd.fd = newfd;
-                    // pfd.events = POLLIN;
-                    // pollfds.push_back(pfd);
-
                 } else {
-                    ReadEvent(it->fd);
+                    ReadEvent(pollfds[i].fd);
                 }
-            }
-            if (it->revents & POLLOUT) {
-                WriteEvent(it->fd);
-            }
-            it++;
         }
     }
+}
 }
 
 void Server::startServer() {

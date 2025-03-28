@@ -1,6 +1,6 @@
 #include "../include/client.hpp"
 
-Client::Client(int _fd, sockaddr_in addr) : fd(_fd), _addr(addr), Auth(false) {}
+Client::Client(int _fd, sockaddr_in addr) : fd(_fd), _addr(addr), Auth(false),pass(false),user(false),nick(false) {}
 
 Client::~Client() {}
 
@@ -38,4 +38,37 @@ sockaddr_in Client::getAddr() {
 
 void Client::setAddr(sockaddr_in addr) {
     _addr = addr;
+}
+
+bool Client::getPassauth() {
+    return pass;
+}
+
+bool Client::getUserauth() {
+    return user;
+}
+
+bool Client::getNickauth() {
+    return nick;
+}
+
+void Client::setPassauth() {
+    pass = true;
+}
+
+void Client::setUserauth() {
+    user = true;
+}
+
+void Client::setNickauth() {
+    nick = true;
+}
+
+void    Client::sendResponse() {
+    int ret = write(fd, response.c_str(), response.length());
+    if (ret == -1) {
+        std::cerr << "Error writing to client" << std::endl;
+        close(fd);
+    }
+    response.clear();
 }

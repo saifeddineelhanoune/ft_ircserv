@@ -1,25 +1,49 @@
 #include "../include/server.hpp"
+#include <sstream>
+#include <algorithm>
+#include <cstring>
 
-void    Server::ReadEvent(int fd)
+void Server::ReadEvent(int fd)
 {
-    char    buffer[1024];
-    int     ret;
-
-    ret = read(fd, buffer, 1024);
-    if (ret == 0)
+    char buffer[1024];
+    std::memset(buffer, 0, sizeof(buffer));
+    
+    int readed = read(fd, buffer, sizeof(buffer) - 1);
+    
+    if (readed <= 0)
     {
-        std::cerr << "Client disconnected" << std::endl;
-        close(fd);
+        std::ostringstream oss;
+        oss << "Closing connection FD: " << fd;
+        std::map<int, Client>::iterator it = clients.find(fd);
+        if (it != clients.end())
+        {
+            std::string response = ":" + it->second.getNick() + " QUIT :Quit: Leaving\r\n";
+            // broadcastToChannel(response, fd);
+            clients.erase(fd);
+            close(fd);
+        }
+        // clients.erase(fd);
         return;
     }
-    if (ret == -1)
+    
+    buffer[readed] = '\0';
+    std::string input(buffer);
+    std::istringstream iss(input);
+    std::string line;
+    std::cout << "Received: " << input << std::endl;
+    while (std::getline(iss, line))
     {
-        std::cerr << "Error reading from client" << std::endl;
-        close(fd);
-        return;
+        // Remove \r if present
+        // std::cout << "Received: " << line << std::endl;
+        if (!line.empty() && line[line.length() - 1] == '\r')
+            line.erase(line.length() - 1);
+        
+        if (line.empty())
+            continue;
+            
+        handleCommands(fd, line);
+        // std::cout << "Received: " << line << std::endl;
     }
-    std::string command(buffer);
-    handleCommands(fd, command);
 }
 
 void    Server::WriteEvent(int fd)
@@ -54,19 +78,40 @@ void    Server::handleCommands(int fd, std::string command)
     if (it == commands.end())
     {
         std::cerr << "Error: Invalid command" << std::endl;
+        clients[fd].response = "421 * :Unknown command\r\n";
+        clients[fd].sendResponse();
         return;
+    }
+    std::cout << "Command: " << args[0] << std::endl;
+    if (clients[fd].getAuth() == false)
+    {
+        if (clients[fd].getPassauth() == false)
+        {
+            if (args[0] != "PASS")
+            {
+                clients[fd].response = "464 * :You must authenticate first\r\n";
+                clients[fd].sendResponse();
+                return;
+            }
+        }
+        else if (clients[fd].getUserauth() == false)
+        {
+            if (args[0] != "USER")
+            {
+                clients[fd].response = "464 * :You must authenticate first\r\n";
+                clients[fd].sendResponse();
+                return;
+            }
+        }
+        else if (clients[fd].getNickauth() == false)
+        {
+            if (args[0] != "NICK")
+            {
+                clients[fd].response = "464 * :You must authenticate first\r\n";
+                clients[fd].sendResponse();
+                return;
+            }
+        }
     }
     (this->*(it->second))(fd, args);
 }
-
-// void    Server::welcomeClient(int fd)
-// {
-//     std::string welcome = "Welcome to the server!\r\n";
-//     int ret = write(fd, welcome.c_str(), welcome.length());
-//     if (ret == -1)
-//     {
-//         std::cerr << "Error writing to client" << std::endl;
-//         close(fd);
-//         return;
-//     }
-// }
