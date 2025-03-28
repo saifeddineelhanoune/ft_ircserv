@@ -54,14 +54,9 @@ class Server {
         void cmdTopic(int fd, std::vector<std::string>& args);
         void cmdMode(int fd, std::vector<std::string>& args);
        
-        void sendError(int fd, const std::string &code, const std::string &command, const std::string &message)
-        {
-            std::string response = code + " " + command + " :" + message + "\r\n";
-            if (clients.find(fd) != clients.end())
-            {
-                clients[fd].response = response;
-                clients[fd].sendResponse();
-            }
+        void sendError(int client_fd, const std::string &code, const std::string &target, const std::string &message) {
+            std::string response = std::string(":") + serverName + " " + code + " " + target + " :" + message + "\r\n";
+            send(client_fd, response.c_str(), response.length(), 0);
         }
         
     public:
