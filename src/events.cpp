@@ -89,8 +89,7 @@ void    Server::handleCommands(int fd, std::string command)
         {
             if (args[0] != "PASS")
             {
-                clients[fd].response = "464 * :You must authenticate first\r\n";
-                clients[fd].sendResponse();
+                sendError(fd, "451", args[0], "You have not registered");
                 return;
             }
         }
@@ -98,8 +97,9 @@ void    Server::handleCommands(int fd, std::string command)
         {
             if (args[0] != "USER")
             {
-                clients[fd].response = "464 * :You must authenticate first\r\n";
-                clients[fd].sendResponse();
+                // clients[fd].response = "464 * :You must authenticate first\r\n";
+                // clients[fd].sendResponse();
+                sendError(fd, "451", args[0], "You have not registered");
                 return;
             }
         }
@@ -107,8 +107,9 @@ void    Server::handleCommands(int fd, std::string command)
         {
             if (args[0] != "NICK")
             {
-                clients[fd].response = "464 * :You must authenticate first\r\n";
-                clients[fd].sendResponse();
+                sendError(fd, "451", args[0], "You have not registered");
+                // clients[fd].response = "464 * :You must authenticate first\r\n";
+                // clients[fd].sendResponse();
                 return;
             }
         }

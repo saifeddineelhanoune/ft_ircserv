@@ -16,6 +16,8 @@
 #include "client.hpp"
 #include "channel.hpp"
 
+#define serverName "IRCServer-v1.0"
+
 struct servData
 {
     std::string passwd;
@@ -51,6 +53,17 @@ class Server {
         void cmdInvite(int fd, std::vector<std::string>& args);
         void cmdTopic(int fd, std::vector<std::string>& args);
         void cmdMode(int fd, std::vector<std::string>& args);
+       
+        void sendError(int fd, const std::string &code, const std::string &command, const std::string &message)
+        {
+            std::string response = code + " " + command + " :" + message + "\r\n";
+            if (clients.find(fd) != clients.end())
+            {
+                clients[fd].response = response;
+                clients[fd].sendResponse();
+            }
+        }
+        
     public:
         void startServer();
         Server(std::string passwd, int port);
