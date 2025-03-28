@@ -114,4 +114,16 @@ void    Server::handleCommands(int fd, std::string command)
         }
     }
     (this->*(it->second))(fd, args);
+    if (clients[fd].getAuth() == false && clients[fd].getPassauth() && clients[fd].getUserauth() && clients[fd].getNickauth())
+    {
+        clients[fd].setAuth(true);
+        clients[fd].response = "001 " + clients[fd].getNick() + " :Welcome to the IRC server\r\n";
+        clients[fd].sendResponse();
+        clients[fd].response = "002 " + clients[fd].getNick() + " :Your host is " + inet_ntoa(data.serverInfo.sin_addr) + "\r\n";
+        clients[fd].sendResponse();
+        clients[fd].response = "003 " + clients[fd].getNick() + " :This server was created " __DATE__ "\r\n";
+        clients[fd].sendResponse();
+        clients[fd].response = "004 " + clients[fd].getNick() + " :This server is running " __DATE__ "\r\n";
+        clients[fd].sendResponse();
+    }
 }

@@ -13,17 +13,24 @@ void Server::cmdNick(int fd, std::vector<std::string>& args) {
     for (it = clients.begin(); it != clients.end(); ++it) {
         if (it->second.getNick() == args[1]) {
             clients[fd].response = "433 * " + args[1] + " :Nickname is already in use\r\n";
+            clients[fd].sendResponse();
             return;
         }
     }
     
     clients[fd].setNick(args[1]);
     clients[fd].response = ":" + clients[fd].getNick() + " NICK :" + args[1] + "\r\n";
+    if (clients[fd].getAuth() == false)
+    {
+        clients[fd].setNickauth();
+        // clients[fd].setAuth(true);
+    }
 }
 
 void Server::cmdUser(int fd, std::vector<std::string>& args) {
     if (args.size() < 5) {
         clients[fd].response = "461 * USER :Not enough parameters\r\n";
+        clients[fd].sendResponse();
         return;
     }
     
@@ -31,6 +38,10 @@ void Server::cmdUser(int fd, std::vector<std::string>& args) {
     if (clients[fd].getNick() != "" && !clients[fd].getAuth()) {
         std::string response = "001 " + clients[fd].getNick() + " :Welcome to the IRC server\r\n";
         clients[fd].response = response;
+    }
+    if (clients[fd].getAuth() == false)
+    {
+        clients[fd].setUserauth();
     }
 }
 
@@ -41,10 +52,16 @@ void Server::cmdPass(int fd, std::vector<std::string>& args) {
     }
     
     if (args[1] == data.passwd) {
-        clients[fd].setAuth(true);
-        clients[fd].response = "001 " + clients[fd].getNick() + " :Welcome to the IRC server\r\n";
+        if (clients[fd].getAuth() == false)
+        {
+            clients[fd].setPassauth();
+        }
+        // clients[fd].setAuth(true);
+        // clients[fd].setPassauth();
+        // clients[fd].response = "001 " + clients[fd].getNick() + " :Welcome to the IRC server\r\n";
     } else {
         clients[fd].response = "464 * :Password incorrect\r\n";
+        clients[fd].sendResponse();
         // Consider disconnecting the client after multiple failed attempts
     }
 }
