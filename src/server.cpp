@@ -40,19 +40,19 @@ Server::~Server() {
     }
 }
 
-void Server::sendError(int fd, const std::string& errorCode, const std::string& command, const std::string& error)
-{
-    std::map<int, Client>::iterator it = clients.find(fd);
-    if (it == clients.end())
-    {
-        std::cerr << "Error: Client not found for FD " << fd << std::endl;
-        return;
-    }
-    std::string t = ":";
-    std::string nick = it->second.getNick().empty() ? "*" : it->second.getNick();
-    it->second.response = t + serverName + " " + errorCode + " " + nick + " " + command + " :" + error + "\r\n";
-    it->second.sendResponse();   
-}
+// void Server::sendError(int fd, const std::string& errorCode, const std::string& command, const std::string& error)
+// {
+//     std::map<int, Client>::iterator it = clients.find(fd);
+//     if (it == clients.end())
+//     {
+//         std::cerr << "Error: Client not found for FD " << fd << std::endl;
+//         return;
+//     }
+//     std::string t = ":";
+//     std::string nick = it->second.getNick().empty() ? "*" : it->second.getNick();
+//     it->second.response = t + serverName + " " + errorCode + " " + nick + " " + command + " :" + error + "\r\n";
+//     it->second.sendResponse();   
+// }
 
 void Server::createSocket() {
     data.socket = socket(AF_INET, SOCK_STREAM, 0);
