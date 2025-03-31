@@ -24,7 +24,7 @@ int main (int argc, char **argv) {
     if (!isStringDigits(argv[1]))
     {
         std::cerr << "Error: Port is not a number" << std::endl;
-        return false;
+        return 0;
     }
     Server server(argv[2], stringToInt(argv[1]));
     server.startServer();
