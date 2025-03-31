@@ -2,12 +2,12 @@
 
 void Server::cmdTopic(int fd, std::vector<std::string>& args) {
     if (args.size() < 2) {
-        clients[fd].response = "461 * TOPIC :Not enough parameters\r\n";
+        sendError(fd, "461", "TOPIC", "Not enough parameters");
         return;
     }
     
     if (!clients[fd].getAuth()) {
-        clients[fd].response = "464 * :You must authenticate first\r\n";
+        sendError(fd, "464", "TOPIC", "You must authenticate first");
         return;
     }
     
@@ -15,13 +15,13 @@ void Server::cmdTopic(int fd, std::vector<std::string>& args) {
     
     // Check if channel exists
     if (channels.find(channelName) == channels.end()) {
-        clients[fd].response = "403 " + channelName + " :No such channel\r\n";
+        sendError(fd, "403", channelName, "No such channel");
         return;
     }
     
     // Check if user is in the channel
     if (!channels[channelName].hasUser(&clients[fd])) {
-        clients[fd].response = "442 " + channelName + " :You're not on that channel\r\n";
+        sendError(fd, "442", channelName, "You're not on that channel");
         return;
     }
     
@@ -30,8 +30,10 @@ void Server::cmdTopic(int fd, std::vector<std::string>& args) {
         std::string topic = channels[channelName].getTopic();
         if (topic.empty()) {
             clients[fd].response = "331 " + clients[fd].getNick() + " " + channelName + " :No topic is set\r\n";
+            clients[fd].sendResponse();
         } else {
             clients[fd].response = "332 " + clients[fd].getNick() + " " + channelName + " :" + topic + "\r\n";
+            clients[fd].sendResponse();
         }
         return;
     }
@@ -39,7 +41,7 @@ void Server::cmdTopic(int fd, std::vector<std::string>& args) {
     // Setting a new topic
     // Check if topic is restricted to operators
     if (channels[channelName].isTopicRestricted() && !channels[channelName].isOperator(fd)) {
-        clients[fd].response = "482 " + channelName + " :You're not channel operator\r\n";
+        sendError(fd, "482", channelName, "You're not channel operator");
         return;
     }
     

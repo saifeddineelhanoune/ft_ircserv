@@ -2,12 +2,12 @@
 
 void Server::cmdMode(int fd, std::vector<std::string>& args) {
     if (args.size() < 3) {
-        clients[fd].response = "461 * MODE :Not enough parameters\r\n";
+        sendError(fd, "461", "MODE", "Not enough parameters");
         return;
     }
     
     if (!clients[fd].getAuth()) {
-        clients[fd].response = "464 * :You must authenticate first\r\n";
+        sendError(fd, "464", "MODE", "You must authenticate first");
         return;
     }
     
@@ -16,19 +16,19 @@ void Server::cmdMode(int fd, std::vector<std::string>& args) {
     
     // Check if channel exists
     if (channels.find(channelName) == channels.end()) {
-        clients[fd].response = "403 " + channelName + " :No such channel\r\n";
+        sendError(fd, "403", channelName, "No such channel");
         return;
     }
     
     // Check if user is in the channel
     if (!channels[channelName].hasUser(&clients[fd])) {
-        clients[fd].response = "442 " + channelName + " :You're not on that channel\r\n";
+        sendError(fd, "442", channelName, "You're not on that channel");
         return;
     }
     
     // Check if user is channel operator
     if (!channels[channelName].isOperator(fd)) {
-        clients[fd].response = "482 " + channelName + " :You're not channel operator\r\n";
+        sendError(fd, "482", channelName, "You're not channel operator");
         return;
     }
     
@@ -68,7 +68,7 @@ void Server::cmdMode(int fd, std::vector<std::string>& args) {
             case 'k': // Channel key (password)
                 if (addMode) {
                     if (args.size() <= (size_t)argIndex) {
-                        clients[fd].response = "461 * MODE +k :Not enough parameters\r\n";
+                        sendError(fd, "461", "MODE", "Not enough parameters");
                         return;
                     }
                     channels[channelName].setKey(args[argIndex]);
@@ -82,7 +82,7 @@ void Server::cmdMode(int fd, std::vector<std::string>& args) {
                 
             case 'o': // Operator status
                 if (args.size() <= (size_t)argIndex) {
-                    clients[fd].response = "461 * MODE +o :Not enough parameters\r\n";
+                    sendError(fd, "461", "MODE", "Not enough parameters");
                     return;
                 }
                 
@@ -100,6 +100,7 @@ void Server::cmdMode(int fd, std::vector<std::string>& args) {
                 
                 if (targetFd == -1) {
                     clients[fd].response = "441 " + targetNick + " " + channelName + " :They aren't on that channel\r\n";
+                            clients[fd].sendResponse();
                     return;
                 }
                 
@@ -117,7 +118,7 @@ void Server::cmdMode(int fd, std::vector<std::string>& args) {
             case 'l': // User limit
                 if (addMode) {
                     if (args.size() <= (size_t)argIndex) {
-                        clients[fd].response = "461 * MODE +l :Not enough parameters\r\n";
+                        sendError(fd, "461", "MODE", "Not enough parameters");
                         return;
                     }
                     
@@ -125,7 +126,7 @@ void Server::cmdMode(int fd, std::vector<std::string>& args) {
                     int limit = 0;
                     std::istringstream iss(args[argIndex]);
                     if (!(iss >> limit) || limit < 0) {
-                        clients[fd].response = "461 * MODE +l :Invalid limit parameter\r\n";
+                        sendError(fd, "461", "MODE", "Invalid user limit");
                         return;
                     }
                     

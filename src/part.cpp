@@ -2,13 +2,13 @@
 
 void Server::cmdPart(int fd, std::vector<std::string>& args) {
     if (args.size() < 2) {
-        clients[fd].response = "461 * PART :Not enough parameters\r\n";
+        sendError(fd, "461", "PART", "Not enough parameters");
         return;
     }
     
     std::string channelName = args[1];
     if (channels.find(channelName) == channels.end()) {
-        clients[fd].response = "403 " + channelName + " :No such channel\r\n";
+        sendError(fd, "403", channelName, "No such channel");
         return;
     }
     
