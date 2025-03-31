@@ -33,8 +33,6 @@ void Server::ReadEvent(int fd)
     std::cout << "Received: " << input << std::endl;
     while (std::getline(iss, line))
     {
-        // Remove \r if present
-        // std::cout << "Received: " << line << std::endl;
         if (!line.empty() && line[line.length() - 1] == '\r')
             line.erase(line.length() - 1);
         
@@ -97,8 +95,6 @@ void    Server::handleCommands(int fd, std::string command)
         {
             if (args[0] != "USER")
             {
-                // clients[fd].response = "464 * :You must authenticate first\r\n";
-                // clients[fd].sendResponse();
                 sendError(fd, "451", args[0], "You have not registered");
                 return;
             }
