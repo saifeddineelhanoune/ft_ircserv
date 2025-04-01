@@ -165,3 +165,104 @@
 [2025-04-01 19:11:44] [INFO] Kicking sel-hano from #CHAN
 [2025-04-01 19:12:00] [WARNING] sel-hano not found in channel #CHAN
 [2025-04-01 19:12:21] [CHANNEL] Adding Client sel-hano To channel #CHAN
+[2025-04-01 19:55:30] [INFO] Logger initialized
+[2025-04-01 19:55:30] [SERVER] Server initializing
+[2025-04-01 19:55:30] [SERVER] Server initialized
+[2025-04-01 19:55:44] [CLIENT] Client Accepted5
+[2025-04-01 19:56:25] [CHANNEL] New channel created: #CHAN by Jack
+[2025-04-01 19:56:25] [CHANNEL] Adding Client Jack To channel #CHAN
+[2025-04-01 19:56:31] [CLIENT] Client Accepted6
+[2025-04-01 19:57:16] [CLIENT] Client Accepted6
+[2025-04-01 19:57:50] [CLIENT] Client Accepted6
+[2025-04-01 19:58:06] [CLIENT] Client Accepted6
+[2025-04-01 19:58:20] [CHANNEL] Adding Client mboutuil To channel #CHAN
+[2025-04-01 19:59:19] [CHANNEL] New channel created: #hello by mboutuil
+[2025-04-01 19:59:19] [CHANNEL] Adding Client mboutuil To channel #hello
+[2025-04-01 19:59:52] [INFO] Kicking mboutuil from #CHAN
+[2025-04-01 20:06:49] [INFO] Logger initialized
+[2025-04-01 20:06:49] [SERVER] Server initializing
+[2025-04-01 20:06:49] [SERVER] Server initialized
+[2025-04-01 20:06:52] [CLIENT] Client Accepted5
+[2025-04-01 20:06:55] [CLIENT] Client Accepted6
+[2025-04-01 20:06:55] [CHANNEL] New channel created: #hello by mboutuil
+[2025-04-01 20:06:55] [CHANNEL] Adding Client mboutuil To channel #hello
+[2025-04-01 20:07:51] [CLIENT] Client Accepted5
+[2025-04-01 20:08:26] [CHANNEL] Adding Client Jack To channel #hello
+[2025-04-01 20:12:52] [CHANNEL] New channel created: #CHAN by Jack
+[2025-04-01 20:12:52] [CHANNEL] Adding Client Jack To channel #CHAN
+[2025-04-01 20:13:07] [CHANNEL] Adding Client mboutuil To channel #CHAN
+[2025-04-01 20:14:13] [INFO] Kicking mboutuil from #CHAN
+[2025-04-01 20:14:30] [WARNING] mboutuil not found in channel #CHAN
+[2025-04-01 20:16:10] [CHANNEL] Adding Client mboutuil To channel #CHAN
+[2025-04-01 20:16:32] [INFO] Kicking mboutuil from #CHAN
+[2025-04-01 20:16:56] [WARNING] mboutuil not found in channel #CHAN
+[2025-04-01 20:21:42] [CHANNEL] New channel created: #CHAN1 by Jack
+[2025-04-01 20:21:42] [CHANNEL] Adding Client Jack To channel #CHAN1
+[2025-04-01 20:21:42] [CHANNEL] New channel created: #CHAN2 by Jack
+[2025-04-01 20:21:42] [CHANNEL] Adding Client Jack To channel #CHAN2
+[2025-04-01 20:21:42] [CHANNEL] New channel created: #CHAN3 by Jack
+[2025-04-01 20:21:42] [CHANNEL] Adding Client Jack To channel #CHAN3
+[2025-04-01 20:21:55] [CHANNEL] Adding Client mboutuil To channel #CHAN
+[2025-04-01 20:23:27] [CHANNEL] Adding Client mboutuil To channel #CHAN1
+[2025-04-01 20:24:50] [WARNING] mboutuil not found in channel #CHAN
+[2025-04-01 20:25:11] [CHANNEL] Adding Client mboutuil To channel #CHAN1
+[2025-04-01 20:53:00] [INFO] Logger initialized
+[2025-04-01 20:53:00] [SERVER] Server initializing
+[2025-04-01 20:53:00] [SERVER] Server initialized
+[2025-04-01 20:53:01] [CLIENT] Client Accepted5
+[2025-04-01 20:53:01] [CHANNEL] New channel created: #hello by mboutuil
+[2025-04-01 20:53:01] [CHANNEL] Adding Client mboutuil To channel #hello
+[2025-04-01 20:53:06] [CLIENT] Client Accepted6
+[2025-04-01 20:53:31] [CHANNEL] Adding Client Jack To channel #hello
+[2025-04-01 20:55:18] [INFO] Logger initialized
+[2025-04-01 20:55:18] [SERVER] Server initializing
+[2025-04-01 20:55:18] [SERVER] Server initialized
+[2025-04-01 20:55:20] [CLIENT] Client Accepted5
+[2025-04-01 20:55:20] [CHANNEL] New channel created: #hello by mboutuil
+[2025-04-01 20:55:20] [CHANNEL] Adding Client mboutuil To channel #hello
+[2025-04-01 20:55:25] [CLIENT] Client Accepted6
+[2025-04-01 20:55:46] [CHANNEL] Adding Client Jack To channel #hello
+[2025-04-01 20:59:46] [INFO] Logger initialized
+[2025-04-01 20:59:46] [SERVER] Server initializing
+[2025-04-01 20:59:46] [SERVER] Server initialized
+[2025-04-01 20:59:47] [CLIENT] Client Accepted5
+[2025-04-01 20:59:47] [CHANNEL] New channel created: #hello by mboutuil
+[2025-04-01 20:59:47] [CHANNEL] Adding Client mboutuil To channel #hello
+[2025-04-01 20:59:49] [CLIENT] Client Accepted6
+[2025-04-01 20:59:56] [CLIENT] Client Accepted6
+[2025-04-01 21:00:11] [CHANNEL] Adding Client Jack To channel #hello
+[2025-04-01 21:01:11] [INFO] Logger initialized
+[2025-04-01 21:01:11] [SERVER] Server initializing
+[2025-04-01 21:01:11] [SERVER] Server initialized
+[2025-04-01 21:01:13] [CLIENT] Client Accepted5
+[2025-04-01 21:01:22] [CLIENT] Client Accepted6
+[2025-04-01 21:01:22] [CHANNEL] New channel created: #hello by mboutuil
+[2025-04-01 21:01:22] [CHANNEL] Adding Client mboutuil To channel #hello
+[2025-04-01 21:01:37] [CHANNEL] Adding Client Jack To channel #hello
+[2025-04-01 21:12:29] [INFO] Logger initialized
+[2025-04-01 21:12:29] [SERVER] Server initializing
+[2025-04-01 21:12:29] [SERVER] Server initialized
+[2025-04-01 21:12:29] [CLIENT] Client Accepted5
+[2025-04-01 21:12:29] [CHANNEL] New channel created: #hello by mboutuil
+[2025-04-01 21:12:29] [CHANNEL] Adding Client mboutuil To channel #hello
+[2025-04-01 21:12:32] [CLIENT] Client Accepted6
+[2025-04-01 21:12:46] [CHANNEL] Adding Client Jack To channel #hello
+[2025-04-01 21:18:23] [INFO] Logger initialized
+[2025-04-01 21:18:23] [SERVER] Server initializing
+[2025-04-01 21:18:23] [SERVER] Server initialized
+[2025-04-01 21:18:25] [CLIENT] Client Accepted5
+[2025-04-01 21:18:38] [CLIENT] Client Accepted6
+[2025-04-01 21:18:38] [CHANNEL] New channel created: #hello by mboutuil
+[2025-04-01 21:18:38] [CHANNEL] Adding Client mboutuil To channel #hello
+[2025-04-01 21:18:55] [CHANNEL] Adding Client Jack To channel #hello
+[2025-04-01 21:20:41] [CHANNEL] Adding Client Jack To channel #hello
+[2025-04-01 21:22:59] [INFO] Logger initialized
+[2025-04-01 21:22:59] [SERVER] Server initializing
+[2025-04-01 21:22:59] [SERVER] Server initialized
+[2025-04-01 21:23:02] [CLIENT] Client Accepted5
+[2025-04-01 21:23:08] [CLIENT] Client Accepted6
+[2025-04-01 21:23:08] [CHANNEL] New channel created: #hello by mboutuil
+[2025-04-01 21:23:08] [CHANNEL] Adding Client mboutuil To channel #hello
+[2025-04-01 21:23:10] [CHANNEL] Adding Client Jack To channel #hello
+[2025-04-01 21:24:04] [CLIENT] Client Accepted7
+[2025-04-01 21:26:31] [CHANNEL] Adding Client SIMOX To channel #hello

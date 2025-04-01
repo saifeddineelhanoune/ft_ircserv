@@ -52,7 +52,8 @@ void Server::cmdKick(int fd, std::vector<std::string>& args) {
     // Broadcast kick message to channel
     std::string kickMsg = ":" + clients[fd].getNick() + " KICK " + channelName + " " + targetNick + " :" + reason + "\r\n";
     broadcastToChannel(channelName, kickMsg, -1);
-    
+    // clients[targetFd].response = kickMsg;
+    // clients[targetFd].sendResponse();
     // Remove the user from the channel
     // channels[channelName].removeUser(&clients[targetFd]);
 }
