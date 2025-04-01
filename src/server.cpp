@@ -1,6 +1,8 @@
 #include "../include/server.hpp"
 
 Server::Server(std::string passwd, int port) {
+    Logger::init("irc_server.log", DEBUG, true);
+    Logger::server("Server initializing");
     data.passwd = passwd;
     data.port = port;
     data.socket = 0;
@@ -29,9 +31,12 @@ Server::Server(std::string passwd, int port) {
     commands["INVITE"] = &Server::cmdInvite;
     commands["TOPIC"] = &Server::cmdTopic;
     commands["MODE"] = &Server::cmdMode;
+
+    Logger::server("Server initialized");
 }
 
 Server::~Server() {
+    Logger::server("Server shutting down");
     close(data.socket);
     std::vector<struct pollfd>::iterator it = pollfds.begin();
     while (it != pollfds.end()) {

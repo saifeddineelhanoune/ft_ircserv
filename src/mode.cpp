@@ -227,11 +227,11 @@ void Server::processChannelModes(int fd, const std::string& target, std::vector<
 
 void Server::processUserModes(int fd, const std::string& target, std::vector<std::string>& args) {
     // User mode (not required by the subject but good to have)
-    if (clients[fd].getNick() != target) {
-        sendError(fd, "502", "", "Cannot change mode for other users");
-        return;
-    }
-    
+    // if (clients[fd].getNick() != target) {
+    //     sendError(fd, "502", "", "Cannot change mode for other users");
+    //     return;
+    // }
+    (void)target;
     if (args.size() < 3) {
         // Just inform about current modes
         clients[fd].response = ":" + std::string(serverName) + " 221 " + clients[fd].getNick() + " +\r\n";

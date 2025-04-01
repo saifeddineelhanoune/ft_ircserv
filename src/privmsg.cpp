@@ -35,6 +35,11 @@ void Server::cmdPrivmsg(int fd, std::vector<std::string>& args) {
     if (target[0] == '#') {
         if (channels.find(target) != channels.end()) {
             std::string response = ":" + clients[fd].getNick() + " PRIVMSG " + target + " :" + message + "\r\n";
+            if (!channels[target].hasUser(&clients[fd])) {
+                sendError(fd, "442", target, "You're not on that channel");
+                Logger::warning(clients[fd].getNick() + " not found in channel " + target);
+                return ;
+            }
             broadcastToChannel(target, response, fd);
         } else {
             clients[fd].response = "403 " + target + " :No such channel\r\n";

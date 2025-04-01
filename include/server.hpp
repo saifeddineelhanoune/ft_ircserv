@@ -15,7 +15,7 @@
 #include <cstdlib>
 #include "client.hpp"
 #include "channel.hpp"
-#include "logger.hpp"
+#include "Logger.hpp"
 
 const std::string serverName = "IRCServer-v1.0";
 

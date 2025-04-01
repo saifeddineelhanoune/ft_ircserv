@@ -17,7 +17,7 @@ void Server::cmdNick(int fd, std::vector<std::string>& args) {
     
     clients[fd].setNick(args[1]);
     clients[fd].response = ":" + clients[fd].getNick() + " NICK :" + args[1] + "\r\n";
-    clients[fd].sendResponse();
+    //clients[fd].sendResponse();
     if (clients[fd].getAuth() == false)
         clients[fd].setNickauth();
 }

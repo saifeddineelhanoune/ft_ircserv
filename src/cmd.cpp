@@ -9,15 +9,14 @@ void Server::welcomeClient()
     int fd_c = accept(data.socket, (struct sockaddr*)&client_addr, &client_len);
     
     if (fd_c < 0)
-    { 
-        std::cerr << "Error accepting client" << std::endl;
+    {
+        Logger::error("Error accepting client connection");
+        Logger::client("Client Error");
         return;
     }
-    
-    std::cout << "Client accepted" << std::endl;
     std::ostringstream oss;
-    oss << "Client accepted FD: " << fd_c;
-    std::cout << oss.str() << std::endl;
+    oss << fd_c;
+    Logger::client("Client Accepted" + oss.str());
     clients[fd_c] = Client(fd_c, client_addr);
     sockaddr_in addr = clients[fd_c].getAddr();
     char host[NI_MAXHOST];

@@ -1,4 +1,4 @@
-#include "../include/logger.hpp"
+#include "../include/Logger.hpp"
 
 // Initialize static members
 bool Logger::isColorEnabled = true;

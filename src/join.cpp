@@ -73,10 +73,11 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
         
         // Create channel if it doesn't exist
         if (isNewChannel) {
+            Logger::channel("New channel created: " + channelName + " by " + clients[fd].getNick());
             Channel newChannel;
             channels[channelName] = newChannel;
         }
-        
+        Logger::channel("Adding Client " + clients[fd].getNick() + " To channel " + channelName);
         // Add user to channel
         channels[channelName].addUser(&clients[fd]);
         

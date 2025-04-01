@@ -93,7 +93,7 @@ void    Server::handleCommands(int fd, std::string command)
         }
         else if (clients[fd].getUserauth() == false)
         {
-            if (args[0] != "USER")
+            if (args[0] != "USER" && args[0] != "NICK")
             {
                 sendError(fd, "451", args[0], "You have not registered");
                 return;
@@ -101,9 +101,9 @@ void    Server::handleCommands(int fd, std::string command)
         }
         else if (clients[fd].getNickauth() == false)
         {
-            if (args[0] != "NICK")
+            if (args[1] != "USER" && args[1] != "NICK")
             {
-                sendError(fd, "451", args[0], "You have not registered");
+                sendError(fd, "451", args[1], "You have not registered");
                 // clients[fd].response = "464 * :You must authenticate first\r\n";
                 // clients[fd].sendResponse();
                 return;
@@ -114,13 +114,13 @@ void    Server::handleCommands(int fd, std::string command)
     if (clients[fd].getAuth() == false && clients[fd].getPassauth() && clients[fd].getUserauth() && clients[fd].getNickauth())
     {
         clients[fd].setAuth(true);
-        clients[fd].response = "001 " + clients[fd].getNick() + " :Welcome to the IRC server\r\n";
+        clients[fd].response = ": 001 " + clients[fd].getNick() + " :Welcome to the IRC server\r\n";
         clients[fd].sendResponse();
-        clients[fd].response = "002 " + clients[fd].getNick() + " :Your host is " + inet_ntoa(data.serverInfo.sin_addr) + "\r\n";
+        clients[fd].response = ": 002 " + clients[fd].getNick() + " :Your host is " + inet_ntoa(data.serverInfo.sin_addr) + "\r\n";
         clients[fd].sendResponse();
-        clients[fd].response = "003 " + clients[fd].getNick() + " :This server was created " __DATE__ "\r\n";
+        clients[fd].response = ": 003 " + clients[fd].getNick() + " :This server was created " +  __DATE__ +  "\r\n";
         clients[fd].sendResponse();
-        clients[fd].response = "004 " + clients[fd].getNick() + " :This server is running " __DATE__ "\r\n";
+        clients[fd].response = ": 004 " + clients[fd].getNick() + " :This server is running " + __DATE__ + "\r\n";
         clients[fd].sendResponse();
     }
 }

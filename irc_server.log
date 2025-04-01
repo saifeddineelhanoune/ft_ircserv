@@ -1,0 +1,167 @@
+[2025-04-01 15:27:09] [INFO] Logger initialized
+[2025-04-01 15:27:09] [SERVER] Server initializing
+[2025-04-01 15:27:09] [SERVER] Server initialized
+[2025-04-01 15:27:25] [CLIENT] Client Accepted5
+[2025-04-01 15:30:01] [CLIENT] Client Accepted6
+[2025-04-01 15:30:36] [CLIENT] Client Accepted6
+[2025-04-01 15:31:32] [CHANNEL] New channel created: #chan1 by sel-hano
+[2025-04-01 15:31:32] [CHANNEL] Adding Client sel-hano To channel #chan1
+[2025-04-01 15:32:05] [CHANNEL] New channel created: ##chan1 by sel-hano
+[2025-04-01 15:32:05] [CHANNEL] Adding Client sel-hano To channel ##chan1
+[2025-04-01 15:34:40] [CLIENT] Client Accepted6
+[2025-04-01 15:38:42] [CLIENT] Client Accepted6
+[2025-04-01 15:41:27] [INFO] Logger initialized
+[2025-04-01 15:41:27] [SERVER] Server initializing
+[2025-04-01 15:41:27] [SERVER] Server initialized
+[2025-04-01 15:41:41] [CLIENT] Client Accepted5
+[2025-04-01 15:41:50] [CLIENT] Client Accepted5
+[2025-04-01 15:42:04] [CLIENT] Client Accepted5
+[2025-04-01 15:42:28] [CLIENT] Client Accepted6
+[2025-04-01 15:44:21] [INFO] Logger initialized
+[2025-04-01 15:44:21] [SERVER] Server initializing
+[2025-04-01 15:44:21] [SERVER] Server initialized
+[2025-04-01 15:44:27] [CLIENT] Client Accepted5
+[2025-04-01 15:44:32] [CLIENT] Client Accepted6
+[2025-04-01 15:51:02] [INFO] Logger initialized
+[2025-04-01 15:51:02] [SERVER] Server initializing
+[2025-04-01 15:51:02] [SERVER] Server initialized
+[2025-04-01 15:51:05] [CLIENT] Client Accepted5
+[2025-04-01 15:51:05] [CLIENT] Client Accepted6
+[2025-04-01 15:51:08] [CLIENT] Client Accepted7
+[2025-04-01 15:54:14] [INFO] Logger initialized
+[2025-04-01 15:54:14] [SERVER] Server initializing
+[2025-04-01 15:54:14] [SERVER] Server initialized
+[2025-04-01 15:54:19] [CLIENT] Client Accepted5
+[2025-04-01 15:54:24] [CLIENT] Client Accepted6
+[2025-04-01 15:58:21] [CLIENT] Client Accepted5
+[2025-04-01 15:58:27] [CLIENT] Client Accepted6
+[2025-04-01 15:59:45] [INFO] Logger initialized
+[2025-04-01 15:59:45] [SERVER] Server initializing
+[2025-04-01 15:59:45] [SERVER] Server initialized
+[2025-04-01 15:59:52] [CLIENT] Client Accepted5
+[2025-04-01 15:59:52] [CLIENT] Client Accepted5
+[2025-04-01 16:00:03] [CLIENT] Client Accepted5
+[2025-04-01 16:00:08] [CLIENT] Client Accepted5
+[2025-04-01 16:02:03] [INFO] Logger initialized
+[2025-04-01 16:02:03] [SERVER] Server initializing
+[2025-04-01 16:02:03] [SERVER] Server initialized
+[2025-04-01 16:02:07] [CLIENT] Client Accepted5
+[2025-04-01 16:03:19] [CLIENT] Client Accepted6
+[2025-04-01 16:04:58] [INFO] Logger initialized
+[2025-04-01 16:04:58] [SERVER] Server initializing
+[2025-04-01 16:04:58] [SERVER] Server initialized
+[2025-04-01 16:05:08] [CLIENT] Client Accepted5
+[2025-04-01 16:05:23] [CHANNEL] New channel created: #chan by test
+[2025-04-01 16:05:23] [CHANNEL] Adding Client test To channel #chan
+[2025-04-01 16:06:27] [INFO] Logger initialized
+[2025-04-01 16:06:27] [SERVER] Server initializing
+[2025-04-01 16:06:34] [INFO] Logger initialized
+[2025-04-01 16:06:34] [SERVER] Server initializing
+[2025-04-01 16:06:34] [SERVER] Server initialized
+[2025-04-01 16:06:40] [CLIENT] Client Accepted5
+[2025-04-01 16:06:42] [CLIENT] Client Accepted6
+[2025-04-01 16:06:52] [CHANNEL] New channel created: #chan by test
+[2025-04-01 16:06:52] [CHANNEL] Adding Client test To channel #chan
+[2025-04-01 16:07:03] [CLIENT] Client Accepted7
+[2025-04-01 16:07:43] [CHANNEL] Adding Client lol To channel #chan
+[2025-04-01 16:08:35] [CLIENT] Client Accepted8
+[2025-04-01 16:09:09] [CLIENT] Client Accepted8
+[2025-04-01 16:09:40] [CLIENT] Client Accepted8
+[2025-04-01 16:10:32] [CHANNEL] Adding Client toto To channel #chan
+[2025-04-01 16:10:42] [CLIENT] Client Accepted6
+[2025-04-01 16:12:47] [CHANNEL] New channel created: #chab by lol
+[2025-04-01 16:12:47] [CHANNEL] Adding Client lol To channel #chab
+[2025-04-01 16:12:53] [CHANNEL] Adding Client lol To channel #chan
+[2025-04-01 18:15:17] [INFO] Logger initialized
+[2025-04-01 18:15:17] [SERVER] Server initializing
+[2025-04-01 18:15:17] [SERVER] Server initialized
+[2025-04-01 18:15:18] [CLIENT] Client Accepted5
+[2025-04-01 18:15:33] [CHANNEL] New channel created: #chan by test
+[2025-04-01 18:15:33] [CHANNEL] Adding Client test To channel #chan
+[2025-04-01 18:17:37] [CLIENT] Client Accepted6
+[2025-04-01 18:18:26] [CHANNEL] Adding Client sel-hano To channel #chan
+[2025-04-01 18:31:17] [INFO] Logger initialized
+[2025-04-01 18:31:17] [SERVER] Server initializing
+[2025-04-01 18:31:17] [SERVER] Server initialized
+[2025-04-01 18:31:30] [CLIENT] Client Accepted5
+[2025-04-01 18:31:30] [CLIENT] Client Accepted6
+[2025-04-01 18:32:13] [CHANNEL] New channel created: #chan1 by sel-hano
+[2025-04-01 18:32:13] [CHANNEL] Adding Client sel-hano To channel #chan1
+[2025-04-01 18:32:36] [CLIENT] Client Accepted7
+[2025-04-01 18:33:31] [CHANNEL] Adding Client mboutuil To channel #chan1
+[2025-04-01 18:34:54] [INFO] Logger initialized
+[2025-04-01 18:34:54] [SERVER] Server initializing
+[2025-04-01 18:34:54] [SERVER] Server initialized
+[2025-04-01 18:34:57] [CLIENT] Client Accepted5
+[2025-04-01 18:35:19] [CLIENT] Client Accepted6
+[2025-04-01 18:35:49] [CLIENT] Client Accepted7
+[2025-04-01 18:36:04] [CHANNEL] New channel created: #chan1 by sel-hano
+[2025-04-01 18:36:04] [CHANNEL] Adding Client sel-hano To channel #chan1
+[2025-04-01 18:36:10] [CHANNEL] Adding Client mboutuil To channel #chan1
+[2025-04-01 18:39:39] [INFO] Logger initialized
+[2025-04-01 18:39:39] [SERVER] Server initializing
+[2025-04-01 18:39:39] [SERVER] Server initialized
+[2025-04-01 18:39:46] [INFO] Logger initialized
+[2025-04-01 18:39:46] [SERVER] Server initializing
+[2025-04-01 18:39:46] [SERVER] Server initialized
+[2025-04-01 18:40:07] [INFO] Logger initialized
+[2025-04-01 18:40:07] [SERVER] Server initializing
+[2025-04-01 18:40:07] [SERVER] Server initialized
+[2025-04-01 18:40:11] [CLIENT] Client Accepted5
+[2025-04-01 18:40:23] [CLIENT] Client Accepted6
+[2025-04-01 18:40:24] [CLIENT] Client Accepted7
+[2025-04-01 18:42:43] [INFO] Logger initialized
+[2025-04-01 18:42:43] [SERVER] Server initializing
+[2025-04-01 18:42:43] [SERVER] Server initialized
+[2025-04-01 18:42:44] [CLIENT] Client Accepted5
+[2025-04-01 18:42:50] [CLIENT] Client Accepted6
+[2025-04-01 18:43:11] [CHANNEL] New channel created: #CHAN by sel-hano
+[2025-04-01 18:43:11] [CHANNEL] Adding Client sel-hano To channel #CHAN
+[2025-04-01 18:43:16] [CLIENT] Client Accepted7
+[2025-04-01 18:43:35] [CHANNEL] Adding Client mboutuil To channel #CHAN
+[2025-04-01 18:43:48] [DEBUG] No such user found
+[2025-04-01 18:49:18] [INFO] Logger initialized
+[2025-04-01 18:49:18] [SERVER] Server initializing
+[2025-04-01 18:49:18] [SERVER] Server initialized
+[2025-04-01 18:49:23] [CLIENT] Client Accepted5
+[2025-04-01 18:49:26] [CLIENT] Client Accepted6
+[2025-04-01 18:49:43] [CLIENT] Client Accepted7
+[2025-04-01 18:49:59] [CHANNEL] New channel created: #c by sel-hano
+[2025-04-01 18:49:59] [CHANNEL] Adding Client sel-hano To channel #c
+[2025-04-01 18:50:08] [CHANNEL] Adding Client mboutuil To channel #c
+[2025-04-01 18:50:21] [INFO] Kicking mboutuil from #c
+[2025-04-01 18:50:21] [DEBUG] No such user found
+[2025-04-01 18:54:29] [INFO] Logger initialized
+[2025-04-01 18:54:29] [SERVER] Server initializing
+[2025-04-01 18:54:29] [SERVER] Server initialized
+[2025-04-01 18:54:32] [CLIENT] Client Accepted5
+[2025-04-01 18:54:38] [CLIENT] Client Accepted6
+[2025-04-01 18:54:50] [CLIENT] Client Accepted7
+[2025-04-01 18:55:07] [CHANNEL] New channel created: #chan by mboutuil
+[2025-04-01 18:55:07] [CHANNEL] Adding Client mboutuil To channel #chan
+[2025-04-01 18:55:12] [CHANNEL] Adding Client sel-hano To channel #chan
+[2025-04-01 18:56:06] [INFO] Kicking sel-hano from #chan
+[2025-04-01 18:56:06] [DEBUG] sel-hano Not found
+[2025-04-01 18:56:06] [DEBUG] No such user found
+[2025-04-01 18:58:08] [INFO] Logger initialized
+[2025-04-01 18:58:08] [SERVER] Server initializing
+[2025-04-01 18:58:08] [SERVER] Server initialized
+[2025-04-01 18:58:21] [CLIENT] Client Accepted5
+[2025-04-01 18:58:23] [CLIENT] Client Accepted6
+[2025-04-01 18:58:35] [CHANNEL] New channel created: #chan by sel-hano
+[2025-04-01 18:58:35] [CHANNEL] Adding Client sel-hano To channel #chan
+[2025-04-01 18:58:40] [CLIENT] Client Accepted7
+[2025-04-01 18:59:13] [CHANNEL] Adding Client mboutuil To channel #chan
+[2025-04-01 18:59:27] [INFO] Kicking mboutuil from #chan
+[2025-04-01 19:10:52] [INFO] Logger initialized
+[2025-04-01 19:10:52] [SERVER] Server initializing
+[2025-04-01 19:10:52] [SERVER] Server initialized
+[2025-04-01 19:10:56] [CLIENT] Client Accepted5
+[2025-04-01 19:11:09] [CLIENT] Client Accepted6
+[2025-04-01 19:11:11] [CLIENT] Client Accepted7
+[2025-04-01 19:11:24] [CHANNEL] New channel created: #CHAN by mboutuil
+[2025-04-01 19:11:24] [CHANNEL] Adding Client mboutuil To channel #CHAN
+[2025-04-01 19:11:30] [CHANNEL] Adding Client sel-hano To channel #CHAN
+[2025-04-01 19:11:44] [INFO] Kicking sel-hano from #CHAN
+[2025-04-01 19:12:00] [WARNING] sel-hano not found in channel #CHAN
+[2025-04-01 19:12:21] [CHANNEL] Adding Client sel-hano To channel #CHAN
