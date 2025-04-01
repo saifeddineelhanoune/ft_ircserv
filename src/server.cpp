@@ -53,7 +53,21 @@ Server::~Server() {
 //     it->second.response = t + serverName + " " + errorCode + " " + nick + " " + command + " :" + error + "\r\n";
 //     it->second.sendResponse();   
 // }
-
+// void Server::sendError(int client_fd, const std::string &code, const std::string &target, const std::string &message) {
+//     std::string nick = clients[client_fd].getNick();
+//     if (nick.empty()) {
+//         nick = "*";
+//     }
+    
+//     std::string response = ":" + std::string(serverName) + " " + code + " " + nick + " ";
+//     if (!target.empty()) {
+//         response += target + " ";
+//     }
+//     response += ":" + message + "\r\n";
+    
+//     clients[client_fd].response = response;
+//     clients[client_fd].sendResponse();
+// }
 
 void Server::createSocket() {
     data.socket = socket(AF_INET, SOCK_STREAM, 0);

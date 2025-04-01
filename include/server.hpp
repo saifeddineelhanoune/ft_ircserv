@@ -15,8 +15,9 @@
 #include <cstdlib>
 #include "client.hpp"
 #include "channel.hpp"
+#include "logger.hpp"
 
-#define serverName "IRCServer-v1.0"
+const std::string serverName = "IRCServer-v1.0";
 
 struct servData
 {
@@ -39,7 +40,7 @@ class Server {
         void createSocket();
         void startListen();
         void broadcastToChannel(const std::string& channel, const std::string& message, int excludeFd);
-
+        void sendChannelNames(int fd, const std::string& channelName);
         void handleCommands(int fd, std::string command);
         void cmdNick(int fd, std::vector<std::string>& args);
         void cmdUser(int fd, std::vector<std::string>& args);
@@ -52,6 +53,21 @@ class Server {
         void cmdKick(int fd, std::vector<std::string>& args);
         void cmdInvite(int fd, std::vector<std::string>& args);
         void cmdTopic(int fd, std::vector<std::string>& args);
+        //mode helpers
+        void handleInviteOnlyMode(const std::string& channelName, bool addMode);
+        void handleTopicRestrictionMode(const std::string& channelName, bool addMode);
+        void handleChannelKeyMode(int fd, const std::string& channelName, bool addMode, 
+                                    std::vector<std::string>& args, int& argIndex, 
+                                    std::string& modeParams);
+        bool handleOperatorMode(int fd, const std::string& channelName, bool addMode, 
+                                std::vector<std::string>& args, int& argIndex, 
+                                std::string& modeParams);
+        bool handleUserLimitMode(int fd, const std::string& channelName, bool addMode, 
+                                std::vector<std::string>& args, int& argIndex, 
+                                std::string& modeParams);
+        void displayChannelModes(int fd, const std::string& channelName);
+        void processChannelModes(int fd, const std::string& target, std::vector<std::string>& args);
+        void processUserModes(int fd, const std::string& target, std::vector<std::string>& args);
         void cmdMode(int fd, std::vector<std::string>& args);
        
         void sendError(int client_fd, const std::string &code, const std::string &target, const std::string &message) {
