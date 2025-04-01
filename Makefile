@@ -2,7 +2,7 @@
 CXX = c++
 
 # Compiler flags
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -Iinclude
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -Iinclude -Ofast
 
 # Directories
 SRC = src
@@ -12,7 +12,7 @@ SRC_DIR = $(wildcard $(SRC)/*.cpp) main.cpp
 OBJ_DIR = obj
 OBJ = $(SRC_DIR:src/%.cpp=$(OBJ_DIR)/%.o)
 
-NAME = ircServ
+NAME = ircserv
 
 all: $(NAME)
 
