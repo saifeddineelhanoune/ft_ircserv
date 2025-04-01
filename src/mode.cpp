@@ -11,24 +11,26 @@ void Server::handleTopicRestrictionMode(const std::string& channelName, bool add
 
 void Server::handleChannelKeyMode(int fd, const std::string& channelName, bool addMode, 
                                  std::vector<std::string>& args, int& argIndex, 
-                                 std::string& modeParams) {
+                                 std::string& modeParams , bool* modeSuccess) {
     if (addMode) {
-        if (args.size() <= (size_t)argIndex) {
+        if (args.size() <= (size_t)argIndex || args[argIndex].empty()) {
             sendError(fd, "461", "MODE", "Not enough parameters");
             return;
         }
+        std::cout << "Setting key: " << args[argIndex] << std::endl;
         channels[channelName].setKey(args[argIndex]);
         modeParams += " " + args[argIndex];
         argIndex++;
     } else {
         channels[channelName].setKey("");
     }
+    *modeSuccess = true;
 }
 
 bool Server::handleOperatorMode(int fd, const std::string& channelName, bool addMode, 
                                std::vector<std::string>& args, int& argIndex, 
                                std::string& modeParams) {
-    if (args.size() <= (size_t)argIndex) {
+    if (args.size() <= (size_t)argIndex ) {
         sendError(fd, "461", "MODE", "Not enough parameters");
         return false;
     }
@@ -151,7 +153,9 @@ void Server::cmdMode(int fd, std::vector<std::string>& args) {
         
         processChannelModes(fd, target, args);
     } else {
-        processUserModes(fd, target, args);
+        // processUserModes(fd, target, args);
+        clients[fd].response = "501 " + target + " :MODE can only be used for channels\r\n";
+        clients[fd].sendResponse();
     }
 }
 
@@ -170,8 +174,9 @@ void Server::processChannelModes(int fd, const std::string& target, std::vector<
     std::string modeParams;
     int argIndex = 3;
     
+        char mode;
     for (size_t i = 0; i < modeString.length(); ++i) {
-        char mode = modeString[i];
+        mode = modeString[i];
         
         bool modeSuccess = false;
         
@@ -191,9 +196,9 @@ void Server::processChannelModes(int fd, const std::string& target, std::vector<
             }
                 
             case 'k': { // Channel key
-                handleChannelKeyMode(fd, target, addMode, args, argIndex, modeParams);
+                handleChannelKeyMode(fd, target, addMode, args, argIndex, modeParams,&modeSuccess);
                 modeChanges += mode;
-                modeSuccess = true;
+                // modeSuccess = true;
                 break;
             }
                 
@@ -218,7 +223,7 @@ void Server::processChannelModes(int fd, const std::string& target, std::vector<
         }
     }
     
-    if (!modeChanges.empty()) {
+    if (!modeChanges.empty() && mode != 'k') {
         std::string modeMsg = ":" + clients[fd].getNick() + "!" + clients[fd].getUser() + "@" + std::string(serverName) + " MODE " + target + " ";
         modeMsg += (addMode ? "+" : "-") + modeChanges + modeParams + "\r\n";
         broadcastToChannel(target, modeMsg, -1);
@@ -231,7 +236,8 @@ void Server::processUserModes(int fd, const std::string& target, std::vector<std
     //     sendError(fd, "502", "", "Cannot change mode for other users");
     //     return;
     // }
-    (void)target;
+    // std::map<int, Client>::iterator it;
+    (void) target;
     if (args.size() < 3) {
         // Just inform about current modes
         clients[fd].response = ":" + std::string(serverName) + " 221 " + clients[fd].getNick() + " +\r\n";

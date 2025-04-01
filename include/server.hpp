@@ -58,7 +58,7 @@ class Server {
         void handleTopicRestrictionMode(const std::string& channelName, bool addMode);
         void handleChannelKeyMode(int fd, const std::string& channelName, bool addMode, 
                                     std::vector<std::string>& args, int& argIndex, 
-                                    std::string& modeParams);
+                                    std::string& modeParams, bool* modeSuccess);
         bool handleOperatorMode(int fd, const std::string& channelName, bool addMode, 
                                 std::vector<std::string>& args, int& argIndex, 
                                 std::string& modeParams);
