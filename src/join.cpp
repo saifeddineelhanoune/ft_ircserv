@@ -2,12 +2,12 @@
 
 void Server::cmdJoin(int fd, std::vector<std::string>& args) {
     if (args.size() < 2) {
-        clients[fd].response = "461 * JOIN :Not enough parameters\r\n";
+        sendError(fd, "461", "JOIN", "Not enough parameters");
         return;
     }
     
     if (!clients[fd].getAuth()) {
-        clients[fd].response = "464 * :You must authenticate first\r\n";
+        sendError(fd, "451", "JOIN", "You have not registered");
         return;
     }
     
@@ -19,7 +19,7 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
     // Check if channel has a key and if the provided key is correct
     if (channels.find(channelName) != channels.end() && !channels[channelName].getKey().empty()) {
         if (args.size() < 3 || args[2] != channels[channelName].getKey()) {
-            clients[fd].response = "475 " + channelName + " :Cannot join channel (+k) - bad key\r\n";
+            sendError(fd, "475", channelName, "Cannot join channel (+k) - bad key");
             return;
         }
     }
@@ -27,7 +27,7 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
     // Check if channel is invite-only and user is invited
     if (channels.find(channelName) != channels.end() && channels[channelName].isInviteOnly()) {
         if (!channels[channelName].isInvited(fd)) {
-            clients[fd].response = "473 " + channelName + " :Cannot join channel (+i) - you must be invited\r\n";
+            sendError(fd, "473", channelName, "Cannot join channel (+i) - you must be invited");
             return;
         }
     }
@@ -36,7 +36,7 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
     if (channels.find(channelName) != channels.end() && 
         channels[channelName].getUserLimit() > 0 && 
         channels[channelName].getUsers().size() >= (size_t)channels[channelName].getUserLimit()) {
-        clients[fd].response = "471 " + channelName + " :Cannot join channel (+l) - channel is full\r\n";
+        sendError(fd, "471", channelName, "Cannot join channel (+l) - channel is full");
         return;
     }
     
@@ -63,5 +63,6 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
     if (!topic.empty()) {
         std::string topicResponse = "332 " + clients[fd].getNick() + " " + channelName + " :" + topic + "\r\n";
         clients[fd].response = topicResponse;
+        clients[fd].sendResponse();
     }
 }

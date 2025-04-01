@@ -39,6 +39,7 @@ void Server::broadcastToChannel(const std::string& channel, const std::string& m
     for (it = users.begin(); it != users.end(); ++it) {
         if ((*it)->getFd() != excludeFd) {
             (*it)->response = message;
+            (*it)->sendResponse();
         }
     }
 }

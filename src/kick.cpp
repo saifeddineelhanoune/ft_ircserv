@@ -23,7 +23,7 @@ void Server::cmdKick(int fd, std::vector<std::string>& args) {
     
     // Check if user is an operator
     if (!channels[channelName].isOperator(fd)) {
-        clients[fd].response = "482 " + channelName + " :You're not channel operator\r\n";
+        sendError(fd, "482", channelName, "You're not channel operator");
         return;
     }
     
@@ -40,6 +40,7 @@ void Server::cmdKick(int fd, std::vector<std::string>& args) {
     
     if (targetFd == -1) {
         clients[fd].response = "441 " + targetNick + " " + channelName + " :They aren't on that channel\r\n";
+        clients[fd].sendResponse();
         return;
     }
     

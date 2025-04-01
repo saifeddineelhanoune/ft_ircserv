@@ -2,8 +2,7 @@
 
 void Server::cmdUser(int fd, std::vector<std::string>& args) {
     if (args.size() < 5) {
-        clients[fd].response = "461 * USER :Not enough parameters\r\n";
-        clients[fd].sendResponse();
+        sendError(fd, "461", "USER", "Not enough parameters");
         return;
     }
     
