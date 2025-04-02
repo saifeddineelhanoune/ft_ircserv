@@ -18,3 +18,5 @@ Channel operations work (joining, messaging, leaving).
 Private messaging between users works.
 All required operator commands are implemented.
 The implementation follows the C++98 standard as required and uses poll() for handling all I/O operations in a non-blocking manner.
+
+
