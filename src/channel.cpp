@@ -5,6 +5,14 @@ void Channel::addUser(Client* client) {
     users.push_back(client);
 }
 
+void Channel::removeInvitedUser(int fd) {
+    // Find and remove the user from the invited list
+    std::set<int>::iterator it = std::find(invitedUsers.begin(), invitedUsers.end(), fd);
+    if (it != invitedUsers.end()) {
+        invitedUsers.erase(it);
+    }
+}
+
 void Channel::removeUser(Client* client) {
     std::vector<Client*>::iterator it;
     for (it = users.begin(); it != users.end(); ++it) {

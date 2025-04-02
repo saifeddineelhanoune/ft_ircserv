@@ -4349,3 +4349,528 @@ NICK sel-hano
 [2025-04-02 13:25:13] [INFO] start parsing data
 [2025-04-02 13:25:13] [INFO] start Handling Command USER
 [2025-04-02 13:25:13] [INFO] end of read event
+[2025-04-02 13:58:01] [SERVER] Server initializing
+[2025-04-02 13:58:01] [SERVER] Server initialized
+[2025-04-02 13:58:08] [CLIENT] Client Accepted5
+[2025-04-02 13:58:08] [DEBUG] starting read event
+[2025-04-02 13:58:08] [DEBUG] processing read event
+[2025-04-02 13:58:08] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-02 13:58:08] [INFO] start parsing data
+[2025-04-02 13:58:08] [INFO] start Handling Command PASS
+[2025-04-02 13:58:08] [INFO] end of read event
+[2025-04-02 13:58:08] [DEBUG] starting read event
+[2025-04-02 13:58:08] [DEBUG] processing read event
+[2025-04-02 13:58:08] [DEBUG] recieved data: NICK iel-bak
+USER ismail 0 * :ismail elbakkali
+
+[2025-04-02 13:58:08] [INFO] start parsing data
+[2025-04-02 13:58:08] [INFO] start Handling Command NICK
+[2025-04-02 13:58:08] [INFO] start Handling Command USER
+[2025-04-02 13:58:08] [INFO] end of read event
+[2025-04-02 13:59:10] [DEBUG] starting read event
+[2025-04-02 13:59:10] [DEBUG] processing read event
+[2025-04-02 13:59:10] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 13:59:10] [INFO] start parsing data
+[2025-04-02 13:59:10] [ERROR] Invalid Command
+[2025-04-02 13:59:10] [INFO] end of read event
+[2025-04-02 14:00:10] [DEBUG] starting read event
+[2025-04-02 14:00:10] [DEBUG] processing read event
+[2025-04-02 14:00:10] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:00:10] [INFO] start parsing data
+[2025-04-02 14:00:10] [ERROR] Invalid Command
+[2025-04-02 14:00:10] [INFO] end of read event
+[2025-04-02 14:01:18] [DEBUG] starting read event
+[2025-04-02 14:01:18] [DEBUG] processing read event
+[2025-04-02 14:01:18] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:01:18] [INFO] start parsing data
+[2025-04-02 14:01:18] [ERROR] Invalid Command
+[2025-04-02 14:01:18] [INFO] end of read event
+[2025-04-02 14:01:40] [CLIENT] Client Accepted6
+[2025-04-02 14:01:55] [DEBUG] starting read event
+[2025-04-02 14:01:55] [DEBUG] processing read event
+[2025-04-02 14:01:55] [DEBUG] recieved data: PASS Password1!
+NICK sel-hano
+
+[2025-04-02 14:01:55] [INFO] start parsing data
+[2025-04-02 14:01:55] [INFO] start Handling Command PASS
+[2025-04-02 14:01:55] [INFO] start Handling Command NICK
+[2025-04-02 14:01:55] [INFO] end of read event
+[2025-04-02 14:01:58] [DEBUG] starting read event
+[2025-04-02 14:01:58] [DEBUG] processing read event
+[2025-04-02 14:01:58] [DEBUG] recieved data: USER saif 0 * saifeddine
+
+[2025-04-02 14:01:58] [INFO] start parsing data
+[2025-04-02 14:01:58] [INFO] start Handling Command USER
+[2025-04-02 14:01:58] [INFO] end of read event
+[2025-04-02 14:02:18] [DEBUG] starting read event
+[2025-04-02 14:02:18] [DEBUG] processing read event
+[2025-04-02 14:02:18] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:02:18] [INFO] start parsing data
+[2025-04-02 14:02:18] [ERROR] Invalid Command
+[2025-04-02 14:02:18] [INFO] end of read event
+[2025-04-02 14:02:31] [DEBUG] starting read event
+[2025-04-02 14:02:31] [DEBUG] processing read event
+[2025-04-02 14:02:31] [DEBUG] recieved data: JOIN #testchannel
+
+[2025-04-02 14:02:31] [INFO] start parsing data
+[2025-04-02 14:02:31] [INFO] start Handling Command JOIN
+[2025-04-02 14:02:31] [CHANNEL] New channel created: #testchannel by sel-hano
+[2025-04-02 14:02:31] [CHANNEL] Adding Client sel-hano To channel #testchannel
+[2025-04-02 14:02:31] [CHANNEL] User sel-hano is now an operator of #testchannel
+[2025-04-02 14:02:31] [INFO] end of read event
+[2025-04-02 14:03:14] [DEBUG] starting read event
+[2025-04-02 14:03:14] [DEBUG] processing read event
+[2025-04-02 14:03:14] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:03:14] [INFO] start parsing data
+[2025-04-02 14:03:14] [ERROR] Invalid Command
+[2025-04-02 14:03:14] [INFO] end of read event
+[2025-04-02 14:04:05] [DEBUG] starting read event
+[2025-04-02 14:04:05] [DEBUG] processing read event
+[2025-04-02 14:04:05] [DEBUG] recieved data: JOIN #test1,#test2,#test3
+
+[2025-04-02 14:04:05] [INFO] start parsing data
+[2025-04-02 14:04:05] [INFO] start Handling Command JOIN
+[2025-04-02 14:04:05] [CHANNEL] New channel created: #test1 by sel-hano
+[2025-04-02 14:04:05] [CHANNEL] Adding Client sel-hano To channel #test1
+[2025-04-02 14:04:05] [CHANNEL] User sel-hano is now an operator of #test1
+[2025-04-02 14:04:05] [CHANNEL] New channel created: #test2 by sel-hano
+[2025-04-02 14:04:05] [CHANNEL] Adding Client sel-hano To channel #test2
+[2025-04-02 14:04:05] [CHANNEL] User sel-hano is now an operator of #test2
+[2025-04-02 14:04:05] [CHANNEL] New channel created: #test3 by sel-hano
+[2025-04-02 14:04:05] [CHANNEL] Adding Client sel-hano To channel #test3
+[2025-04-02 14:04:05] [CHANNEL] User sel-hano is now an operator of #test3
+[2025-04-02 14:04:05] [INFO] end of read event
+[2025-04-02 14:04:15] [DEBUG] starting read event
+[2025-04-02 14:04:15] [DEBUG] processing read event
+[2025-04-02 14:04:15] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:04:15] [INFO] start parsing data
+[2025-04-02 14:04:15] [ERROR] Invalid Command
+[2025-04-02 14:04:15] [INFO] end of read event
+[2025-04-02 14:04:50] [DEBUG] starting read event
+[2025-04-02 14:04:50] [DEBUG] processing read event
+[2025-04-02 14:04:50] [DEBUG] recieved data: MODE #testchannel +k secretkey
+
+[2025-04-02 14:04:50] [INFO] start parsing data
+[2025-04-02 14:04:50] [INFO] start Handling Command MODE
+[2025-04-02 14:04:50] [CHANNEL] Mode changed for #testchannel: +k
+[2025-04-02 14:04:50] [INFO] end of read event
+[2025-04-02 14:05:08] [CLIENT] Client Accepted7
+[2025-04-02 14:05:14] [DEBUG] starting read event
+[2025-04-02 14:05:14] [DEBUG] processing read event
+[2025-04-02 14:05:14] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:05:14] [INFO] start parsing data
+[2025-04-02 14:05:14] [ERROR] Invalid Command
+[2025-04-02 14:05:14] [INFO] end of read event
+[2025-04-02 14:05:19] [DEBUG] starting read event
+[2025-04-02 14:05:19] [DEBUG] processing read event
+[2025-04-02 14:05:19] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-02 14:05:19] [INFO] start parsing data
+[2025-04-02 14:05:19] [INFO] start Handling Command PASS
+[2025-04-02 14:05:19] [INFO] end of read event
+[2025-04-02 14:05:38] [DEBUG] starting read event
+[2025-04-02 14:05:38] [DEBUG] processing read event
+[2025-04-02 14:05:38] [DEBUG] recieved data: USER zakaria 0 * elbouzkri
+
+[2025-04-02 14:05:38] [INFO] start parsing data
+[2025-04-02 14:05:38] [INFO] start Handling Command USER
+[2025-04-02 14:05:38] [INFO] end of read event
+[2025-04-02 14:05:43] [DEBUG] starting read event
+[2025-04-02 14:05:43] [DEBUG] processing read event
+[2025-04-02 14:05:43] [DEBUG] recieved data: NICK zel-bouz
+
+[2025-04-02 14:05:43] [INFO] start parsing data
+[2025-04-02 14:05:43] [INFO] start Handling Command NICK
+[2025-04-02 14:05:43] [INFO] end of read event
+[2025-04-02 14:05:48] [DEBUG] starting read event
+[2025-04-02 14:05:48] [DEBUG] processing read event
+[2025-04-02 14:05:48] [DEBUG] recieved data: 
+
+[2025-04-02 14:05:48] [INFO] start parsing data
+[2025-04-02 14:05:48] [INFO] end of read event
+[2025-04-02 14:05:51] [DEBUG] starting read event
+[2025-04-02 14:05:51] [DEBUG] processing read event
+[2025-04-02 14:05:51] [DEBUG] recieved data: 
+
+[2025-04-02 14:05:51] [INFO] start parsing data
+[2025-04-02 14:05:51] [INFO] end of read event
+[2025-04-02 14:05:51] [DEBUG] starting read event
+[2025-04-02 14:05:51] [DEBUG] processing read event
+[2025-04-02 14:05:51] [DEBUG] recieved data: 
+
+[2025-04-02 14:05:51] [INFO] start parsing data
+[2025-04-02 14:05:51] [INFO] end of read event
+[2025-04-02 14:05:52] [DEBUG] starting read event
+[2025-04-02 14:05:52] [DEBUG] processing read event
+[2025-04-02 14:05:52] [DEBUG] recieved data: 
+
+[2025-04-02 14:05:52] [INFO] start parsing data
+[2025-04-02 14:05:52] [INFO] end of read event
+[2025-04-02 14:05:53] [DEBUG] starting read event
+[2025-04-02 14:05:53] [DEBUG] processing read event
+[2025-04-02 14:05:53] [DEBUG] recieved data: 
+
+[2025-04-02 14:05:53] [INFO] start parsing data
+[2025-04-02 14:05:53] [INFO] end of read event
+[2025-04-02 14:05:53] [DEBUG] starting read event
+[2025-04-02 14:05:53] [DEBUG] processing read event
+[2025-04-02 14:05:53] [DEBUG] recieved data: 
+
+[2025-04-02 14:05:53] [INFO] start parsing data
+[2025-04-02 14:05:53] [INFO] end of read event
+[2025-04-02 14:06:02] [DEBUG] starting read event
+[2025-04-02 14:06:02] [FATAL] :zel-bouz QUIT :Quit: Leaving
+
+[2025-04-02 14:06:02] [INFO] Connection closed
+[2025-04-02 14:06:03] [CLIENT] Client Accepted7
+[2025-04-02 14:06:12] [DEBUG] starting read event
+[2025-04-02 14:06:12] [DEBUG] processing read event
+[2025-04-02 14:06:12] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:06:12] [INFO] start parsing data
+[2025-04-02 14:06:12] [ERROR] Invalid Command
+[2025-04-02 14:06:12] [INFO] end of read event
+[2025-04-02 14:06:13] [DEBUG] starting read event
+[2025-04-02 14:06:13] [DEBUG] processing read event
+[2025-04-02 14:06:13] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-02 14:06:13] [INFO] start parsing data
+[2025-04-02 14:06:13] [INFO] start Handling Command PASS
+[2025-04-02 14:06:13] [INFO] end of read event
+[2025-04-02 14:06:30] [DEBUG] starting read event
+[2025-04-02 14:06:30] [DEBUG] processing read event
+[2025-04-02 14:06:30] [DEBUG] recieved data: NICK zel-bouz
+
+[2025-04-02 14:06:30] [INFO] start parsing data
+[2025-04-02 14:06:30] [INFO] start Handling Command NICK
+[2025-04-02 14:06:30] [INFO] end of read event
+[2025-04-02 14:06:42] [DEBUG] starting read event
+[2025-04-02 14:06:42] [DEBUG] processing read event
+[2025-04-02 14:06:42] [DEBUG] recieved data: USER zakaria 0 * elbouzkri
+
+[2025-04-02 14:06:42] [INFO] start parsing data
+[2025-04-02 14:06:42] [INFO] start Handling Command USER
+[2025-04-02 14:06:42] [INFO] end of read event
+[2025-04-02 14:07:06] [DEBUG] starting read event
+[2025-04-02 14:07:06] [DEBUG] processing read event
+[2025-04-02 14:07:06] [DEBUG] recieved data: JOIN #testchannel wrongkey
+
+[2025-04-02 14:07:06] [INFO] start parsing data
+[2025-04-02 14:07:06] [INFO] start Handling Command JOIN
+[2025-04-02 14:07:06] [INFO] end of read event
+[2025-04-02 14:07:11] [DEBUG] starting read event
+[2025-04-02 14:07:11] [DEBUG] processing read event
+[2025-04-02 14:07:11] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:07:11] [INFO] start parsing data
+[2025-04-02 14:07:11] [ERROR] Invalid Command
+[2025-04-02 14:07:11] [INFO] end of read event
+[2025-04-02 14:07:25] [DEBUG] starting read event
+[2025-04-02 14:07:25] [DEBUG] processing read event
+[2025-04-02 14:07:25] [DEBUG] recieved data: JOIN #testchannel secretkey
+
+[2025-04-02 14:07:25] [INFO] start parsing data
+[2025-04-02 14:07:25] [INFO] start Handling Command JOIN
+[2025-04-02 14:07:25] [CHANNEL] Adding Client zel-bouz To channel #testchannel
+[2025-04-02 14:07:25] [INFO] end of read event
+[2025-04-02 14:07:48] [DEBUG] starting read event
+[2025-04-02 14:07:48] [DEBUG] processing read event
+[2025-04-02 14:07:48] [DEBUG] recieved data: MODE #testchannel +i
+
+[2025-04-02 14:07:48] [INFO] start parsing data
+[2025-04-02 14:07:48] [INFO] start Handling Command MODE
+[2025-04-02 14:07:48] [CHANNEL] Mode changed for #testchannel: +i
+[2025-04-02 14:07:48] [INFO] end of read event
+[2025-04-02 14:08:08] [CLIENT] Client Accepted8
+[2025-04-02 14:08:11] [DEBUG] starting read event
+[2025-04-02 14:08:11] [DEBUG] processing read event
+[2025-04-02 14:08:11] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:08:11] [INFO] start parsing data
+[2025-04-02 14:08:11] [ERROR] Invalid Command
+[2025-04-02 14:08:11] [INFO] end of read event
+[2025-04-02 14:08:18] [DEBUG] starting read event
+[2025-04-02 14:08:18] [DEBUG] processing read event
+[2025-04-02 14:08:18] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-02 14:08:18] [INFO] start parsing data
+[2025-04-02 14:08:18] [INFO] start Handling Command PASS
+[2025-04-02 14:08:18] [INFO] end of read event
+[2025-04-02 14:08:24] [DEBUG] starting read event
+[2025-04-02 14:08:24] [DEBUG] processing read event
+[2025-04-02 14:08:24] [DEBUG] recieved data: NICK anammal
+
+[2025-04-02 14:08:24] [INFO] start parsing data
+[2025-04-02 14:08:24] [INFO] start Handling Command NICK
+[2025-04-02 14:08:24] [INFO] end of read event
+[2025-04-02 14:08:37] [DEBUG] starting read event
+[2025-04-02 14:08:37] [DEBUG] processing read event
+[2025-04-02 14:08:37] [DEBUG] recieved data: USER anas 0 * nammal
+
+[2025-04-02 14:08:37] [INFO] start parsing data
+[2025-04-02 14:08:37] [INFO] start Handling Command USER
+[2025-04-02 14:08:37] [INFO] end of read event
+[2025-04-02 14:08:50] [DEBUG] starting read event
+[2025-04-02 14:08:50] [DEBUG] processing read event
+[2025-04-02 14:08:50] [DEBUG] recieved data: JOIN #testchannel
+
+[2025-04-02 14:08:50] [INFO] start parsing data
+[2025-04-02 14:08:50] [INFO] start Handling Command JOIN
+[2025-04-02 14:08:50] [INFO] end of read event
+[2025-04-02 14:09:11] [DEBUG] starting read event
+[2025-04-02 14:09:11] [DEBUG] processing read event
+[2025-04-02 14:09:11] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:09:11] [INFO] start parsing data
+[2025-04-02 14:09:11] [ERROR] Invalid Command
+[2025-04-02 14:09:11] [INFO] end of read event
+[2025-04-02 14:10:09] [DEBUG] starting read event
+[2025-04-02 14:10:09] [DEBUG] processing read event
+[2025-04-02 14:10:09] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:10:09] [INFO] start parsing data
+[2025-04-02 14:10:09] [ERROR] Invalid Command
+[2025-04-02 14:10:09] [INFO] end of read event
+[2025-04-02 14:10:23] [DEBUG] starting read event
+[2025-04-02 14:10:23] [DEBUG] processing read event
+[2025-04-02 14:10:23] [DEBUG] recieved data: MODE #testchannel +t
+
+[2025-04-02 14:10:23] [INFO] start parsing data
+[2025-04-02 14:10:23] [INFO] start Handling Command MODE
+[2025-04-02 14:10:23] [CHANNEL] Mode changed for #testchannel: +t
+[2025-04-02 14:10:23] [INFO] end of read event
+[2025-04-02 14:11:03] [DEBUG] starting read event
+[2025-04-02 14:11:03] [DEBUG] processing read event
+[2025-04-02 14:11:03] [DEBUG] recieved data: TOPIC #testchannel :New topic
+
+[2025-04-02 14:11:03] [INFO] start parsing data
+[2025-04-02 14:11:03] [INFO] start Handling Command TOPIC
+[2025-04-02 14:11:03] [INFO] end of read event
+[2025-04-02 14:11:15] [DEBUG] starting read event
+[2025-04-02 14:11:15] [DEBUG] processing read event
+[2025-04-02 14:11:15] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:11:15] [INFO] start parsing data
+[2025-04-02 14:11:15] [ERROR] Invalid Command
+[2025-04-02 14:11:15] [INFO] end of read event
+[2025-04-02 14:11:33] [DEBUG] starting read event
+[2025-04-02 14:11:33] [DEBUG] processing read event
+[2025-04-02 14:11:33] [DEBUG] recieved data: TOPIC #testchannel :New topic
+
+[2025-04-02 14:11:33] [INFO] start parsing data
+[2025-04-02 14:11:33] [INFO] start Handling Command TOPIC
+[2025-04-02 14:11:33] [INFO] end of read event
+[2025-04-02 14:12:09] [DEBUG] starting read event
+[2025-04-02 14:12:09] [DEBUG] processing read event
+[2025-04-02 14:12:09] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:12:09] [INFO] start parsing data
+[2025-04-02 14:12:09] [ERROR] Invalid Command
+[2025-04-02 14:12:09] [INFO] end of read event
+[2025-04-02 14:12:18] [DEBUG] starting read event
+[2025-04-02 14:12:18] [DEBUG] processing read event
+[2025-04-02 14:12:18] [DEBUG] recieved data: JOIN #testchannel secretkey
+
+[2025-04-02 14:12:18] [INFO] start parsing data
+[2025-04-02 14:12:18] [INFO] start Handling Command JOIN
+[2025-04-02 14:12:18] [INFO] end of read event
+[2025-04-02 14:13:13] [DEBUG] starting read event
+[2025-04-02 14:13:13] [DEBUG] processing read event
+[2025-04-02 14:13:13] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:13:13] [INFO] start parsing data
+[2025-04-02 14:13:13] [ERROR] Invalid Command
+[2025-04-02 14:13:13] [INFO] end of read event
+[2025-04-02 14:13:29] [DEBUG] starting read event
+[2025-04-02 14:13:29] [DEBUG] processing read event
+[2025-04-02 14:13:29] [DEBUG] recieved data: MODE #test1 +l 2
+
+[2025-04-02 14:13:29] [INFO] start parsing data
+[2025-04-02 14:13:29] [INFO] start Handling Command MODE
+[2025-04-02 14:13:29] [CHANNEL] Mode changed for #test1: +l
+[2025-04-02 14:13:29] [INFO] end of read event
+[2025-04-02 14:13:40] [DEBUG] starting read event
+[2025-04-02 14:13:40] [DEBUG] processing read event
+[2025-04-02 14:13:40] [DEBUG] recieved data: JOIN #test1
+
+[2025-04-02 14:13:40] [INFO] start parsing data
+[2025-04-02 14:13:40] [INFO] start Handling Command JOIN
+[2025-04-02 14:13:40] [CHANNEL] Adding Client zel-bouz To channel #test1
+[2025-04-02 14:13:40] [INFO] end of read event
+[2025-04-02 14:13:49] [DEBUG] starting read event
+[2025-04-02 14:13:49] [DEBUG] processing read event
+[2025-04-02 14:13:49] [DEBUG] recieved data: JOIN #test1
+
+[2025-04-02 14:13:49] [INFO] start parsing data
+[2025-04-02 14:13:49] [INFO] start Handling Command JOIN
+[2025-04-02 14:13:49] [INFO] end of read event
+[2025-04-02 14:14:08] [DEBUG] starting read event
+[2025-04-02 14:14:08] [DEBUG] processing read event
+[2025-04-02 14:14:08] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:14:08] [INFO] start parsing data
+[2025-04-02 14:14:08] [ERROR] Invalid Command
+[2025-04-02 14:14:08] [INFO] end of read event
+[2025-04-02 14:14:36] [DEBUG] starting read event
+[2025-04-02 14:14:36] [DEBUG] processing read event
+[2025-04-02 14:14:36] [DEBUG] recieved data: MODE #test1 +o zel-bouz
+
+[2025-04-02 14:14:36] [INFO] start parsing data
+[2025-04-02 14:14:36] [INFO] start Handling Command MODE
+[2025-04-02 14:14:36] [CHANNEL] User zel-bouz is now an operator of #test1
+[2025-04-02 14:14:36] [CHANNEL] Mode changed for #test1: +o
+[2025-04-02 14:14:36] [INFO] end of read event
+[2025-04-02 14:14:52] [DEBUG] starting read event
+[2025-04-02 14:14:52] [DEBUG] processing read event
+[2025-04-02 14:14:52] [DEBUG] recieved data: KICK #test1 anammal
+
+[2025-04-02 14:14:52] [INFO] start parsing data
+[2025-04-02 14:14:52] [INFO] start Handling Command KICK
+[2025-04-02 14:14:52] [INFO] end of read event
+[2025-04-02 14:15:10] [DEBUG] starting read event
+[2025-04-02 14:15:10] [DEBUG] processing read event
+[2025-04-02 14:15:10] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:15:10] [INFO] start parsing data
+[2025-04-02 14:15:10] [ERROR] Invalid Command
+[2025-04-02 14:15:10] [INFO] end of read event
+[2025-04-02 14:15:13] [DEBUG] starting read event
+[2025-04-02 14:15:13] [DEBUG] processing read event
+[2025-04-02 14:15:13] [DEBUG] recieved data: MODE #test2 +o zel-bouz
+
+[2025-04-02 14:15:13] [INFO] start parsing data
+[2025-04-02 14:15:13] [INFO] start Handling Command MODE
+[2025-04-02 14:15:13] [INFO] end of read event
+[2025-04-02 14:15:23] [DEBUG] starting read event
+[2025-04-02 14:15:23] [DEBUG] processing read event
+[2025-04-02 14:15:23] [DEBUG] recieved data: JOIN #test2
+
+[2025-04-02 14:15:23] [INFO] start parsing data
+[2025-04-02 14:15:23] [INFO] start Handling Command JOIN
+[2025-04-02 14:15:23] [CHANNEL] Adding Client zel-bouz To channel #test2
+[2025-04-02 14:15:23] [INFO] end of read event
+[2025-04-02 14:15:46] [DEBUG] starting read event
+[2025-04-02 14:15:46] [DEBUG] processing read event
+[2025-04-02 14:15:46] [DEBUG] recieved data: MODE #test2 +o zel-bouz
+
+[2025-04-02 14:15:46] [INFO] start parsing data
+[2025-04-02 14:15:46] [INFO] start Handling Command MODE
+[2025-04-02 14:15:46] [CHANNEL] User zel-bouz is now an operator of #test2
+[2025-04-02 14:15:46] [CHANNEL] Mode changed for #test2: +o
+[2025-04-02 14:15:46] [INFO] end of read event
+[2025-04-02 14:15:58] [DEBUG] starting read event
+[2025-04-02 14:15:58] [DEBUG] processing read event
+[2025-04-02 14:15:58] [DEBUG] recieved data: JOIN #test2
+
+[2025-04-02 14:15:58] [INFO] start parsing data
+[2025-04-02 14:15:58] [INFO] start Handling Command JOIN
+[2025-04-02 14:15:58] [CHANNEL] Adding Client anammal To channel #test2
+[2025-04-02 14:15:58] [INFO] end of read event
+[2025-04-02 14:16:10] [DEBUG] starting read event
+[2025-04-02 14:16:10] [DEBUG] processing read event
+[2025-04-02 14:16:10] [DEBUG] recieved data: KICK #test2 anammal
+
+[2025-04-02 14:16:10] [INFO] start parsing data
+[2025-04-02 14:16:10] [INFO] start Handling Command KICK
+[2025-04-02 14:16:10] [INFO] User anammal was kicked from #test2 by zel-bouz
+[2025-04-02 14:16:10] [INFO] end of read event
+[2025-04-02 14:16:15] [DEBUG] starting read event
+[2025-04-02 14:16:15] [DEBUG] processing read event
+[2025-04-02 14:16:15] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:16:15] [INFO] start parsing data
+[2025-04-02 14:16:15] [ERROR] Invalid Command
+[2025-04-02 14:16:15] [INFO] end of read event
+[2025-04-02 14:16:25] [DEBUG] starting read event
+[2025-04-02 14:16:25] [DEBUG] processing read event
+[2025-04-02 14:16:25] [DEBUG] recieved data: PRIVMSG #test2 Hello
+
+[2025-04-02 14:16:25] [INFO] start parsing data
+[2025-04-02 14:16:25] [INFO] start Handling Command PRIVMSG
+[2025-04-02 14:16:25] [WARNING] anammal not found in channel #test2
+[2025-04-02 14:16:25] [INFO] end of read event
+[2025-04-02 14:16:44] [DEBUG] starting read event
+[2025-04-02 14:16:44] [DEBUG] processing read event
+[2025-04-02 14:16:44] [DEBUG] recieved data: PRIVMSG #test2 Hello
+
+[2025-04-02 14:16:44] [INFO] start parsing data
+[2025-04-02 14:16:44] [INFO] start Handling Command PRIVMSG
+[2025-04-02 14:16:44] [INFO] end of read event
+[2025-04-02 14:17:01] [DEBUG] starting read event
+[2025-04-02 14:17:01] [DEBUG] processing read event
+[2025-04-02 14:17:01] [DEBUG] recieved data: PRIVMSG #test2 Fin a sahbi
+
+[2025-04-02 14:17:01] [INFO] start parsing data
+[2025-04-02 14:17:01] [INFO] start Handling Command PRIVMSG
+[2025-04-02 14:17:01] [INFO] end of read event
+[2025-04-02 14:17:12] [DEBUG] starting read event
+[2025-04-02 14:17:12] [DEBUG] processing read event
+[2025-04-02 14:17:12] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:17:12] [INFO] start parsing data
+[2025-04-02 14:17:12] [ERROR] Invalid Command
+[2025-04-02 14:17:12] [INFO] end of read event
+[2025-04-02 14:17:44] [DEBUG] starting read event
+[2025-04-02 14:17:44] [DEBUG] processing read event
+[2025-04-02 14:17:44] [DEBUG] recieved data: MODE #testchannel
+
+[2025-04-02 14:17:44] [INFO] start parsing data
+[2025-04-02 14:17:44] [INFO] start Handling Command MODE
+[2025-04-02 14:17:44] [INFO] end of read event
+[2025-04-02 14:18:04] [DEBUG] starting read event
+[2025-04-02 14:18:04] [DEBUG] processing read event
+[2025-04-02 14:18:04] [DEBUG] recieved data: MODE #test2
+
+[2025-04-02 14:18:04] [INFO] start parsing data
+[2025-04-02 14:18:04] [INFO] start Handling Command MODE
+[2025-04-02 14:18:04] [INFO] end of read event
+[2025-04-02 14:18:09] [DEBUG] starting read event
+[2025-04-02 14:18:09] [DEBUG] processing read event
+[2025-04-02 14:18:09] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:18:09] [INFO] start parsing data
+[2025-04-02 14:18:09] [ERROR] Invalid Command
+[2025-04-02 14:18:09] [INFO] end of read event
+[2025-04-02 14:18:13] [DEBUG] starting read event
+[2025-04-02 14:18:13] [DEBUG] processing read event
+[2025-04-02 14:18:13] [DEBUG] recieved data: MODE #test1
+
+[2025-04-02 14:18:13] [INFO] start parsing data
+[2025-04-02 14:18:13] [INFO] start Handling Command MODE
+[2025-04-02 14:18:13] [INFO] end of read event
+[2025-04-02 14:19:15] [DEBUG] starting read event
+[2025-04-02 14:19:15] [DEBUG] processing read event
+[2025-04-02 14:19:15] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:19:15] [INFO] start parsing data
+[2025-04-02 14:19:15] [ERROR] Invalid Command
+[2025-04-02 14:19:15] [INFO] end of read event
+[2025-04-02 14:20:09] [DEBUG] starting read event
+[2025-04-02 14:20:09] [DEBUG] processing read event
+[2025-04-02 14:20:09] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:20:09] [INFO] start parsing data
+[2025-04-02 14:20:09] [ERROR] Invalid Command
+[2025-04-02 14:20:09] [INFO] end of read event
+[2025-04-02 14:21:14] [DEBUG] starting read event
+[2025-04-02 14:21:14] [DEBUG] processing read event
+[2025-04-02 14:21:14] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:21:14] [INFO] start parsing data
+[2025-04-02 14:21:14] [ERROR] Invalid Command
+[2025-04-02 14:21:14] [INFO] end of read event
+[2025-04-02 14:22:18] [DEBUG] starting read event
+[2025-04-02 14:22:18] [DEBUG] processing read event
+[2025-04-02 14:22:18] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 14:22:18] [INFO] start parsing data
+[2025-04-02 14:22:18] [ERROR] Invalid Command
+[2025-04-02 14:22:18] [INFO] end of read event
