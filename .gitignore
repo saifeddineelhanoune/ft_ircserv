@@ -4,3 +4,5 @@
 .vscode-test
 ./ircserv
 tester.sh
+nc
+irc_server.log
