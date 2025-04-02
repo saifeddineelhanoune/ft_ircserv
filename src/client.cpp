@@ -68,7 +68,7 @@ void    Client::sendResponse() {
     int ret = write(fd, response.c_str(), response.length());
     if (ret == -1) {
         std::cerr << "Error writing to client" << std::endl;
-        // (void)serv;
+        (void)serv;
         serv->deleteClient(fd);
         // close(fd);
     }

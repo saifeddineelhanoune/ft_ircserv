@@ -120,6 +120,6 @@ void Server::sendChannelNames(int fd, const std::string& channelName) {
     
     clients[fd].response = ":" + std::string(serverName) + " 353 " + clients[fd].getNick() + " = " + channelName + " :" + namesList + "\r\n";
     clients[fd].sendResponse();
-    clients[fd].response = ":" + std::string(serverName) + " 366 " + clients[fd].getNick() + " " + channelName + " :End of /NAMES list\r\n";
+    clients[fd].response = ":" + std::string(serverName) + " 366 " + clients[fd].getNick() + " " + channelName + " :End of /NAMES list.\r\n";
     clients[fd].sendResponse();
 }

@@ -4,7 +4,7 @@
 # Usage: ./irc_community.sh <server_ip> <port> <password>
 
 SERVER_IP=${1:-"127.0.0.1"}
-PORT=${2:-6666}
+PORT=${2:-6669}
 PASSWORD=${3:-"Password123!"}
 
 # Colors for better output readability
@@ -32,8 +32,7 @@ setup_client() {
     local nick=$1
     local username=$2
     local socket="$TEMP_DIR/$nick.sock"
-    
-    echo -e "${GREEN}Connecting user $nick...${NC}"
+        echo -e "${GREEN}Connecting user $nick...${NC}"
     
     # Start netcat with a Unix socket for communication
     mkfifo "$socket"

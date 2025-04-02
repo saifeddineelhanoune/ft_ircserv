@@ -94,14 +94,6 @@ void    Server::handleCommands(int fd, std::string command)
                 return;
             }
         }
-        else if (clients[fd].getUserauth() == false)
-        {
-            if (args[0] != "USER")
-            {
-                sendError(fd, "451", args[0], "You have not registered");
-                return;
-            }
-        }
         else if (clients[fd].getNickauth() == false)
         {
             if (args[0] != "NICK")
@@ -109,6 +101,14 @@ void    Server::handleCommands(int fd, std::string command)
                 sendError(fd, "451", args[0], "You have not registered");
                 // clients[fd].response = "464 * :You must authenticate first\r\n";
                 // clients[fd].sendResponse();
+                return;
+            }
+        }
+        else if (clients[fd].getUserauth() == false)
+        {
+            if (args[0] != "USER")
+            {
+                sendError(fd, "451", args[0], "You have not registered");
                 return;
             }
         }

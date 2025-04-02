@@ -65,7 +65,6 @@ void Server::deleteClient(int fd) {
             ++pollIt;
         }
     }
-
     close(fd);
 }
 
