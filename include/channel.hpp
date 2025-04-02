@@ -10,14 +10,14 @@ class Client;
 
 class Channel {
     private:
+        std::string topic;
+        std::string key;
         std::vector<Client*> users;
         std::set<int> operators;
-        std::string topic;
+        std::set<int> invitedUsers;
         bool inviteOnly;
         bool topicRestricted;
-        std::string key;
         int userLimit;
-        std::set<int> invitedUsers;
         
     public:
         Channel() : topic("Welcome to the channel!"), inviteOnly(false), topicRestricted(false), userLimit(0) {}

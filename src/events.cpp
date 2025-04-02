@@ -87,7 +87,7 @@ void    Server::handleCommands(int fd, std::string command)
     std::map<std::string, CommandHandler>::iterator it = commands.find(args[0]);
     if (it == commands.end())
     {
-        std::cerr << "Error: Invalid command" << std::endl;
+        Logger::error("Invalid Command " + args[0]);
         clients[fd].response = "421 * :Unknown command\r\n";
         clients[fd].sendResponse();
         return;

@@ -71,10 +71,9 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
     for (size_t i = 0; i < channelList.size(); i++) {
         std::string channelName = channelList[i];
         std::string key = (i < keyList.size()) ? keyList[i] : "";
-    if (channelName.empty() || channelName[0] != '#') {
-        sendError(fd, "403", channelName, "No such channel");
-        continue;
-    }
+        if (channelName[0] != '#') {
+            channelName = "#" + channelName;
+        }
         
         // Check if channel exists
         bool isNewChannel = (this->channels.find(channelName) == this->channels.end());

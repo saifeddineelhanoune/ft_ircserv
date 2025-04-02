@@ -23,7 +23,11 @@ void Server::cmdMode(int fd, std::vector<std::string>& args) {
         
         // If no mode specified, just display current modes
         if (args.size() == 2) {
+<<<<<<< HEAD
             displayChannelModes(fd, target,1);
+=======
+            displayChannelModes(fd, target);
+>>>>>>> 8de79b774023040b43b96efbc3f30f022c20bead
             return;
         }
         
@@ -129,7 +133,158 @@ void Server::processChannelModes(int fd, const std::string& target, std::vector<
         broadcastToChannel(target, modeMsg, -1);
         
         Logger::channel("Mode changed for " + target + ": " + (addMode ? "+" : "-") + modeChanges);
+<<<<<<< HEAD
+=======
     }
+}
+
+void Server::displayChannelModes(int fd, const std::string& channelName) {
+    std::string modes = "+";
+    std::string params = "";
+    
+    // Add current modes to the string
+    if (channels[channelName].isInviteOnly()) {
+        modes += "i";
+    }
+    
+    if (channels[channelName].isTopicRestricted()) {
+        modes += "t";
+    }
+    
+    if (!channels[channelName].getKey().empty()) {
+        modes += "k";
+        params += " " + channels[channelName].getKey();
+    }
+    
+    if (channels[channelName].getUserLimit() > 0) {
+        modes += "l";
+        std::stringstream ss;
+        ss << channels[channelName].getUserLimit();
+        params += " " + ss.str();
+    }
+    
+    // Send mode information to user
+    std::string response = ":" + serverName + " 324 " + clients[fd].getNick() + " " + 
+                          channelName + " " + modes + params + "\r\n";
+    clients[fd].response = response;
+    clients[fd].sendResponse();
+    
+    // Send channel creation time (required by many clients)
+    clients[fd].response = ":" + serverName + " 329 " + clients[fd].getNick() + " " + 
+                          channelName + " " + "1234567890" + "\r\n"; // Use actual timestamp if available
+    clients[fd].sendResponse();
+}
+
+bool Server::handleOperatorMode(int fd, const std::string& channelName, bool addMode, 
+                               std::vector<std::string>& args, int& argIndex, 
+                               std::string& modeParams) {
+    if (args.size() <= (size_t)argIndex) {
+        sendError(fd, "461", "MODE +o/-o", "Not enough parameters");
+        return false;
+    }
+    
+    // Find target user
+    std::string targetNick = args[argIndex];
+    int targetFd = -1;
+    std::vector<Client*>& usersVec = channels[channelName].getUsers();
+    
+    for (size_t j = 0; j < usersVec.size(); j++) {
+        if (usersVec[j]->getNick() == targetNick) {
+            targetFd = usersVec[j]->getFd();
+            break;
+        }
+    }
+    
+    if (targetFd == -1) {
+        sendError(fd, "441", targetNick, "They aren't on that channel");
+        argIndex++;
+        return false;
+    }
+    
+    // Check if already operator when adding or not operator when removing
+    if (addMode && channels[channelName].isOperator(targetFd)) {
+        Logger::warning(targetNick + " is already an operator in " + channelName);
+        argIndex++;
+        return false;
+    } else if (!addMode && !channels[channelName].isOperator(targetFd)) {
+        Logger::warning(targetNick + " is not an operator in " + channelName);
+        argIndex++;
+        return false;
+    }
+    
+    if (addMode) {
+        channels[channelName].addOperator(targetFd);
+        Logger::channel("User " + targetNick + " is now an operator of " + channelName);
+    } else {
+        channels[channelName].removeOperator(targetFd);
+        Logger::channel("User " + targetNick + " is no longer an operator of " + channelName);
+    }
+    
+    modeParams += " " + targetNick;
+    argIndex++;
+    return true;
+}
+
+bool Server::handleUserLimitMode(int fd, const std::string& channelName, bool addMode, 
+                                std::vector<std::string>& args, int& argIndex, 
+                                std::string& modeParams) {
+    if (addMode) {
+        if (args.size() <= (size_t)argIndex) {
+            sendError(fd, "461", "MODE +l", "Not enough parameters");
+            return false;
+        }
+        
+        std::string limitStr = args[argIndex];
+        if (!isStringDigits(limitStr)) {
+            sendError(fd, "461", "MODE +l", "User limit must be a number");
+            argIndex++;
+            return false;
+        }
+        
+        int limit = atoi(limitStr.c_str());
+        channels[channelName].setUserLimit(limit);
+        modeParams += " " + limitStr;
+        argIndex++;
+    } else {
+        // Remove user limit
+        channels[channelName].setUserLimit(0);
+>>>>>>> 8de79b774023040b43b96efbc3f30f022c20bead
+    }
+    
+    return true;
+}
+
+void Server::handleChannelKeyMode(int fd, const std::string& channelName, bool addMode, 
+                                 std::vector<std::string>& args, int& argIndex, 
+                                 std::string& modeParams, bool* modeSuccess) {
+    if (addMode) {
+        if (args.size() <= (size_t)argIndex) {
+            sendError(fd, "461", "MODE +k", "Not enough parameters");
+            *modeSuccess = false;
+            return;
+        }
+        
+        std::string key = args[argIndex];
+        channels[channelName].setKey(key);
+        modeParams += " " + key;
+        argIndex++;
+        *modeSuccess = true;
+    } else {
+        // For -k, we don't require a parameter, but accept it if provided
+        channels[channelName].setKey("");
+        if (args.size() > (size_t)argIndex) {
+            argIndex++;
+        }
+        *modeSuccess = true;
+    }
+}
+
+void Server::handleInviteOnlyMode(const std::string& channelName, bool addMode) {
+    channels[channelName].setInviteOnly(addMode);
+}
+
+void Server::handleTopicRestrictionMode(const std::string& channelName, bool addMode) {
+    channels[channelName].setTopicRestricted(addMode);
 }
 
 void Server::displayChannelModes(int fd, const std::string& channelName,bool wlcMode) {
