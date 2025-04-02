@@ -1,26 +1,25 @@
 #include "../include/server.hpp"
 
+#include "../include/server.hpp"
+
 void Server::cmdKick(int fd, std::vector<std::string>& args) {
     if (args.size() < 3) {
-        clients[fd].response = "461 * KICK :Not enough parameters\r\n";
-        clients[fd].sendResponse();
+        sendError(fd, "461", "KICK", "Not enough parameters");
         return;
     }
     
     if (!clients[fd].getAuth()) {
-        clients[fd].response = "464 * :You must authenticate first\r\n";
-        clients[fd].sendResponse();
+        sendError(fd, "451", "KICK", "You have not registered");
         return;
     }
     
     std::string channelName = args[1];
     std::string targetNick = args[2];
-    std::string reason = args.size() > 3 ? args[3] : "No reason specified\r\n";
+    std::string reason = args.size() > 3 ? args[3] : "No reason specified";
     
     // Check if channel exists
     if (channels.find(channelName) == channels.end()) {
-        clients[fd].response = "403 " + channelName + " :No such channel\r\n";
-        clients[fd].sendResponse();
+        sendError(fd, "403", channelName, "No such channel");
         return;
     }
     
@@ -37,23 +36,28 @@ void Server::cmdKick(int fd, std::vector<std::string>& args) {
     for (it = users.begin(); it != users.end(); ++it) {
         if ((*it)->getNick() == targetNick) {
             targetFd = (*it)->getFd();
-            Logger::info("Kicking " + targetNick + " from " + channelName);
-            users.erase(it);
             break;
         }
     }
     
     if (targetFd == -1) {
-        clients[fd].response = "441 " + targetNick + " " + channelName + " :They aren't on that channel\r\n";
-        clients[fd].sendResponse();
+        sendError(fd, "441", targetNick, "They aren't on that channel");
         return;
     }
     
-    // Broadcast kick message to channel
-    std::string kickMsg = ":" + clients[fd].getNick() + " KICK " + channelName + " " + targetNick + " :" + reason + "\r\n";
-    broadcastToChannel(channelName, kickMsg, -1);
-    // clients[targetFd].response = kickMsg;
-    // clients[targetFd].sendResponse();
-    // Remove the user from the channel
-    // channels[channelName].removeUser(&clients[targetFd]);
+    // Create kick message in proper IRC format
+    std::string kickMsg = ":" + clients[fd].getNick() + "!" + clients[fd].getUser() + "@" + 
+                         serverName + " KICK " + channelName + " " + targetNick + " :" + reason + "\r\n";
+    
+    // Send kick message to the kicked user first
+    clients[targetFd].response = kickMsg;
+    clients[targetFd].sendResponse();
+    
+    // Broadcast kick message to all other channel members
+    broadcastToChannel(channelName, kickMsg, targetFd);
+    
+    // Use the Channel's removeUser method to properly remove the user
+    channels[channelName].removeUser(&clients[targetFd]);
+    
+    Logger::info("User " + targetNick + " was kicked from " + channelName + " by " + clients[fd].getNick());
 }
