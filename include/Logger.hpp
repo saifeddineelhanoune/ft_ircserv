@@ -37,7 +37,6 @@ public:
     
     static void log(LogLevel level, const std::string& message);
     
-    // Convenience methods for different log levels
     static void debug(const std::string& message);
     static void info(const std::string& message);
     static void warning(const std::string& message);

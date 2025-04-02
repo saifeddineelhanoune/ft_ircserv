@@ -266,3 +266,4086 @@
 [2025-04-01 21:23:10] [CHANNEL] Adding Client Jack To channel #hello
 [2025-04-01 21:24:04] [CLIENT] Client Accepted7
 [2025-04-01 21:26:31] [CHANNEL] Adding Client SIMOX To channel #hello
+[2025-04-01 21:59:24] [INFO] Logger initialized
+[2025-04-01 21:59:24] [SERVER] Server initializing
+[2025-04-01 21:59:24] [SERVER] Server initialized
+[2025-04-01 21:59:28] [CLIENT] Client Accepted5
+[2025-04-01 23:09:20] [INFO] Logger initialized
+[2025-04-01 23:09:20] [SERVER] Server initializing
+[2025-04-01 23:09:20] [SERVER] Server initialized
+[2025-04-01 23:09:25] [CLIENT] Client Accepted5
+[2025-04-01 23:36:28] [SERVER] Server initializing
+[2025-04-01 23:36:28] [SERVER] Server initialized
+[2025-04-01 23:36:28] [CLIENT] Client Accepted5
+[2025-04-01 23:36:28] [DEBUG] starting read event
+[2025-04-01 23:36:28] [DEBUG] processing read event
+[2025-04-01 23:36:28] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-01 23:36:28] [INFO] start parsing data
+[2025-04-01 23:36:28] [INFO] end of read event
+[2025-04-01 23:36:28] [DEBUG] starting read event
+[2025-04-01 23:36:28] [DEBUG] processing read event
+[2025-04-01 23:36:28] [DEBUG] recieved data: NICK test
+
+[2025-04-01 23:36:28] [INFO] start parsing data
+[2025-04-01 23:36:28] [INFO] end of read event
+[2025-04-01 23:36:28] [DEBUG] starting read event
+[2025-04-01 23:36:28] [DEBUG] processing read event
+[2025-04-01 23:36:28] [DEBUG] recieved data: USER test 0 * saifeddine
+
+[2025-04-01 23:36:28] [INFO] start parsing data
+[2025-04-01 23:36:28] [INFO] end of read event
+[2025-04-01 23:37:29] [CLIENT] Client Accepted6
+[2025-04-01 23:37:39] [DEBUG] starting read event
+[2025-04-01 23:37:39] [DEBUG] processing read event
+[2025-04-01 23:37:39] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-01 23:37:39] [INFO] start parsing data
+[2025-04-01 23:37:39] [INFO] end of read event
+[2025-04-01 23:37:46] [DEBUG] starting read event
+[2025-04-01 23:37:46] [DEBUG] processing read event
+[2025-04-01 23:37:46] [DEBUG] recieved data: NICK sel-hano
+
+[2025-04-01 23:37:46] [INFO] start parsing data
+[2025-04-01 23:37:46] [INFO] end of read event
+[2025-04-01 23:37:58] [DEBUG] starting read event
+[2025-04-01 23:37:58] [DEBUG] processing read event
+[2025-04-01 23:37:58] [DEBUG] recieved data: USER saif 0 * saifeddine
+
+[2025-04-01 23:37:58] [INFO] start parsing data
+[2025-04-01 23:37:58] [INFO] end of read event
+[2025-04-01 23:40:10] [DEBUG] starting read event
+[2025-04-01 23:40:10] [DEBUG] processing read event
+[2025-04-01 23:40:10] [DEBUG] recieved data: JOIN #chan, #chan2, #chan1, #chan3, #chan8
+
+[2025-04-01 23:40:10] [INFO] start parsing data
+[2025-04-01 23:40:10] [CHANNEL] New channel created: #chan by sel-hano
+[2025-04-01 23:40:10] [CHANNEL] Adding Client sel-hano To channel #chan
+[2025-04-01 23:40:10] [CHANNEL] New channel created: # by sel-hano
+[2025-04-01 23:40:10] [CHANNEL] Adding Client sel-hano To channel #
+[2025-04-01 23:40:10] [INFO] end of read event
+[2025-04-01 23:43:18] [SERVER] Server initializing
+[2025-04-01 23:43:18] [SERVER] Server initialized
+[2025-04-01 23:43:24] [CLIENT] Client Accepted5
+[2025-04-01 23:43:24] [DEBUG] starting read event
+[2025-04-01 23:43:24] [DEBUG] processing read event
+[2025-04-01 23:43:24] [DEBUG] recieved data: PASS Password1!
+NICK AdminUser
+USER admin 0 * :admin
+
+[2025-04-01 23:43:24] [INFO] start parsing data
+[2025-04-01 23:43:24] [INFO] end of read event
+[2025-04-01 23:43:27] [CLIENT] Client Accepted6
+[2025-04-01 23:43:27] [DEBUG] starting read event
+[2025-04-01 23:43:27] [DEBUG] processing read event
+[2025-04-01 23:43:27] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-01 23:43:27] [INFO] start parsing data
+[2025-04-01 23:43:27] [INFO] end of read event
+[2025-04-01 23:43:27] [CLIENT] Client Accepted7
+[2025-04-01 23:43:27] [DEBUG] starting read event
+[2025-04-01 23:43:27] [DEBUG] processing read event
+[2025-04-01 23:43:27] [DEBUG] recieved data: PASS Password1!
+NICK Moderator1
+USER mod1 0 * :mod1
+
+[2025-04-01 23:43:27] [INFO] start parsing data
+[2025-04-01 23:43:27] [INFO] end of read event
+[2025-04-01 23:43:27] [DEBUG] starting read event
+[2025-04-01 23:43:27] [DEBUG] processing read event
+[2025-04-01 23:43:27] [DEBUG] recieved data: NICK test
+
+[2025-04-01 23:43:27] [INFO] start parsing data
+[2025-04-01 23:43:27] [INFO] end of read event
+[2025-04-01 23:43:27] [DEBUG] starting read event
+[2025-04-01 23:43:27] [DEBUG] processing read event
+[2025-04-01 23:43:27] [DEBUG] recieved data: USER test 0 * saifeddine
+
+[2025-04-01 23:43:27] [INFO] start parsing data
+[2025-04-01 23:43:27] [INFO] end of read event
+[2025-04-01 23:43:30] [CLIENT] Client Accepted8
+[2025-04-01 23:43:30] [DEBUG] starting read event
+[2025-04-01 23:43:30] [DEBUG] processing read event
+[2025-04-01 23:43:30] [DEBUG] recieved data: PASS Password1!
+NICK Moderator2
+USER mod2 0 * :mod2
+
+[2025-04-01 23:43:30] [INFO] start parsing data
+[2025-04-01 23:43:30] [INFO] end of read event
+[2025-04-01 23:43:33] [CLIENT] Client Accepted9
+[2025-04-01 23:43:33] [DEBUG] starting read event
+[2025-04-01 23:43:33] [DEBUG] processing read event
+[2025-04-01 23:43:33] [DEBUG] recieved data: PASS Password1!
+NICK JohnDoe
+USER john 0 * :john
+
+[2025-04-01 23:43:33] [INFO] start parsing data
+[2025-04-01 23:43:33] [INFO] end of read event
+[2025-04-01 23:43:36] [CLIENT] Client Accepted10
+[2025-04-01 23:43:36] [DEBUG] starting read event
+[2025-04-01 23:43:36] [DEBUG] processing read event
+[2025-04-01 23:43:36] [DEBUG] recieved data: PASS Password1!
+NICK JaneSmith
+USER jane 0 * :jane
+
+[2025-04-01 23:43:36] [INFO] start parsing data
+[2025-04-01 23:43:36] [INFO] end of read event
+[2025-04-01 23:43:39] [CLIENT] Client Accepted11
+[2025-04-01 23:43:39] [DEBUG] starting read event
+[2025-04-01 23:43:39] [DEBUG] processing read event
+[2025-04-01 23:43:39] [DEBUG] recieved data: PASS Password1!
+NICK NewGuy
+USER newguy 0 * :newguy
+
+[2025-04-01 23:43:39] [INFO] start parsing data
+[2025-04-01 23:43:39] [INFO] end of read event
+[2025-04-01 23:43:44] [CLIENT] Client Accepted12
+[2025-04-01 23:43:44] [DEBUG] starting read event
+[2025-04-01 23:43:44] [DEBUG] processing read event
+[2025-04-01 23:43:44] [DEBUG] recieved data: JOIN #main
+
+[2025-04-01 23:43:44] [INFO] start parsing data
+[2025-04-01 23:43:44] [INFO] end of read event
+[2025-04-01 23:43:44] [DEBUG] starting read event
+[2025-04-01 23:43:44] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:43:44] [INFO] Connection closed
+[2025-04-01 23:43:47] [CLIENT] Client Accepted12
+[2025-04-01 23:43:47] [DEBUG] starting read event
+[2025-04-01 23:43:47] [DEBUG] processing read event
+[2025-04-01 23:43:47] [DEBUG] recieved data: MODE #main +t
+
+[2025-04-01 23:43:47] [INFO] start parsing data
+[2025-04-01 23:43:47] [INFO] end of read event
+[2025-04-01 23:43:47] [DEBUG] starting read event
+[2025-04-01 23:43:47] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:43:47] [INFO] Connection closed
+[2025-04-01 23:43:48] [CLIENT] Client Accepted12
+[2025-04-01 23:43:48] [DEBUG] starting read event
+[2025-04-01 23:43:48] [DEBUG] processing read event
+[2025-04-01 23:43:48] [DEBUG] recieved data: TOPIC #main :Welcome to the Main Discussion Channel
+
+[2025-04-01 23:43:48] [INFO] start parsing data
+[2025-04-01 23:43:48] [INFO] end of read event
+[2025-04-01 23:43:48] [DEBUG] starting read event
+[2025-04-01 23:43:48] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:43:48] [INFO] Connection closed
+[2025-04-01 23:43:50] [CLIENT] Client Accepted12
+[2025-04-01 23:43:50] [DEBUG] starting read event
+[2025-04-01 23:43:50] [DEBUG] processing read event
+[2025-04-01 23:43:50] [DEBUG] recieved data: JOIN #main
+
+[2025-04-01 23:43:50] [INFO] start parsing data
+[2025-04-01 23:43:50] [INFO] end of read event
+[2025-04-01 23:43:50] [DEBUG] starting read event
+[2025-04-01 23:43:50] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:43:50] [INFO] Connection closed
+[2025-04-01 23:43:51] [CLIENT] Client Accepted12
+[2025-04-01 23:43:51] [DEBUG] starting read event
+[2025-04-01 23:43:51] [DEBUG] processing read event
+[2025-04-01 23:43:51] [DEBUG] recieved data: JOIN #main
+
+[2025-04-01 23:43:51] [INFO] start parsing data
+[2025-04-01 23:43:51] [INFO] end of read event
+[2025-04-01 23:43:51] [DEBUG] starting read event
+[2025-04-01 23:43:51] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:43:51] [INFO] Connection closed
+[2025-04-01 23:43:53] [CLIENT] Client Accepted12
+[2025-04-01 23:43:53] [DEBUG] starting read event
+[2025-04-01 23:43:53] [DEBUG] processing read event
+[2025-04-01 23:43:53] [DEBUG] recieved data: MODE #main +o Moderator1
+
+[2025-04-01 23:43:53] [INFO] start parsing data
+[2025-04-01 23:43:53] [INFO] end of read event
+[2025-04-01 23:43:53] [DEBUG] starting read event
+[2025-04-01 23:43:53] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:43:53] [INFO] Connection closed
+[2025-04-01 23:43:54] [CLIENT] Client Accepted12
+[2025-04-01 23:43:54] [DEBUG] starting read event
+[2025-04-01 23:43:54] [DEBUG] processing read event
+[2025-04-01 23:43:54] [DEBUG] recieved data: MODE #main +o Moderator2
+
+[2025-04-01 23:43:54] [INFO] start parsing data
+[2025-04-01 23:43:54] [INFO] end of read event
+[2025-04-01 23:43:54] [DEBUG] starting read event
+[2025-04-01 23:43:54] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:43:54] [INFO] Connection closed
+[2025-04-01 23:43:56] [CLIENT] Client Accepted12
+[2025-04-01 23:43:56] [DEBUG] starting read event
+[2025-04-01 23:43:56] [DEBUG] processing read event
+[2025-04-01 23:43:56] [DEBUG] recieved data: JOIN #main
+
+[2025-04-01 23:43:56] [INFO] start parsing data
+[2025-04-01 23:43:56] [INFO] end of read event
+[2025-04-01 23:43:56] [DEBUG] starting read event
+[2025-04-01 23:43:56] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:43:56] [INFO] Connection closed
+[2025-04-01 23:43:57] [CLIENT] Client Accepted12
+[2025-04-01 23:43:57] [DEBUG] starting read event
+[2025-04-01 23:43:57] [DEBUG] processing read event
+[2025-04-01 23:43:57] [DEBUG] recieved data: JOIN #main
+
+[2025-04-01 23:43:57] [INFO] start parsing data
+[2025-04-01 23:43:57] [INFO] end of read event
+[2025-04-01 23:43:57] [DEBUG] starting read event
+[2025-04-01 23:43:57] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:43:57] [INFO] Connection closed
+[2025-04-01 23:43:59] [CLIENT] Client Accepted12
+[2025-04-01 23:43:59] [DEBUG] starting read event
+[2025-04-01 23:43:59] [DEBUG] processing read event
+[2025-04-01 23:43:59] [DEBUG] recieved data: PRIVMSG #main :Welcome everyone to our new IRC server!
+
+[2025-04-01 23:43:59] [INFO] start parsing data
+[2025-04-01 23:43:59] [INFO] end of read event
+[2025-04-01 23:43:59] [DEBUG] starting read event
+[2025-04-01 23:43:59] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:43:59] [INFO] Connection closed
+[2025-04-01 23:44:00] [CLIENT] Client Accepted12
+[2025-04-01 23:44:00] [DEBUG] starting read event
+[2025-04-01 23:44:00] [DEBUG] processing read event
+[2025-04-01 23:44:00] [DEBUG] recieved data: PRIVMSG #main :Thanks for setting this up, Admin!
+
+[2025-04-01 23:44:00] [INFO] start parsing data
+[2025-04-01 23:44:00] [INFO] end of read event
+[2025-04-01 23:44:00] [DEBUG] starting read event
+[2025-04-01 23:44:00] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:00] [INFO] Connection closed
+[2025-04-01 23:44:02] [CLIENT] Client Accepted12
+[2025-04-01 23:44:02] [DEBUG] starting read event
+[2025-04-01 23:44:02] [DEBUG] processing read event
+[2025-04-01 23:44:02] [DEBUG] recieved data: PRIVMSG #main :Hello everyone, nice to meet you all.
+
+[2025-04-01 23:44:02] [INFO] start parsing data
+[2025-04-01 23:44:02] [INFO] end of read event
+[2025-04-01 23:44:02] [DEBUG] starting read event
+[2025-04-01 23:44:02] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:02] [INFO] Connection closed
+[2025-04-01 23:44:03] [CLIENT] Client Accepted12
+[2025-04-01 23:44:03] [DEBUG] starting read event
+[2025-04-01 23:44:03] [DEBUG] processing read event
+[2025-04-01 23:44:03] [DEBUG] recieved data: PRIVMSG #main :Hi there! Excited to be part of this community.
+
+[2025-04-01 23:44:03] [INFO] start parsing data
+[2025-04-01 23:44:03] [INFO] end of read event
+[2025-04-01 23:44:03] [DEBUG] starting read event
+[2025-04-01 23:44:03] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:03] [INFO] Connection closed
+[2025-04-01 23:44:05] [CLIENT] Client Accepted12
+[2025-04-01 23:44:05] [DEBUG] starting read event
+[2025-04-01 23:44:05] [DEBUG] processing read event
+[2025-04-01 23:44:05] [DEBUG] recieved data: JOIN #moderators
+
+[2025-04-01 23:44:05] [INFO] start parsing data
+[2025-04-01 23:44:05] [INFO] end of read event
+[2025-04-01 23:44:05] [DEBUG] starting read event
+[2025-04-01 23:44:05] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:05] [INFO] Connection closed
+[2025-04-01 23:44:06] [CLIENT] Client Accepted12
+[2025-04-01 23:44:06] [DEBUG] starting read event
+[2025-04-01 23:44:06] [DEBUG] processing read event
+[2025-04-01 23:44:06] [DEBUG] recieved data: MODE #moderators +k secretpass
+
+[2025-04-01 23:44:06] [INFO] start parsing data
+[2025-04-01 23:44:06] [INFO] end of read event
+[2025-04-01 23:44:06] [DEBUG] starting read event
+[2025-04-01 23:44:06] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:06] [INFO] Connection closed
+[2025-04-01 23:44:08] [CLIENT] Client Accepted12
+[2025-04-01 23:44:08] [DEBUG] starting read event
+[2025-04-01 23:44:08] [DEBUG] processing read event
+[2025-04-01 23:44:08] [DEBUG] recieved data: MODE #moderators +i
+
+[2025-04-01 23:44:08] [INFO] start parsing data
+[2025-04-01 23:44:08] [INFO] end of read event
+[2025-04-01 23:44:08] [DEBUG] starting read event
+[2025-04-01 23:44:08] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:08] [INFO] Connection closed
+[2025-04-01 23:44:09] [CLIENT] Client Accepted12
+[2025-04-01 23:44:09] [DEBUG] starting read event
+[2025-04-01 23:44:09] [DEBUG] processing read event
+[2025-04-01 23:44:09] [DEBUG] recieved data: INVITE Moderator2 #moderators
+
+[2025-04-01 23:44:09] [INFO] start parsing data
+[2025-04-01 23:44:09] [INFO] end of read event
+[2025-04-01 23:44:09] [DEBUG] starting read event
+[2025-04-01 23:44:09] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:09] [INFO] Connection closed
+[2025-04-01 23:44:11] [CLIENT] Client Accepted12
+[2025-04-01 23:44:11] [DEBUG] starting read event
+[2025-04-01 23:44:11] [DEBUG] processing read event
+[2025-04-01 23:44:11] [DEBUG] recieved data: INVITE AdminUser #moderators
+
+[2025-04-01 23:44:11] [INFO] start parsing data
+[2025-04-01 23:44:11] [INFO] end of read event
+[2025-04-01 23:44:11] [DEBUG] starting read event
+[2025-04-01 23:44:11] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:11] [INFO] Connection closed
+[2025-04-01 23:44:12] [CLIENT] Client Accepted12
+[2025-04-01 23:44:12] [DEBUG] starting read event
+[2025-04-01 23:44:12] [DEBUG] processing read event
+[2025-04-01 23:44:12] [DEBUG] recieved data: JOIN #moderators secretpass
+
+[2025-04-01 23:44:12] [INFO] start parsing data
+[2025-04-01 23:44:12] [INFO] end of read event
+[2025-04-01 23:44:12] [DEBUG] starting read event
+[2025-04-01 23:44:12] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:12] [INFO] Connection closed
+[2025-04-01 23:44:14] [CLIENT] Client Accepted12
+[2025-04-01 23:44:14] [DEBUG] starting read event
+[2025-04-01 23:44:14] [DEBUG] processing read event
+[2025-04-01 23:44:14] [DEBUG] recieved data: JOIN #moderators secretpass
+
+[2025-04-01 23:44:14] [INFO] start parsing data
+[2025-04-01 23:44:14] [INFO] end of read event
+[2025-04-01 23:44:14] [DEBUG] starting read event
+[2025-04-01 23:44:14] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:14] [INFO] Connection closed
+[2025-04-01 23:44:15] [CLIENT] Client Accepted12
+[2025-04-01 23:44:15] [DEBUG] starting read event
+[2025-04-01 23:44:15] [DEBUG] processing read event
+[2025-04-01 23:44:15] [DEBUG] recieved data: PRIVMSG #moderators :We need to discuss moderation policies.
+
+[2025-04-01 23:44:15] [INFO] start parsing data
+[2025-04-01 23:44:15] [INFO] end of read event
+[2025-04-01 23:44:15] [DEBUG] starting read event
+[2025-04-01 23:44:15] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:15] [INFO] Connection closed
+[2025-04-01 23:44:17] [CLIENT] Client Accepted12
+[2025-04-01 23:44:17] [DEBUG] starting read event
+[2025-04-01 23:44:17] [DEBUG] processing read event
+[2025-04-01 23:44:17] [DEBUG] recieved data: PRIVMSG #moderators :I think we should establish some basic rules.
+
+[2025-04-01 23:44:17] [INFO] start parsing data
+[2025-04-01 23:44:17] [INFO] end of read event
+[2025-04-01 23:44:17] [DEBUG] starting read event
+[2025-04-01 23:44:17] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:17] [INFO] Connection closed
+[2025-04-01 23:44:18] [CLIENT] Client Accepted12
+[2025-04-01 23:44:18] [DEBUG] starting read event
+[2025-04-01 23:44:18] [DEBUG] processing read event
+[2025-04-01 23:44:18] [DEBUG] recieved data: PRIVMSG #moderators :Good idea. Let's draft something and share it with everyone.
+
+[2025-04-01 23:44:18] [INFO] start parsing data
+[2025-04-01 23:44:18] [INFO] end of read event
+[2025-04-01 23:44:18] [DEBUG] starting read event
+[2025-04-01 23:44:18] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:18] [INFO] Connection closed
+[2025-04-01 23:44:20] [CLIENT] Client Accepted12
+[2025-04-01 23:44:20] [DEBUG] starting read event
+[2025-04-01 23:44:20] [DEBUG] processing read event
+[2025-04-01 23:44:20] [DEBUG] recieved data: PRIVMSG #main :We're working on community guidelines, they'll be posted soon!
+
+[2025-04-01 23:44:20] [INFO] start parsing data
+[2025-04-01 23:44:20] [INFO] end of read event
+[2025-04-01 23:44:20] [DEBUG] starting read event
+[2025-04-01 23:44:20] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:20] [INFO] Connection closed
+[2025-04-01 23:44:21] [CLIENT] Client Accepted12
+[2025-04-01 23:44:21] [DEBUG] starting read event
+[2025-04-01 23:44:21] [DEBUG] processing read event
+[2025-04-01 23:44:21] [DEBUG] recieved data: JOIN #main
+
+[2025-04-01 23:44:21] [INFO] start parsing data
+[2025-04-01 23:44:21] [INFO] end of read event
+[2025-04-01 23:44:21] [DEBUG] starting read event
+[2025-04-01 23:44:21] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:21] [INFO] Connection closed
+[2025-04-01 23:44:23] [CLIENT] Client Accepted12
+[2025-04-01 23:44:23] [DEBUG] starting read event
+[2025-04-01 23:44:23] [DEBUG] processing read event
+[2025-04-01 23:44:23] [DEBUG] recieved data: PRIVMSG #main :Hello everyone! I'm new here.
+
+[2025-04-01 23:44:23] [INFO] start parsing data
+[2025-04-01 23:44:23] [INFO] end of read event
+[2025-04-01 23:44:23] [DEBUG] starting read event
+[2025-04-01 23:44:23] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:23] [INFO] Connection closed
+[2025-04-01 23:44:24] [CLIENT] Client Accepted12
+[2025-04-01 23:44:24] [DEBUG] starting read event
+[2025-04-01 23:44:24] [DEBUG] processing read event
+[2025-04-01 23:44:24] [DEBUG] recieved data: PRIVMSG #main :NewGuy, I'm going to kick you as a demonstration, nothing personal!
+
+[2025-04-01 23:44:24] [INFO] start parsing data
+[2025-04-01 23:44:24] [INFO] end of read event
+[2025-04-01 23:44:24] [DEBUG] starting read event
+[2025-04-01 23:44:24] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:24] [INFO] Connection closed
+[2025-04-01 23:44:26] [CLIENT] Client Accepted12
+[2025-04-01 23:44:26] [DEBUG] starting read event
+[2025-04-01 23:44:26] [DEBUG] processing read event
+[2025-04-01 23:44:26] [DEBUG] recieved data: KICK #main NewGuy :Just a demonstration
+
+[2025-04-01 23:44:26] [INFO] start parsing data
+[2025-04-01 23:44:26] [INFO] end of read event
+[2025-04-01 23:44:26] [DEBUG] starting read event
+[2025-04-01 23:44:26] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:26] [INFO] Connection closed
+[2025-04-01 23:44:29] [CLIENT] Client Accepted12
+[2025-04-01 23:44:29] [DEBUG] starting read event
+[2025-04-01 23:44:29] [DEBUG] processing read event
+[2025-04-01 23:44:29] [DEBUG] recieved data: JOIN #main
+
+[2025-04-01 23:44:29] [INFO] start parsing data
+[2025-04-01 23:44:29] [INFO] end of read event
+[2025-04-01 23:44:29] [DEBUG] starting read event
+[2025-04-01 23:44:29] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:29] [INFO] Connection closed
+[2025-04-01 23:44:31] [CLIENT] Client Accepted12
+[2025-04-01 23:44:31] [DEBUG] starting read event
+[2025-04-01 23:44:31] [DEBUG] processing read event
+[2025-04-01 23:44:31] [DEBUG] recieved data: PRIVMSG #main :I'm back! That was interesting.
+
+[2025-04-01 23:44:31] [INFO] start parsing data
+[2025-04-01 23:44:31] [INFO] end of read event
+[2025-04-01 23:44:31] [DEBUG] starting read event
+[2025-04-01 23:44:31] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:31] [INFO] Connection closed
+[2025-04-01 23:44:33] [CLIENT] Client Accepted12
+[2025-04-01 23:44:33] [DEBUG] starting read event
+[2025-04-01 23:44:33] [DEBUG] processing read event
+[2025-04-01 23:44:33] [DEBUG] recieved data: TOPIC #main :Main Channel - Today's Topic: IRC Protocol Features
+
+[2025-04-01 23:44:33] [INFO] start parsing data
+[2025-04-01 23:44:33] [INFO] end of read event
+[2025-04-01 23:44:33] [DEBUG] starting read event
+[2025-04-01 23:44:33] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:33] [INFO] Connection closed
+[2025-04-01 23:44:34] [CLIENT] Client Accepted12
+[2025-04-01 23:44:34] [DEBUG] starting read event
+[2025-04-01 23:44:34] [DEBUG] processing read event
+[2025-04-01 23:44:34] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-01 23:44:34] [INFO] start parsing data
+[2025-04-01 23:44:34] [INFO] end of read event
+[2025-04-01 23:44:34] [DEBUG] starting read event
+[2025-04-01 23:44:34] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:34] [INFO] Connection closed
+[2025-04-01 23:44:36] [CLIENT] Client Accepted12
+[2025-04-01 23:44:36] [DEBUG] starting read event
+[2025-04-01 23:44:36] [DEBUG] processing read event
+[2025-04-01 23:44:36] [DEBUG] recieved data: TOPIC #tech :Technology Discussions
+
+[2025-04-01 23:44:36] [INFO] start parsing data
+[2025-04-01 23:44:36] [INFO] end of read event
+[2025-04-01 23:44:36] [DEBUG] starting read event
+[2025-04-01 23:44:36] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:36] [INFO] Connection closed
+[2025-04-01 23:44:37] [CLIENT] Client Accepted12
+[2025-04-01 23:44:37] [DEBUG] starting read event
+[2025-04-01 23:44:37] [DEBUG] processing read event
+[2025-04-01 23:44:37] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-01 23:44:37] [INFO] start parsing data
+[2025-04-01 23:44:37] [INFO] end of read event
+[2025-04-01 23:44:37] [DEBUG] starting read event
+[2025-04-01 23:44:37] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:37] [INFO] Connection closed
+[2025-04-01 23:44:39] [CLIENT] Client Accepted12
+[2025-04-01 23:44:39] [DEBUG] starting read event
+[2025-04-01 23:44:39] [DEBUG] processing read event
+[2025-04-01 23:44:39] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-01 23:44:39] [INFO] start parsing data
+[2025-04-01 23:44:39] [INFO] end of read event
+[2025-04-01 23:44:39] [DEBUG] starting read event
+[2025-04-01 23:44:39] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:39] [INFO] Connection closed
+[2025-04-01 23:44:40] [CLIENT] Client Accepted12
+[2025-04-01 23:44:40] [DEBUG] starting read event
+[2025-04-01 23:44:40] [DEBUG] processing read event
+[2025-04-01 23:44:40] [DEBUG] recieved data: PRIVMSG #tech :Who's excited about the latest developments in IRC servers?
+
+[2025-04-01 23:44:40] [INFO] start parsing data
+[2025-04-01 23:44:40] [INFO] end of read event
+[2025-04-01 23:44:40] [DEBUG] starting read event
+[2025-04-01 23:44:40] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:40] [INFO] Connection closed
+[2025-04-01 23:44:42] [CLIENT] Client Accepted12
+[2025-04-01 23:44:42] [DEBUG] starting read event
+[2025-04-01 23:44:42] [DEBUG] processing read event
+[2025-04-01 23:44:42] [DEBUG] recieved data: PRIVMSG #tech :I find the MODE command particularly interesting.
+
+[2025-04-01 23:44:42] [INFO] start parsing data
+[2025-04-01 23:44:42] [INFO] end of read event
+[2025-04-01 23:44:42] [DEBUG] starting read event
+[2025-04-01 23:44:42] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:42] [INFO] Connection closed
+[2025-04-01 23:44:43] [CLIENT] Client Accepted12
+[2025-04-01 23:44:43] [DEBUG] starting read event
+[2025-04-01 23:44:43] [DEBUG] processing read event
+[2025-04-01 23:44:43] [DEBUG] recieved data: PRIVMSG #tech :The non-blocking I/O implementation is quite elegant.
+
+[2025-04-01 23:44:43] [INFO] start parsing data
+[2025-04-01 23:44:43] [INFO] end of read event
+[2025-04-01 23:44:43] [DEBUG] starting read event
+[2025-04-01 23:44:43] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:43] [INFO] Connection closed
+[2025-04-01 23:44:45] [CLIENT] Client Accepted12
+[2025-04-01 23:44:45] [DEBUG] starting read event
+[2025-04-01 23:44:45] [DEBUG] processing read event
+[2025-04-01 23:44:45] [DEBUG] recieved data: MODE #tech +l 3
+
+[2025-04-01 23:44:45] [INFO] start parsing data
+[2025-04-01 23:44:45] [INFO] end of read event
+[2025-04-01 23:44:45] [DEBUG] starting read event
+[2025-04-01 23:44:45] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:45] [INFO] Connection closed
+[2025-04-01 23:44:46] [CLIENT] Client Accepted12
+[2025-04-01 23:44:46] [DEBUG] starting read event
+[2025-04-01 23:44:46] [DEBUG] processing read event
+[2025-04-01 23:44:46] [DEBUG] recieved data: PRIVMSG #tech :I've set a user limit of 3 for this channel.
+
+[2025-04-01 23:44:46] [INFO] start parsing data
+[2025-04-01 23:44:46] [INFO] end of read event
+[2025-04-01 23:44:46] [DEBUG] starting read event
+[2025-04-01 23:44:46] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:46] [INFO] Connection closed
+[2025-04-01 23:44:48] [CLIENT] Client Accepted12
+[2025-04-01 23:44:48] [DEBUG] starting read event
+[2025-04-01 23:44:48] [DEBUG] processing read event
+[2025-04-01 23:44:48] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-01 23:44:48] [INFO] start parsing data
+[2025-04-01 23:44:48] [INFO] end of read event
+[2025-04-01 23:44:48] [DEBUG] starting read event
+[2025-04-01 23:44:48] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:48] [INFO] Connection closed
+[2025-04-01 23:44:49] [CLIENT] Client Accepted12
+[2025-04-01 23:44:49] [DEBUG] starting read event
+[2025-04-01 23:44:49] [DEBUG] processing read event
+[2025-04-01 23:44:49] [DEBUG] recieved data: PRIVMSG #tech :I need to leave this channel for now, see you later!
+
+[2025-04-01 23:44:49] [INFO] start parsing data
+[2025-04-01 23:44:49] [INFO] end of read event
+[2025-04-01 23:44:49] [DEBUG] starting read event
+[2025-04-01 23:44:49] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:49] [INFO] Connection closed
+[2025-04-01 23:44:51] [CLIENT] Client Accepted12
+[2025-04-01 23:44:51] [DEBUG] starting read event
+[2025-04-01 23:44:51] [DEBUG] processing read event
+[2025-04-01 23:44:51] [DEBUG] recieved data: PART #tech
+
+[2025-04-01 23:44:51] [INFO] start parsing data
+[2025-04-01 23:44:51] [INFO] end of read event
+[2025-04-01 23:44:51] [DEBUG] starting read event
+[2025-04-01 23:44:51] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:51] [INFO] Connection closed
+[2025-04-01 23:44:52] [CLIENT] Client Accepted12
+[2025-04-01 23:44:52] [DEBUG] starting read event
+[2025-04-01 23:44:52] [DEBUG] processing read event
+[2025-04-01 23:44:52] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-01 23:44:52] [INFO] start parsing data
+[2025-04-01 23:44:52] [INFO] end of read event
+[2025-04-01 23:44:52] [DEBUG] starting read event
+[2025-04-01 23:44:52] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:52] [INFO] Connection closed
+[2025-04-01 23:44:54] [CLIENT] Client Accepted12
+[2025-04-01 23:44:54] [DEBUG] starting read event
+[2025-04-01 23:44:54] [DEBUG] processing read event
+[2025-04-01 23:44:54] [DEBUG] recieved data: PRIVMSG #tech :I can join now that Jane left!
+
+[2025-04-01 23:44:54] [INFO] start parsing data
+[2025-04-01 23:44:54] [INFO] end of read event
+[2025-04-01 23:44:54] [DEBUG] starting read event
+[2025-04-01 23:44:54] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:54] [INFO] Connection closed
+[2025-04-01 23:44:55] [CLIENT] Client Accepted12
+[2025-04-01 23:44:55] [DEBUG] starting read event
+[2025-04-01 23:44:55] [DEBUG] processing read event
+[2025-04-01 23:44:55] [DEBUG] recieved data: PRIVMSG JohnDoe :Hey John, you're doing a great job managing the tech channel!
+
+[2025-04-01 23:44:55] [INFO] start parsing data
+[2025-04-01 23:44:55] [INFO] end of read event
+[2025-04-01 23:44:55] [DEBUG] starting read event
+[2025-04-01 23:44:55] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:44:55] [INFO] Connection closed
+[2025-04-01 23:52:12] [CLIENT] Client Accepted12
+[2025-04-01 23:52:12] [DEBUG] starting read event
+[2025-04-01 23:52:12] [DEBUG] processing read event
+[2025-04-01 23:52:12] [DEBUG] recieved data: PASS password123
+NICK AdminUser
+USER admin 0 * :admin
+
+[2025-04-01 23:52:12] [INFO] start parsing data
+[2025-04-01 23:52:12] [INFO] end of read event
+[2025-04-01 23:52:15] [CLIENT] Client Accepted13
+[2025-04-01 23:52:15] [DEBUG] starting read event
+[2025-04-01 23:52:15] [DEBUG] processing read event
+[2025-04-01 23:52:15] [DEBUG] recieved data: PASS password123
+NICK Moderator1
+USER mod1 0 * :mod1
+
+[2025-04-01 23:52:15] [INFO] start parsing data
+[2025-04-01 23:52:15] [INFO] end of read event
+[2025-04-01 23:52:18] [CLIENT] Client Accepted14
+[2025-04-01 23:52:18] [DEBUG] starting read event
+[2025-04-01 23:52:18] [DEBUG] processing read event
+[2025-04-01 23:52:18] [DEBUG] recieved data: PASS password123
+NICK Moderator2
+USER mod2 0 * :mod2
+
+[2025-04-01 23:52:18] [INFO] start parsing data
+[2025-04-01 23:52:18] [INFO] end of read event
+[2025-04-01 23:52:21] [CLIENT] Client Accepted15
+[2025-04-01 23:52:21] [DEBUG] starting read event
+[2025-04-01 23:52:21] [DEBUG] processing read event
+[2025-04-01 23:52:21] [DEBUG] recieved data: PASS password123
+NICK JohnDoe
+USER john 0 * :john
+
+[2025-04-01 23:52:21] [INFO] start parsing data
+[2025-04-01 23:52:21] [INFO] end of read event
+[2025-04-01 23:52:24] [CLIENT] Client Accepted16
+[2025-04-01 23:52:24] [DEBUG] starting read event
+[2025-04-01 23:52:24] [DEBUG] processing read event
+[2025-04-01 23:52:24] [DEBUG] recieved data: PASS password123
+NICK JaneSmith
+USER jane 0 * :jane
+
+[2025-04-01 23:52:24] [INFO] start parsing data
+[2025-04-01 23:52:24] [INFO] end of read event
+[2025-04-01 23:52:27] [CLIENT] Client Accepted17
+[2025-04-01 23:52:27] [DEBUG] starting read event
+[2025-04-01 23:52:27] [DEBUG] processing read event
+[2025-04-01 23:52:27] [DEBUG] recieved data: PASS password123
+NICK NewGuy
+USER newbie 0 * :newbie
+
+[2025-04-01 23:52:27] [INFO] start parsing data
+[2025-04-01 23:52:27] [INFO] end of read event
+[2025-04-01 23:52:30] [CLIENT] Client Accepted18
+[2025-04-01 23:52:30] [DEBUG] starting read event
+[2025-04-01 23:52:30] [DEBUG] processing read event
+[2025-04-01 23:52:30] [DEBUG] recieved data: PASS password123
+NICK Developer1
+USER dev1 0 * :dev1
+
+[2025-04-01 23:52:30] [INFO] start parsing data
+[2025-04-01 23:52:30] [INFO] end of read event
+[2025-04-01 23:52:33] [CLIENT] Client Accepted19
+[2025-04-01 23:52:33] [DEBUG] starting read event
+[2025-04-01 23:52:33] [DEBUG] processing read event
+[2025-04-01 23:52:33] [DEBUG] recieved data: PASS password123
+NICK Developer2
+USER dev2 0 * :dev2
+
+[2025-04-01 23:52:33] [INFO] start parsing data
+[2025-04-01 23:52:33] [INFO] end of read event
+[2025-04-01 23:52:36] [CLIENT] Client Accepted20
+[2025-04-01 23:52:36] [DEBUG] starting read event
+[2025-04-01 23:52:36] [DEBUG] processing read event
+[2025-04-01 23:52:36] [DEBUG] recieved data: PASS password123
+NICK MarketingUser
+USER marketing 0 * :marketing
+
+[2025-04-01 23:52:36] [INFO] start parsing data
+[2025-04-01 23:52:36] [INFO] end of read event
+[2025-04-01 23:52:39] [CLIENT] Client Accepted21
+[2025-04-01 23:52:39] [DEBUG] starting read event
+[2025-04-01 23:52:39] [DEBUG] processing read event
+[2025-04-01 23:52:39] [DEBUG] recieved data: PASS password123
+NICK SupportAgent
+USER support 0 * :support
+
+[2025-04-01 23:52:39] [INFO] start parsing data
+[2025-04-01 23:52:39] [INFO] end of read event
+[2025-04-01 23:52:42] [CLIENT] Client Accepted22
+[2025-04-01 23:52:42] [DEBUG] starting read event
+[2025-04-01 23:52:42] [DEBUG] processing read event
+[2025-04-01 23:52:42] [DEBUG] recieved data: JOIN #main
+
+[2025-04-01 23:52:42] [INFO] start parsing data
+[2025-04-01 23:52:42] [INFO] end of read event
+[2025-04-01 23:52:42] [DEBUG] starting read event
+[2025-04-01 23:52:42] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:52:42] [INFO] Connection closed
+[2025-04-01 23:52:44] [CLIENT] Client Accepted22
+[2025-04-01 23:52:44] [DEBUG] starting read event
+[2025-04-01 23:52:44] [DEBUG] processing read event
+[2025-04-01 23:52:44] [DEBUG] recieved data: TOPIC #main :Welcome to the IRC Community!
+
+[2025-04-01 23:52:44] [INFO] start parsing data
+[2025-04-01 23:52:44] [INFO] end of read event
+[2025-04-01 23:52:44] [DEBUG] starting read event
+[2025-04-01 23:52:44] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:52:44] [INFO] Connection closed
+[2025-04-01 23:52:45] [CLIENT] Client Accepted22
+[2025-04-01 23:52:45] [DEBUG] starting read event
+[2025-04-01 23:52:45] [DEBUG] processing read event
+[2025-04-01 23:52:45] [DEBUG] recieved data: JOIN #main
+
+[2025-04-01 23:52:45] [INFO] start parsing data
+[2025-04-01 23:52:45] [INFO] end of read event
+[2025-04-01 23:52:45] [DEBUG] starting read event
+[2025-04-01 23:52:45] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:52:45] [INFO] Connection closed
+[2025-04-01 23:52:47] [CLIENT] Client Accepted22
+[2025-04-01 23:52:47] [DEBUG] starting read event
+[2025-04-01 23:52:47] [DEBUG] processing read event
+[2025-04-01 23:52:47] [DEBUG] recieved data: JOIN #main
+
+[2025-04-01 23:52:47] [INFO] start parsing data
+[2025-04-01 23:52:47] [INFO] end of read event
+[2025-04-01 23:52:47] [DEBUG] starting read event
+[2025-04-01 23:52:47] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:52:47] [INFO] Connection closed
+[2025-04-01 23:52:48] [CLIENT] Client Accepted22
+[2025-04-01 23:52:48] [DEBUG] starting read event
+[2025-04-01 23:52:48] [DEBUG] processing read event
+[2025-04-01 23:52:48] [DEBUG] recieved data: JOIN #main
+
+[2025-04-01 23:52:48] [INFO] start parsing data
+[2025-04-01 23:52:48] [INFO] end of read event
+[2025-04-01 23:52:48] [DEBUG] starting read event
+[2025-04-01 23:52:48] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:52:48] [INFO] Connection closed
+[2025-04-01 23:52:50] [CLIENT] Client Accepted22
+[2025-04-01 23:52:50] [DEBUG] starting read event
+[2025-04-01 23:52:50] [DEBUG] processing read event
+[2025-04-01 23:52:50] [DEBUG] recieved data: JOIN #main
+
+[2025-04-01 23:52:50] [INFO] start parsing data
+[2025-04-01 23:52:50] [INFO] end of read event
+[2025-04-01 23:52:50] [DEBUG] starting read event
+[2025-04-01 23:52:50] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:52:50] [INFO] Connection closed
+[2025-04-01 23:52:51] [CLIENT] Client Accepted22
+[2025-04-01 23:52:51] [DEBUG] starting read event
+[2025-04-01 23:52:51] [DEBUG] processing read event
+[2025-04-01 23:52:51] [DEBUG] recieved data: PRIVMSG #main :Welcome everyone to our IRC community!
+
+[2025-04-01 23:52:51] [INFO] start parsing data
+[2025-04-01 23:52:51] [INFO] end of read event
+[2025-04-01 23:52:51] [DEBUG] starting read event
+[2025-04-01 23:52:51] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:52:51] [INFO] Connection closed
+[2025-04-01 23:52:53] [CLIENT] Client Accepted22
+[2025-04-01 23:52:53] [DEBUG] starting read event
+[2025-04-01 23:52:53] [DEBUG] processing read event
+[2025-04-01 23:52:53] [DEBUG] recieved data: PRIVMSG #main :Hello everyone! I'm one of the moderators here.
+
+[2025-04-01 23:52:53] [INFO] start parsing data
+[2025-04-01 23:52:53] [INFO] end of read event
+[2025-04-01 23:52:53] [DEBUG] starting read event
+[2025-04-01 23:52:53] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:52:53] [INFO] Connection closed
+[2025-04-01 23:52:54] [CLIENT] Client Accepted22
+[2025-04-01 23:52:54] [DEBUG] starting read event
+[2025-04-01 23:52:54] [DEBUG] processing read event
+[2025-04-01 23:52:54] [DEBUG] recieved data: PRIVMSG #main :Hi all, glad to be here!
+
+[2025-04-01 23:52:54] [INFO] start parsing data
+[2025-04-01 23:52:54] [INFO] end of read event
+[2025-04-01 23:52:54] [DEBUG] starting read event
+[2025-04-01 23:52:54] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:52:54] [INFO] Connection closed
+[2025-04-01 23:52:56] [CLIENT] Client Accepted22
+[2025-04-01 23:52:56] [DEBUG] starting read event
+[2025-04-01 23:52:56] [DEBUG] processing read event
+[2025-04-01 23:52:56] [DEBUG] recieved data: PRIVMSG #main :Hello from Jane! Looking forward to our discussions.
+
+[2025-04-01 23:52:56] [INFO] start parsing data
+[2025-04-01 23:52:56] [INFO] end of read event
+[2025-04-01 23:52:56] [DEBUG] starting read event
+[2025-04-01 23:52:56] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:52:56] [INFO] Connection closed
+[2025-04-01 23:52:57] [CLIENT] Client Accepted22
+[2025-04-01 23:52:57] [DEBUG] starting read event
+[2025-04-01 23:52:57] [DEBUG] processing read event
+[2025-04-01 23:52:57] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-01 23:52:57] [INFO] start parsing data
+[2025-04-01 23:52:57] [INFO] end of read event
+[2025-04-01 23:52:57] [DEBUG] starting read event
+[2025-04-01 23:52:57] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:52:57] [INFO] Connection closed
+[2025-04-01 23:52:59] [CLIENT] Client Accepted22
+[2025-04-01 23:52:59] [DEBUG] starting read event
+[2025-04-01 23:52:59] [DEBUG] processing read event
+[2025-04-01 23:52:59] [DEBUG] recieved data: TOPIC #tech :Technical Discussions and Support
+
+[2025-04-01 23:52:59] [INFO] start parsing data
+[2025-04-01 23:52:59] [INFO] end of read event
+[2025-04-01 23:52:59] [DEBUG] starting read event
+[2025-04-01 23:52:59] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:52:59] [INFO] Connection closed
+[2025-04-01 23:53:00] [CLIENT] Client Accepted22
+[2025-04-01 23:53:00] [DEBUG] starting read event
+[2025-04-01 23:53:00] [DEBUG] processing read event
+[2025-04-01 23:53:00] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-01 23:53:00] [INFO] start parsing data
+[2025-04-01 23:53:00] [INFO] end of read event
+[2025-04-01 23:53:00] [DEBUG] starting read event
+[2025-04-01 23:53:00] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:53:00] [INFO] Connection closed
+[2025-04-01 23:53:02] [CLIENT] Client Accepted22
+[2025-04-01 23:53:02] [DEBUG] starting read event
+[2025-04-01 23:53:02] [DEBUG] processing read event
+[2025-04-01 23:53:02] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-01 23:53:02] [INFO] start parsing data
+[2025-04-01 23:53:02] [INFO] end of read event
+[2025-04-01 23:53:02] [DEBUG] starting read event
+[2025-04-01 23:53:02] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:53:02] [INFO] Connection closed
+[2025-04-01 23:53:03] [CLIENT] Client Accepted22
+[2025-04-01 23:53:03] [DEBUG] starting read event
+[2025-04-01 23:53:03] [DEBUG] processing read event
+[2025-04-01 23:53:03] [DEBUG] recieved data: PRIVMSG #tech :Welcome to the tech channel! This is where we discuss all things technical.
+
+[2025-04-01 23:53:03] [INFO] start parsing data
+[2025-04-01 23:53:03] [INFO] end of read event
+[2025-04-01 23:53:03] [DEBUG] starting read event
+[2025-04-01 23:53:03] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:53:03] [INFO] Connection closed
+[2025-04-01 23:53:05] [CLIENT] Client Accepted22
+[2025-04-01 23:53:05] [DEBUG] starting read event
+[2025-04-01 23:53:05] [DEBUG] processing read event
+[2025-04-01 23:53:05] [DEBUG] recieved data: PRIVMSG #tech :Hello fellow devs! What are you all working on?
+
+[2025-04-01 23:53:05] [INFO] start parsing data
+[2025-04-01 23:53:05] [INFO] end of read event
+[2025-04-01 23:53:05] [DEBUG] starting read event
+[2025-04-01 23:53:05] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:53:05] [INFO] Connection closed
+[2025-04-01 23:53:06] [CLIENT] Client Accepted22
+[2025-04-01 23:53:06] [DEBUG] starting read event
+[2025-04-01 23:53:06] [DEBUG] processing read event
+[2025-04-01 23:53:06] [DEBUG] recieved data: PRIVMSG #tech :I'm exploring IRC protocol implementation. It's fascinating!
+
+[2025-04-01 23:53:06] [INFO] start parsing data
+[2025-04-01 23:53:06] [INFO] end of read event
+[2025-04-01 23:53:06] [DEBUG] starting read event
+[2025-04-01 23:53:06] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:53:06] [INFO] Connection closed
+[2025-04-01 23:53:08] [CLIENT] Client Accepted22
+[2025-04-01 23:53:08] [DEBUG] starting read event
+[2025-04-01 23:53:08] [DEBUG] processing read event
+[2025-04-01 23:53:08] [DEBUG] recieved data: JOIN #marketing
+
+[2025-04-01 23:53:08] [INFO] start parsing data
+[2025-04-01 23:53:08] [INFO] end of read event
+[2025-04-01 23:53:08] [DEBUG] starting read event
+[2025-04-01 23:53:08] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:53:08] [INFO] Connection closed
+[2025-04-01 23:53:09] [CLIENT] Client Accepted22
+[2025-04-01 23:53:09] [DEBUG] starting read event
+[2025-04-01 23:53:09] [DEBUG] processing read event
+[2025-04-01 23:53:09] [DEBUG] recieved data: TOPIC #marketing :Marketing Strategies and Campaigns
+
+[2025-04-01 23:53:09] [INFO] start parsing data
+[2025-04-01 23:53:09] [INFO] end of read event
+[2025-04-01 23:53:09] [DEBUG] starting read event
+[2025-04-01 23:53:09] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:53:09] [INFO] Connection closed
+[2025-04-01 23:53:11] [CLIENT] Client Accepted22
+[2025-04-01 23:53:11] [DEBUG] starting read event
+[2025-04-01 23:53:11] [DEBUG] processing read event
+[2025-04-01 23:53:11] [DEBUG] recieved data: JOIN #marketing
+
+[2025-04-01 23:53:11] [INFO] start parsing data
+[2025-04-01 23:53:11] [INFO] end of read event
+[2025-04-01 23:53:11] [DEBUG] starting read event
+[2025-04-01 23:53:11] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:53:11] [INFO] Connection closed
+[2025-04-01 23:53:12] [CLIENT] Client Accepted22
+[2025-04-01 23:53:12] [DEBUG] starting read event
+[2025-04-01 23:53:12] [DEBUG] processing read event
+[2025-04-01 23:53:12] [DEBUG] recieved data: JOIN #marketing
+
+[2025-04-01 23:53:12] [INFO] start parsing data
+[2025-04-01 23:53:12] [INFO] end of read event
+[2025-04-01 23:53:12] [DEBUG] starting read event
+[2025-04-01 23:53:12] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:53:12] [INFO] Connection closed
+[2025-04-01 23:53:14] [CLIENT] Client Accepted22
+[2025-04-01 23:53:14] [DEBUG] starting read event
+[2025-04-01 23:53:14] [DEBUG] processing read event
+[2025-04-01 23:53:14] [DEBUG] recieved data: PRIVMSG #marketing :Let's discuss our Q3 marketing strategy.
+
+[2025-04-01 23:53:14] [INFO] start parsing data
+[2025-04-01 23:53:14] [INFO] end of read event
+[2025-04-01 23:53:14] [DEBUG] starting read event
+[2025-04-01 23:53:14] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:53:14] [INFO] Connection closed
+[2025-04-01 23:53:15] [CLIENT] Client Accepted22
+[2025-04-01 23:53:15] [DEBUG] starting read event
+[2025-04-01 23:53:15] [DEBUG] processing read event
+[2025-04-01 23:53:15] [DEBUG] recieved data: PRIVMSG #marketing :I think we should focus more on social media.
+
+[2025-04-01 23:53:15] [INFO] start parsing data
+[2025-04-01 23:53:15] [INFO] end of read event
+[2025-04-01 23:53:15] [DEBUG] starting read event
+[2025-04-01 23:53:15] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-01 23:53:15] [INFO] Connection closed
+[2025-04-01 23:59:19] [SERVER] Server initializing
+[2025-04-01 23:59:19] [SERVER] Server initialized
+[2025-04-01 23:59:31] [SERVER] Server initializing
+[2025-04-01 23:59:31] [SERVER] Server initialized
+[2025-04-01 23:59:40] [SERVER] Server initializing
+[2025-04-01 23:59:40] [SERVER] Server initialized
+[2025-04-02 00:00:06] [CLIENT] Client Accepted5
+[2025-04-02 00:00:11] [DEBUG] starting read event
+[2025-04-02 00:00:11] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:00:11] [INFO] Connection closed
+[2025-04-02 00:00:20] [CLIENT] Client Accepted22
+[2025-04-02 00:00:20] [DEBUG] starting read event
+[2025-04-02 00:00:20] [DEBUG] processing read event
+[2025-04-02 00:00:20] [DEBUG] recieved data: PASS password123
+NICK AdminUser
+USER admin 0 * :admin
+
+[2025-04-02 00:00:20] [INFO] start parsing data
+[2025-04-02 00:00:20] [INFO] end of read event
+[2025-04-02 00:00:23] [CLIENT] Client Accepted23
+[2025-04-02 00:00:23] [DEBUG] starting read event
+[2025-04-02 00:00:23] [DEBUG] processing read event
+[2025-04-02 00:00:23] [DEBUG] recieved data: PASS password123
+NICK Moderator1
+USER mod1 0 * :mod1
+
+[2025-04-02 00:00:23] [INFO] start parsing data
+[2025-04-02 00:00:23] [INFO] end of read event
+[2025-04-02 00:00:26] [CLIENT] Client Accepted24
+[2025-04-02 00:00:26] [DEBUG] starting read event
+[2025-04-02 00:00:26] [DEBUG] processing read event
+[2025-04-02 00:00:26] [DEBUG] recieved data: PASS password123
+NICK Moderator2
+USER mod2 0 * :mod2
+
+[2025-04-02 00:00:26] [INFO] start parsing data
+[2025-04-02 00:00:26] [INFO] end of read event
+[2025-04-02 00:00:29] [CLIENT] Client Accepted25
+[2025-04-02 00:00:29] [DEBUG] starting read event
+[2025-04-02 00:00:29] [DEBUG] processing read event
+[2025-04-02 00:00:29] [DEBUG] recieved data: PASS password123
+NICK JohnDoe
+USER john 0 * :john
+
+[2025-04-02 00:00:29] [INFO] start parsing data
+[2025-04-02 00:00:29] [INFO] end of read event
+[2025-04-02 00:00:32] [CLIENT] Client Accepted26
+[2025-04-02 00:00:32] [DEBUG] starting read event
+[2025-04-02 00:00:32] [DEBUG] processing read event
+[2025-04-02 00:00:32] [DEBUG] recieved data: PASS password123
+NICK JaneSmith
+USER jane 0 * :jane
+
+[2025-04-02 00:00:32] [INFO] start parsing data
+[2025-04-02 00:00:32] [INFO] end of read event
+[2025-04-02 00:00:35] [CLIENT] Client Accepted27
+[2025-04-02 00:00:35] [DEBUG] starting read event
+[2025-04-02 00:00:35] [DEBUG] processing read event
+[2025-04-02 00:00:35] [DEBUG] recieved data: PASS password123
+NICK NewGuy
+USER newbie 0 * :newbie
+
+[2025-04-02 00:00:35] [INFO] start parsing data
+[2025-04-02 00:00:35] [INFO] end of read event
+[2025-04-02 00:00:38] [CLIENT] Client Accepted28
+[2025-04-02 00:00:38] [DEBUG] starting read event
+[2025-04-02 00:00:38] [DEBUG] processing read event
+[2025-04-02 00:00:38] [DEBUG] recieved data: PASS password123
+NICK Developer1
+USER dev1 0 * :dev1
+
+[2025-04-02 00:00:38] [INFO] start parsing data
+[2025-04-02 00:00:38] [INFO] end of read event
+[2025-04-02 00:00:41] [CLIENT] Client Accepted29
+[2025-04-02 00:00:41] [DEBUG] starting read event
+[2025-04-02 00:00:41] [DEBUG] processing read event
+[2025-04-02 00:00:41] [DEBUG] recieved data: PASS password123
+NICK Developer2
+USER dev2 0 * :dev2
+
+[2025-04-02 00:00:41] [INFO] start parsing data
+[2025-04-02 00:00:41] [INFO] end of read event
+[2025-04-02 00:00:44] [CLIENT] Client Accepted30
+[2025-04-02 00:00:44] [DEBUG] starting read event
+[2025-04-02 00:00:44] [DEBUG] processing read event
+[2025-04-02 00:00:44] [DEBUG] recieved data: PASS password123
+NICK MarketingUser
+USER marketing 0 * :marketing
+
+[2025-04-02 00:00:44] [INFO] start parsing data
+[2025-04-02 00:00:44] [INFO] end of read event
+[2025-04-02 00:00:47] [CLIENT] Client Accepted31
+[2025-04-02 00:00:47] [DEBUG] starting read event
+[2025-04-02 00:00:47] [DEBUG] processing read event
+[2025-04-02 00:00:47] [DEBUG] recieved data: PASS password123
+NICK SupportAgent
+USER support 0 * :support
+
+[2025-04-02 00:00:47] [INFO] start parsing data
+[2025-04-02 00:00:47] [INFO] end of read event
+[2025-04-02 00:00:50] [CLIENT] Client Accepted32
+[2025-04-02 00:00:50] [DEBUG] starting read event
+[2025-04-02 00:00:50] [DEBUG] processing read event
+[2025-04-02 00:00:50] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:00:50] [INFO] start parsing data
+[2025-04-02 00:00:50] [INFO] end of read event
+[2025-04-02 00:00:50] [DEBUG] starting read event
+[2025-04-02 00:00:50] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:00:50] [INFO] Connection closed
+[2025-04-02 00:00:51] [CLIENT] Client Accepted32
+[2025-04-02 00:00:51] [DEBUG] starting read event
+[2025-04-02 00:00:51] [DEBUG] processing read event
+[2025-04-02 00:00:51] [DEBUG] recieved data: TOPIC #main :Welcome to the IRC Community!
+
+[2025-04-02 00:00:51] [INFO] start parsing data
+[2025-04-02 00:00:51] [INFO] end of read event
+[2025-04-02 00:00:51] [DEBUG] starting read event
+[2025-04-02 00:00:51] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:00:51] [INFO] Connection closed
+[2025-04-02 00:00:53] [CLIENT] Client Accepted32
+[2025-04-02 00:00:53] [DEBUG] starting read event
+[2025-04-02 00:00:53] [DEBUG] processing read event
+[2025-04-02 00:00:53] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:00:53] [INFO] start parsing data
+[2025-04-02 00:00:53] [INFO] end of read event
+[2025-04-02 00:00:53] [DEBUG] starting read event
+[2025-04-02 00:00:53] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:00:53] [INFO] Connection closed
+[2025-04-02 00:00:54] [CLIENT] Client Accepted32
+[2025-04-02 00:00:54] [DEBUG] starting read event
+[2025-04-02 00:00:54] [DEBUG] processing read event
+[2025-04-02 00:00:54] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:00:54] [INFO] start parsing data
+[2025-04-02 00:00:54] [INFO] end of read event
+[2025-04-02 00:00:54] [DEBUG] starting read event
+[2025-04-02 00:00:54] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:00:54] [INFO] Connection closed
+[2025-04-02 00:00:56] [CLIENT] Client Accepted32
+[2025-04-02 00:00:56] [DEBUG] starting read event
+[2025-04-02 00:00:56] [DEBUG] processing read event
+[2025-04-02 00:00:56] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:00:56] [INFO] start parsing data
+[2025-04-02 00:00:56] [INFO] end of read event
+[2025-04-02 00:00:56] [DEBUG] starting read event
+[2025-04-02 00:00:56] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:00:56] [INFO] Connection closed
+[2025-04-02 00:00:57] [CLIENT] Client Accepted32
+[2025-04-02 00:00:57] [DEBUG] starting read event
+[2025-04-02 00:00:57] [DEBUG] processing read event
+[2025-04-02 00:00:57] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:00:57] [INFO] start parsing data
+[2025-04-02 00:00:57] [INFO] end of read event
+[2025-04-02 00:00:57] [DEBUG] starting read event
+[2025-04-02 00:00:57] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:00:57] [INFO] Connection closed
+[2025-04-02 00:00:59] [CLIENT] Client Accepted32
+[2025-04-02 00:00:59] [DEBUG] starting read event
+[2025-04-02 00:00:59] [DEBUG] processing read event
+[2025-04-02 00:00:59] [DEBUG] recieved data: PRIVMSG #main :Welcome everyone to our IRC community!
+
+[2025-04-02 00:00:59] [INFO] start parsing data
+[2025-04-02 00:00:59] [INFO] end of read event
+[2025-04-02 00:00:59] [DEBUG] starting read event
+[2025-04-02 00:00:59] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:00:59] [INFO] Connection closed
+[2025-04-02 00:01:00] [CLIENT] Client Accepted32
+[2025-04-02 00:01:00] [DEBUG] starting read event
+[2025-04-02 00:01:00] [DEBUG] processing read event
+[2025-04-02 00:01:00] [DEBUG] recieved data: PRIVMSG #main :Hello everyone! I'm one of the moderators here.
+
+[2025-04-02 00:01:00] [INFO] start parsing data
+[2025-04-02 00:01:00] [INFO] end of read event
+[2025-04-02 00:01:00] [DEBUG] starting read event
+[2025-04-02 00:01:00] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:00] [INFO] Connection closed
+[2025-04-02 00:01:02] [CLIENT] Client Accepted32
+[2025-04-02 00:01:02] [DEBUG] starting read event
+[2025-04-02 00:01:02] [DEBUG] processing read event
+[2025-04-02 00:01:02] [DEBUG] recieved data: PRIVMSG #main :Hi all, glad to be here!
+
+[2025-04-02 00:01:02] [INFO] start parsing data
+[2025-04-02 00:01:02] [INFO] end of read event
+[2025-04-02 00:01:02] [DEBUG] starting read event
+[2025-04-02 00:01:02] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:02] [INFO] Connection closed
+[2025-04-02 00:01:03] [CLIENT] Client Accepted32
+[2025-04-02 00:01:03] [DEBUG] starting read event
+[2025-04-02 00:01:03] [DEBUG] processing read event
+[2025-04-02 00:01:03] [DEBUG] recieved data: PRIVMSG #main :Hello from Jane! Looking forward to our discussions.
+
+[2025-04-02 00:01:03] [INFO] start parsing data
+[2025-04-02 00:01:03] [INFO] end of read event
+[2025-04-02 00:01:03] [DEBUG] starting read event
+[2025-04-02 00:01:03] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:03] [INFO] Connection closed
+[2025-04-02 00:01:05] [CLIENT] Client Accepted32
+[2025-04-02 00:01:05] [DEBUG] starting read event
+[2025-04-02 00:01:05] [DEBUG] processing read event
+[2025-04-02 00:01:05] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-02 00:01:05] [INFO] start parsing data
+[2025-04-02 00:01:05] [INFO] end of read event
+[2025-04-02 00:01:05] [DEBUG] starting read event
+[2025-04-02 00:01:05] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:05] [INFO] Connection closed
+[2025-04-02 00:01:06] [CLIENT] Client Accepted32
+[2025-04-02 00:01:06] [DEBUG] starting read event
+[2025-04-02 00:01:06] [DEBUG] processing read event
+[2025-04-02 00:01:06] [DEBUG] recieved data: TOPIC #tech :Technical Discussions and Support
+
+[2025-04-02 00:01:06] [INFO] start parsing data
+[2025-04-02 00:01:06] [INFO] end of read event
+[2025-04-02 00:01:06] [DEBUG] starting read event
+[2025-04-02 00:01:06] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:06] [INFO] Connection closed
+[2025-04-02 00:01:08] [CLIENT] Client Accepted32
+[2025-04-02 00:01:08] [DEBUG] starting read event
+[2025-04-02 00:01:08] [DEBUG] processing read event
+[2025-04-02 00:01:08] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-02 00:01:08] [INFO] start parsing data
+[2025-04-02 00:01:08] [INFO] end of read event
+[2025-04-02 00:01:08] [DEBUG] starting read event
+[2025-04-02 00:01:08] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:08] [INFO] Connection closed
+[2025-04-02 00:01:09] [CLIENT] Client Accepted32
+[2025-04-02 00:01:09] [DEBUG] starting read event
+[2025-04-02 00:01:09] [DEBUG] processing read event
+[2025-04-02 00:01:09] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-02 00:01:09] [INFO] start parsing data
+[2025-04-02 00:01:09] [INFO] end of read event
+[2025-04-02 00:01:09] [DEBUG] starting read event
+[2025-04-02 00:01:09] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:09] [INFO] Connection closed
+[2025-04-02 00:01:11] [CLIENT] Client Accepted32
+[2025-04-02 00:01:11] [DEBUG] starting read event
+[2025-04-02 00:01:11] [DEBUG] processing read event
+[2025-04-02 00:01:11] [DEBUG] recieved data: PRIVMSG #tech :Welcome to the tech channel! This is where we discuss all things technical.
+
+[2025-04-02 00:01:11] [INFO] start parsing data
+[2025-04-02 00:01:11] [INFO] end of read event
+[2025-04-02 00:01:11] [DEBUG] starting read event
+[2025-04-02 00:01:11] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:11] [INFO] Connection closed
+[2025-04-02 00:01:12] [CLIENT] Client Accepted32
+[2025-04-02 00:01:12] [DEBUG] starting read event
+[2025-04-02 00:01:12] [DEBUG] processing read event
+[2025-04-02 00:01:12] [DEBUG] recieved data: PRIVMSG #tech :Hello fellow devs! What are you all working on?
+
+[2025-04-02 00:01:12] [INFO] start parsing data
+[2025-04-02 00:01:12] [INFO] end of read event
+[2025-04-02 00:01:12] [DEBUG] starting read event
+[2025-04-02 00:01:12] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:12] [INFO] Connection closed
+[2025-04-02 00:01:14] [CLIENT] Client Accepted32
+[2025-04-02 00:01:14] [DEBUG] starting read event
+[2025-04-02 00:01:14] [DEBUG] processing read event
+[2025-04-02 00:01:14] [DEBUG] recieved data: PRIVMSG #tech :I'm exploring IRC protocol implementation. It's fascinating!
+
+[2025-04-02 00:01:14] [INFO] start parsing data
+[2025-04-02 00:01:14] [INFO] end of read event
+[2025-04-02 00:01:14] [DEBUG] starting read event
+[2025-04-02 00:01:14] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:14] [INFO] Connection closed
+[2025-04-02 00:01:15] [CLIENT] Client Accepted32
+[2025-04-02 00:01:15] [DEBUG] starting read event
+[2025-04-02 00:01:15] [DEBUG] processing read event
+[2025-04-02 00:01:15] [DEBUG] recieved data: JOIN #marketing
+
+[2025-04-02 00:01:15] [INFO] start parsing data
+[2025-04-02 00:01:15] [INFO] end of read event
+[2025-04-02 00:01:15] [DEBUG] starting read event
+[2025-04-02 00:01:15] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:15] [INFO] Connection closed
+[2025-04-02 00:01:17] [CLIENT] Client Accepted32
+[2025-04-02 00:01:17] [DEBUG] starting read event
+[2025-04-02 00:01:17] [DEBUG] processing read event
+[2025-04-02 00:01:17] [DEBUG] recieved data: TOPIC #marketing :Marketing Strategies and Campaigns
+
+[2025-04-02 00:01:17] [INFO] start parsing data
+[2025-04-02 00:01:17] [INFO] end of read event
+[2025-04-02 00:01:17] [DEBUG] starting read event
+[2025-04-02 00:01:17] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:17] [INFO] Connection closed
+[2025-04-02 00:01:18] [CLIENT] Client Accepted32
+[2025-04-02 00:01:18] [DEBUG] starting read event
+[2025-04-02 00:01:18] [DEBUG] processing read event
+[2025-04-02 00:01:18] [DEBUG] recieved data: JOIN #marketing
+
+[2025-04-02 00:01:18] [INFO] start parsing data
+[2025-04-02 00:01:18] [INFO] end of read event
+[2025-04-02 00:01:18] [DEBUG] starting read event
+[2025-04-02 00:01:18] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:18] [INFO] Connection closed
+[2025-04-02 00:01:20] [CLIENT] Client Accepted32
+[2025-04-02 00:01:20] [DEBUG] starting read event
+[2025-04-02 00:01:20] [DEBUG] processing read event
+[2025-04-02 00:01:20] [DEBUG] recieved data: JOIN #marketing
+
+[2025-04-02 00:01:20] [INFO] start parsing data
+[2025-04-02 00:01:20] [INFO] end of read event
+[2025-04-02 00:01:20] [DEBUG] starting read event
+[2025-04-02 00:01:20] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:20] [INFO] Connection closed
+[2025-04-02 00:01:21] [CLIENT] Client Accepted32
+[2025-04-02 00:01:21] [DEBUG] starting read event
+[2025-04-02 00:01:21] [DEBUG] processing read event
+[2025-04-02 00:01:21] [DEBUG] recieved data: PRIVMSG #marketing :Let's discuss our Q3 marketing strategy.
+
+[2025-04-02 00:01:21] [INFO] start parsing data
+[2025-04-02 00:01:21] [INFO] end of read event
+[2025-04-02 00:01:21] [DEBUG] starting read event
+[2025-04-02 00:01:21] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:21] [INFO] Connection closed
+[2025-04-02 00:01:23] [CLIENT] Client Accepted32
+[2025-04-02 00:01:23] [DEBUG] starting read event
+[2025-04-02 00:01:23] [DEBUG] processing read event
+[2025-04-02 00:01:23] [DEBUG] recieved data: PRIVMSG #marketing :I think we should focus more on social media.
+
+[2025-04-02 00:01:23] [INFO] start parsing data
+[2025-04-02 00:01:23] [INFO] end of read event
+[2025-04-02 00:01:23] [DEBUG] starting read event
+[2025-04-02 00:01:23] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:23] [INFO] Connection closed
+[2025-04-02 00:01:24] [CLIENT] Client Accepted32
+[2025-04-02 00:01:24] [DEBUG] starting read event
+[2025-04-02 00:01:24] [DEBUG] processing read event
+[2025-04-02 00:01:24] [DEBUG] recieved data: PRIVMSG #marketing :Good point, Jane. Let's allocate more resources there.
+
+[2025-04-02 00:01:24] [INFO] start parsing data
+[2025-04-02 00:01:24] [INFO] end of read event
+[2025-04-02 00:01:24] [DEBUG] starting read event
+[2025-04-02 00:01:24] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:24] [INFO] Connection closed
+[2025-04-02 00:01:26] [CLIENT] Client Accepted32
+[2025-04-02 00:01:26] [DEBUG] starting read event
+[2025-04-02 00:01:26] [DEBUG] processing read event
+[2025-04-02 00:01:26] [DEBUG] recieved data: JOIN #support
+
+[2025-04-02 00:01:26] [INFO] start parsing data
+[2025-04-02 00:01:26] [INFO] end of read event
+[2025-04-02 00:01:26] [DEBUG] starting read event
+[2025-04-02 00:01:26] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:26] [INFO] Connection closed
+[2025-04-02 00:01:27] [CLIENT] Client Accepted32
+[2025-04-02 00:01:27] [DEBUG] starting read event
+[2025-04-02 00:01:27] [DEBUG] processing read event
+[2025-04-02 00:01:27] [DEBUG] recieved data: JOIN #support
+
+[2025-04-02 00:01:27] [INFO] start parsing data
+[2025-04-02 00:01:27] [INFO] end of read event
+[2025-04-02 00:01:27] [DEBUG] starting read event
+[2025-04-02 00:01:27] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:27] [INFO] Connection closed
+[2025-04-02 00:01:29] [CLIENT] Client Accepted32
+[2025-04-02 00:01:29] [DEBUG] starting read event
+[2025-04-02 00:01:29] [DEBUG] processing read event
+[2025-04-02 00:01:29] [DEBUG] recieved data: TOPIC #support :Customer Support and Assistance
+
+[2025-04-02 00:01:29] [INFO] start parsing data
+[2025-04-02 00:01:29] [INFO] end of read event
+[2025-04-02 00:01:29] [DEBUG] starting read event
+[2025-04-02 00:01:29] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:29] [INFO] Connection closed
+[2025-04-02 00:01:30] [CLIENT] Client Accepted32
+[2025-04-02 00:01:30] [DEBUG] starting read event
+[2025-04-02 00:01:30] [DEBUG] processing read event
+[2025-04-02 00:01:30] [DEBUG] recieved data: MODE #support +o JohnDoe
+
+[2025-04-02 00:01:30] [INFO] start parsing data
+[2025-04-02 00:01:30] [INFO] end of read event
+[2025-04-02 00:01:30] [DEBUG] starting read event
+[2025-04-02 00:01:30] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:30] [INFO] Connection closed
+[2025-04-02 00:01:32] [CLIENT] Client Accepted32
+[2025-04-02 00:01:32] [DEBUG] starting read event
+[2025-04-02 00:01:32] [DEBUG] processing read event
+[2025-04-02 00:01:32] [DEBUG] recieved data: PRIVMSG #support :JohnDoe is now a channel operator to help with support.
+
+[2025-04-02 00:01:32] [INFO] start parsing data
+[2025-04-02 00:01:32] [INFO] end of read event
+[2025-04-02 00:01:32] [DEBUG] starting read event
+[2025-04-02 00:01:32] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:32] [INFO] Connection closed
+[2025-04-02 00:01:33] [CLIENT] Client Accepted32
+[2025-04-02 00:01:33] [DEBUG] starting read event
+[2025-04-02 00:01:33] [DEBUG] processing read event
+[2025-04-02 00:01:33] [DEBUG] recieved data: PRIVMSG #support :This channel is for supporting our users. What issues are you seeing?
+
+[2025-04-02 00:01:33] [INFO] start parsing data
+[2025-04-02 00:01:33] [INFO] end of read event
+[2025-04-02 00:01:33] [DEBUG] starting read event
+[2025-04-02 00:01:33] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:33] [INFO] Connection closed
+[2025-04-02 00:01:35] [CLIENT] Client Accepted32
+[2025-04-02 00:01:35] [DEBUG] starting read event
+[2025-04-02 00:01:35] [DEBUG] processing read event
+[2025-04-02 00:01:35] [DEBUG] recieved data: PRIVMSG #support :I've been helping users with connection issues primarily.
+
+[2025-04-02 00:01:35] [INFO] start parsing data
+[2025-04-02 00:01:35] [INFO] end of read event
+[2025-04-02 00:01:35] [DEBUG] starting read event
+[2025-04-02 00:01:35] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:35] [INFO] Connection closed
+[2025-04-02 00:01:37] [CLIENT] Client Accepted32
+[2025-04-02 00:01:37] [DEBUG] starting read event
+[2025-04-02 00:01:37] [DEBUG] processing read event
+[2025-04-02 00:01:37] [DEBUG] recieved data: PRIVMSG #support :What version should I be using?
+
+[2025-04-02 00:01:37] [INFO] start parsing data
+[2025-04-02 00:01:37] [INFO] end of read event
+[2025-04-02 00:01:37] [DEBUG] starting read event
+[2025-04-02 00:01:37] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:37] [INFO] Connection closed
+[2025-04-02 00:01:38] [CLIENT] Client Accepted32
+[2025-04-02 00:01:38] [DEBUG] starting read event
+[2025-04-02 00:01:38] [DEBUG] processing read event
+[2025-04-02 00:01:38] [DEBUG] recieved data: PRIVMSG #support :The latest version, 2.3.1
+
+[2025-04-02 00:01:38] [INFO] start parsing data
+[2025-04-02 00:01:38] [INFO] end of read event
+[2025-04-02 00:01:38] [DEBUG] starting read event
+[2025-04-02 00:01:38] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:38] [INFO] Connection closed
+[2025-04-02 00:01:40] [CLIENT] Client Accepted32
+[2025-04-02 00:01:40] [DEBUG] starting read event
+[2025-04-02 00:01:40] [DEBUG] processing read event
+[2025-04-02 00:01:40] [DEBUG] recieved data: PRIVMSG #support :This is some spam message that violates channel rules!!!
+
+[2025-04-02 00:01:40] [INFO] start parsing data
+[2025-04-02 00:01:40] [INFO] end of read event
+[2025-04-02 00:01:40] [DEBUG] starting read event
+[2025-04-02 00:01:40] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:40] [INFO] Connection closed
+[2025-04-02 00:01:41] [CLIENT] Client Accepted32
+[2025-04-02 00:01:41] [DEBUG] starting read event
+[2025-04-02 00:01:41] [DEBUG] processing read event
+[2025-04-02 00:01:41] [DEBUG] recieved data: PRIVMSG #support :NewGuy, please follow channel rules. I'll have to kick you as a warning.
+
+[2025-04-02 00:01:41] [INFO] start parsing data
+[2025-04-02 00:01:41] [INFO] end of read event
+[2025-04-02 00:01:41] [DEBUG] starting read event
+[2025-04-02 00:01:41] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:41] [INFO] Connection closed
+[2025-04-02 00:01:43] [CLIENT] Client Accepted32
+[2025-04-02 00:01:43] [DEBUG] starting read event
+[2025-04-02 00:01:43] [DEBUG] processing read event
+[2025-04-02 00:01:43] [DEBUG] recieved data: KICK #support NewGuy :Violation of channel rules
+
+[2025-04-02 00:01:43] [INFO] start parsing data
+[2025-04-02 00:01:43] [INFO] end of read event
+[2025-04-02 00:01:43] [DEBUG] starting read event
+[2025-04-02 00:01:43] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:43] [INFO] Connection closed
+[2025-04-02 00:01:46] [CLIENT] Client Accepted32
+[2025-04-02 00:01:46] [DEBUG] starting read event
+[2025-04-02 00:01:46] [DEBUG] processing read event
+[2025-04-02 00:01:46] [DEBUG] recieved data: JOIN #main,#support
+
+[2025-04-02 00:01:46] [INFO] start parsing data
+[2025-04-02 00:01:46] [INFO] end of read event
+[2025-04-02 00:01:46] [DEBUG] starting read event
+[2025-04-02 00:01:46] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:46] [INFO] Connection closed
+[2025-04-02 00:01:48] [CLIENT] Client Accepted32
+[2025-04-02 00:01:48] [DEBUG] starting read event
+[2025-04-02 00:01:48] [DEBUG] processing read event
+[2025-04-02 00:01:48] [DEBUG] recieved data: PRIVMSG #main :I'm back and now in multiple channels!
+
+[2025-04-02 00:01:48] [INFO] start parsing data
+[2025-04-02 00:01:48] [INFO] end of read event
+[2025-04-02 00:01:48] [DEBUG] starting read event
+[2025-04-02 00:01:48] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:48] [INFO] Connection closed
+[2025-04-02 00:01:49] [CLIENT] Client Accepted32
+[2025-04-02 00:01:49] [DEBUG] starting read event
+[2025-04-02 00:01:49] [DEBUG] processing read event
+[2025-04-02 00:01:49] [DEBUG] recieved data: PRIVMSG #support :Sorry about earlier. I'll follow the rules now.
+
+[2025-04-02 00:01:49] [INFO] start parsing data
+[2025-04-02 00:01:49] [INFO] end of read event
+[2025-04-02 00:01:49] [DEBUG] starting read event
+[2025-04-02 00:01:49] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:49] [INFO] Connection closed
+[2025-04-02 00:01:51] [CLIENT] Client Accepted32
+[2025-04-02 00:01:51] [DEBUG] starting read event
+[2025-04-02 00:01:51] [DEBUG] processing read event
+[2025-04-02 00:01:51] [DEBUG] recieved data: PRIVMSG JohnDoe :Thanks for helping moderate the support channel.
+
+[2025-04-02 00:01:51] [INFO] start parsing data
+[2025-04-02 00:01:51] [INFO] end of read event
+[2025-04-02 00:01:51] [DEBUG] starting read event
+[2025-04-02 00:01:51] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:51] [INFO] Connection closed
+[2025-04-02 00:01:52] [CLIENT] Client Accepted32
+[2025-04-02 00:01:52] [DEBUG] starting read event
+[2025-04-02 00:01:52] [DEBUG] processing read event
+[2025-04-02 00:01:52] [DEBUG] recieved data: PRIVMSG AdminUser :No problem! Happy to help keep things organized.
+
+[2025-04-02 00:01:52] [INFO] start parsing data
+[2025-04-02 00:01:52] [INFO] end of read event
+[2025-04-02 00:01:52] [DEBUG] starting read event
+[2025-04-02 00:01:52] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:52] [INFO] Connection closed
+[2025-04-02 00:01:54] [CLIENT] Client Accepted32
+[2025-04-02 00:01:54] [DEBUG] starting read event
+[2025-04-02 00:01:54] [DEBUG] processing read event
+[2025-04-02 00:01:54] [DEBUG] recieved data: PRIVMSG Moderator2 :Should we schedule a planning meeting for next week?
+
+[2025-04-02 00:01:54] [INFO] start parsing data
+[2025-04-02 00:01:54] [INFO] end of read event
+[2025-04-02 00:01:54] [DEBUG] starting read event
+[2025-04-02 00:01:54] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:54] [INFO] Connection closed
+[2025-04-02 00:01:55] [CLIENT] Client Accepted32
+[2025-04-02 00:01:55] [DEBUG] starting read event
+[2025-04-02 00:01:55] [DEBUG] processing read event
+[2025-04-02 00:01:55] [DEBUG] recieved data: JOIN #moderators
+
+[2025-04-02 00:01:55] [INFO] start parsing data
+[2025-04-02 00:01:55] [INFO] end of read event
+[2025-04-02 00:01:55] [DEBUG] starting read event
+[2025-04-02 00:01:55] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:55] [INFO] Connection closed
+[2025-04-02 00:01:57] [CLIENT] Client Accepted32
+[2025-04-02 00:01:57] [DEBUG] starting read event
+[2025-04-02 00:01:57] [DEBUG] processing read event
+[2025-04-02 00:01:57] [DEBUG] recieved data: MODE #moderators +k secretpass
+
+[2025-04-02 00:01:57] [INFO] start parsing data
+[2025-04-02 00:01:57] [INFO] end of read event
+[2025-04-02 00:01:57] [DEBUG] starting read event
+[2025-04-02 00:01:57] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:57] [INFO] Connection closed
+[2025-04-02 00:01:58] [CLIENT] Client Accepted32
+[2025-04-02 00:01:58] [DEBUG] starting read event
+[2025-04-02 00:01:58] [DEBUG] processing read event
+[2025-04-02 00:01:58] [DEBUG] recieved data: MODE #moderators +i
+
+[2025-04-02 00:01:58] [INFO] start parsing data
+[2025-04-02 00:01:58] [INFO] end of read event
+[2025-04-02 00:01:58] [DEBUG] starting read event
+[2025-04-02 00:01:58] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:01:58] [INFO] Connection closed
+[2025-04-02 00:02:05] [CLIENT] Client Accepted5
+[2025-04-02 00:02:05] [DEBUG] starting read event
+[2025-04-02 00:02:05] [DEBUG] processing read event
+[2025-04-02 00:02:05] [DEBUG] recieved data: PASS password123
+NICK AdminUser
+USER admin 0 * :admin
+
+[2025-04-02 00:02:05] [INFO] start parsing data
+[2025-04-02 00:02:05] [INFO] end of read event
+[2025-04-02 00:02:08] [CLIENT] Client Accepted6
+[2025-04-02 00:02:08] [DEBUG] starting read event
+[2025-04-02 00:02:08] [DEBUG] processing read event
+[2025-04-02 00:02:08] [DEBUG] recieved data: PASS password123
+NICK Moderator1
+USER mod1 0 * :mod1
+
+[2025-04-02 00:02:08] [INFO] start parsing data
+[2025-04-02 00:02:08] [INFO] end of read event
+[2025-04-02 00:02:11] [CLIENT] Client Accepted7
+[2025-04-02 00:02:11] [DEBUG] starting read event
+[2025-04-02 00:02:11] [DEBUG] processing read event
+[2025-04-02 00:02:11] [DEBUG] recieved data: PASS password123
+NICK Moderator2
+USER mod2 0 * :mod2
+
+[2025-04-02 00:02:11] [INFO] start parsing data
+[2025-04-02 00:02:11] [INFO] end of read event
+[2025-04-02 00:02:14] [CLIENT] Client Accepted8
+[2025-04-02 00:02:14] [DEBUG] starting read event
+[2025-04-02 00:02:14] [DEBUG] processing read event
+[2025-04-02 00:02:14] [DEBUG] recieved data: PASS password123
+NICK JohnDoe
+USER john 0 * :john
+
+[2025-04-02 00:02:14] [INFO] start parsing data
+[2025-04-02 00:02:14] [INFO] end of read event
+[2025-04-02 00:02:17] [CLIENT] Client Accepted9
+[2025-04-02 00:02:17] [DEBUG] starting read event
+[2025-04-02 00:02:17] [DEBUG] processing read event
+[2025-04-02 00:02:17] [DEBUG] recieved data: PASS password123
+NICK JaneSmith
+USER jane 0 * :jane
+
+[2025-04-02 00:02:17] [INFO] start parsing data
+[2025-04-02 00:02:17] [INFO] end of read event
+[2025-04-02 00:02:20] [CLIENT] Client Accepted10
+[2025-04-02 00:02:20] [DEBUG] starting read event
+[2025-04-02 00:02:20] [DEBUG] processing read event
+[2025-04-02 00:02:20] [DEBUG] recieved data: PASS password123
+NICK NewGuy
+USER newbie 0 * :newbie
+
+[2025-04-02 00:02:20] [INFO] start parsing data
+[2025-04-02 00:02:20] [INFO] end of read event
+[2025-04-02 00:02:23] [CLIENT] Client Accepted11
+[2025-04-02 00:02:23] [DEBUG] starting read event
+[2025-04-02 00:02:23] [DEBUG] processing read event
+[2025-04-02 00:02:23] [DEBUG] recieved data: PASS password123
+NICK Developer1
+USER dev1 0 * :dev1
+
+[2025-04-02 00:02:23] [INFO] start parsing data
+[2025-04-02 00:02:23] [INFO] end of read event
+[2025-04-02 00:02:26] [CLIENT] Client Accepted12
+[2025-04-02 00:02:26] [DEBUG] starting read event
+[2025-04-02 00:02:26] [DEBUG] processing read event
+[2025-04-02 00:02:26] [DEBUG] recieved data: PASS password123
+NICK Developer2
+USER dev2 0 * :dev2
+
+[2025-04-02 00:02:26] [INFO] start parsing data
+[2025-04-02 00:02:26] [INFO] end of read event
+[2025-04-02 00:02:29] [CLIENT] Client Accepted13
+[2025-04-02 00:02:29] [DEBUG] starting read event
+[2025-04-02 00:02:29] [DEBUG] processing read event
+[2025-04-02 00:02:29] [DEBUG] recieved data: PASS password123
+NICK MarketingUser
+USER marketing 0 * :marketing
+
+[2025-04-02 00:02:29] [INFO] start parsing data
+[2025-04-02 00:02:29] [INFO] end of read event
+[2025-04-02 00:02:32] [CLIENT] Client Accepted14
+[2025-04-02 00:02:32] [DEBUG] starting read event
+[2025-04-02 00:02:32] [DEBUG] processing read event
+[2025-04-02 00:02:32] [DEBUG] recieved data: PASS password123
+NICK SupportAgent
+USER support 0 * :support
+
+[2025-04-02 00:02:32] [INFO] start parsing data
+[2025-04-02 00:02:32] [INFO] end of read event
+[2025-04-02 00:02:35] [CLIENT] Client Accepted15
+[2025-04-02 00:02:35] [DEBUG] starting read event
+[2025-04-02 00:02:35] [DEBUG] processing read event
+[2025-04-02 00:02:35] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:02:35] [INFO] start parsing data
+[2025-04-02 00:02:35] [INFO] end of read event
+[2025-04-02 00:02:35] [DEBUG] starting read event
+[2025-04-02 00:02:35] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:35] [INFO] Connection closed
+[2025-04-02 00:02:36] [CLIENT] Client Accepted15
+[2025-04-02 00:02:36] [DEBUG] starting read event
+[2025-04-02 00:02:36] [DEBUG] processing read event
+[2025-04-02 00:02:36] [DEBUG] recieved data: TOPIC #main :Welcome to the IRC Community!
+
+[2025-04-02 00:02:36] [INFO] start parsing data
+[2025-04-02 00:02:36] [INFO] end of read event
+[2025-04-02 00:02:36] [DEBUG] starting read event
+[2025-04-02 00:02:36] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:36] [INFO] Connection closed
+[2025-04-02 00:02:38] [CLIENT] Client Accepted15
+[2025-04-02 00:02:38] [DEBUG] starting read event
+[2025-04-02 00:02:38] [DEBUG] processing read event
+[2025-04-02 00:02:38] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:02:38] [INFO] start parsing data
+[2025-04-02 00:02:38] [INFO] end of read event
+[2025-04-02 00:02:38] [DEBUG] starting read event
+[2025-04-02 00:02:38] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:38] [INFO] Connection closed
+[2025-04-02 00:02:39] [CLIENT] Client Accepted15
+[2025-04-02 00:02:39] [DEBUG] starting read event
+[2025-04-02 00:02:39] [DEBUG] processing read event
+[2025-04-02 00:02:39] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:02:39] [INFO] start parsing data
+[2025-04-02 00:02:39] [INFO] end of read event
+[2025-04-02 00:02:39] [DEBUG] starting read event
+[2025-04-02 00:02:39] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:39] [INFO] Connection closed
+[2025-04-02 00:02:41] [CLIENT] Client Accepted15
+[2025-04-02 00:02:41] [DEBUG] starting read event
+[2025-04-02 00:02:41] [DEBUG] processing read event
+[2025-04-02 00:02:41] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:02:41] [INFO] start parsing data
+[2025-04-02 00:02:41] [INFO] end of read event
+[2025-04-02 00:02:41] [DEBUG] starting read event
+[2025-04-02 00:02:41] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:41] [INFO] Connection closed
+[2025-04-02 00:02:42] [CLIENT] Client Accepted15
+[2025-04-02 00:02:42] [DEBUG] starting read event
+[2025-04-02 00:02:42] [DEBUG] processing read event
+[2025-04-02 00:02:42] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:02:42] [INFO] start parsing data
+[2025-04-02 00:02:42] [INFO] end of read event
+[2025-04-02 00:02:42] [DEBUG] starting read event
+[2025-04-02 00:02:42] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:42] [INFO] Connection closed
+[2025-04-02 00:02:44] [CLIENT] Client Accepted15
+[2025-04-02 00:02:44] [DEBUG] starting read event
+[2025-04-02 00:02:44] [DEBUG] processing read event
+[2025-04-02 00:02:44] [DEBUG] recieved data: PRIVMSG #main :Welcome everyone to our IRC community!
+
+[2025-04-02 00:02:44] [INFO] start parsing data
+[2025-04-02 00:02:44] [INFO] end of read event
+[2025-04-02 00:02:44] [DEBUG] starting read event
+[2025-04-02 00:02:44] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:44] [INFO] Connection closed
+[2025-04-02 00:02:45] [CLIENT] Client Accepted15
+[2025-04-02 00:02:45] [DEBUG] starting read event
+[2025-04-02 00:02:45] [DEBUG] processing read event
+[2025-04-02 00:02:45] [DEBUG] recieved data: PRIVMSG #main :Hello everyone! I'm one of the moderators here.
+
+[2025-04-02 00:02:45] [INFO] start parsing data
+[2025-04-02 00:02:45] [INFO] end of read event
+[2025-04-02 00:02:45] [DEBUG] starting read event
+[2025-04-02 00:02:45] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:45] [INFO] Connection closed
+[2025-04-02 00:02:47] [CLIENT] Client Accepted15
+[2025-04-02 00:02:47] [DEBUG] starting read event
+[2025-04-02 00:02:47] [DEBUG] processing read event
+[2025-04-02 00:02:47] [DEBUG] recieved data: PRIVMSG #main :Hi all, glad to be here!
+
+[2025-04-02 00:02:47] [INFO] start parsing data
+[2025-04-02 00:02:47] [INFO] end of read event
+[2025-04-02 00:02:47] [DEBUG] starting read event
+[2025-04-02 00:02:47] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:47] [INFO] Connection closed
+[2025-04-02 00:02:48] [CLIENT] Client Accepted15
+[2025-04-02 00:02:48] [DEBUG] starting read event
+[2025-04-02 00:02:48] [DEBUG] processing read event
+[2025-04-02 00:02:48] [DEBUG] recieved data: PRIVMSG #main :Hello from Jane! Looking forward to our discussions.
+
+[2025-04-02 00:02:48] [INFO] start parsing data
+[2025-04-02 00:02:48] [INFO] end of read event
+[2025-04-02 00:02:48] [DEBUG] starting read event
+[2025-04-02 00:02:48] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:48] [INFO] Connection closed
+[2025-04-02 00:02:50] [CLIENT] Client Accepted15
+[2025-04-02 00:02:50] [DEBUG] starting read event
+[2025-04-02 00:02:50] [DEBUG] processing read event
+[2025-04-02 00:02:50] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-02 00:02:50] [INFO] start parsing data
+[2025-04-02 00:02:50] [INFO] end of read event
+[2025-04-02 00:02:50] [DEBUG] starting read event
+[2025-04-02 00:02:50] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:50] [INFO] Connection closed
+[2025-04-02 00:02:51] [CLIENT] Client Accepted15
+[2025-04-02 00:02:51] [DEBUG] starting read event
+[2025-04-02 00:02:51] [DEBUG] processing read event
+[2025-04-02 00:02:51] [DEBUG] recieved data: TOPIC #tech :Technical Discussions and Support
+
+[2025-04-02 00:02:51] [INFO] start parsing data
+[2025-04-02 00:02:51] [INFO] end of read event
+[2025-04-02 00:02:51] [DEBUG] starting read event
+[2025-04-02 00:02:51] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:51] [INFO] Connection closed
+[2025-04-02 00:02:53] [CLIENT] Client Accepted15
+[2025-04-02 00:02:53] [DEBUG] starting read event
+[2025-04-02 00:02:53] [DEBUG] processing read event
+[2025-04-02 00:02:53] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-02 00:02:53] [INFO] start parsing data
+[2025-04-02 00:02:53] [INFO] end of read event
+[2025-04-02 00:02:53] [DEBUG] starting read event
+[2025-04-02 00:02:53] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:53] [INFO] Connection closed
+[2025-04-02 00:02:54] [CLIENT] Client Accepted15
+[2025-04-02 00:02:54] [DEBUG] starting read event
+[2025-04-02 00:02:54] [DEBUG] processing read event
+[2025-04-02 00:02:54] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-02 00:02:54] [INFO] start parsing data
+[2025-04-02 00:02:54] [INFO] end of read event
+[2025-04-02 00:02:54] [DEBUG] starting read event
+[2025-04-02 00:02:54] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:54] [INFO] Connection closed
+[2025-04-02 00:02:56] [CLIENT] Client Accepted15
+[2025-04-02 00:02:56] [DEBUG] starting read event
+[2025-04-02 00:02:56] [DEBUG] processing read event
+[2025-04-02 00:02:56] [DEBUG] recieved data: PRIVMSG #tech :Welcome to the tech channel! This is where we discuss all things technical.
+
+[2025-04-02 00:02:56] [INFO] start parsing data
+[2025-04-02 00:02:56] [INFO] end of read event
+[2025-04-02 00:02:56] [DEBUG] starting read event
+[2025-04-02 00:02:56] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:56] [INFO] Connection closed
+[2025-04-02 00:02:57] [CLIENT] Client Accepted15
+[2025-04-02 00:02:57] [DEBUG] starting read event
+[2025-04-02 00:02:57] [DEBUG] processing read event
+[2025-04-02 00:02:57] [DEBUG] recieved data: PRIVMSG #tech :Hello fellow devs! What are you all working on?
+
+[2025-04-02 00:02:57] [INFO] start parsing data
+[2025-04-02 00:02:57] [INFO] end of read event
+[2025-04-02 00:02:57] [DEBUG] starting read event
+[2025-04-02 00:02:57] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:57] [INFO] Connection closed
+[2025-04-02 00:02:59] [CLIENT] Client Accepted15
+[2025-04-02 00:02:59] [DEBUG] starting read event
+[2025-04-02 00:02:59] [DEBUG] processing read event
+[2025-04-02 00:02:59] [DEBUG] recieved data: PRIVMSG #tech :I'm exploring IRC protocol implementation. It's fascinating!
+
+[2025-04-02 00:02:59] [INFO] start parsing data
+[2025-04-02 00:02:59] [INFO] end of read event
+[2025-04-02 00:02:59] [DEBUG] starting read event
+[2025-04-02 00:02:59] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:02:59] [INFO] Connection closed
+[2025-04-02 00:03:00] [CLIENT] Client Accepted15
+[2025-04-02 00:03:00] [DEBUG] starting read event
+[2025-04-02 00:03:00] [DEBUG] processing read event
+[2025-04-02 00:03:00] [DEBUG] recieved data: JOIN #marketing
+
+[2025-04-02 00:03:00] [INFO] start parsing data
+[2025-04-02 00:03:00] [INFO] end of read event
+[2025-04-02 00:03:00] [DEBUG] starting read event
+[2025-04-02 00:03:00] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:00] [INFO] Connection closed
+[2025-04-02 00:03:02] [CLIENT] Client Accepted15
+[2025-04-02 00:03:02] [DEBUG] starting read event
+[2025-04-02 00:03:02] [DEBUG] processing read event
+[2025-04-02 00:03:02] [DEBUG] recieved data: TOPIC #marketing :Marketing Strategies and Campaigns
+
+[2025-04-02 00:03:02] [INFO] start parsing data
+[2025-04-02 00:03:02] [INFO] end of read event
+[2025-04-02 00:03:02] [DEBUG] starting read event
+[2025-04-02 00:03:02] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:02] [INFO] Connection closed
+[2025-04-02 00:03:03] [CLIENT] Client Accepted15
+[2025-04-02 00:03:03] [DEBUG] starting read event
+[2025-04-02 00:03:03] [DEBUG] processing read event
+[2025-04-02 00:03:03] [DEBUG] recieved data: JOIN #marketing
+
+[2025-04-02 00:03:03] [INFO] start parsing data
+[2025-04-02 00:03:03] [INFO] end of read event
+[2025-04-02 00:03:03] [DEBUG] starting read event
+[2025-04-02 00:03:03] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:03] [INFO] Connection closed
+[2025-04-02 00:03:05] [CLIENT] Client Accepted15
+[2025-04-02 00:03:05] [DEBUG] starting read event
+[2025-04-02 00:03:05] [DEBUG] processing read event
+[2025-04-02 00:03:05] [DEBUG] recieved data: JOIN #marketing
+
+[2025-04-02 00:03:05] [INFO] start parsing data
+[2025-04-02 00:03:05] [INFO] end of read event
+[2025-04-02 00:03:05] [DEBUG] starting read event
+[2025-04-02 00:03:05] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:05] [INFO] Connection closed
+[2025-04-02 00:03:06] [CLIENT] Client Accepted15
+[2025-04-02 00:03:06] [DEBUG] starting read event
+[2025-04-02 00:03:06] [DEBUG] processing read event
+[2025-04-02 00:03:06] [DEBUG] recieved data: PRIVMSG #marketing :Let's discuss our Q3 marketing strategy.
+
+[2025-04-02 00:03:06] [INFO] start parsing data
+[2025-04-02 00:03:06] [INFO] end of read event
+[2025-04-02 00:03:06] [DEBUG] starting read event
+[2025-04-02 00:03:06] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:06] [INFO] Connection closed
+[2025-04-02 00:03:08] [CLIENT] Client Accepted15
+[2025-04-02 00:03:08] [DEBUG] starting read event
+[2025-04-02 00:03:08] [DEBUG] processing read event
+[2025-04-02 00:03:08] [DEBUG] recieved data: PRIVMSG #marketing :I think we should focus more on social media.
+
+[2025-04-02 00:03:08] [INFO] start parsing data
+[2025-04-02 00:03:08] [INFO] end of read event
+[2025-04-02 00:03:08] [DEBUG] starting read event
+[2025-04-02 00:03:08] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:08] [INFO] Connection closed
+[2025-04-02 00:03:09] [CLIENT] Client Accepted15
+[2025-04-02 00:03:09] [DEBUG] starting read event
+[2025-04-02 00:03:09] [DEBUG] processing read event
+[2025-04-02 00:03:09] [DEBUG] recieved data: PRIVMSG #marketing :Good point, Jane. Let's allocate more resources there.
+
+[2025-04-02 00:03:09] [INFO] start parsing data
+[2025-04-02 00:03:09] [INFO] end of read event
+[2025-04-02 00:03:09] [DEBUG] starting read event
+[2025-04-02 00:03:09] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:09] [INFO] Connection closed
+[2025-04-02 00:03:11] [CLIENT] Client Accepted15
+[2025-04-02 00:03:11] [DEBUG] starting read event
+[2025-04-02 00:03:11] [DEBUG] processing read event
+[2025-04-02 00:03:11] [DEBUG] recieved data: JOIN #support
+
+[2025-04-02 00:03:11] [INFO] start parsing data
+[2025-04-02 00:03:11] [INFO] end of read event
+[2025-04-02 00:03:11] [DEBUG] starting read event
+[2025-04-02 00:03:11] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:11] [INFO] Connection closed
+[2025-04-02 00:03:12] [CLIENT] Client Accepted15
+[2025-04-02 00:03:12] [DEBUG] starting read event
+[2025-04-02 00:03:12] [DEBUG] processing read event
+[2025-04-02 00:03:12] [DEBUG] recieved data: JOIN #support
+
+[2025-04-02 00:03:12] [INFO] start parsing data
+[2025-04-02 00:03:12] [INFO] end of read event
+[2025-04-02 00:03:12] [DEBUG] starting read event
+[2025-04-02 00:03:12] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:12] [INFO] Connection closed
+[2025-04-02 00:03:14] [CLIENT] Client Accepted15
+[2025-04-02 00:03:14] [DEBUG] starting read event
+[2025-04-02 00:03:14] [DEBUG] processing read event
+[2025-04-02 00:03:14] [DEBUG] recieved data: TOPIC #support :Customer Support and Assistance
+
+[2025-04-02 00:03:14] [INFO] start parsing data
+[2025-04-02 00:03:14] [INFO] end of read event
+[2025-04-02 00:03:14] [DEBUG] starting read event
+[2025-04-02 00:03:14] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:14] [INFO] Connection closed
+[2025-04-02 00:03:16] [CLIENT] Client Accepted15
+[2025-04-02 00:03:16] [DEBUG] starting read event
+[2025-04-02 00:03:16] [DEBUG] processing read event
+[2025-04-02 00:03:16] [DEBUG] recieved data: MODE #support +o JohnDoe
+
+[2025-04-02 00:03:16] [INFO] start parsing data
+[2025-04-02 00:03:16] [INFO] end of read event
+[2025-04-02 00:03:16] [DEBUG] starting read event
+[2025-04-02 00:03:16] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:16] [INFO] Connection closed
+[2025-04-02 00:03:17] [CLIENT] Client Accepted15
+[2025-04-02 00:03:17] [DEBUG] starting read event
+[2025-04-02 00:03:17] [DEBUG] processing read event
+[2025-04-02 00:03:17] [DEBUG] recieved data: PRIVMSG #support :JohnDoe is now a channel operator to help with support.
+
+[2025-04-02 00:03:17] [INFO] start parsing data
+[2025-04-02 00:03:17] [INFO] end of read event
+[2025-04-02 00:03:17] [DEBUG] starting read event
+[2025-04-02 00:03:17] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:17] [INFO] Connection closed
+[2025-04-02 00:03:19] [CLIENT] Client Accepted15
+[2025-04-02 00:03:19] [DEBUG] starting read event
+[2025-04-02 00:03:19] [DEBUG] processing read event
+[2025-04-02 00:03:19] [DEBUG] recieved data: PRIVMSG #support :This channel is for supporting our users. What issues are you seeing?
+
+[2025-04-02 00:03:19] [INFO] start parsing data
+[2025-04-02 00:03:19] [INFO] end of read event
+[2025-04-02 00:03:19] [DEBUG] starting read event
+[2025-04-02 00:03:19] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:19] [INFO] Connection closed
+[2025-04-02 00:03:20] [CLIENT] Client Accepted15
+[2025-04-02 00:03:20] [DEBUG] starting read event
+[2025-04-02 00:03:20] [DEBUG] processing read event
+[2025-04-02 00:03:20] [DEBUG] recieved data: PRIVMSG #support :I've been helping users with connection issues primarily.
+
+[2025-04-02 00:03:20] [INFO] start parsing data
+[2025-04-02 00:03:20] [INFO] end of read event
+[2025-04-02 00:03:20] [DEBUG] starting read event
+[2025-04-02 00:03:20] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:20] [INFO] Connection closed
+[2025-04-02 00:03:22] [CLIENT] Client Accepted15
+[2025-04-02 00:03:22] [DEBUG] starting read event
+[2025-04-02 00:03:22] [DEBUG] processing read event
+[2025-04-02 00:03:22] [DEBUG] recieved data: PRIVMSG #support :What version should I be using?
+
+[2025-04-02 00:03:22] [INFO] start parsing data
+[2025-04-02 00:03:22] [INFO] end of read event
+[2025-04-02 00:03:22] [DEBUG] starting read event
+[2025-04-02 00:03:22] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:22] [INFO] Connection closed
+[2025-04-02 00:03:23] [CLIENT] Client Accepted15
+[2025-04-02 00:03:23] [DEBUG] starting read event
+[2025-04-02 00:03:23] [DEBUG] processing read event
+[2025-04-02 00:03:23] [DEBUG] recieved data: PRIVMSG #support :The latest version, 2.3.1
+
+[2025-04-02 00:03:23] [INFO] start parsing data
+[2025-04-02 00:03:23] [INFO] end of read event
+[2025-04-02 00:03:23] [DEBUG] starting read event
+[2025-04-02 00:03:23] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:23] [INFO] Connection closed
+[2025-04-02 00:03:25] [CLIENT] Client Accepted15
+[2025-04-02 00:03:25] [DEBUG] starting read event
+[2025-04-02 00:03:25] [DEBUG] processing read event
+[2025-04-02 00:03:25] [DEBUG] recieved data: PRIVMSG #support :This is some spam message that violates channel rules!!!
+
+[2025-04-02 00:03:25] [INFO] start parsing data
+[2025-04-02 00:03:25] [INFO] end of read event
+[2025-04-02 00:03:25] [DEBUG] starting read event
+[2025-04-02 00:03:25] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:25] [INFO] Connection closed
+[2025-04-02 00:03:26] [CLIENT] Client Accepted15
+[2025-04-02 00:03:26] [DEBUG] starting read event
+[2025-04-02 00:03:26] [DEBUG] processing read event
+[2025-04-02 00:03:26] [DEBUG] recieved data: PRIVMSG #support :NewGuy, please follow channel rules. I'll have to kick you as a warning.
+
+[2025-04-02 00:03:26] [INFO] start parsing data
+[2025-04-02 00:03:26] [INFO] end of read event
+[2025-04-02 00:03:26] [DEBUG] starting read event
+[2025-04-02 00:03:26] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:26] [INFO] Connection closed
+[2025-04-02 00:03:28] [CLIENT] Client Accepted15
+[2025-04-02 00:03:28] [DEBUG] starting read event
+[2025-04-02 00:03:28] [DEBUG] processing read event
+[2025-04-02 00:03:28] [DEBUG] recieved data: KICK #support NewGuy :Violation of channel rules
+
+[2025-04-02 00:03:28] [INFO] start parsing data
+[2025-04-02 00:03:28] [INFO] end of read event
+[2025-04-02 00:03:28] [DEBUG] starting read event
+[2025-04-02 00:03:28] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:28] [INFO] Connection closed
+[2025-04-02 00:03:31] [CLIENT] Client Accepted15
+[2025-04-02 00:03:31] [DEBUG] starting read event
+[2025-04-02 00:03:31] [DEBUG] processing read event
+[2025-04-02 00:03:31] [DEBUG] recieved data: JOIN #main,#support
+
+[2025-04-02 00:03:31] [INFO] start parsing data
+[2025-04-02 00:03:31] [INFO] end of read event
+[2025-04-02 00:03:31] [DEBUG] starting read event
+[2025-04-02 00:03:31] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:31] [INFO] Connection closed
+[2025-04-02 00:03:33] [CLIENT] Client Accepted15
+[2025-04-02 00:03:33] [DEBUG] starting read event
+[2025-04-02 00:03:33] [DEBUG] processing read event
+[2025-04-02 00:03:33] [DEBUG] recieved data: PRIVMSG #main :I'm back and now in multiple channels!
+
+[2025-04-02 00:03:33] [INFO] start parsing data
+[2025-04-02 00:03:33] [INFO] end of read event
+[2025-04-02 00:03:33] [DEBUG] starting read event
+[2025-04-02 00:03:33] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:33] [INFO] Connection closed
+[2025-04-02 00:03:34] [CLIENT] Client Accepted15
+[2025-04-02 00:03:34] [DEBUG] starting read event
+[2025-04-02 00:03:34] [DEBUG] processing read event
+[2025-04-02 00:03:34] [DEBUG] recieved data: PRIVMSG #support :Sorry about earlier. I'll follow the rules now.
+
+[2025-04-02 00:03:34] [INFO] start parsing data
+[2025-04-02 00:03:34] [INFO] end of read event
+[2025-04-02 00:03:34] [DEBUG] starting read event
+[2025-04-02 00:03:34] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:34] [INFO] Connection closed
+[2025-04-02 00:03:36] [CLIENT] Client Accepted15
+[2025-04-02 00:03:36] [DEBUG] starting read event
+[2025-04-02 00:03:36] [DEBUG] processing read event
+[2025-04-02 00:03:36] [DEBUG] recieved data: PRIVMSG JohnDoe :Thanks for helping moderate the support channel.
+
+[2025-04-02 00:03:36] [INFO] start parsing data
+[2025-04-02 00:03:36] [INFO] end of read event
+[2025-04-02 00:03:36] [DEBUG] starting read event
+[2025-04-02 00:03:36] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:36] [INFO] Connection closed
+[2025-04-02 00:03:37] [CLIENT] Client Accepted15
+[2025-04-02 00:03:37] [DEBUG] starting read event
+[2025-04-02 00:03:37] [DEBUG] processing read event
+[2025-04-02 00:03:37] [DEBUG] recieved data: PRIVMSG AdminUser :No problem! Happy to help keep things organized.
+
+[2025-04-02 00:03:37] [INFO] start parsing data
+[2025-04-02 00:03:37] [INFO] end of read event
+[2025-04-02 00:03:37] [DEBUG] starting read event
+[2025-04-02 00:03:37] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:37] [INFO] Connection closed
+[2025-04-02 00:03:39] [CLIENT] Client Accepted15
+[2025-04-02 00:03:39] [DEBUG] starting read event
+[2025-04-02 00:03:39] [DEBUG] processing read event
+[2025-04-02 00:03:39] [DEBUG] recieved data: PRIVMSG Moderator2 :Should we schedule a planning meeting for next week?
+
+[2025-04-02 00:03:39] [INFO] start parsing data
+[2025-04-02 00:03:39] [INFO] end of read event
+[2025-04-02 00:03:39] [DEBUG] starting read event
+[2025-04-02 00:03:39] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:39] [INFO] Connection closed
+[2025-04-02 00:03:40] [CLIENT] Client Accepted15
+[2025-04-02 00:03:40] [DEBUG] starting read event
+[2025-04-02 00:03:40] [DEBUG] processing read event
+[2025-04-02 00:03:40] [DEBUG] recieved data: PRIVMSG Moderator1 :Sounds good. How about Tuesday afternoon?
+
+[2025-04-02 00:03:40] [INFO] start parsing data
+[2025-04-02 00:03:40] [INFO] end of read event
+[2025-04-02 00:03:40] [DEBUG] starting read event
+[2025-04-02 00:03:40] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:40] [INFO] Connection closed
+[2025-04-02 00:03:42] [CLIENT] Client Accepted15
+[2025-04-02 00:03:42] [DEBUG] starting read event
+[2025-04-02 00:03:42] [DEBUG] processing read event
+[2025-04-02 00:03:42] [DEBUG] recieved data: JOIN #moderators
+
+[2025-04-02 00:03:42] [INFO] start parsing data
+[2025-04-02 00:03:42] [INFO] end of read event
+[2025-04-02 00:03:42] [DEBUG] starting read event
+[2025-04-02 00:03:42] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:42] [INFO] Connection closed
+[2025-04-02 00:03:43] [CLIENT] Client Accepted15
+[2025-04-02 00:03:43] [DEBUG] starting read event
+[2025-04-02 00:03:43] [DEBUG] processing read event
+[2025-04-02 00:03:43] [DEBUG] recieved data: MODE #moderators +k secretpass
+
+[2025-04-02 00:03:43] [INFO] start parsing data
+[2025-04-02 00:03:43] [INFO] end of read event
+[2025-04-02 00:03:43] [DEBUG] starting read event
+[2025-04-02 00:03:43] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:43] [INFO] Connection closed
+[2025-04-02 00:03:45] [CLIENT] Client Accepted15
+[2025-04-02 00:03:45] [DEBUG] starting read event
+[2025-04-02 00:03:45] [DEBUG] processing read event
+[2025-04-02 00:03:45] [DEBUG] recieved data: MODE #moderators +i
+
+[2025-04-02 00:03:45] [INFO] start parsing data
+[2025-04-02 00:03:45] [INFO] end of read event
+[2025-04-02 00:03:45] [DEBUG] starting read event
+[2025-04-02 00:03:45] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:45] [INFO] Connection closed
+[2025-04-02 00:03:46] [CLIENT] Client Accepted15
+[2025-04-02 00:03:46] [DEBUG] starting read event
+[2025-04-02 00:03:46] [DEBUG] processing read event
+[2025-04-02 00:03:46] [DEBUG] recieved data: INVITE Moderator2 #moderators
+
+[2025-04-02 00:03:46] [INFO] start parsing data
+[2025-04-02 00:03:46] [INFO] end of read event
+[2025-04-02 00:03:46] [DEBUG] starting read event
+[2025-04-02 00:03:46] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:46] [INFO] Connection closed
+[2025-04-02 00:03:48] [CLIENT] Client Accepted15
+[2025-04-02 00:03:48] [DEBUG] starting read event
+[2025-04-02 00:03:48] [DEBUG] processing read event
+[2025-04-02 00:03:48] [DEBUG] recieved data: INVITE AdminUser #moderators
+
+[2025-04-02 00:03:48] [INFO] start parsing data
+[2025-04-02 00:03:48] [INFO] end of read event
+[2025-04-02 00:03:48] [DEBUG] starting read event
+[2025-04-02 00:03:48] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:48] [INFO] Connection closed
+[2025-04-02 00:03:49] [CLIENT] Client Accepted15
+[2025-04-02 00:03:49] [DEBUG] starting read event
+[2025-04-02 00:03:49] [DEBUG] processing read event
+[2025-04-02 00:03:49] [DEBUG] recieved data: JOIN #moderators secretpass
+
+[2025-04-02 00:03:49] [INFO] start parsing data
+[2025-04-02 00:03:49] [INFO] end of read event
+[2025-04-02 00:03:49] [DEBUG] starting read event
+[2025-04-02 00:03:49] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:49] [INFO] Connection closed
+[2025-04-02 00:03:51] [CLIENT] Client Accepted15
+[2025-04-02 00:03:51] [DEBUG] starting read event
+[2025-04-02 00:03:51] [DEBUG] processing read event
+[2025-04-02 00:03:51] [DEBUG] recieved data: JOIN #moderators secretpass
+
+[2025-04-02 00:03:51] [INFO] start parsing data
+[2025-04-02 00:03:51] [INFO] end of read event
+[2025-04-02 00:03:51] [DEBUG] starting read event
+[2025-04-02 00:03:51] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:51] [INFO] Connection closed
+[2025-04-02 00:03:52] [CLIENT] Client Accepted15
+[2025-04-02 00:03:52] [DEBUG] starting read event
+[2025-04-02 00:03:52] [DEBUG] processing read event
+[2025-04-02 00:03:52] [DEBUG] recieved data: PRIVMSG #moderators :We need to discuss moderation policies.
+
+[2025-04-02 00:03:52] [INFO] start parsing data
+[2025-04-02 00:03:52] [INFO] end of read event
+[2025-04-02 00:03:52] [DEBUG] starting read event
+[2025-04-02 00:03:52] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:52] [INFO] Connection closed
+[2025-04-02 00:03:54] [CLIENT] Client Accepted15
+[2025-04-02 00:03:54] [DEBUG] starting read event
+[2025-04-02 00:03:54] [DEBUG] processing read event
+[2025-04-02 00:03:54] [DEBUG] recieved data: PRIVMSG #moderators :I think we should establish some basic rules.
+
+[2025-04-02 00:03:54] [INFO] start parsing data
+[2025-04-02 00:03:54] [INFO] end of read event
+[2025-04-02 00:03:54] [DEBUG] starting read event
+[2025-04-02 00:03:54] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:54] [INFO] Connection closed
+[2025-04-02 00:03:55] [CLIENT] Client Accepted15
+[2025-04-02 00:03:55] [DEBUG] starting read event
+[2025-04-02 00:03:55] [DEBUG] processing read event
+[2025-04-02 00:03:55] [DEBUG] recieved data: PRIVMSG #moderators :Good idea. Let's draft something and share it with everyone.
+
+[2025-04-02 00:03:55] [INFO] start parsing data
+[2025-04-02 00:03:55] [INFO] end of read event
+[2025-04-02 00:03:55] [DEBUG] starting read event
+[2025-04-02 00:03:55] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:55] [INFO] Connection closed
+[2025-04-02 00:03:57] [CLIENT] Client Accepted15
+[2025-04-02 00:03:57] [DEBUG] starting read event
+[2025-04-02 00:03:57] [DEBUG] processing read event
+[2025-04-02 00:03:57] [DEBUG] recieved data: JOIN #modetest
+
+[2025-04-02 00:03:57] [INFO] start parsing data
+[2025-04-02 00:03:57] [INFO] end of read event
+[2025-04-02 00:03:57] [DEBUG] starting read event
+[2025-04-02 00:03:57] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:57] [INFO] Connection closed
+[2025-04-02 00:03:58] [CLIENT] Client Accepted15
+[2025-04-02 00:03:58] [DEBUG] starting read event
+[2025-04-02 00:03:58] [DEBUG] processing read event
+[2025-04-02 00:03:58] [DEBUG] recieved data: JOIN #modetest
+
+[2025-04-02 00:03:58] [INFO] start parsing data
+[2025-04-02 00:03:58] [INFO] end of read event
+[2025-04-02 00:03:58] [DEBUG] starting read event
+[2025-04-02 00:03:58] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:03:58] [INFO] Connection closed
+[2025-04-02 00:04:00] [CLIENT] Client Accepted15
+[2025-04-02 00:04:00] [DEBUG] starting read event
+[2025-04-02 00:04:00] [DEBUG] processing read event
+[2025-04-02 00:04:00] [DEBUG] recieved data: JOIN #modetest
+
+[2025-04-02 00:04:00] [INFO] start parsing data
+[2025-04-02 00:04:00] [INFO] end of read event
+[2025-04-02 00:04:00] [DEBUG] starting read event
+[2025-04-02 00:04:00] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:00] [INFO] Connection closed
+[2025-04-02 00:04:01] [CLIENT] Client Accepted15
+[2025-04-02 00:04:01] [DEBUG] starting read event
+[2025-04-02 00:04:01] [DEBUG] processing read event
+[2025-04-02 00:04:01] [DEBUG] recieved data: MODE #modetest +i
+
+[2025-04-02 00:04:01] [INFO] start parsing data
+[2025-04-02 00:04:01] [INFO] end of read event
+[2025-04-02 00:04:01] [DEBUG] starting read event
+[2025-04-02 00:04:01] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:01] [INFO] Connection closed
+[2025-04-02 00:04:03] [CLIENT] Client Accepted15
+[2025-04-02 00:04:03] [DEBUG] starting read event
+[2025-04-02 00:04:03] [DEBUG] processing read event
+[2025-04-02 00:04:03] [DEBUG] recieved data: PRIVMSG #modetest :Channel is now invite-only (+i)
+
+[2025-04-02 00:04:03] [INFO] start parsing data
+[2025-04-02 00:04:03] [INFO] end of read event
+[2025-04-02 00:04:03] [DEBUG] starting read event
+[2025-04-02 00:04:03] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:03] [INFO] Connection closed
+[2025-04-02 00:04:04] [CLIENT] Client Accepted15
+[2025-04-02 00:04:04] [DEBUG] starting read event
+[2025-04-02 00:04:04] [DEBUG] processing read event
+[2025-04-02 00:04:04] [DEBUG] recieved data: MODE #modetest +t
+
+[2025-04-02 00:04:04] [INFO] start parsing data
+[2025-04-02 00:04:04] [INFO] end of read event
+[2025-04-02 00:04:04] [DEBUG] starting read event
+[2025-04-02 00:04:04] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:04] [INFO] Connection closed
+[2025-04-02 00:04:06] [CLIENT] Client Accepted15
+[2025-04-02 00:04:06] [DEBUG] starting read event
+[2025-04-02 00:04:06] [DEBUG] processing read event
+[2025-04-02 00:04:06] [DEBUG] recieved data: PRIVMSG #modetest :Channel now has topic restriction (+t)
+
+[2025-04-02 00:04:06] [INFO] start parsing data
+[2025-04-02 00:04:06] [INFO] end of read event
+[2025-04-02 00:04:06] [DEBUG] starting read event
+[2025-04-02 00:04:06] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:06] [INFO] Connection closed
+[2025-04-02 00:04:08] [CLIENT] Client Accepted15
+[2025-04-02 00:04:08] [DEBUG] starting read event
+[2025-04-02 00:04:08] [DEBUG] processing read event
+[2025-04-02 00:04:08] [DEBUG] recieved data: MODE #modetest +k testpass
+
+[2025-04-02 00:04:08] [INFO] start parsing data
+[2025-04-02 00:04:08] [INFO] end of read event
+[2025-04-02 00:04:08] [DEBUG] starting read event
+[2025-04-02 00:04:08] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:08] [INFO] Connection closed
+[2025-04-02 00:04:09] [CLIENT] Client Accepted15
+[2025-04-02 00:04:09] [DEBUG] starting read event
+[2025-04-02 00:04:09] [DEBUG] processing read event
+[2025-04-02 00:04:09] [DEBUG] recieved data: PRIVMSG #modetest :Channel now has a key (+k): testpass
+
+[2025-04-02 00:04:09] [INFO] start parsing data
+[2025-04-02 00:04:09] [INFO] end of read event
+[2025-04-02 00:04:09] [DEBUG] starting read event
+[2025-04-02 00:04:09] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:09] [INFO] Connection closed
+[2025-04-02 00:04:11] [CLIENT] Client Accepted15
+[2025-04-02 00:04:11] [DEBUG] starting read event
+[2025-04-02 00:04:11] [DEBUG] processing read event
+[2025-04-02 00:04:11] [DEBUG] recieved data: MODE #modetest +l 5
+
+[2025-04-02 00:04:11] [INFO] start parsing data
+[2025-04-02 00:04:11] [INFO] end of read event
+[2025-04-02 00:04:11] [DEBUG] starting read event
+[2025-04-02 00:04:11] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:11] [INFO] Connection closed
+[2025-04-02 00:04:12] [CLIENT] Client Accepted15
+[2025-04-02 00:04:12] [DEBUG] starting read event
+[2025-04-02 00:04:12] [DEBUG] processing read event
+[2025-04-02 00:04:12] [DEBUG] recieved data: PRIVMSG #modetest :Channel now has a user limit (+l): 5
+
+[2025-04-02 00:04:12] [INFO] start parsing data
+[2025-04-02 00:04:12] [INFO] end of read event
+[2025-04-02 00:04:12] [DEBUG] starting read event
+[2025-04-02 00:04:12] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:12] [INFO] Connection closed
+[2025-04-02 00:04:14] [CLIENT] Client Accepted15
+[2025-04-02 00:04:14] [DEBUG] starting read event
+[2025-04-02 00:04:14] [DEBUG] processing read event
+[2025-04-02 00:04:14] [DEBUG] recieved data: MODE #modetest +o Developer2
+
+[2025-04-02 00:04:14] [INFO] start parsing data
+[2025-04-02 00:04:14] [INFO] end of read event
+[2025-04-02 00:04:14] [DEBUG] starting read event
+[2025-04-02 00:04:14] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:14] [INFO] Connection closed
+[2025-04-02 00:04:15] [CLIENT] Client Accepted15
+[2025-04-02 00:04:15] [DEBUG] starting read event
+[2025-04-02 00:04:15] [DEBUG] processing read event
+[2025-04-02 00:04:15] [DEBUG] recieved data: PRIVMSG #modetest :Developer2 is now an operator (+o)
+
+[2025-04-02 00:04:15] [INFO] start parsing data
+[2025-04-02 00:04:15] [INFO] end of read event
+[2025-04-02 00:04:15] [DEBUG] starting read event
+[2025-04-02 00:04:15] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:15] [INFO] Connection closed
+[2025-04-02 00:04:17] [CLIENT] Client Accepted15
+[2025-04-02 00:04:17] [DEBUG] starting read event
+[2025-04-02 00:04:17] [DEBUG] processing read event
+[2025-04-02 00:04:17] [DEBUG] recieved data: MODE #modetest -i
+
+[2025-04-02 00:04:17] [INFO] start parsing data
+[2025-04-02 00:04:17] [INFO] end of read event
+[2025-04-02 00:04:17] [DEBUG] starting read event
+[2025-04-02 00:04:17] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:17] [INFO] Connection closed
+[2025-04-02 00:04:18] [CLIENT] Client Accepted15
+[2025-04-02 00:04:18] [DEBUG] starting read event
+[2025-04-02 00:04:18] [DEBUG] processing read event
+[2025-04-02 00:04:18] [DEBUG] recieved data: PRIVMSG #modetest :Removed invite-only mode (-i)
+
+[2025-04-02 00:04:18] [INFO] start parsing data
+[2025-04-02 00:04:18] [INFO] end of read event
+[2025-04-02 00:04:18] [DEBUG] starting read event
+[2025-04-02 00:04:18] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:18] [INFO] Connection closed
+[2025-04-02 00:04:23] [CLIENT] Client Accepted15
+[2025-04-02 00:04:23] [DEBUG] starting read event
+[2025-04-02 00:04:23] [DEBUG] processing read event
+[2025-04-02 00:04:23] [DEBUG] recieved data: PASS Password123!
+NICK AdminUser
+USER admin 0 * :admin
+
+[2025-04-02 00:04:23] [INFO] start parsing data
+[2025-04-02 00:04:23] [INFO] end of read event
+[2025-04-02 00:04:26] [CLIENT] Client Accepted16
+[2025-04-02 00:04:26] [DEBUG] starting read event
+[2025-04-02 00:04:26] [DEBUG] processing read event
+[2025-04-02 00:04:26] [DEBUG] recieved data: PASS Password123!
+NICK Moderator1
+USER mod1 0 * :mod1
+
+[2025-04-02 00:04:26] [INFO] start parsing data
+[2025-04-02 00:04:26] [INFO] end of read event
+[2025-04-02 00:04:29] [CLIENT] Client Accepted17
+[2025-04-02 00:04:29] [DEBUG] starting read event
+[2025-04-02 00:04:29] [DEBUG] processing read event
+[2025-04-02 00:04:29] [DEBUG] recieved data: PASS Password123!
+NICK Moderator2
+USER mod2 0 * :mod2
+
+[2025-04-02 00:04:29] [INFO] start parsing data
+[2025-04-02 00:04:29] [INFO] end of read event
+[2025-04-02 00:04:32] [CLIENT] Client Accepted18
+[2025-04-02 00:04:32] [DEBUG] starting read event
+[2025-04-02 00:04:32] [DEBUG] processing read event
+[2025-04-02 00:04:32] [DEBUG] recieved data: PASS Password123!
+NICK JohnDoe
+USER john 0 * :john
+
+[2025-04-02 00:04:32] [INFO] start parsing data
+[2025-04-02 00:04:32] [INFO] end of read event
+[2025-04-02 00:04:35] [CLIENT] Client Accepted19
+[2025-04-02 00:04:35] [DEBUG] starting read event
+[2025-04-02 00:04:35] [DEBUG] processing read event
+[2025-04-02 00:04:35] [DEBUG] recieved data: PASS Password123!
+NICK JaneSmith
+USER jane 0 * :jane
+
+[2025-04-02 00:04:35] [INFO] start parsing data
+[2025-04-02 00:04:35] [INFO] end of read event
+[2025-04-02 00:04:38] [CLIENT] Client Accepted20
+[2025-04-02 00:04:38] [DEBUG] starting read event
+[2025-04-02 00:04:38] [DEBUG] processing read event
+[2025-04-02 00:04:38] [DEBUG] recieved data: PASS Password123!
+NICK NewGuy
+USER newbie 0 * :newbie
+
+[2025-04-02 00:04:38] [INFO] start parsing data
+[2025-04-02 00:04:38] [INFO] end of read event
+[2025-04-02 00:04:41] [CLIENT] Client Accepted21
+[2025-04-02 00:04:41] [DEBUG] starting read event
+[2025-04-02 00:04:41] [DEBUG] processing read event
+[2025-04-02 00:04:41] [DEBUG] recieved data: PASS Password123!
+NICK Developer1
+USER dev1 0 * :dev1
+
+[2025-04-02 00:04:41] [INFO] start parsing data
+[2025-04-02 00:04:41] [INFO] end of read event
+[2025-04-02 00:04:44] [CLIENT] Client Accepted22
+[2025-04-02 00:04:44] [DEBUG] starting read event
+[2025-04-02 00:04:44] [DEBUG] processing read event
+[2025-04-02 00:04:44] [DEBUG] recieved data: PASS Password123!
+NICK Developer2
+USER dev2 0 * :dev2
+
+[2025-04-02 00:04:44] [INFO] start parsing data
+[2025-04-02 00:04:44] [INFO] end of read event
+[2025-04-02 00:04:47] [CLIENT] Client Accepted23
+[2025-04-02 00:04:47] [DEBUG] starting read event
+[2025-04-02 00:04:47] [DEBUG] processing read event
+[2025-04-02 00:04:47] [DEBUG] recieved data: PASS Password123!
+NICK MarketingUser
+USER marketing 0 * :marketing
+
+[2025-04-02 00:04:47] [INFO] start parsing data
+[2025-04-02 00:04:47] [INFO] end of read event
+[2025-04-02 00:04:50] [CLIENT] Client Accepted24
+[2025-04-02 00:04:50] [DEBUG] starting read event
+[2025-04-02 00:04:50] [DEBUG] processing read event
+[2025-04-02 00:04:50] [DEBUG] recieved data: PASS Password123!
+NICK SupportAgent
+USER support 0 * :support
+
+[2025-04-02 00:04:50] [INFO] start parsing data
+[2025-04-02 00:04:50] [INFO] end of read event
+[2025-04-02 00:04:53] [CLIENT] Client Accepted25
+[2025-04-02 00:04:53] [DEBUG] starting read event
+[2025-04-02 00:04:53] [DEBUG] processing read event
+[2025-04-02 00:04:53] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:04:53] [INFO] start parsing data
+[2025-04-02 00:04:53] [INFO] end of read event
+[2025-04-02 00:04:53] [DEBUG] starting read event
+[2025-04-02 00:04:53] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:53] [INFO] Connection closed
+[2025-04-02 00:04:55] [CLIENT] Client Accepted25
+[2025-04-02 00:04:55] [DEBUG] starting read event
+[2025-04-02 00:04:55] [DEBUG] processing read event
+[2025-04-02 00:04:55] [DEBUG] recieved data: TOPIC #main :Welcome to the IRC Community!
+
+[2025-04-02 00:04:55] [INFO] start parsing data
+[2025-04-02 00:04:55] [INFO] end of read event
+[2025-04-02 00:04:55] [DEBUG] starting read event
+[2025-04-02 00:04:55] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:55] [INFO] Connection closed
+[2025-04-02 00:04:56] [CLIENT] Client Accepted25
+[2025-04-02 00:04:56] [DEBUG] starting read event
+[2025-04-02 00:04:56] [DEBUG] processing read event
+[2025-04-02 00:04:56] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:04:56] [INFO] start parsing data
+[2025-04-02 00:04:56] [INFO] end of read event
+[2025-04-02 00:04:56] [DEBUG] starting read event
+[2025-04-02 00:04:56] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:56] [INFO] Connection closed
+[2025-04-02 00:04:58] [CLIENT] Client Accepted25
+[2025-04-02 00:04:58] [DEBUG] starting read event
+[2025-04-02 00:04:58] [DEBUG] processing read event
+[2025-04-02 00:04:58] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:04:58] [INFO] start parsing data
+[2025-04-02 00:04:58] [INFO] end of read event
+[2025-04-02 00:04:58] [DEBUG] starting read event
+[2025-04-02 00:04:58] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:58] [INFO] Connection closed
+[2025-04-02 00:04:59] [CLIENT] Client Accepted25
+[2025-04-02 00:04:59] [DEBUG] starting read event
+[2025-04-02 00:04:59] [DEBUG] processing read event
+[2025-04-02 00:04:59] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:04:59] [INFO] start parsing data
+[2025-04-02 00:04:59] [INFO] end of read event
+[2025-04-02 00:04:59] [DEBUG] starting read event
+[2025-04-02 00:04:59] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:04:59] [INFO] Connection closed
+[2025-04-02 00:05:01] [CLIENT] Client Accepted25
+[2025-04-02 00:05:01] [DEBUG] starting read event
+[2025-04-02 00:05:01] [DEBUG] processing read event
+[2025-04-02 00:05:01] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:05:01] [INFO] start parsing data
+[2025-04-02 00:05:01] [INFO] end of read event
+[2025-04-02 00:05:01] [DEBUG] starting read event
+[2025-04-02 00:05:01] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:01] [INFO] Connection closed
+[2025-04-02 00:05:02] [CLIENT] Client Accepted25
+[2025-04-02 00:05:02] [DEBUG] starting read event
+[2025-04-02 00:05:02] [DEBUG] processing read event
+[2025-04-02 00:05:02] [DEBUG] recieved data: PRIVMSG #main :Welcome everyone to our IRC community!
+
+[2025-04-02 00:05:02] [INFO] start parsing data
+[2025-04-02 00:05:02] [INFO] end of read event
+[2025-04-02 00:05:02] [DEBUG] starting read event
+[2025-04-02 00:05:02] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:02] [INFO] Connection closed
+[2025-04-02 00:05:04] [CLIENT] Client Accepted25
+[2025-04-02 00:05:04] [DEBUG] starting read event
+[2025-04-02 00:05:04] [DEBUG] processing read event
+[2025-04-02 00:05:04] [DEBUG] recieved data: PRIVMSG #main :Hello everyone! I'm one of the moderators here.
+
+[2025-04-02 00:05:04] [INFO] start parsing data
+[2025-04-02 00:05:04] [INFO] end of read event
+[2025-04-02 00:05:04] [DEBUG] starting read event
+[2025-04-02 00:05:04] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:04] [INFO] Connection closed
+[2025-04-02 00:05:06] [CLIENT] Client Accepted25
+[2025-04-02 00:05:06] [DEBUG] starting read event
+[2025-04-02 00:05:06] [DEBUG] processing read event
+[2025-04-02 00:05:06] [DEBUG] recieved data: PRIVMSG #main :Hi all, glad to be here!
+
+[2025-04-02 00:05:06] [INFO] start parsing data
+[2025-04-02 00:05:06] [INFO] end of read event
+[2025-04-02 00:05:06] [DEBUG] starting read event
+[2025-04-02 00:05:06] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:06] [INFO] Connection closed
+[2025-04-02 00:05:07] [CLIENT] Client Accepted25
+[2025-04-02 00:05:07] [DEBUG] starting read event
+[2025-04-02 00:05:07] [DEBUG] processing read event
+[2025-04-02 00:05:07] [DEBUG] recieved data: PRIVMSG #main :Hello from Jane! Looking forward to our discussions.
+
+[2025-04-02 00:05:07] [INFO] start parsing data
+[2025-04-02 00:05:07] [INFO] end of read event
+[2025-04-02 00:05:07] [DEBUG] starting read event
+[2025-04-02 00:05:07] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:07] [INFO] Connection closed
+[2025-04-02 00:05:09] [CLIENT] Client Accepted25
+[2025-04-02 00:05:09] [DEBUG] starting read event
+[2025-04-02 00:05:09] [DEBUG] processing read event
+[2025-04-02 00:05:09] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-02 00:05:09] [INFO] start parsing data
+[2025-04-02 00:05:09] [INFO] end of read event
+[2025-04-02 00:05:09] [DEBUG] starting read event
+[2025-04-02 00:05:09] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:09] [INFO] Connection closed
+[2025-04-02 00:05:10] [CLIENT] Client Accepted25
+[2025-04-02 00:05:10] [DEBUG] starting read event
+[2025-04-02 00:05:10] [DEBUG] processing read event
+[2025-04-02 00:05:10] [DEBUG] recieved data: TOPIC #tech :Technical Discussions and Support
+
+[2025-04-02 00:05:10] [INFO] start parsing data
+[2025-04-02 00:05:10] [INFO] end of read event
+[2025-04-02 00:05:10] [DEBUG] starting read event
+[2025-04-02 00:05:10] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:10] [INFO] Connection closed
+[2025-04-02 00:05:12] [CLIENT] Client Accepted25
+[2025-04-02 00:05:12] [DEBUG] starting read event
+[2025-04-02 00:05:12] [DEBUG] processing read event
+[2025-04-02 00:05:12] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-02 00:05:12] [INFO] start parsing data
+[2025-04-02 00:05:12] [INFO] end of read event
+[2025-04-02 00:05:12] [DEBUG] starting read event
+[2025-04-02 00:05:12] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:12] [INFO] Connection closed
+[2025-04-02 00:05:13] [CLIENT] Client Accepted25
+[2025-04-02 00:05:13] [DEBUG] starting read event
+[2025-04-02 00:05:13] [DEBUG] processing read event
+[2025-04-02 00:05:13] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-02 00:05:13] [INFO] start parsing data
+[2025-04-02 00:05:13] [INFO] end of read event
+[2025-04-02 00:05:13] [DEBUG] starting read event
+[2025-04-02 00:05:13] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:13] [INFO] Connection closed
+[2025-04-02 00:05:15] [CLIENT] Client Accepted25
+[2025-04-02 00:05:15] [DEBUG] starting read event
+[2025-04-02 00:05:15] [DEBUG] processing read event
+[2025-04-02 00:05:15] [DEBUG] recieved data: PRIVMSG #tech :Welcome to the tech channel! This is where we discuss all things technical.
+
+[2025-04-02 00:05:15] [INFO] start parsing data
+[2025-04-02 00:05:15] [INFO] end of read event
+[2025-04-02 00:05:15] [DEBUG] starting read event
+[2025-04-02 00:05:15] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:15] [INFO] Connection closed
+[2025-04-02 00:05:16] [CLIENT] Client Accepted25
+[2025-04-02 00:05:16] [DEBUG] starting read event
+[2025-04-02 00:05:16] [DEBUG] processing read event
+[2025-04-02 00:05:16] [DEBUG] recieved data: PRIVMSG #tech :Hello fellow devs! What are you all working on?
+
+[2025-04-02 00:05:16] [INFO] start parsing data
+[2025-04-02 00:05:16] [INFO] end of read event
+[2025-04-02 00:05:16] [DEBUG] starting read event
+[2025-04-02 00:05:16] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:16] [INFO] Connection closed
+[2025-04-02 00:05:18] [CLIENT] Client Accepted25
+[2025-04-02 00:05:18] [DEBUG] starting read event
+[2025-04-02 00:05:18] [DEBUG] processing read event
+[2025-04-02 00:05:18] [DEBUG] recieved data: PRIVMSG #tech :I'm exploring IRC protocol implementation. It's fascinating!
+
+[2025-04-02 00:05:18] [INFO] start parsing data
+[2025-04-02 00:05:18] [INFO] end of read event
+[2025-04-02 00:05:18] [DEBUG] starting read event
+[2025-04-02 00:05:18] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:18] [INFO] Connection closed
+[2025-04-02 00:05:19] [CLIENT] Client Accepted25
+[2025-04-02 00:05:19] [DEBUG] starting read event
+[2025-04-02 00:05:19] [DEBUG] processing read event
+[2025-04-02 00:05:19] [DEBUG] recieved data: JOIN #marketing
+
+[2025-04-02 00:05:19] [INFO] start parsing data
+[2025-04-02 00:05:19] [INFO] end of read event
+[2025-04-02 00:05:19] [DEBUG] starting read event
+[2025-04-02 00:05:19] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:19] [INFO] Connection closed
+[2025-04-02 00:05:21] [CLIENT] Client Accepted25
+[2025-04-02 00:05:21] [DEBUG] starting read event
+[2025-04-02 00:05:21] [DEBUG] processing read event
+[2025-04-02 00:05:21] [DEBUG] recieved data: TOPIC #marketing :Marketing Strategies and Campaigns
+
+[2025-04-02 00:05:21] [INFO] start parsing data
+[2025-04-02 00:05:21] [INFO] end of read event
+[2025-04-02 00:05:21] [DEBUG] starting read event
+[2025-04-02 00:05:21] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:21] [INFO] Connection closed
+[2025-04-02 00:05:22] [CLIENT] Client Accepted25
+[2025-04-02 00:05:22] [DEBUG] starting read event
+[2025-04-02 00:05:22] [DEBUG] processing read event
+[2025-04-02 00:05:22] [DEBUG] recieved data: JOIN #marketing
+
+[2025-04-02 00:05:22] [INFO] start parsing data
+[2025-04-02 00:05:22] [INFO] end of read event
+[2025-04-02 00:05:22] [DEBUG] starting read event
+[2025-04-02 00:05:22] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:22] [INFO] Connection closed
+[2025-04-02 00:05:24] [CLIENT] Client Accepted25
+[2025-04-02 00:05:24] [DEBUG] starting read event
+[2025-04-02 00:05:24] [DEBUG] processing read event
+[2025-04-02 00:05:24] [DEBUG] recieved data: JOIN #marketing
+
+[2025-04-02 00:05:24] [INFO] start parsing data
+[2025-04-02 00:05:24] [INFO] end of read event
+[2025-04-02 00:05:24] [DEBUG] starting read event
+[2025-04-02 00:05:24] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:24] [INFO] Connection closed
+[2025-04-02 00:05:25] [CLIENT] Client Accepted25
+[2025-04-02 00:05:25] [DEBUG] starting read event
+[2025-04-02 00:05:25] [DEBUG] processing read event
+[2025-04-02 00:05:25] [DEBUG] recieved data: PRIVMSG #marketing :Let's discuss our Q3 marketing strategy.
+
+[2025-04-02 00:05:25] [INFO] start parsing data
+[2025-04-02 00:05:25] [INFO] end of read event
+[2025-04-02 00:05:25] [DEBUG] starting read event
+[2025-04-02 00:05:25] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:25] [INFO] Connection closed
+[2025-04-02 00:05:27] [CLIENT] Client Accepted25
+[2025-04-02 00:05:27] [DEBUG] starting read event
+[2025-04-02 00:05:27] [DEBUG] processing read event
+[2025-04-02 00:05:27] [DEBUG] recieved data: PRIVMSG #marketing :I think we should focus more on social media.
+
+[2025-04-02 00:05:27] [INFO] start parsing data
+[2025-04-02 00:05:27] [INFO] end of read event
+[2025-04-02 00:05:27] [DEBUG] starting read event
+[2025-04-02 00:05:27] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:27] [INFO] Connection closed
+[2025-04-02 00:05:28] [CLIENT] Client Accepted25
+[2025-04-02 00:05:28] [DEBUG] starting read event
+[2025-04-02 00:05:28] [DEBUG] processing read event
+[2025-04-02 00:05:28] [DEBUG] recieved data: PRIVMSG #marketing :Good point, Jane. Let's allocate more resources there.
+
+[2025-04-02 00:05:28] [INFO] start parsing data
+[2025-04-02 00:05:28] [INFO] end of read event
+[2025-04-02 00:05:28] [DEBUG] starting read event
+[2025-04-02 00:05:28] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:28] [INFO] Connection closed
+[2025-04-02 00:05:30] [CLIENT] Client Accepted25
+[2025-04-02 00:05:30] [DEBUG] starting read event
+[2025-04-02 00:05:30] [DEBUG] processing read event
+[2025-04-02 00:05:30] [DEBUG] recieved data: JOIN #support
+
+[2025-04-02 00:05:30] [INFO] start parsing data
+[2025-04-02 00:05:30] [INFO] end of read event
+[2025-04-02 00:05:30] [DEBUG] starting read event
+[2025-04-02 00:05:30] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:30] [INFO] Connection closed
+[2025-04-02 00:05:31] [CLIENT] Client Accepted25
+[2025-04-02 00:05:31] [DEBUG] starting read event
+[2025-04-02 00:05:31] [DEBUG] processing read event
+[2025-04-02 00:05:31] [DEBUG] recieved data: JOIN #support
+
+[2025-04-02 00:05:31] [INFO] start parsing data
+[2025-04-02 00:05:31] [INFO] end of read event
+[2025-04-02 00:05:31] [DEBUG] starting read event
+[2025-04-02 00:05:31] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:31] [INFO] Connection closed
+[2025-04-02 00:05:33] [CLIENT] Client Accepted25
+[2025-04-02 00:05:33] [DEBUG] starting read event
+[2025-04-02 00:05:33] [DEBUG] processing read event
+[2025-04-02 00:05:33] [DEBUG] recieved data: TOPIC #support :Customer Support and Assistance
+
+[2025-04-02 00:05:33] [INFO] start parsing data
+[2025-04-02 00:05:33] [INFO] end of read event
+[2025-04-02 00:05:33] [DEBUG] starting read event
+[2025-04-02 00:05:33] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:33] [INFO] Connection closed
+[2025-04-02 00:05:34] [CLIENT] Client Accepted25
+[2025-04-02 00:05:34] [DEBUG] starting read event
+[2025-04-02 00:05:34] [DEBUG] processing read event
+[2025-04-02 00:05:34] [DEBUG] recieved data: MODE #support +o JohnDoe
+
+[2025-04-02 00:05:34] [INFO] start parsing data
+[2025-04-02 00:05:34] [INFO] end of read event
+[2025-04-02 00:05:34] [DEBUG] starting read event
+[2025-04-02 00:05:34] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:34] [INFO] Connection closed
+[2025-04-02 00:05:36] [CLIENT] Client Accepted25
+[2025-04-02 00:05:36] [DEBUG] starting read event
+[2025-04-02 00:05:36] [DEBUG] processing read event
+[2025-04-02 00:05:36] [DEBUG] recieved data: PRIVMSG #support :JohnDoe is now a channel operator to help with support.
+
+[2025-04-02 00:05:36] [INFO] start parsing data
+[2025-04-02 00:05:36] [INFO] end of read event
+[2025-04-02 00:05:36] [DEBUG] starting read event
+[2025-04-02 00:05:36] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:36] [INFO] Connection closed
+[2025-04-02 00:05:37] [CLIENT] Client Accepted25
+[2025-04-02 00:05:37] [DEBUG] starting read event
+[2025-04-02 00:05:37] [DEBUG] processing read event
+[2025-04-02 00:05:37] [DEBUG] recieved data: PRIVMSG #support :This channel is for supporting our users. What issues are you seeing?
+
+[2025-04-02 00:05:37] [INFO] start parsing data
+[2025-04-02 00:05:37] [INFO] end of read event
+[2025-04-02 00:05:37] [DEBUG] starting read event
+[2025-04-02 00:05:37] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:37] [INFO] Connection closed
+[2025-04-02 00:05:39] [CLIENT] Client Accepted25
+[2025-04-02 00:05:39] [DEBUG] starting read event
+[2025-04-02 00:05:39] [DEBUG] processing read event
+[2025-04-02 00:05:39] [DEBUG] recieved data: PRIVMSG #support :I've been helping users with connection issues primarily.
+
+[2025-04-02 00:05:39] [INFO] start parsing data
+[2025-04-02 00:05:39] [INFO] end of read event
+[2025-04-02 00:05:39] [DEBUG] starting read event
+[2025-04-02 00:05:39] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:39] [INFO] Connection closed
+[2025-04-02 00:05:40] [CLIENT] Client Accepted25
+[2025-04-02 00:05:40] [DEBUG] starting read event
+[2025-04-02 00:05:40] [DEBUG] processing read event
+[2025-04-02 00:05:40] [DEBUG] recieved data: PRIVMSG #support :What version should I be using?
+
+[2025-04-02 00:05:40] [INFO] start parsing data
+[2025-04-02 00:05:40] [INFO] end of read event
+[2025-04-02 00:05:40] [DEBUG] starting read event
+[2025-04-02 00:05:40] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:40] [INFO] Connection closed
+[2025-04-02 00:05:42] [CLIENT] Client Accepted25
+[2025-04-02 00:05:42] [DEBUG] starting read event
+[2025-04-02 00:05:42] [DEBUG] processing read event
+[2025-04-02 00:05:42] [DEBUG] recieved data: PRIVMSG #support :The latest version, 2.3.1
+
+[2025-04-02 00:05:42] [INFO] start parsing data
+[2025-04-02 00:05:42] [INFO] end of read event
+[2025-04-02 00:05:42] [DEBUG] starting read event
+[2025-04-02 00:05:42] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:42] [INFO] Connection closed
+[2025-04-02 00:05:43] [CLIENT] Client Accepted25
+[2025-04-02 00:05:43] [DEBUG] starting read event
+[2025-04-02 00:05:43] [DEBUG] processing read event
+[2025-04-02 00:05:43] [DEBUG] recieved data: PRIVMSG #support :This is some spam message that violates channel rules!!!
+
+[2025-04-02 00:05:43] [INFO] start parsing data
+[2025-04-02 00:05:43] [INFO] end of read event
+[2025-04-02 00:05:43] [DEBUG] starting read event
+[2025-04-02 00:05:43] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:43] [INFO] Connection closed
+[2025-04-02 00:05:45] [CLIENT] Client Accepted25
+[2025-04-02 00:05:45] [DEBUG] starting read event
+[2025-04-02 00:05:45] [DEBUG] processing read event
+[2025-04-02 00:05:45] [DEBUG] recieved data: PRIVMSG #support :NewGuy, please follow channel rules. I'll have to kick you as a warning.
+
+[2025-04-02 00:05:45] [INFO] start parsing data
+[2025-04-02 00:05:45] [INFO] end of read event
+[2025-04-02 00:05:45] [DEBUG] starting read event
+[2025-04-02 00:05:45] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:45] [INFO] Connection closed
+[2025-04-02 00:05:46] [CLIENT] Client Accepted25
+[2025-04-02 00:05:46] [DEBUG] starting read event
+[2025-04-02 00:05:46] [DEBUG] processing read event
+[2025-04-02 00:05:46] [DEBUG] recieved data: KICK #support NewGuy :Violation of channel rules
+
+[2025-04-02 00:05:46] [INFO] start parsing data
+[2025-04-02 00:05:46] [INFO] end of read event
+[2025-04-02 00:05:46] [DEBUG] starting read event
+[2025-04-02 00:05:46] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:46] [INFO] Connection closed
+[2025-04-02 00:05:50] [CLIENT] Client Accepted25
+[2025-04-02 00:05:50] [DEBUG] starting read event
+[2025-04-02 00:05:50] [DEBUG] processing read event
+[2025-04-02 00:05:50] [DEBUG] recieved data: JOIN #main,#support
+
+[2025-04-02 00:05:50] [INFO] start parsing data
+[2025-04-02 00:05:50] [INFO] end of read event
+[2025-04-02 00:05:50] [DEBUG] starting read event
+[2025-04-02 00:05:50] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:50] [INFO] Connection closed
+[2025-04-02 00:05:51] [CLIENT] Client Accepted25
+[2025-04-02 00:05:51] [DEBUG] starting read event
+[2025-04-02 00:05:51] [DEBUG] processing read event
+[2025-04-02 00:05:51] [DEBUG] recieved data: PRIVMSG #support :Sorry about earlier. I'll follow the rules now.
+
+[2025-04-02 00:05:51] [INFO] start parsing data
+[2025-04-02 00:05:51] [INFO] end of read event
+[2025-04-02 00:05:51] [DEBUG] starting read event
+[2025-04-02 00:05:51] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:51] [INFO] Connection closed
+[2025-04-02 00:05:53] [CLIENT] Client Accepted25
+[2025-04-02 00:05:53] [DEBUG] starting read event
+[2025-04-02 00:05:53] [DEBUG] processing read event
+[2025-04-02 00:05:53] [DEBUG] recieved data: PRIVMSG JohnDoe :Thanks for helping moderate the support channel.
+
+[2025-04-02 00:05:53] [INFO] start parsing data
+[2025-04-02 00:05:53] [INFO] end of read event
+[2025-04-02 00:05:53] [DEBUG] starting read event
+[2025-04-02 00:05:53] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:53] [INFO] Connection closed
+[2025-04-02 00:05:54] [CLIENT] Client Accepted25
+[2025-04-02 00:05:54] [DEBUG] starting read event
+[2025-04-02 00:05:54] [DEBUG] processing read event
+[2025-04-02 00:05:54] [DEBUG] recieved data: PRIVMSG AdminUser :No problem! Happy to help keep things organized.
+
+[2025-04-02 00:05:54] [INFO] start parsing data
+[2025-04-02 00:05:54] [INFO] end of read event
+[2025-04-02 00:05:54] [DEBUG] starting read event
+[2025-04-02 00:05:54] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:54] [INFO] Connection closed
+[2025-04-02 00:05:56] [CLIENT] Client Accepted25
+[2025-04-02 00:05:56] [DEBUG] starting read event
+[2025-04-02 00:05:56] [DEBUG] processing read event
+[2025-04-02 00:05:56] [DEBUG] recieved data: PRIVMSG Moderator2 :Should we schedule a planning meeting for next week?
+
+[2025-04-02 00:05:56] [INFO] start parsing data
+[2025-04-02 00:05:56] [INFO] end of read event
+[2025-04-02 00:05:56] [DEBUG] starting read event
+[2025-04-02 00:05:56] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:56] [INFO] Connection closed
+[2025-04-02 00:05:57] [CLIENT] Client Accepted25
+[2025-04-02 00:05:57] [DEBUG] starting read event
+[2025-04-02 00:05:57] [DEBUG] processing read event
+[2025-04-02 00:05:57] [DEBUG] recieved data: PRIVMSG Moderator1 :Sounds good. How about Tuesday afternoon?
+
+[2025-04-02 00:05:57] [INFO] start parsing data
+[2025-04-02 00:05:57] [INFO] end of read event
+[2025-04-02 00:05:57] [DEBUG] starting read event
+[2025-04-02 00:05:57] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:05:57] [INFO] Connection closed
+[2025-04-02 00:06:01] [CLIENT] Client Accepted25
+[2025-04-02 00:06:01] [DEBUG] starting read event
+[2025-04-02 00:06:01] [DEBUG] processing read event
+[2025-04-02 00:06:01] [DEBUG] recieved data: PASS Password123!
+NICK AdminUser
+USER admin 0 * :admin
+
+[2025-04-02 00:06:01] [INFO] start parsing data
+[2025-04-02 00:06:01] [INFO] end of read event
+[2025-04-02 00:06:04] [CLIENT] Client Accepted26
+[2025-04-02 00:06:04] [DEBUG] starting read event
+[2025-04-02 00:06:04] [DEBUG] processing read event
+[2025-04-02 00:06:04] [DEBUG] recieved data: PASS Password123!
+NICK Moderator1
+USER mod1 0 * :mod1
+
+[2025-04-02 00:06:04] [INFO] start parsing data
+[2025-04-02 00:06:04] [INFO] end of read event
+[2025-04-02 00:06:07] [CLIENT] Client Accepted27
+[2025-04-02 00:06:07] [DEBUG] starting read event
+[2025-04-02 00:06:07] [DEBUG] processing read event
+[2025-04-02 00:06:07] [DEBUG] recieved data: PASS Password123!
+NICK Moderator2
+USER mod2 0 * :mod2
+
+[2025-04-02 00:06:07] [INFO] start parsing data
+[2025-04-02 00:06:07] [INFO] end of read event
+[2025-04-02 00:06:10] [CLIENT] Client Accepted28
+[2025-04-02 00:06:10] [DEBUG] starting read event
+[2025-04-02 00:06:10] [DEBUG] processing read event
+[2025-04-02 00:06:10] [DEBUG] recieved data: PASS Password123!
+NICK JohnDoe
+USER john 0 * :john
+
+[2025-04-02 00:06:10] [INFO] start parsing data
+[2025-04-02 00:06:10] [INFO] end of read event
+[2025-04-02 00:06:13] [CLIENT] Client Accepted29
+[2025-04-02 00:06:13] [DEBUG] starting read event
+[2025-04-02 00:06:13] [DEBUG] processing read event
+[2025-04-02 00:06:13] [DEBUG] recieved data: PASS Password123!
+NICK JaneSmith
+USER jane 0 * :jane
+
+[2025-04-02 00:06:13] [INFO] start parsing data
+[2025-04-02 00:06:13] [INFO] end of read event
+[2025-04-02 00:06:16] [CLIENT] Client Accepted30
+[2025-04-02 00:06:16] [DEBUG] starting read event
+[2025-04-02 00:06:16] [DEBUG] processing read event
+[2025-04-02 00:06:16] [DEBUG] recieved data: PASS Password123!
+NICK NewGuy
+USER newbie 0 * :newbie
+
+[2025-04-02 00:06:16] [INFO] start parsing data
+[2025-04-02 00:06:16] [INFO] end of read event
+[2025-04-02 00:06:19] [CLIENT] Client Accepted31
+[2025-04-02 00:06:19] [DEBUG] starting read event
+[2025-04-02 00:06:19] [DEBUG] processing read event
+[2025-04-02 00:06:19] [DEBUG] recieved data: PASS Password123!
+NICK Developer1
+USER dev1 0 * :dev1
+
+[2025-04-02 00:06:19] [INFO] start parsing data
+[2025-04-02 00:06:19] [INFO] end of read event
+[2025-04-02 00:06:22] [CLIENT] Client Accepted32
+[2025-04-02 00:06:22] [DEBUG] starting read event
+[2025-04-02 00:06:22] [DEBUG] processing read event
+[2025-04-02 00:06:22] [DEBUG] recieved data: PASS Password123!
+NICK Developer2
+USER dev2 0 * :dev2
+
+[2025-04-02 00:06:22] [INFO] start parsing data
+[2025-04-02 00:06:22] [INFO] end of read event
+[2025-04-02 00:06:25] [CLIENT] Client Accepted33
+[2025-04-02 00:06:25] [DEBUG] starting read event
+[2025-04-02 00:06:25] [DEBUG] processing read event
+[2025-04-02 00:06:25] [DEBUG] recieved data: PASS Password123!
+NICK MarketingUser
+USER marketing 0 * :marketing
+
+[2025-04-02 00:06:25] [INFO] start parsing data
+[2025-04-02 00:06:25] [INFO] end of read event
+[2025-04-02 00:06:28] [CLIENT] Client Accepted34
+[2025-04-02 00:06:28] [DEBUG] starting read event
+[2025-04-02 00:06:28] [DEBUG] processing read event
+[2025-04-02 00:06:28] [DEBUG] recieved data: PASS Password123!
+NICK SupportAgent
+USER support 0 * :support
+
+[2025-04-02 00:06:28] [INFO] start parsing data
+[2025-04-02 00:06:28] [INFO] end of read event
+[2025-04-02 00:06:31] [CLIENT] Client Accepted35
+[2025-04-02 00:06:31] [DEBUG] starting read event
+[2025-04-02 00:06:31] [DEBUG] processing read event
+[2025-04-02 00:06:31] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:06:31] [INFO] start parsing data
+[2025-04-02 00:06:31] [INFO] end of read event
+[2025-04-02 00:06:31] [DEBUG] starting read event
+[2025-04-02 00:06:31] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:06:31] [INFO] Connection closed
+[2025-04-02 00:06:36] [CLIENT] Client Accepted35
+[2025-04-02 00:06:36] [DEBUG] starting read event
+[2025-04-02 00:06:36] [DEBUG] processing read event
+[2025-04-02 00:06:36] [DEBUG] recieved data: TOPIC #main :Welcome to the IRC Community!
+
+[2025-04-02 00:06:36] [INFO] start parsing data
+[2025-04-02 00:06:36] [INFO] end of read event
+[2025-04-02 00:06:36] [DEBUG] starting read event
+[2025-04-02 00:06:36] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:06:36] [INFO] Connection closed
+[2025-04-02 00:06:41] [CLIENT] Client Accepted35
+[2025-04-02 00:06:41] [DEBUG] starting read event
+[2025-04-02 00:06:41] [DEBUG] processing read event
+[2025-04-02 00:06:41] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:06:41] [INFO] start parsing data
+[2025-04-02 00:06:41] [INFO] end of read event
+[2025-04-02 00:06:41] [DEBUG] starting read event
+[2025-04-02 00:06:41] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:06:41] [INFO] Connection closed
+[2025-04-02 00:06:46] [CLIENT] Client Accepted35
+[2025-04-02 00:06:46] [DEBUG] starting read event
+[2025-04-02 00:06:46] [DEBUG] processing read event
+[2025-04-02 00:06:46] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 00:06:46] [INFO] start parsing data
+[2025-04-02 00:06:46] [INFO] end of read event
+[2025-04-02 00:06:46] [DEBUG] starting read event
+[2025-04-02 00:06:46] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:06:46] [INFO] Connection closed
+[2025-04-02 00:10:02] [CLIENT] Client Accepted35
+[2025-04-02 00:10:02] [DEBUG] starting read event
+[2025-04-02 00:10:02] [DEBUG] processing read event
+[2025-04-02 00:10:02] [DEBUG] recieved data: PASS Password123!
+
+[2025-04-02 00:10:02] [INFO] start parsing data
+[2025-04-02 00:10:02] [INFO] end of read event
+[2025-04-02 00:10:02] [DEBUG] starting read event
+[2025-04-02 00:10:02] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 00:10:02] [INFO] Connection closed
+[2025-04-02 00:49:48] [DEBUG] starting read event
+[2025-04-02 00:49:48] [FATAL] :test QUIT :Quit: Leaving
+
+[2025-04-02 00:49:48] [INFO] Connection closed
+[2025-04-02 12:23:00] [SERVER] Server initializing
+[2025-04-02 12:23:00] [SERVER] Server initialized
+[2025-04-02 12:23:37] [SERVER] Server initializing
+[2025-04-02 12:23:37] [SERVER] Server initialized
+[2025-04-02 12:23:41] [CLIENT] Client Accepted5
+[2025-04-02 12:23:41] [DEBUG] starting read event
+[2025-04-02 12:23:41] [DEBUG] processing read event
+[2025-04-02 12:23:41] [DEBUG] recieved data: PASS Password123!
+NICK AdminUser
+USER admin 0 * :admin
+
+[2025-04-02 12:23:41] [INFO] start parsing data
+[2025-04-02 12:23:41] [INFO] start Handling Command PASS
+[2025-04-02 12:23:41] [INFO] start Handling Command NICK
+[2025-04-02 12:23:41] [INFO] start Handling Command USER
+[2025-04-02 12:23:41] [INFO] end of read event
+[2025-04-02 12:23:44] [CLIENT] Client Accepted6
+[2025-04-02 12:23:44] [DEBUG] starting read event
+[2025-04-02 12:23:44] [DEBUG] processing read event
+[2025-04-02 12:23:44] [DEBUG] recieved data: PASS Password123!
+NICK Moderator1
+USER mod1 0 * :mod1
+
+[2025-04-02 12:23:44] [INFO] start parsing data
+[2025-04-02 12:23:44] [INFO] start Handling Command PASS
+[2025-04-02 12:23:44] [INFO] start Handling Command NICK
+[2025-04-02 12:23:44] [INFO] start Handling Command USER
+[2025-04-02 12:23:44] [INFO] end of read event
+[2025-04-02 12:23:47] [CLIENT] Client Accepted7
+[2025-04-02 12:23:47] [DEBUG] starting read event
+[2025-04-02 12:23:47] [DEBUG] processing read event
+[2025-04-02 12:23:47] [DEBUG] recieved data: PASS Password123!
+NICK Moderator2
+USER mod2 0 * :mod2
+
+[2025-04-02 12:23:47] [INFO] start parsing data
+[2025-04-02 12:23:47] [INFO] start Handling Command PASS
+[2025-04-02 12:23:47] [INFO] start Handling Command NICK
+[2025-04-02 12:23:47] [INFO] start Handling Command USER
+[2025-04-02 12:23:47] [INFO] end of read event
+[2025-04-02 12:23:50] [CLIENT] Client Accepted8
+[2025-04-02 12:23:50] [DEBUG] starting read event
+[2025-04-02 12:23:50] [DEBUG] processing read event
+[2025-04-02 12:23:50] [DEBUG] recieved data: PASS Password123!
+NICK JohnDoe
+USER john 0 * :john
+
+[2025-04-02 12:23:50] [INFO] start parsing data
+[2025-04-02 12:23:50] [INFO] start Handling Command PASS
+[2025-04-02 12:23:50] [INFO] start Handling Command NICK
+[2025-04-02 12:23:50] [INFO] start Handling Command USER
+[2025-04-02 12:23:50] [INFO] end of read event
+[2025-04-02 12:23:53] [CLIENT] Client Accepted9
+[2025-04-02 12:23:53] [DEBUG] starting read event
+[2025-04-02 12:23:53] [DEBUG] processing read event
+[2025-04-02 12:23:53] [DEBUG] recieved data: PASS Password123!
+NICK JaneSmith
+USER jane 0 * :jane
+
+[2025-04-02 12:23:53] [INFO] start parsing data
+[2025-04-02 12:23:53] [INFO] start Handling Command PASS
+[2025-04-02 12:23:53] [INFO] start Handling Command NICK
+[2025-04-02 12:23:53] [INFO] start Handling Command USER
+[2025-04-02 12:23:53] [INFO] end of read event
+[2025-04-02 12:23:56] [CLIENT] Client Accepted10
+[2025-04-02 12:23:56] [DEBUG] starting read event
+[2025-04-02 12:23:56] [DEBUG] processing read event
+[2025-04-02 12:23:56] [DEBUG] recieved data: PASS Password123!
+NICK NewGuy
+USER newbie 0 * :newbie
+
+[2025-04-02 12:23:56] [INFO] start parsing data
+[2025-04-02 12:23:56] [INFO] start Handling Command PASS
+[2025-04-02 12:23:56] [INFO] start Handling Command NICK
+[2025-04-02 12:23:56] [INFO] start Handling Command USER
+[2025-04-02 12:23:56] [INFO] end of read event
+[2025-04-02 12:23:59] [CLIENT] Client Accepted11
+[2025-04-02 12:23:59] [DEBUG] starting read event
+[2025-04-02 12:23:59] [DEBUG] processing read event
+[2025-04-02 12:23:59] [DEBUG] recieved data: PASS Password123!
+NICK Developer1
+USER dev1 0 * :dev1
+
+[2025-04-02 12:23:59] [INFO] start parsing data
+[2025-04-02 12:23:59] [INFO] start Handling Command PASS
+[2025-04-02 12:23:59] [INFO] start Handling Command NICK
+[2025-04-02 12:23:59] [INFO] start Handling Command USER
+[2025-04-02 12:23:59] [INFO] end of read event
+[2025-04-02 12:24:02] [CLIENT] Client Accepted12
+[2025-04-02 12:24:02] [DEBUG] starting read event
+[2025-04-02 12:24:02] [DEBUG] processing read event
+[2025-04-02 12:24:02] [DEBUG] recieved data: PASS Password123!
+NICK Developer2
+USER dev2 0 * :dev2
+
+[2025-04-02 12:24:02] [INFO] start parsing data
+[2025-04-02 12:24:02] [INFO] start Handling Command PASS
+[2025-04-02 12:24:02] [INFO] start Handling Command NICK
+[2025-04-02 12:24:02] [INFO] start Handling Command USER
+[2025-04-02 12:24:02] [INFO] end of read event
+[2025-04-02 12:24:05] [CLIENT] Client Accepted13
+[2025-04-02 12:24:05] [DEBUG] starting read event
+[2025-04-02 12:24:05] [DEBUG] processing read event
+[2025-04-02 12:24:05] [DEBUG] recieved data: PASS Password123!
+NICK MarketingUser
+USER marketing 0 * :marketing
+
+[2025-04-02 12:24:05] [INFO] start parsing data
+[2025-04-02 12:24:05] [INFO] start Handling Command PASS
+[2025-04-02 12:24:05] [INFO] start Handling Command NICK
+[2025-04-02 12:24:05] [INFO] start Handling Command USER
+[2025-04-02 12:24:05] [INFO] end of read event
+[2025-04-02 12:24:08] [CLIENT] Client Accepted14
+[2025-04-02 12:24:08] [DEBUG] starting read event
+[2025-04-02 12:24:08] [DEBUG] processing read event
+[2025-04-02 12:24:08] [DEBUG] recieved data: PASS Password123!
+NICK SupportAgent
+USER support 0 * :support
+
+[2025-04-02 12:24:08] [INFO] start parsing data
+[2025-04-02 12:24:08] [INFO] start Handling Command PASS
+[2025-04-02 12:24:08] [INFO] start Handling Command NICK
+[2025-04-02 12:24:08] [INFO] start Handling Command USER
+[2025-04-02 12:24:08] [INFO] end of read event
+[2025-04-02 12:24:11] [CLIENT] Client Accepted15
+[2025-04-02 12:24:11] [DEBUG] starting read event
+[2025-04-02 12:24:11] [DEBUG] processing read event
+[2025-04-02 12:24:11] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 12:24:11] [INFO] start parsing data
+[2025-04-02 12:24:11] [INFO] start Handling Command JOIN
+[2025-04-02 12:24:11] [INFO] end of read event
+[2025-04-02 12:24:11] [DEBUG] starting read event
+[2025-04-02 12:24:11] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:24:11] [INFO] Connection closed
+[2025-04-02 12:24:16] [CLIENT] Client Accepted15
+[2025-04-02 12:24:16] [DEBUG] starting read event
+[2025-04-02 12:24:16] [DEBUG] processing read event
+[2025-04-02 12:24:16] [DEBUG] recieved data: TOPIC #main :Welcome to the IRC Community!
+
+[2025-04-02 12:24:16] [INFO] start parsing data
+[2025-04-02 12:24:16] [INFO] start Handling Command TOPIC
+[2025-04-02 12:24:16] [INFO] end of read event
+[2025-04-02 12:24:16] [DEBUG] starting read event
+[2025-04-02 12:24:16] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:24:16] [INFO] Connection closed
+[2025-04-02 12:24:21] [CLIENT] Client Accepted15
+[2025-04-02 12:24:21] [DEBUG] starting read event
+[2025-04-02 12:24:21] [DEBUG] processing read event
+[2025-04-02 12:24:21] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 12:24:21] [INFO] start parsing data
+[2025-04-02 12:24:21] [INFO] start Handling Command JOIN
+[2025-04-02 12:24:21] [INFO] end of read event
+[2025-04-02 12:24:21] [DEBUG] starting read event
+[2025-04-02 12:24:21] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:24:21] [INFO] Connection closed
+[2025-04-02 12:24:26] [CLIENT] Client Accepted15
+[2025-04-02 12:24:26] [DEBUG] starting read event
+[2025-04-02 12:24:26] [DEBUG] processing read event
+[2025-04-02 12:24:26] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 12:24:26] [INFO] start parsing data
+[2025-04-02 12:24:26] [INFO] start Handling Command JOIN
+[2025-04-02 12:24:26] [INFO] end of read event
+[2025-04-02 12:24:26] [DEBUG] starting read event
+[2025-04-02 12:24:26] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:24:26] [INFO] Connection closed
+[2025-04-02 12:24:31] [CLIENT] Client Accepted15
+[2025-04-02 12:24:31] [DEBUG] starting read event
+[2025-04-02 12:24:31] [DEBUG] processing read event
+[2025-04-02 12:24:31] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 12:24:31] [INFO] start parsing data
+[2025-04-02 12:24:31] [INFO] start Handling Command JOIN
+[2025-04-02 12:24:31] [INFO] end of read event
+[2025-04-02 12:24:31] [DEBUG] starting read event
+[2025-04-02 12:24:31] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:24:31] [INFO] Connection closed
+[2025-04-02 12:24:36] [CLIENT] Client Accepted15
+[2025-04-02 12:24:36] [DEBUG] starting read event
+[2025-04-02 12:24:36] [DEBUG] processing read event
+[2025-04-02 12:24:36] [DEBUG] recieved data: JOIN #main
+
+[2025-04-02 12:24:36] [INFO] start parsing data
+[2025-04-02 12:24:36] [INFO] start Handling Command JOIN
+[2025-04-02 12:24:36] [INFO] end of read event
+[2025-04-02 12:24:36] [DEBUG] starting read event
+[2025-04-02 12:24:36] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:24:36] [INFO] Connection closed
+[2025-04-02 12:24:41] [CLIENT] Client Accepted15
+[2025-04-02 12:24:41] [DEBUG] starting read event
+[2025-04-02 12:24:41] [DEBUG] processing read event
+[2025-04-02 12:24:41] [DEBUG] recieved data: PRIVMSG #main :Welcome everyone to our IRC community!
+
+[2025-04-02 12:24:41] [INFO] start parsing data
+[2025-04-02 12:24:41] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:24:41] [INFO] end of read event
+[2025-04-02 12:24:41] [DEBUG] starting read event
+[2025-04-02 12:24:41] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:24:41] [INFO] Connection closed
+[2025-04-02 12:24:46] [CLIENT] Client Accepted15
+[2025-04-02 12:24:46] [DEBUG] starting read event
+[2025-04-02 12:24:46] [DEBUG] processing read event
+[2025-04-02 12:24:46] [DEBUG] recieved data: PRIVMSG #main :Hello everyone! I'm one of the moderators here.
+
+[2025-04-02 12:24:46] [INFO] start parsing data
+[2025-04-02 12:24:46] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:24:46] [INFO] end of read event
+[2025-04-02 12:24:46] [DEBUG] starting read event
+[2025-04-02 12:24:46] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:24:46] [INFO] Connection closed
+[2025-04-02 12:24:51] [CLIENT] Client Accepted15
+[2025-04-02 12:24:51] [DEBUG] starting read event
+[2025-04-02 12:24:51] [DEBUG] processing read event
+[2025-04-02 12:24:51] [DEBUG] recieved data: PRIVMSG #main :Hi all, glad to be here!
+
+[2025-04-02 12:24:51] [INFO] start parsing data
+[2025-04-02 12:24:51] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:24:51] [INFO] end of read event
+[2025-04-02 12:24:51] [DEBUG] starting read event
+[2025-04-02 12:24:51] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:24:51] [INFO] Connection closed
+[2025-04-02 12:24:56] [CLIENT] Client Accepted15
+[2025-04-02 12:24:56] [DEBUG] starting read event
+[2025-04-02 12:24:56] [DEBUG] processing read event
+[2025-04-02 12:24:56] [DEBUG] recieved data: PRIVMSG #main :Hello from Jane! Looking forward to our discussions.
+
+[2025-04-02 12:24:56] [INFO] start parsing data
+[2025-04-02 12:24:56] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:24:56] [INFO] end of read event
+[2025-04-02 12:24:56] [DEBUG] starting read event
+[2025-04-02 12:24:56] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:24:56] [INFO] Connection closed
+[2025-04-02 12:25:01] [CLIENT] Client Accepted15
+[2025-04-02 12:25:01] [DEBUG] starting read event
+[2025-04-02 12:25:01] [DEBUG] processing read event
+[2025-04-02 12:25:01] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-02 12:25:01] [INFO] start parsing data
+[2025-04-02 12:25:01] [INFO] start Handling Command JOIN
+[2025-04-02 12:25:01] [INFO] end of read event
+[2025-04-02 12:25:01] [DEBUG] starting read event
+[2025-04-02 12:25:01] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:25:01] [INFO] Connection closed
+[2025-04-02 12:25:06] [CLIENT] Client Accepted15
+[2025-04-02 12:25:06] [DEBUG] starting read event
+[2025-04-02 12:25:06] [DEBUG] processing read event
+[2025-04-02 12:25:06] [DEBUG] recieved data: TOPIC #tech :Technical Discussions and Support
+
+[2025-04-02 12:25:06] [INFO] start parsing data
+[2025-04-02 12:25:06] [INFO] start Handling Command TOPIC
+[2025-04-02 12:25:06] [INFO] end of read event
+[2025-04-02 12:25:06] [DEBUG] starting read event
+[2025-04-02 12:25:06] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:25:06] [INFO] Connection closed
+[2025-04-02 12:25:11] [CLIENT] Client Accepted15
+[2025-04-02 12:25:11] [DEBUG] starting read event
+[2025-04-02 12:25:11] [DEBUG] processing read event
+[2025-04-02 12:25:11] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-02 12:25:11] [INFO] start parsing data
+[2025-04-02 12:25:11] [INFO] start Handling Command JOIN
+[2025-04-02 12:25:11] [INFO] end of read event
+[2025-04-02 12:25:11] [DEBUG] starting read event
+[2025-04-02 12:25:11] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:25:11] [INFO] Connection closed
+[2025-04-02 12:25:16] [CLIENT] Client Accepted15
+[2025-04-02 12:25:16] [DEBUG] starting read event
+[2025-04-02 12:25:16] [DEBUG] processing read event
+[2025-04-02 12:25:16] [DEBUG] recieved data: JOIN #tech
+
+[2025-04-02 12:25:16] [INFO] start parsing data
+[2025-04-02 12:25:16] [INFO] start Handling Command JOIN
+[2025-04-02 12:25:16] [INFO] end of read event
+[2025-04-02 12:25:16] [DEBUG] starting read event
+[2025-04-02 12:25:16] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:25:16] [INFO] Connection closed
+[2025-04-02 12:25:21] [CLIENT] Client Accepted15
+[2025-04-02 12:25:21] [DEBUG] starting read event
+[2025-04-02 12:25:21] [DEBUG] processing read event
+[2025-04-02 12:25:21] [DEBUG] recieved data: PRIVMSG #tech :Welcome to the tech channel! This is where we discuss all things technical.
+
+[2025-04-02 12:25:21] [INFO] start parsing data
+[2025-04-02 12:25:21] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:25:21] [INFO] end of read event
+[2025-04-02 12:25:21] [DEBUG] starting read event
+[2025-04-02 12:25:21] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:25:21] [INFO] Connection closed
+[2025-04-02 12:25:26] [CLIENT] Client Accepted15
+[2025-04-02 12:25:26] [DEBUG] starting read event
+[2025-04-02 12:25:26] [DEBUG] processing read event
+[2025-04-02 12:25:26] [DEBUG] recieved data: PRIVMSG #tech :Hello fellow devs! What are you all working on?
+
+[2025-04-02 12:25:26] [INFO] start parsing data
+[2025-04-02 12:25:26] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:25:26] [INFO] end of read event
+[2025-04-02 12:25:26] [DEBUG] starting read event
+[2025-04-02 12:25:26] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:25:26] [INFO] Connection closed
+[2025-04-02 12:25:31] [CLIENT] Client Accepted15
+[2025-04-02 12:25:31] [DEBUG] starting read event
+[2025-04-02 12:25:31] [DEBUG] processing read event
+[2025-04-02 12:25:31] [DEBUG] recieved data: PRIVMSG #tech :I'm exploring IRC protocol implementation. It's fascinating!
+
+[2025-04-02 12:25:31] [INFO] start parsing data
+[2025-04-02 12:25:31] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:25:31] [INFO] end of read event
+[2025-04-02 12:25:31] [DEBUG] starting read event
+[2025-04-02 12:25:31] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:25:31] [INFO] Connection closed
+[2025-04-02 12:25:36] [CLIENT] Client Accepted15
+[2025-04-02 12:25:36] [DEBUG] starting read event
+[2025-04-02 12:25:36] [DEBUG] processing read event
+[2025-04-02 12:25:36] [DEBUG] recieved data: JOIN #marketing
+
+[2025-04-02 12:25:36] [INFO] start parsing data
+[2025-04-02 12:25:36] [INFO] start Handling Command JOIN
+[2025-04-02 12:25:36] [INFO] end of read event
+[2025-04-02 12:25:36] [DEBUG] starting read event
+[2025-04-02 12:25:36] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:25:36] [INFO] Connection closed
+[2025-04-02 12:25:41] [CLIENT] Client Accepted15
+[2025-04-02 12:25:41] [DEBUG] starting read event
+[2025-04-02 12:25:41] [DEBUG] processing read event
+[2025-04-02 12:25:41] [DEBUG] recieved data: TOPIC #marketing :Marketing Strategies and Campaigns
+
+[2025-04-02 12:25:41] [INFO] start parsing data
+[2025-04-02 12:25:41] [INFO] start Handling Command TOPIC
+[2025-04-02 12:25:41] [INFO] end of read event
+[2025-04-02 12:25:41] [DEBUG] starting read event
+[2025-04-02 12:25:41] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:25:41] [INFO] Connection closed
+[2025-04-02 12:25:46] [CLIENT] Client Accepted15
+[2025-04-02 12:25:46] [DEBUG] starting read event
+[2025-04-02 12:25:46] [DEBUG] processing read event
+[2025-04-02 12:25:46] [DEBUG] recieved data: JOIN #marketing
+
+[2025-04-02 12:25:46] [INFO] start parsing data
+[2025-04-02 12:25:46] [INFO] start Handling Command JOIN
+[2025-04-02 12:25:46] [INFO] end of read event
+[2025-04-02 12:25:46] [DEBUG] starting read event
+[2025-04-02 12:25:46] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:25:46] [INFO] Connection closed
+[2025-04-02 12:25:51] [CLIENT] Client Accepted15
+[2025-04-02 12:25:51] [DEBUG] starting read event
+[2025-04-02 12:25:51] [DEBUG] processing read event
+[2025-04-02 12:25:51] [DEBUG] recieved data: JOIN #marketing
+
+[2025-04-02 12:25:51] [INFO] start parsing data
+[2025-04-02 12:25:51] [INFO] start Handling Command JOIN
+[2025-04-02 12:25:51] [INFO] end of read event
+[2025-04-02 12:25:51] [DEBUG] starting read event
+[2025-04-02 12:25:51] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:25:51] [INFO] Connection closed
+[2025-04-02 12:25:56] [CLIENT] Client Accepted15
+[2025-04-02 12:25:56] [DEBUG] starting read event
+[2025-04-02 12:25:56] [DEBUG] processing read event
+[2025-04-02 12:25:56] [DEBUG] recieved data: PRIVMSG #marketing :Let's discuss our Q3 marketing strategy.
+
+[2025-04-02 12:25:56] [INFO] start parsing data
+[2025-04-02 12:25:56] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:25:56] [INFO] end of read event
+[2025-04-02 12:25:56] [DEBUG] starting read event
+[2025-04-02 12:25:56] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:25:56] [INFO] Connection closed
+[2025-04-02 12:26:01] [CLIENT] Client Accepted15
+[2025-04-02 12:26:01] [DEBUG] starting read event
+[2025-04-02 12:26:01] [DEBUG] processing read event
+[2025-04-02 12:26:01] [DEBUG] recieved data: PRIVMSG #marketing :I think we should focus more on social media.
+
+[2025-04-02 12:26:01] [INFO] start parsing data
+[2025-04-02 12:26:01] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:26:01] [INFO] end of read event
+[2025-04-02 12:26:01] [DEBUG] starting read event
+[2025-04-02 12:26:01] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:26:01] [INFO] Connection closed
+[2025-04-02 12:26:06] [CLIENT] Client Accepted15
+[2025-04-02 12:26:06] [DEBUG] starting read event
+[2025-04-02 12:26:06] [DEBUG] processing read event
+[2025-04-02 12:26:06] [DEBUG] recieved data: PRIVMSG #marketing :Good point, Jane. Let's allocate more resources there.
+
+[2025-04-02 12:26:06] [INFO] start parsing data
+[2025-04-02 12:26:06] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:26:06] [INFO] end of read event
+[2025-04-02 12:26:06] [DEBUG] starting read event
+[2025-04-02 12:26:06] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:26:06] [INFO] Connection closed
+[2025-04-02 12:26:11] [CLIENT] Client Accepted15
+[2025-04-02 12:26:11] [DEBUG] starting read event
+[2025-04-02 12:26:11] [DEBUG] processing read event
+[2025-04-02 12:26:11] [DEBUG] recieved data: JOIN #support
+
+[2025-04-02 12:26:11] [INFO] start parsing data
+[2025-04-02 12:26:11] [INFO] start Handling Command JOIN
+[2025-04-02 12:26:11] [INFO] end of read event
+[2025-04-02 12:26:11] [DEBUG] starting read event
+[2025-04-02 12:26:11] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:26:11] [INFO] Connection closed
+[2025-04-02 12:26:16] [CLIENT] Client Accepted15
+[2025-04-02 12:26:16] [DEBUG] starting read event
+[2025-04-02 12:26:16] [DEBUG] processing read event
+[2025-04-02 12:26:16] [DEBUG] recieved data: JOIN #support
+
+[2025-04-02 12:26:16] [INFO] start parsing data
+[2025-04-02 12:26:16] [INFO] start Handling Command JOIN
+[2025-04-02 12:26:16] [INFO] end of read event
+[2025-04-02 12:26:16] [DEBUG] starting read event
+[2025-04-02 12:26:16] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:26:16] [INFO] Connection closed
+[2025-04-02 12:26:21] [CLIENT] Client Accepted15
+[2025-04-02 12:26:21] [DEBUG] starting read event
+[2025-04-02 12:26:21] [DEBUG] processing read event
+[2025-04-02 12:26:21] [DEBUG] recieved data: TOPIC #support :Customer Support and Assistance
+
+[2025-04-02 12:26:21] [INFO] start parsing data
+[2025-04-02 12:26:21] [INFO] start Handling Command TOPIC
+[2025-04-02 12:26:21] [INFO] end of read event
+[2025-04-02 12:26:21] [DEBUG] starting read event
+[2025-04-02 12:26:21] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:26:21] [INFO] Connection closed
+[2025-04-02 12:26:26] [CLIENT] Client Accepted15
+[2025-04-02 12:26:26] [DEBUG] starting read event
+[2025-04-02 12:26:26] [DEBUG] processing read event
+[2025-04-02 12:26:26] [DEBUG] recieved data: MODE #support +o JohnDoe
+
+[2025-04-02 12:26:26] [INFO] start parsing data
+[2025-04-02 12:26:26] [INFO] start Handling Command MODE
+[2025-04-02 12:26:26] [INFO] end of read event
+[2025-04-02 12:26:26] [DEBUG] starting read event
+[2025-04-02 12:26:26] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:26:26] [INFO] Connection closed
+[2025-04-02 12:26:31] [CLIENT] Client Accepted15
+[2025-04-02 12:26:31] [DEBUG] starting read event
+[2025-04-02 12:26:31] [DEBUG] processing read event
+[2025-04-02 12:26:31] [DEBUG] recieved data: PRIVMSG #support :JohnDoe is now a channel operator to help with support.
+
+[2025-04-02 12:26:31] [INFO] start parsing data
+[2025-04-02 12:26:31] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:26:31] [INFO] end of read event
+[2025-04-02 12:26:31] [DEBUG] starting read event
+[2025-04-02 12:26:31] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:26:31] [INFO] Connection closed
+[2025-04-02 12:26:36] [CLIENT] Client Accepted15
+[2025-04-02 12:26:36] [DEBUG] starting read event
+[2025-04-02 12:26:36] [DEBUG] processing read event
+[2025-04-02 12:26:36] [DEBUG] recieved data: PRIVMSG #support :This channel is for supporting our users. What issues are you seeing?
+
+[2025-04-02 12:26:36] [INFO] start parsing data
+[2025-04-02 12:26:36] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:26:36] [INFO] end of read event
+[2025-04-02 12:26:36] [DEBUG] starting read event
+[2025-04-02 12:26:36] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:26:36] [INFO] Connection closed
+[2025-04-02 12:26:41] [CLIENT] Client Accepted15
+[2025-04-02 12:26:41] [DEBUG] starting read event
+[2025-04-02 12:26:41] [DEBUG] processing read event
+[2025-04-02 12:26:41] [DEBUG] recieved data: PRIVMSG #support :I've been helping users with connection issues primarily.
+
+[2025-04-02 12:26:41] [INFO] start parsing data
+[2025-04-02 12:26:41] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:26:41] [INFO] end of read event
+[2025-04-02 12:26:41] [DEBUG] starting read event
+[2025-04-02 12:26:41] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:26:41] [INFO] Connection closed
+[2025-04-02 12:26:46] [CLIENT] Client Accepted15
+[2025-04-02 12:26:46] [DEBUG] starting read event
+[2025-04-02 12:26:46] [DEBUG] processing read event
+[2025-04-02 12:26:46] [DEBUG] recieved data: PRIVMSG #support :What version should I be using?
+
+[2025-04-02 12:26:46] [INFO] start parsing data
+[2025-04-02 12:26:46] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:26:46] [INFO] end of read event
+[2025-04-02 12:26:46] [DEBUG] starting read event
+[2025-04-02 12:26:46] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:26:46] [INFO] Connection closed
+[2025-04-02 12:26:51] [CLIENT] Client Accepted15
+[2025-04-02 12:26:51] [DEBUG] starting read event
+[2025-04-02 12:26:51] [DEBUG] processing read event
+[2025-04-02 12:26:51] [DEBUG] recieved data: PRIVMSG #support :The latest version, 2.3.1
+
+[2025-04-02 12:26:51] [INFO] start parsing data
+[2025-04-02 12:26:51] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:26:51] [INFO] end of read event
+[2025-04-02 12:26:51] [DEBUG] starting read event
+[2025-04-02 12:26:51] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:26:51] [INFO] Connection closed
+[2025-04-02 12:26:56] [CLIENT] Client Accepted15
+[2025-04-02 12:26:56] [DEBUG] starting read event
+[2025-04-02 12:26:56] [DEBUG] processing read event
+[2025-04-02 12:26:56] [DEBUG] recieved data: PRIVMSG #support :This is some spam message that violates channel rules!!!
+
+[2025-04-02 12:26:56] [INFO] start parsing data
+[2025-04-02 12:26:56] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:26:56] [INFO] end of read event
+[2025-04-02 12:26:56] [DEBUG] starting read event
+[2025-04-02 12:26:56] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:26:56] [INFO] Connection closed
+[2025-04-02 12:27:01] [CLIENT] Client Accepted15
+[2025-04-02 12:27:01] [DEBUG] starting read event
+[2025-04-02 12:27:01] [DEBUG] processing read event
+[2025-04-02 12:27:01] [DEBUG] recieved data: PRIVMSG #support :NewGuy, please follow channel rules. I'll have to kick you as a warning.
+
+[2025-04-02 12:27:01] [INFO] start parsing data
+[2025-04-02 12:27:01] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:27:01] [INFO] end of read event
+[2025-04-02 12:27:01] [DEBUG] starting read event
+[2025-04-02 12:27:01] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:27:01] [INFO] Connection closed
+[2025-04-02 12:27:06] [CLIENT] Client Accepted15
+[2025-04-02 12:27:06] [DEBUG] starting read event
+[2025-04-02 12:27:06] [DEBUG] processing read event
+[2025-04-02 12:27:06] [DEBUG] recieved data: KICK #support NewGuy :Violation of channel rules
+
+[2025-04-02 12:27:06] [INFO] start parsing data
+[2025-04-02 12:27:06] [INFO] start Handling Command KICK
+[2025-04-02 12:27:06] [INFO] end of read event
+[2025-04-02 12:27:06] [DEBUG] starting read event
+[2025-04-02 12:27:06] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:27:06] [INFO] Connection closed
+[2025-04-02 12:27:13] [CLIENT] Client Accepted15
+[2025-04-02 12:27:13] [DEBUG] starting read event
+[2025-04-02 12:27:13] [DEBUG] processing read event
+[2025-04-02 12:27:13] [DEBUG] recieved data: JOIN #main,#support
+
+[2025-04-02 12:27:13] [INFO] start parsing data
+[2025-04-02 12:27:13] [INFO] start Handling Command JOIN
+[2025-04-02 12:27:13] [INFO] end of read event
+[2025-04-02 12:27:13] [DEBUG] starting read event
+[2025-04-02 12:27:13] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:27:13] [INFO] Connection closed
+[2025-04-02 12:27:18] [CLIENT] Client Accepted15
+[2025-04-02 12:27:18] [DEBUG] starting read event
+[2025-04-02 12:27:18] [DEBUG] processing read event
+[2025-04-02 12:27:18] [DEBUG] recieved data: PRIVMSG #main :I'm back and now in multiple channels!
+
+[2025-04-02 12:27:18] [INFO] start parsing data
+[2025-04-02 12:27:18] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:27:18] [INFO] end of read event
+[2025-04-02 12:27:18] [DEBUG] starting read event
+[2025-04-02 12:27:18] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:27:18] [INFO] Connection closed
+[2025-04-02 12:27:23] [CLIENT] Client Accepted15
+[2025-04-02 12:27:23] [DEBUG] starting read event
+[2025-04-02 12:27:23] [DEBUG] processing read event
+[2025-04-02 12:27:23] [DEBUG] recieved data: PRIVMSG #support :Sorry about earlier. I'll follow the rules now.
+
+[2025-04-02 12:27:23] [INFO] start parsing data
+[2025-04-02 12:27:23] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:27:23] [INFO] end of read event
+[2025-04-02 12:27:23] [DEBUG] starting read event
+[2025-04-02 12:27:23] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:27:23] [INFO] Connection closed
+[2025-04-02 12:27:28] [CLIENT] Client Accepted15
+[2025-04-02 12:27:28] [DEBUG] starting read event
+[2025-04-02 12:27:28] [DEBUG] processing read event
+[2025-04-02 12:27:28] [DEBUG] recieved data: PRIVMSG JohnDoe :Thanks for helping moderate the support channel.
+
+[2025-04-02 12:27:28] [INFO] start parsing data
+[2025-04-02 12:27:28] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:27:28] [INFO] end of read event
+[2025-04-02 12:27:28] [DEBUG] starting read event
+[2025-04-02 12:27:28] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:27:28] [INFO] Connection closed
+[2025-04-02 12:27:33] [CLIENT] Client Accepted15
+[2025-04-02 12:27:33] [DEBUG] starting read event
+[2025-04-02 12:27:33] [DEBUG] processing read event
+[2025-04-02 12:27:33] [DEBUG] recieved data: PRIVMSG AdminUser :No problem! Happy to help keep things organized.
+
+[2025-04-02 12:27:33] [INFO] start parsing data
+[2025-04-02 12:27:33] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:27:33] [INFO] end of read event
+[2025-04-02 12:27:33] [DEBUG] starting read event
+[2025-04-02 12:27:33] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:27:33] [INFO] Connection closed
+[2025-04-02 12:27:38] [CLIENT] Client Accepted15
+[2025-04-02 12:27:38] [DEBUG] starting read event
+[2025-04-02 12:27:38] [DEBUG] processing read event
+[2025-04-02 12:27:38] [DEBUG] recieved data: PRIVMSG Moderator2 :Should we schedule a planning meeting for next week?
+
+[2025-04-02 12:27:38] [INFO] start parsing data
+[2025-04-02 12:27:38] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:27:38] [INFO] end of read event
+[2025-04-02 12:27:38] [DEBUG] starting read event
+[2025-04-02 12:27:38] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:27:38] [INFO] Connection closed
+[2025-04-02 12:27:43] [CLIENT] Client Accepted15
+[2025-04-02 12:27:43] [DEBUG] starting read event
+[2025-04-02 12:27:43] [DEBUG] processing read event
+[2025-04-02 12:27:43] [DEBUG] recieved data: PRIVMSG Moderator1 :Sounds good. How about Tuesday afternoon?
+
+[2025-04-02 12:27:43] [INFO] start parsing data
+[2025-04-02 12:27:43] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:27:43] [INFO] end of read event
+[2025-04-02 12:27:43] [DEBUG] starting read event
+[2025-04-02 12:27:43] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:27:43] [INFO] Connection closed
+[2025-04-02 12:27:48] [CLIENT] Client Accepted15
+[2025-04-02 12:27:48] [DEBUG] starting read event
+[2025-04-02 12:27:48] [DEBUG] processing read event
+[2025-04-02 12:27:48] [DEBUG] recieved data: JOIN #moderators
+
+[2025-04-02 12:27:48] [INFO] start parsing data
+[2025-04-02 12:27:48] [INFO] start Handling Command JOIN
+[2025-04-02 12:27:48] [INFO] end of read event
+[2025-04-02 12:27:48] [DEBUG] starting read event
+[2025-04-02 12:27:48] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:27:48] [INFO] Connection closed
+[2025-04-02 12:27:53] [CLIENT] Client Accepted15
+[2025-04-02 12:27:53] [DEBUG] starting read event
+[2025-04-02 12:27:53] [DEBUG] processing read event
+[2025-04-02 12:27:53] [DEBUG] recieved data: MODE #moderators +k secretpass
+
+[2025-04-02 12:27:53] [INFO] start parsing data
+[2025-04-02 12:27:53] [INFO] start Handling Command MODE
+[2025-04-02 12:27:53] [INFO] end of read event
+[2025-04-02 12:27:53] [DEBUG] starting read event
+[2025-04-02 12:27:53] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:27:53] [INFO] Connection closed
+[2025-04-02 12:27:58] [CLIENT] Client Accepted15
+[2025-04-02 12:27:58] [DEBUG] starting read event
+[2025-04-02 12:27:58] [DEBUG] processing read event
+[2025-04-02 12:27:58] [DEBUG] recieved data: MODE #moderators +i
+
+[2025-04-02 12:27:58] [INFO] start parsing data
+[2025-04-02 12:27:58] [INFO] start Handling Command MODE
+[2025-04-02 12:27:58] [INFO] end of read event
+[2025-04-02 12:27:58] [DEBUG] starting read event
+[2025-04-02 12:27:58] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:27:58] [INFO] Connection closed
+[2025-04-02 12:34:19] [SERVER] Server initializing
+[2025-04-02 12:34:19] [SERVER] Server initialized
+[2025-04-02 12:34:33] [CLIENT] Client Accepted5
+[2025-04-02 12:34:57] [DEBUG] starting read event
+[2025-04-02 12:34:57] [DEBUG] processing read event
+[2025-04-02 12:34:57] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-02 12:34:57] [INFO] start parsing data
+[2025-04-02 12:34:57] [INFO] start Handling Command PASS
+[2025-04-02 12:34:57] [INFO] end of read event
+[2025-04-02 12:35:12] [DEBUG] starting read event
+[2025-04-02 12:35:12] [DEBUG] processing read event
+[2025-04-02 12:35:12] [DEBUG] recieved data: NICK sel-hano
+
+[2025-04-02 12:35:12] [INFO] start parsing data
+[2025-04-02 12:35:12] [INFO] start Handling Command NICK
+[2025-04-02 12:35:12] [INFO] end of read event
+[2025-04-02 12:35:23] [DEBUG] starting read event
+[2025-04-02 12:35:23] [DEBUG] processing read event
+[2025-04-02 12:35:23] [DEBUG] recieved data: USER saif 0 * saifeddine
+
+[2025-04-02 12:35:23] [INFO] start parsing data
+[2025-04-02 12:35:23] [INFO] start Handling Command USER
+[2025-04-02 12:35:23] [INFO] end of read event
+[2025-04-02 12:38:28] [CLIENT] Client Accepted6
+[2025-04-02 12:38:28] [DEBUG] starting read event
+[2025-04-02 12:38:28] [DEBUG] processing read event
+[2025-04-02 12:38:28] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-02 12:38:28] [INFO] start parsing data
+[2025-04-02 12:38:28] [INFO] start Handling Command PASS
+[2025-04-02 12:38:28] [INFO] end of read event
+[2025-04-02 12:38:28] [DEBUG] starting read event
+[2025-04-02 12:38:28] [DEBUG] processing read event
+[2025-04-02 12:38:28] [DEBUG] recieved data: NICK sel-hano
+
+[2025-04-02 12:38:28] [INFO] start parsing data
+[2025-04-02 12:38:28] [INFO] start Handling Command NICK
+[2025-04-02 12:38:28] [INFO] end of read event
+[2025-04-02 12:38:28] [DEBUG] starting read event
+[2025-04-02 12:38:28] [DEBUG] processing read event
+[2025-04-02 12:38:28] [DEBUG] recieved data: USER saif 0 * saifeddine
+
+[2025-04-02 12:38:28] [INFO] start parsing data
+[2025-04-02 12:38:28] [INFO] start Handling Command USER
+[2025-04-02 12:38:28] [INFO] end of read event
+[2025-04-02 12:38:28] [DEBUG] starting read event
+[2025-04-02 12:38:28] [DEBUG] processing read event
+[2025-04-02 12:38:28] [DEBUG] recieved data: NICK sel-hano_
+
+[2025-04-02 12:38:28] [INFO] start parsing data
+[2025-04-02 12:38:28] [INFO] start Handling Command NICK
+[2025-04-02 12:38:28] [INFO] end of read event
+[2025-04-02 12:42:28] [DEBUG] starting read event
+[2025-04-02 12:42:28] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:42:28] [INFO] Connection closed
+[2025-04-02 12:42:28] [CLIENT] Client Accepted6
+[2025-04-02 12:42:28] [DEBUG] starting read event
+[2025-04-02 12:42:28] [DEBUG] processing read event
+[2025-04-02 12:42:28] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-02 12:42:28] [INFO] start parsing data
+[2025-04-02 12:42:28] [INFO] start Handling Command PASS
+[2025-04-02 12:42:28] [INFO] end of read event
+[2025-04-02 12:42:28] [DEBUG] starting read event
+[2025-04-02 12:42:28] [DEBUG] processing read event
+[2025-04-02 12:42:28] [DEBUG] recieved data: NICK sel-hano
+USER saif 0 * saifeddine
+
+[2025-04-02 12:42:28] [INFO] start parsing data
+[2025-04-02 12:42:28] [INFO] start Handling Command NICK
+[2025-04-02 12:42:28] [INFO] start Handling Command USER
+[2025-04-02 12:42:28] [INFO] end of read event
+[2025-04-02 12:42:28] [DEBUG] starting read event
+[2025-04-02 12:42:28] [DEBUG] processing read event
+[2025-04-02 12:42:28] [DEBUG] recieved data: NICK sel-hano_
+
+[2025-04-02 12:42:28] [INFO] start parsing data
+[2025-04-02 12:42:28] [INFO] start Handling Command NICK
+[2025-04-02 12:42:28] [INFO] end of read event
+[2025-04-02 12:44:40] [DEBUG] starting read event
+[2025-04-02 12:44:40] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 12:44:40] [INFO] Connection closed
+[2025-04-02 12:47:36] [SERVER] Server initializing
+[2025-04-02 12:47:36] [SERVER] Server initialized
+[2025-04-02 12:47:47] [CLIENT] Client Accepted5
+[2025-04-02 12:47:55] [DEBUG] starting read event
+[2025-04-02 12:47:55] [DEBUG] processing read event
+[2025-04-02 12:47:55] [DEBUG] recieved data: NICK sel-hano
+
+[2025-04-02 12:47:55] [INFO] start parsing data
+[2025-04-02 12:47:55] [INFO] start Handling Command NICK
+[2025-04-02 12:47:55] [INFO] end of read event
+[2025-04-02 12:48:21] [DEBUG] starting read event
+[2025-04-02 12:48:21] [DEBUG] processing read event
+[2025-04-02 12:48:21] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-02 12:48:21] [INFO] start parsing data
+[2025-04-02 12:48:21] [INFO] start Handling Command PASS
+[2025-04-02 12:48:21] [INFO] end of read event
+[2025-04-02 12:48:32] [DEBUG] starting read event
+[2025-04-02 12:48:32] [DEBUG] processing read event
+[2025-04-02 12:48:32] [DEBUG] recieved data: NICK sel-hano
+
+[2025-04-02 12:48:32] [INFO] start parsing data
+[2025-04-02 12:48:32] [INFO] start Handling Command NICK
+[2025-04-02 12:48:32] [INFO] end of read event
+[2025-04-02 12:48:46] [DEBUG] starting read event
+[2025-04-02 12:48:46] [DEBUG] processing read event
+[2025-04-02 12:48:46] [DEBUG] recieved data: USER saif 0 * saifeddine
+
+[2025-04-02 12:48:46] [INFO] start parsing data
+[2025-04-02 12:48:46] [INFO] start Handling Command USER
+[2025-04-02 12:48:46] [INFO] end of read event
+[2025-04-02 12:48:56] [CLIENT] Client Accepted6
+[2025-04-02 12:48:56] [DEBUG] starting read event
+[2025-04-02 12:48:56] [DEBUG] processing read event
+[2025-04-02 12:48:56] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-02 12:48:56] [INFO] start parsing data
+[2025-04-02 12:48:56] [INFO] start Handling Command PASS
+[2025-04-02 12:48:56] [INFO] end of read event
+[2025-04-02 12:48:56] [DEBUG] starting read event
+[2025-04-02 12:48:56] [DEBUG] processing read event
+[2025-04-02 12:48:56] [DEBUG] recieved data: NICK iel-bak
+USER ismail 0 * :ismail elbakkali
+
+[2025-04-02 12:48:56] [INFO] start parsing data
+[2025-04-02 12:48:56] [INFO] start Handling Command NICK
+[2025-04-02 12:48:56] [INFO] start Handling Command USER
+[2025-04-02 12:48:56] [INFO] end of read event
+[2025-04-02 12:49:13] [DEBUG] starting read event
+[2025-04-02 12:49:13] [DEBUG] processing read event
+[2025-04-02 12:49:13] [DEBUG] recieved data: JOIN #channel
+
+[2025-04-02 12:49:13] [INFO] start parsing data
+[2025-04-02 12:49:13] [INFO] start Handling Command JOIN
+[2025-04-02 12:49:13] [CHANNEL] New channel created: #channel by sel-hano
+[2025-04-02 12:49:13] [CHANNEL] Adding Client sel-hano To channel #channel
+[2025-04-02 12:49:13] [INFO] end of read event
+[2025-04-02 12:50:04] [SERVER] Server initializing
+[2025-04-02 12:50:04] [SERVER] Server initialized
+[2025-04-02 12:50:10] [CLIENT] Client Accepted5
+[2025-04-02 12:50:10] [DEBUG] starting read event
+[2025-04-02 12:50:10] [DEBUG] processing read event
+[2025-04-02 12:50:10] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-02 12:50:10] [INFO] start parsing data
+[2025-04-02 12:50:10] [INFO] start Handling Command PASS
+[2025-04-02 12:50:10] [INFO] end of read event
+[2025-04-02 12:50:10] [DEBUG] starting read event
+[2025-04-02 12:50:10] [DEBUG] processing read event
+[2025-04-02 12:50:10] [DEBUG] recieved data: NICK iel-bak
+
+[2025-04-02 12:50:10] [INFO] start parsing data
+[2025-04-02 12:50:10] [INFO] start Handling Command NICK
+[2025-04-02 12:50:10] [INFO] end of read event
+[2025-04-02 12:50:10] [DEBUG] starting read event
+[2025-04-02 12:50:10] [DEBUG] processing read event
+[2025-04-02 12:50:10] [DEBUG] recieved data: USER ismail 0 * :ismail elbakkali
+
+[2025-04-02 12:50:10] [INFO] start parsing data
+[2025-04-02 12:50:10] [INFO] start Handling Command USER
+[2025-04-02 12:50:10] [INFO] end of read event
+[2025-04-02 12:50:19] [CLIENT] Client Accepted6
+[2025-04-02 12:50:29] [DEBUG] starting read event
+[2025-04-02 12:50:29] [DEBUG] processing read event
+[2025-04-02 12:50:29] [DEBUG] recieved data: PASS Password1!
+NICK sel-hano
+
+[2025-04-02 12:50:29] [INFO] start parsing data
+[2025-04-02 12:50:29] [INFO] start Handling Command PASS
+[2025-04-02 12:50:29] [INFO] start Handling Command NICK
+[2025-04-02 12:50:29] [INFO] end of read event
+[2025-04-02 12:50:31] [DEBUG] starting read event
+[2025-04-02 12:50:31] [DEBUG] processing read event
+[2025-04-02 12:50:31] [DEBUG] recieved data: USER saif 0 * saifeddine
+
+[2025-04-02 12:50:31] [INFO] start parsing data
+[2025-04-02 12:50:31] [INFO] start Handling Command USER
+[2025-04-02 12:50:31] [INFO] end of read event
+[2025-04-02 12:50:41] [DEBUG] starting read event
+[2025-04-02 12:50:41] [DEBUG] processing read event
+[2025-04-02 12:50:41] [DEBUG] recieved data: JOIN #channel
+
+[2025-04-02 12:50:41] [INFO] start parsing data
+[2025-04-02 12:50:41] [INFO] start Handling Command JOIN
+[2025-04-02 12:50:41] [CHANNEL] New channel created: #channel by sel-hano
+[2025-04-02 12:50:41] [CHANNEL] Adding Client sel-hano To channel #channel
+[2025-04-02 12:50:41] [INFO] end of read event
+[2025-04-02 12:51:07] [SERVER] Server initializing
+[2025-04-02 12:51:07] [SERVER] Server initialized
+[2025-04-02 12:51:10] [CLIENT] Client Accepted5
+[2025-04-02 12:51:16] [DEBUG] starting read event
+[2025-04-02 12:51:16] [DEBUG] processing read event
+[2025-04-02 12:51:16] [DEBUG] recieved data: PASS Password1!
+NICK sel-hano
+
+[2025-04-02 12:51:16] [INFO] start parsing data
+[2025-04-02 12:51:16] [INFO] start Handling Command PASS
+[2025-04-02 12:51:16] [INFO] start Handling Command NICK
+[2025-04-02 12:51:16] [INFO] end of read event
+[2025-04-02 12:51:22] [CLIENT] Client Accepted6
+[2025-04-02 12:51:22] [DEBUG] starting read event
+[2025-04-02 12:51:22] [DEBUG] processing read event
+[2025-04-02 12:51:22] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-02 12:51:22] [INFO] start parsing data
+[2025-04-02 12:51:22] [INFO] start Handling Command PASS
+[2025-04-02 12:51:22] [INFO] end of read event
+[2025-04-02 12:51:22] [DEBUG] starting read event
+[2025-04-02 12:51:22] [DEBUG] processing read event
+[2025-04-02 12:51:22] [DEBUG] recieved data: NICK iel-bak
+
+[2025-04-02 12:51:22] [INFO] start parsing data
+[2025-04-02 12:51:22] [INFO] start Handling Command NICK
+[2025-04-02 12:51:22] [INFO] end of read event
+[2025-04-02 12:51:22] [DEBUG] starting read event
+[2025-04-02 12:51:22] [DEBUG] processing read event
+[2025-04-02 12:51:22] [DEBUG] recieved data: USER ismail 0 * :ismail elbakkali
+
+[2025-04-02 12:51:22] [INFO] start parsing data
+[2025-04-02 12:51:22] [INFO] start Handling Command USER
+[2025-04-02 12:51:22] [INFO] end of read event
+[2025-04-02 12:51:35] [DEBUG] starting read event
+[2025-04-02 12:51:35] [DEBUG] processing read event
+[2025-04-02 12:51:35] [DEBUG] recieved data: USER saif 0 * saifeddine
+
+[2025-04-02 12:51:35] [INFO] start parsing data
+[2025-04-02 12:51:35] [INFO] start Handling Command USER
+[2025-04-02 12:51:35] [INFO] end of read event
+[2025-04-02 12:51:59] [DEBUG] starting read event
+[2025-04-02 12:51:59] [DEBUG] processing read event
+[2025-04-02 12:51:59] [DEBUG] recieved data: JOIN #channel
+
+[2025-04-02 12:51:59] [INFO] start parsing data
+[2025-04-02 12:51:59] [INFO] start Handling Command JOIN
+[2025-04-02 12:51:59] [CHANNEL] New channel created: #channel by sel-hano
+[2025-04-02 12:51:59] [CHANNEL] Adding Client sel-hano To channel #channel
+[2025-04-02 12:51:59] [INFO] end of read event
+[2025-04-02 12:52:32] [DEBUG] starting read event
+[2025-04-02 12:52:32] [DEBUG] processing read event
+[2025-04-02 12:52:32] [DEBUG] recieved data: PRIVMSG #chan Hello
+
+[2025-04-02 12:52:32] [INFO] start parsing data
+[2025-04-02 12:52:32] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:52:32] [INFO] end of read event
+[2025-04-02 12:52:49] [DEBUG] starting read event
+[2025-04-02 12:52:49] [DEBUG] processing read event
+[2025-04-02 12:52:49] [DEBUG] recieved data: JOIN #chan
+
+[2025-04-02 12:52:49] [INFO] start parsing data
+[2025-04-02 12:52:49] [INFO] start Handling Command JOIN
+[2025-04-02 12:52:49] [CHANNEL] New channel created: #chan by sel-hano
+[2025-04-02 12:52:49] [CHANNEL] Adding Client sel-hano To channel #chan
+[2025-04-02 12:52:49] [INFO] end of read event
+[2025-04-02 12:53:18] [DEBUG] starting read event
+[2025-04-02 12:53:18] [DEBUG] processing read event
+[2025-04-02 12:53:18] [DEBUG] recieved data: PRIVMSG #chan Hiiiii
+
+[2025-04-02 12:53:18] [INFO] start parsing data
+[2025-04-02 12:53:18] [INFO] start Handling Command PRIVMSG
+[2025-04-02 12:53:18] [WARNING] iel-bak not found in channel #chan
+[2025-04-02 12:53:18] [INFO] end of read event
+[2025-04-02 13:25:02] [SERVER] Server initializing
+[2025-04-02 13:25:02] [SERVER] Server initialized
+[2025-04-02 13:25:13] [CLIENT] Client Accepted5
+[2025-04-02 13:25:13] [DEBUG] starting read event
+[2025-04-02 13:25:13] [DEBUG] processing read event
+[2025-04-02 13:25:13] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-02 13:25:13] [INFO] start parsing data
+[2025-04-02 13:25:13] [INFO] start Handling Command PASS
+[2025-04-02 13:25:13] [INFO] end of read event
+[2025-04-02 13:25:13] [DEBUG] starting read event
+[2025-04-02 13:25:13] [DEBUG] processing read event
+[2025-04-02 13:25:13] [DEBUG] recieved data: NICK iel-bak
+
+[2025-04-02 13:25:13] [INFO] start parsing data
+[2025-04-02 13:25:13] [INFO] start Handling Command NICK
+[2025-04-02 13:25:13] [INFO] end of read event
+[2025-04-02 13:25:13] [DEBUG] starting read event
+[2025-04-02 13:25:13] [DEBUG] processing read event
+[2025-04-02 13:25:13] [DEBUG] recieved data: USER ismail 0 * :ismail elbakkali
+
+[2025-04-02 13:25:13] [INFO] start parsing data
+[2025-04-02 13:25:13] [INFO] start Handling Command USER
+[2025-04-02 13:25:13] [INFO] end of read event

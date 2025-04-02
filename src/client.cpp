@@ -1,6 +1,6 @@
 #include "../include/client.hpp"
 
-Client::Client(int _fd, sockaddr_in addr) : fd(_fd), _addr(addr), Auth(false),pass(false),user(false),nick(false) {}
+Client::Client(int _fd, sockaddr_in addr) : fd(_fd), _addr(addr), Auth(false), pass(false), user(false), nick(false) {}
 
 Client::~Client() {}
 

@@ -6,19 +6,21 @@
 #include <vector>
 #include <map>
 #include <netinet/in.h>
-#include"server.hpp"
+#include "server.hpp"
 
 class Client
 {
     private :
-    int         fd;
-    sockaddr_in     _addr;
-    bool        Auth;
-    bool    pass;
-    bool    user;
-    bool    nick;
+        int         fd;
+        sockaddr_in     _addr;
+        bool        Auth;
+        bool    pass;
+        bool    user;
+        bool    nick;
         std::string Nick;
         std::string User;
+        // Server &serv;
+
     public :
         Client() : fd(0), Auth(false) {};
         Client (int _fd, sockaddr_in addr);

@@ -3,14 +3,14 @@
 // Initialize static members
 bool Logger::isColorEnabled = true;
 LogLevel Logger::minLevel = INFO;
-std::ofstream Logger::logFile;
+std::ofstream Logger::logFile; // Don't initialize here
 
 // Get current timestamp for log entries
 std::string Logger::getTimestamp() {
     time_t now = time(0);
-    struct tm *timeinfo = localtime(&now);
+    struct tm* timeinfo = localtime(&now);
     char buffer[80];
-    strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", timeinfo);
+    strftime(buffer, 80, "[%Y-%m-%d %H:%M:%S]", timeinfo);
     return std::string(buffer);
 }
 
@@ -37,25 +37,22 @@ std::string Logger::getColorCode(LogLevel level) {
     }
     
     switch (level) {
-        case DEBUG:   return "\033[36m"; // Cyan
-        case INFO:    return "\033[32m"; // Green
-        case WARNING: return "\033[33m"; // Yellow
-        case ERROR:   return "\033[31m"; // Red
-        case FATAL:   return "\033[35m"; // Magenta
-        case MESSAGE: return "\033[37m"; // White
-        case CHANNEL: return "\033[34m"; // Blue
-        case SERVER:  return "\033[32m"; // Green
-        case CLIENT:  return "\033[36m"; // Cyan
-        default:      return "\033[0m";  // Reset
+        case DEBUG:   return "\033[34m"; 
+        case INFO:    return "\033[32m"; 
+        case WARNING: return "\033[33m"; 
+        case ERROR:   return "\033[31m";
+        case FATAL:   return "\033[35m"; 
+        case MESSAGE: return "\033[37m"; 
+        case CHANNEL: return "\033[30m";
+        case SERVER:  return "\033[31m"; 
+        case CLIENT:  return "\033[35m";
+        default:      return "\033[0m";  
     }
 }
 
 // Reset ANSI color
 std::string Logger::resetColor() {
-    if (!isColorEnabled) {
-        return "";
-    }
-    return "\033[0m";
+    return isColorEnabled ? "\033[0m" : "";
 }
 
 // Initialize the logger
@@ -63,14 +60,18 @@ void Logger::init(const std::string& logFilePath, LogLevel level, bool enableCol
     minLevel = level;
     isColorEnabled = enableColor;
     
+    // Close existing file if open
+    if (logFile.is_open()) {
+        logFile.close();
+    }
+    
+    // Open log file if path is provided
     if (!logFilePath.empty()) {
         logFile.open(logFilePath.c_str(), std::ios::out | std::ios::app);
         if (!logFile.is_open()) {
-            std::cerr << "Error: Cannot open log file " << logFilePath << std::endl;
+            std::cerr << "Failed to open log file: " << logFilePath << std::endl;
         }
     }
-    
-    info("Logger initialized");
 }
 
 // Set minimum log level
@@ -95,16 +96,15 @@ void Logger::log(LogLevel level, const std::string& message) {
     std::string resetColorCode = resetColor();
     
     // Format: [TIME] [LEVEL] Message
-    std::stringstream logEntry;
-    logEntry << "[" << timestamp << "] [" << levelStr << "] " << message;
+    std::stringstream logMessage;
+    logMessage << colorCode << timestamp << " [" << levelStr << "] " << message << resetColorCode;
     
-    // Output to console with color
-    std::cout << colorCode << logEntry.str() << resetColorCode << std::endl;
+    // Output to console
+    std::cout << logMessage.str() << std::endl;
     
-    // Output to file without color codes
+    // Output to file if open (without color codes)
     if (logFile.is_open()) {
-        logFile << logEntry.str() << std::endl;
-        logFile.flush();
+        logFile << timestamp << " [" << levelStr << "] " << message << std::endl;
     }
 }
 
