@@ -68,15 +68,13 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
         }
         keyList.push_back(keys.substr(lastPos));
     }
-    
     for (size_t i = 0; i < channelList.size(); i++) {
         std::string channelName = channelList[i];
         std::string key = (i < keyList.size()) ? keyList[i] : "";
-        
-        // Ensure channel name starts with #
-        if (channelName[0] != '#') {
-            channelName = "#" + channelName;
-        }
+    if (channelName.empty() || channelName[0] != '#') {
+        sendError(fd, "403", channelName, "No such channel");
+        continue;
+    }
         
         // Check if channel exists
         bool isNewChannel = (this->channels.find(channelName) == this->channels.end());
@@ -109,9 +107,12 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
         
         // Create channel if it doesn't exist
         if (isNewChannel) {
-            Logger::channel("New channel created: " + channelName + " by " + clients[fd].getNick());
-            Channel newChannel;
-            this->channels[channelName] = newChannel;
+            if (!key.empty())
+            {
+                Logger::channel("New channel created: " + channelName + " by " + clients[fd].getNick());
+                Channel newChannel;
+                this->channels[channelName] = newChannel;
+            }
         }
         
         // If user is already in the channel, don't add them again
@@ -134,8 +135,9 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
         // Send JOIN message to all users in the channel
         std::string response = ":" + clients[fd].getNick() + "!" + clients[fd].getUser() + "@" + serverName + " JOIN :" + channelName + "\r\n";
         broadcastToChannel(channelName, response, -1);
-        
         // Send channel topic
+
+        displayChannelModes(fd,channelName,0);
         std::string topic = this->channels[channelName].getTopic();
         if (!topic.empty()) {
             std::string topicResponse = ":" + serverName + " 332 " + clients[fd].getNick() + " " + channelName + " :" + topic + "\r\n";
@@ -173,4 +175,6 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
 //     clients[fd].response = ":" + std::string(serverName) + " 366 " + clients[fd].getNick() + " " + channelName + " :End of /NAMES list.\r\n";
 //     clients[fd].sendResponse();
 // }
+
+
 

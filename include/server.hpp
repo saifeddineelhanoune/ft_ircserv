@@ -65,7 +65,7 @@ class Server {
         bool handleUserLimitMode(int fd, const std::string& channelName, bool addMode, 
                                 std::vector<std::string>& args, int& argIndex, 
                                 std::string& modeParams);
-        void displayChannelModes(int fd, const std::string& channelName);
+        void displayChannelModes(int fd, const std::string& channelName,bool flag);
         void processChannelModes(int fd, const std::string& target, std::vector<std::string>& args);
         void processUserModes(int fd, const std::string& target, std::vector<std::string>& args);
         void cmdMode(int fd, std::vector<std::string>& args);

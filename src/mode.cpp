@@ -23,7 +23,7 @@ void Server::cmdMode(int fd, std::vector<std::string>& args) {
         
         // If no mode specified, just display current modes
         if (args.size() == 2) {
-            displayChannelModes(fd, target);
+            displayChannelModes(fd, target,1);
             return;
         }
         
@@ -132,7 +132,7 @@ void Server::processChannelModes(int fd, const std::string& target, std::vector<
     }
 }
 
-void Server::displayChannelModes(int fd, const std::string& channelName) {
+void Server::displayChannelModes(int fd, const std::string& channelName,bool wlcMode) {
     std::string modes = "+";
     std::string params = "";
     
@@ -164,9 +164,12 @@ void Server::displayChannelModes(int fd, const std::string& channelName) {
     clients[fd].sendResponse();
     
     // Send channel creation time (required by many clients)
-    clients[fd].response = ":" + serverName + " 329 " + clients[fd].getNick() + " " + 
-                          channelName + " " + "1234567890" + "\r\n"; // Use actual timestamp if available
-    clients[fd].sendResponse();
+    if (wlcMode)
+    {
+        clients[fd].response = ":" + serverName + " 329 " + clients[fd].getNick() + " " + 
+                             channelName + " " + "1234567890" + "\r\n"; // Use actual timestamp if available
+        clients[fd].sendResponse();
+    }
 }
 
 bool Server::handleOperatorMode(int fd, const std::string& channelName, bool addMode, 

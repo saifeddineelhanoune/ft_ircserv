@@ -9,38 +9,47 @@ void Server::ReadEvent(int fd)
     char buffer[1024];
     std::memset(buffer, 0, sizeof(buffer));
     Logger::debug("starting read event");
+
     int readed = read(fd, buffer, sizeof(buffer) - 1);
+
     if (readed <= 0)
     {
-        std::map<int, Client>::iterator it = clients.find(fd);
+        std::map<int,Client>::iterator it = clients.find(fd);
         if (it != clients.end())
         {
             std::string response = ":" + it->second.getNick() + " QUIT :Quit: Leaving\r\n";
-            deleteClient(fd);
             Logger::fatal(response);
-            // clients.erase(fd);
-            // close(fd);
+            deleteClient(fd);
         }
         Logger::info("Connection closed");
         return;
     }
-    Logger::debug("processing read event");
+
     buffer[readed] = '\0';
-    std::string input(buffer);
-    std::istringstream iss(input);
-    std::string line;
-    Logger::debug("recieved data: " + input);
-    Logger::info("start parsing data");
-    while (std::getline(iss, line))
+    Logger::debug("received data: " + std::string(buffer));
+    clients[fd].getbuff().append(buffer);
+    std::string& clientBuffer = clients[fd].getbuff();
+
+    std::size_t pos;
+    while ((pos = clientBuffer.find_first_of("\r\n")) != std::string::npos) 
     {
-        if (!line.empty() && line[line.length() - 1] == '\r')
-            line.erase(line.length() - 1);
-        if (line.empty())
-            continue;
-        handleCommands(fd, line);
+        std::string command = clientBuffer.substr(0, pos);
+        clientBuffer.erase(0, pos + 1); 
+
+        if (!command.empty() && command.back() == '\r')
+            command.pop_back();
+
+        if (!command.empty()) 
+        {
+            Logger::debug("Processing command: " + command);
+            handleCommands(fd, command);
+        }
     }
+
     Logger::info("end of read event");
 }
+
+
 
 void    Server::WriteEvent(int fd)
 {

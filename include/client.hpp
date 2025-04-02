@@ -22,7 +22,7 @@ class Client
         std::string Nick;
         std::string User;
         Server *serv;
-
+        std::string buff;
     public :
         Client() : fd(0), Auth(false) ,serv(NULL){};
         Client (int _fd, sockaddr_in addr, Server *ss);
@@ -40,6 +40,7 @@ class Client
         void    setPassauth();
         void    setUserauth();
         void    setNickauth();
+        std::string &getbuff() {return buff;}
         sockaddr_in getAddr();
         void    sendResponse();
         void    setAddr(sockaddr_in addr);
