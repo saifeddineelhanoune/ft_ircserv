@@ -83,6 +83,10 @@ class Server {
         void welcomeClient();
         void WriteEvent(int fd);
         void ReadEvent(int fd);
+        std::map<int,Client> &getclients()
+        {
+            return clients;
+        }
 };
 
 bool isStringDigits(std::string str);

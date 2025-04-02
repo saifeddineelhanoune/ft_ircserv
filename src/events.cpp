@@ -65,7 +65,7 @@ void    Server::WriteEvent(int fd)
     it->second.response.clear();
 }
 
-void Server::handleCommands(int fd, std::string command)
+void    Server::handleCommands(int fd, std::string command)
 {
     std::vector<std::string> args;
     std::string::size_type pos = 0, lastPos = 0;
@@ -78,12 +78,12 @@ void Server::handleCommands(int fd, std::string command)
     std::map<std::string, CommandHandler>::iterator it = commands.find(args[0]);
     if (it == commands.end())
     {
-        Logger::error("Invalid Command");
+        std::cerr << "Error: Invalid command" << std::endl;
         clients[fd].response = "421 * :Unknown command\r\n";
         clients[fd].sendResponse();
         return;
     }
-    Logger::info("start Handling Command " + args[0]);
+    std::cout << "Command: " << args[0] << std::endl;
     if (clients[fd].getAuth() == false)
     {
         if (clients[fd].getPassauth() == false)
@@ -96,7 +96,7 @@ void Server::handleCommands(int fd, std::string command)
         }
         else if (clients[fd].getUserauth() == false)
         {
-            if (args[0] != "USER" && args[0] != "NICK")
+            if (args[0] != "USER")
             {
                 sendError(fd, "451", args[0], "You have not registered");
                 return;
@@ -104,12 +104,26 @@ void Server::handleCommands(int fd, std::string command)
         }
         else if (clients[fd].getNickauth() == false)
         {
-            if (args[0] != "USER" && args[0] != "NICK") // Fixed: Was checking args[1] instead of args[0]
+            if (args[0] != "NICK")
             {
                 sendError(fd, "451", args[0], "You have not registered");
+                // clients[fd].response = "464 * :You must authenticate first\r\n";
+                // clients[fd].sendResponse();
                 return;
             }
         }
     }
     (this->*(it->second))(fd, args);
+    if (clients[fd].getAuth() == false && clients[fd].getPassauth() && clients[fd].getUserauth() && clients[fd].getNickauth())
+    {
+        clients[fd].setAuth(true);
+        clients[fd].response = "001 " + clients[fd].getNick() + " :Welcome to the IRC server\r\n";
+        clients[fd].sendResponse();
+        clients[fd].response = "002 " + clients[fd].getNick() + " :Your host is " + inet_ntoa(data.serverInfo.sin_addr) + "\r\n";
+        clients[fd].sendResponse();
+        clients[fd].response = "003 " + clients[fd].getNick() + " :This server was created " __DATE__ "\r\n";
+        clients[fd].sendResponse();
+        clients[fd].response = "004 " + clients[fd].getNick() + " :This server is running " __DATE__ "\r\n";
+        clients[fd].sendResponse();
+    }
 }

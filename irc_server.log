@@ -4416,3 +4416,787 @@ NICK sel-hano
 [2025-04-02 13:36:30] [FATAL] : QUIT :Quit: Leaving
 
 [2025-04-02 13:36:30] [INFO] Connection closed
+[2025-04-02 13:42:35] [SERVER] Server initializing
+[2025-04-02 13:42:35] [SERVER] Server initialized
+[2025-04-02 13:42:37] [CLIENT] Client Accepted5
+[2025-04-02 13:42:41] [DEBUG] starting read event
+[2025-04-02 13:42:41] [DEBUG] processing read event
+[2025-04-02 13:42:41] [DEBUG] recieved data: PASS hello
+
+[2025-04-02 13:42:41] [INFO] start parsing data
+[2025-04-02 13:42:41] [INFO] start Handling Command PASS
+[2025-04-02 13:42:41] [INFO] end of read event
+[2025-04-02 13:42:46] [DEBUG] starting read event
+[2025-04-02 13:42:46] [DEBUG] processing read event
+[2025-04-02 13:42:46] [DEBUG] recieved data: 
+
+[2025-04-02 13:42:46] [INFO] start parsing data
+[2025-04-02 13:42:46] [INFO] end of read event
+[2025-04-02 13:42:59] [DEBUG] starting read event
+[2025-04-02 13:42:59] [DEBUG] processing read event
+[2025-04-02 13:42:59] [DEBUG] recieved data: PASS 
+[2025-04-02 13:42:59] [INFO] start parsing data
+[2025-04-02 13:42:59] [INFO] start Handling Command PASS
+[2025-04-02 13:42:59] [INFO] end of read event
+[2025-04-02 13:43:41] [DEBUG] starting read event
+[2025-04-02 13:43:41] [DEBUG] processing read event
+[2025-04-02 13:43:41] [DEBUG] recieved data: PASS Hello#12
+
+[2025-04-02 13:43:41] [INFO] start parsing data
+[2025-04-02 13:43:41] [INFO] start Handling Command PASS
+[2025-04-02 13:43:41] [INFO] end of read event
+[2025-04-02 13:43:52] [DEBUG] starting read event
+[2025-04-02 13:43:52] [DEBUG] processing read event
+[2025-04-02 13:43:52] [DEBUG] recieved data: PASS Hello#123
+
+[2025-04-02 13:43:52] [INFO] start parsing data
+[2025-04-02 13:43:52] [INFO] start Handling Command PASS
+[2025-04-02 13:43:52] [INFO] end of read event
+[2025-04-02 13:43:59] [DEBUG] starting read event
+[2025-04-02 13:43:59] [DEBUG] processing read event
+[2025-04-02 13:43:59] [DEBUG] recieved data: NICK SIMO
+
+[2025-04-02 13:43:59] [INFO] start parsing data
+[2025-04-02 13:43:59] [INFO] start Handling Command NICK
+[2025-04-02 13:43:59] [INFO] end of read event
+[2025-04-02 13:44:04] [DEBUG] starting read event
+[2025-04-02 13:44:04] [DEBUG] processing read event
+[2025-04-02 13:44:04] [DEBUG] recieved data: USER LOL - - PP
+
+[2025-04-02 13:44:04] [INFO] start parsing data
+[2025-04-02 13:44:04] [INFO] start Handling Command USER
+[2025-04-02 13:51:33] [SERVER] Server initializing
+[2025-04-02 13:51:33] [SERVER] Server initialized
+[2025-04-02 13:51:39] [CLIENT] Client Accepted5
+[2025-04-02 13:51:42] [DEBUG] starting read event
+[2025-04-02 13:51:42] [DEBUG] processing read event
+[2025-04-02 13:51:42] [DEBUG] recieved data: PASS hello
+
+[2025-04-02 13:51:42] [INFO] start parsing data
+[2025-04-02 13:51:42] [INFO] start Handling Command PASS
+[2025-04-02 13:51:42] [INFO] end of read event
+[2025-04-02 13:51:42] [DEBUG] starting read event
+[2025-04-02 13:51:42] [DEBUG] processing read event
+[2025-04-02 13:51:42] [DEBUG] recieved data: :IRCServer-v1.0 464 PASS :Password incorrect
+
+
+[2025-04-02 13:51:42] [INFO] start parsing data
+[2025-04-02 13:51:42] [ERROR] Invalid Command
+[2025-04-02 13:51:42] [INFO] end of read event
+[2025-04-02 13:51:42] [DEBUG] starting read event
+[2025-04-02 13:51:42] [DEBUG] processing read event
+[2025-04-02 13:51:42] [DEBUG] recieved data: PASS :IRCServer-v1.0 464 PASS :Password incorrect
+PASS Hello#12
+
+[2025-04-02 13:51:42] [INFO] start parsing data
+[2025-04-02 13:51:42] [INFO] start Handling Command PASS
+[2025-04-02 13:51:42] [INFO] start Handling Command PASS
+[2025-04-02 13:51:42] [INFO] end of read event
+[2025-04-02 13:51:42] [DEBUG] starting read event
+[2025-04-02 13:51:42] [DEBUG] processing read event
+[2025-04-02 13:51:42] [DEBUG] recieved data: :IRCServer-v1.0 464 PASS :Password incorrect
+
+[2025-04-02 13:51:42] [INFO] start parsing data
+[2025-04-02 13:51:42] [ERROR] Invalid Command
+[2025-04-02 13:51:42] [INFO] end of read event
+[2025-04-02 13:51:55] [DEBUG] starting read event
+[2025-04-02 13:51:55] [DEBUG] processing read event
+[2025-04-02 13:51:55] [DEBUG] recieved data: PASS Hello#123PASS Hello#123
+
+[2025-04-02 13:51:55] [INFO] start parsing data
+[2025-04-02 13:51:55] [INFO] start Handling Command PASS
+[2025-04-02 13:51:55] [INFO] end of read event
+[2025-04-02 13:52:02] [DEBUG] starting read event
+[2025-04-02 13:52:02] [DEBUG] processing read event
+[2025-04-02 13:52:02] [DEBUG] recieved data: NICK SIMO
+
+[2025-04-02 13:52:02] [INFO] start parsing data
+[2025-04-02 13:52:02] [INFO] start Handling Command NICK
+[2025-04-02 13:52:02] [INFO] end of read event
+[2025-04-02 13:52:06] [DEBUG] starting read event
+[2025-04-02 13:52:06] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 13:52:06] [INFO] Connection closed
+[2025-04-02 13:52:08] [CLIENT] Client Accepted5
+[2025-04-02 13:52:15] [DEBUG] starting read event
+[2025-04-02 13:52:15] [DEBUG] processing read event
+[2025-04-02 13:52:15] [DEBUG] recieved data: PASS Hello#123
+
+[2025-04-02 13:52:15] [INFO] start parsing data
+[2025-04-02 13:52:15] [INFO] start Handling Command PASS
+[2025-04-02 13:52:15] [INFO] end of read event
+[2025-04-02 13:52:18] [DEBUG] starting read event
+[2025-04-02 13:52:18] [DEBUG] processing read event
+[2025-04-02 13:52:18] [DEBUG] recieved data: NICK SIM
+
+[2025-04-02 13:52:18] [INFO] start parsing data
+[2025-04-02 13:52:18] [INFO] start Handling Command NICK
+[2025-04-02 13:52:18] [INFO] end of read event
+[2025-04-02 13:52:22] [DEBUG] starting read event
+[2025-04-02 13:52:22] [DEBUG] processing read event
+[2025-04-02 13:52:22] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 13:52:22] [INFO] start parsing data
+[2025-04-02 13:52:22] [INFO] start Handling Command USER
+[2025-04-02 13:54:37] [SERVER] Server initializing
+[2025-04-02 13:54:37] [SERVER] Server initialized
+[2025-04-02 13:54:39] [CLIENT] Client Accepted5
+[2025-04-02 13:54:47] [DEBUG] starting read event
+[2025-04-02 13:54:47] [DEBUG] processing read event
+[2025-04-02 13:54:47] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 13:54:47] [INFO] start parsing data
+[2025-04-02 13:54:47] [INFO] start Handling Command PASS
+[2025-04-02 13:54:47] [INFO] start Handling Command NICK
+[2025-04-02 13:54:47] [INFO] end of read event
+[2025-04-02 13:54:49] [DEBUG] starting read event
+[2025-04-02 13:54:49] [DEBUG] processing read event
+[2025-04-02 13:54:49] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 13:54:49] [INFO] start parsing data
+[2025-04-02 13:54:49] [INFO] start Handling Command USER
+[2025-04-02 13:55:43] [SERVER] Server initializing
+[2025-04-02 13:55:43] [SERVER] Server initialized
+[2025-04-02 13:55:45] [CLIENT] Client Accepted5
+[2025-04-02 13:55:51] [DEBUG] starting read event
+[2025-04-02 13:55:51] [DEBUG] processing read event
+[2025-04-02 13:55:51] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 13:55:51] [INFO] start parsing data
+[2025-04-02 13:55:51] [INFO] start Handling Command PASS
+[2025-04-02 13:55:51] [INFO] start Handling Command NICK
+[2025-04-02 13:55:51] [INFO] end of read event
+[2025-04-02 13:55:54] [DEBUG] starting read event
+[2025-04-02 13:55:54] [DEBUG] processing read event
+[2025-04-02 13:55:54] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 13:55:54] [INFO] start parsing data
+[2025-04-02 13:55:54] [INFO] start Handling Command USER
+[2025-04-02 13:56:31] [SERVER] Server initializing
+[2025-04-02 13:56:31] [SERVER] Server initialized
+[2025-04-02 13:56:33] [CLIENT] Client Accepted5
+[2025-04-02 13:56:41] [DEBUG] starting read event
+[2025-04-02 13:56:41] [DEBUG] processing read event
+[2025-04-02 13:56:41] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 13:56:41] [INFO] start parsing data
+[2025-04-02 13:56:41] [INFO] start Handling Command PASS
+[2025-04-02 13:56:41] [INFO] start Handling Command NICK
+[2025-04-02 13:56:41] [INFO] end of read event
+[2025-04-02 13:56:43] [DEBUG] starting read event
+[2025-04-02 13:56:43] [DEBUG] processing read event
+[2025-04-02 13:56:43] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 13:56:43] [INFO] start parsing data
+[2025-04-02 13:56:43] [INFO] start Handling Command USER
+[2025-04-02 13:56:51] [SERVER] Server initializing
+[2025-04-02 13:56:51] [SERVER] Server initialized
+[2025-04-02 13:56:57] [SERVER] Server initializing
+[2025-04-02 13:56:57] [SERVER] Server initialized
+[2025-04-02 13:56:59] [CLIENT] Client Accepted5
+[2025-04-02 13:57:00] [DEBUG] starting read event
+[2025-04-02 13:57:00] [DEBUG] processing read event
+[2025-04-02 13:57:00] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 13:57:00] [INFO] start parsing data
+[2025-04-02 13:57:00] [INFO] start Handling Command PASS
+[2025-04-02 13:57:00] [INFO] start Handling Command NICK
+[2025-04-02 13:57:00] [INFO] end of read event
+[2025-04-02 13:57:01] [DEBUG] starting read event
+[2025-04-02 13:57:01] [DEBUG] processing read event
+[2025-04-02 13:57:01] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 13:57:01] [INFO] start parsing data
+[2025-04-02 13:57:01] [INFO] start Handling Command USER
+[2025-04-02 13:57:17] [SERVER] Server initializing
+[2025-04-02 13:57:17] [SERVER] Server initialized
+[2025-04-02 13:57:19] [CLIENT] Client Accepted5
+[2025-04-02 13:57:21] [DEBUG] starting read event
+[2025-04-02 13:57:21] [DEBUG] processing read event
+[2025-04-02 13:57:21] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 13:57:21] [INFO] start parsing data
+[2025-04-02 13:57:21] [INFO] start Handling Command PASS
+[2025-04-02 13:57:21] [INFO] start Handling Command NICK
+[2025-04-02 13:57:21] [INFO] end of read event
+[2025-04-02 13:57:22] [DEBUG] starting read event
+[2025-04-02 13:57:22] [DEBUG] processing read event
+[2025-04-02 13:57:22] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 13:57:22] [INFO] start parsing data
+[2025-04-02 13:57:22] [INFO] start Handling Command USER
+[2025-04-02 13:57:48] [SERVER] Server initializing
+[2025-04-02 13:57:48] [SERVER] Server initialized
+[2025-04-02 13:57:50] [CLIENT] Client Accepted5
+[2025-04-02 13:57:50] [DEBUG] starting read event
+[2025-04-02 13:57:50] [DEBUG] processing read event
+[2025-04-02 13:57:50] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 13:57:50] [INFO] start parsing data
+[2025-04-02 13:57:50] [INFO] start Handling Command PASS
+[2025-04-02 13:57:50] [INFO] start Handling Command NICK
+[2025-04-02 13:57:50] [INFO] end of read event
+[2025-04-02 13:57:51] [DEBUG] starting read event
+[2025-04-02 13:57:51] [DEBUG] processing read event
+[2025-04-02 13:57:51] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 13:57:51] [INFO] start parsing data
+[2025-04-02 13:57:51] [INFO] start Handling Command USER
+[2025-04-02 13:58:02] [SERVER] Server initializing
+[2025-04-02 13:58:02] [SERVER] Server initialized
+[2025-04-02 13:58:05] [CLIENT] Client Accepted5
+[2025-04-02 13:58:06] [DEBUG] starting read event
+[2025-04-02 13:58:06] [DEBUG] processing read event
+[2025-04-02 13:58:06] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 13:58:06] [INFO] start parsing data
+[2025-04-02 13:58:06] [INFO] start Handling Command PASS
+[2025-04-02 13:58:06] [INFO] start Handling Command NICK
+[2025-04-02 13:58:06] [INFO] end of read event
+[2025-04-02 13:58:07] [DEBUG] starting read event
+[2025-04-02 13:58:07] [DEBUG] processing read event
+[2025-04-02 13:58:07] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 13:58:07] [INFO] start parsing data
+[2025-04-02 13:58:07] [INFO] start Handling Command USER
+[2025-04-02 13:58:19] [SERVER] Server initializing
+[2025-04-02 13:58:19] [SERVER] Server initialized
+[2025-04-02 13:58:21] [CLIENT] Client Accepted5
+[2025-04-02 13:58:22] [DEBUG] starting read event
+[2025-04-02 13:58:22] [DEBUG] processing read event
+[2025-04-02 13:58:22] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 13:58:22] [INFO] start parsing data
+[2025-04-02 13:58:22] [INFO] start Handling Command PASS
+[2025-04-02 13:58:22] [INFO] start Handling Command NICK
+[2025-04-02 13:58:22] [INFO] end of read event
+[2025-04-02 13:58:23] [DEBUG] starting read event
+[2025-04-02 13:58:23] [DEBUG] processing read event
+[2025-04-02 13:58:23] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 13:58:23] [INFO] start parsing data
+[2025-04-02 13:58:23] [INFO] start Handling Command USER
+[2025-04-02 13:58:37] [SERVER] Server initializing
+[2025-04-02 13:58:37] [SERVER] Server initialized
+[2025-04-02 13:58:39] [SERVER] Server initializing
+[2025-04-02 13:58:39] [SERVER] Server initialized
+[2025-04-02 13:58:42] [CLIENT] Client Accepted5
+[2025-04-02 13:58:44] [DEBUG] starting read event
+[2025-04-02 13:58:44] [DEBUG] processing read event
+[2025-04-02 13:58:44] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 13:58:44] [INFO] start parsing data
+[2025-04-02 13:58:44] [INFO] start Handling Command PASS
+[2025-04-02 13:58:44] [INFO] start Handling Command NICK
+[2025-04-02 13:58:44] [INFO] end of read event
+[2025-04-02 13:58:45] [DEBUG] starting read event
+[2025-04-02 13:58:45] [DEBUG] processing read event
+[2025-04-02 13:58:45] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 13:58:45] [INFO] start parsing data
+[2025-04-02 13:58:45] [INFO] start Handling Command USER
+[2025-04-02 13:58:55] [SERVER] Server initializing
+[2025-04-02 13:58:55] [SERVER] Server initialized
+[2025-04-02 13:58:57] [CLIENT] Client Accepted5
+[2025-04-02 13:58:58] [DEBUG] starting read event
+[2025-04-02 13:58:58] [DEBUG] processing read event
+[2025-04-02 13:58:58] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 13:58:58] [INFO] start parsing data
+[2025-04-02 13:58:58] [INFO] start Handling Command PASS
+[2025-04-02 13:58:58] [INFO] start Handling Command NICK
+[2025-04-02 13:58:58] [INFO] end of read event
+[2025-04-02 13:58:58] [DEBUG] starting read event
+[2025-04-02 13:58:58] [DEBUG] processing read event
+[2025-04-02 13:58:58] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 13:58:58] [INFO] start parsing data
+[2025-04-02 13:58:58] [INFO] start Handling Command USER
+[2025-04-02 14:01:33] [SERVER] Server initializing
+[2025-04-02 14:01:33] [SERVER] Server initialized
+[2025-04-02 14:01:35] [CLIENT] Client Accepted5
+[2025-04-02 14:01:37] [DEBUG] starting read event
+[2025-04-02 14:01:37] [DEBUG] processing read event
+[2025-04-02 14:01:37] [DEBUG] recieved data:         clients[fd].response = "001 " + clients[fd].getNick() + " :Welcome to the IRC server\r\n";
+
+[2025-04-02 14:01:37] [INFO] start parsing data
+[2025-04-02 14:01:37] [ERROR] Invalid Command
+[2025-04-02 14:01:37] [INFO] end of read event
+[2025-04-02 14:01:39] [DEBUG] starting read event
+[2025-04-02 14:01:39] [DEBUG] processing read event
+[2025-04-02 14:01:39] [DEBUG] recieved data:         clients[fd].sendResponse();
+
+[2025-04-02 14:01:39] [INFO] start parsing data
+[2025-04-02 14:01:39] [ERROR] Invalid Command
+[2025-04-02 14:01:39] [INFO] end of read event
+[2025-04-02 14:01:44] [DEBUG] starting read event
+[2025-04-02 14:01:44] [DEBUG] processing read event
+[2025-04-02 14:01:44] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 14:01:44] [INFO] start parsing data
+[2025-04-02 14:01:44] [INFO] start Handling Command PASS
+[2025-04-02 14:01:44] [INFO] start Handling Command NICK
+[2025-04-02 14:01:44] [INFO] end of read event
+[2025-04-02 14:01:45] [DEBUG] starting read event
+[2025-04-02 14:01:45] [DEBUG] processing read event
+[2025-04-02 14:01:45] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 14:01:45] [INFO] start parsing data
+[2025-04-02 14:01:45] [INFO] start Handling Command USER
+[2025-04-02 14:01:45] [INFO] end of read event
+[2025-04-02 14:01:50] [DEBUG] starting read event
+[2025-04-02 14:01:50] [FATAL] :SIM QUIT :Quit: Leaving
+
+[2025-04-02 14:01:50] [INFO] Connection closed
+[2025-04-02 14:01:58] [SERVER] Server initializing
+[2025-04-02 14:01:58] [SERVER] Server initialized
+[2025-04-02 14:02:01] [CLIENT] Client Accepted5
+[2025-04-02 14:02:02] [DEBUG] starting read event
+[2025-04-02 14:02:02] [DEBUG] processing read event
+[2025-04-02 14:02:02] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 14:02:02] [INFO] start parsing data
+[2025-04-02 14:02:02] [INFO] start Handling Command PASS
+[2025-04-02 14:02:02] [INFO] start Handling Command NICK
+[2025-04-02 14:02:02] [INFO] end of read event
+[2025-04-02 14:02:03] [DEBUG] starting read event
+[2025-04-02 14:02:03] [DEBUG] processing read event
+[2025-04-02 14:02:03] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 14:02:03] [INFO] start parsing data
+[2025-04-02 14:02:03] [INFO] start Handling Command USER
+[2025-04-02 14:02:45] [SERVER] Server initializing
+[2025-04-02 14:02:45] [SERVER] Server initialized
+[2025-04-02 14:02:47] [CLIENT] Client Accepted5
+[2025-04-02 14:02:48] [DEBUG] starting read event
+[2025-04-02 14:02:48] [DEBUG] processing read event
+[2025-04-02 14:02:48] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 14:02:48] [INFO] start parsing data
+[2025-04-02 14:02:48] [INFO] start Handling Command PASS
+[2025-04-02 14:02:48] [INFO] start Handling Command NICK
+[2025-04-02 14:02:48] [INFO] end of read event
+[2025-04-02 14:02:49] [DEBUG] starting read event
+[2025-04-02 14:02:49] [DEBUG] processing read event
+[2025-04-02 14:02:49] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 14:02:49] [INFO] start parsing data
+[2025-04-02 14:02:49] [INFO] start Handling Command USER
+[2025-04-02 14:05:58] [SERVER] Server initializing
+[2025-04-02 14:05:58] [SERVER] Server initialized
+[2025-04-02 14:06:00] [CLIENT] Client Accepted5
+[2025-04-02 14:06:05] [DEBUG] starting read event
+[2025-04-02 14:06:05] [DEBUG] processing read event
+[2025-04-02 14:06:05] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 14:06:05] [INFO] start parsing data
+[2025-04-02 14:06:05] [INFO] Start Handling Command: PASS
+[2025-04-02 14:06:05] [INFO] Start Handling Command: NICK
+[2025-04-02 14:06:05] [INFO] end of read event
+[2025-04-02 14:06:06] [DEBUG] starting read event
+[2025-04-02 14:06:06] [DEBUG] processing read event
+[2025-04-02 14:06:06] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 14:06:06] [INFO] start parsing data
+[2025-04-02 14:06:06] [INFO] Start Handling Command: USER
+[2025-04-02 14:06:56] [SERVER] Server initializing
+[2025-04-02 14:06:56] [SERVER] Server initialized
+[2025-04-02 14:07:00] [CLIENT] Client Accepted5
+[2025-04-02 14:07:01] [DEBUG] starting read event
+[2025-04-02 14:07:01] [DEBUG] processing read event
+[2025-04-02 14:07:01] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 14:07:01] [INFO] start parsing data
+[2025-04-02 14:07:01] [INFO] Start Handling Command: PASS
+[2025-04-02 14:07:01] [INFO] Start Handling Command: NICK
+[2025-04-02 14:07:01] [INFO] end of read event
+[2025-04-02 14:07:02] [DEBUG] starting read event
+[2025-04-02 14:07:02] [DEBUG] processing read event
+[2025-04-02 14:07:02] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 14:07:02] [INFO] start parsing data
+[2025-04-02 14:07:02] [INFO] Start Handling Command: USER
+[2025-04-02 14:09:15] [SERVER] Server initializing
+[2025-04-02 14:09:15] [SERVER] Server initialized
+[2025-04-02 14:09:18] [CLIENT] Client Accepted5
+[2025-04-02 14:09:22] [DEBUG] starting read event
+[2025-04-02 14:09:22] [DEBUG] processing read event
+[2025-04-02 14:09:22] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 14:09:22] [INFO] start parsing data
+[2025-04-02 14:09:22] [INFO] start Handling Command PASS
+[2025-04-02 14:09:22] [INFO] start Handling Command NICK
+[2025-04-02 14:09:22] [INFO] end of read event
+[2025-04-02 14:09:23] [DEBUG] starting read event
+[2025-04-02 14:09:23] [DEBUG] processing read event
+[2025-04-02 14:09:23] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 14:09:23] [INFO] start parsing data
+[2025-04-02 14:09:23] [INFO] start Handling Command USER
+[2025-04-02 14:10:29] [SERVER] Server initializing
+[2025-04-02 14:10:29] [SERVER] Server initialized
+[2025-04-02 14:10:32] [CLIENT] Client Accepted5
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data: void Server::handleCommands(int fd, std::string command)
+{
+    std::vector<std::string> args;
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: void
+[2025-04-02 14:10:33] [ERROR] Invalid USER command received: {
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:     std::string::size_type pos = 0, lastPos = 0;
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:     while ((pos = command.find(" ", lastPos)) != std::string::npos)
+    {
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:         args.push_back(command.substr(lastPos, pos - lastPos));
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:         lastPos = pos + 1;
+    }
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:     args.push_back(command.substr(lastPos));
+
+    if (args.size() < 2) {
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:         Logger::error("Invalid USER command received: " + command);
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:         sendError(fd, "461", "USER", "Not enough parameters");
+        return;
+    }
+
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:     std::map<std::string, CommandHandler>::iterator it = commands.find(args[0]);
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:     if (it == commands.end())
+    {
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:         Logger::error("Invalid Command: " + args[0]);
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:         clients[fd].response = "421 * :Unknown command\r\n";
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:         clients[fd].sendResponse();
+        return;
+    }
+
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:     Logger::info("Start Handling Command: " + args[0]);
+
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:     // Ensure that the client exists before proceeding
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:     if (clients.find(fd) == clients.end()) {
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:         Logger::error("Client not found for FD: " + std::to_string(fd));
+        return;
+    }
+
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:     // Handle the command as needed
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:33] [DEBUG] starting read event
+[2025-04-02 14:10:33] [DEBUG] processing read event
+[2025-04-02 14:10:33] [DEBUG] recieved data:     (this->*(it->second))(fd, args);
+}
+
+[2025-04-02 14:10:33] [INFO] start parsing data
+[2025-04-02 14:10:33] [ERROR] Invalid Command: 
+[2025-04-02 14:10:33] [ERROR] Invalid USER command received: }
+[2025-04-02 14:10:33] [INFO] end of read event
+[2025-04-02 14:10:34] [DEBUG] starting read event
+[2025-04-02 14:10:34] [DEBUG] processing read event
+[2025-04-02 14:10:34] [DEBUG] recieved data: 
+
+[2025-04-02 14:10:34] [INFO] start parsing data
+[2025-04-02 14:10:34] [INFO] end of read event
+[2025-04-02 14:10:40] [DEBUG] starting read event
+[2025-04-02 14:10:40] [DEBUG] processing read event
+[2025-04-02 14:10:40] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 14:10:40] [INFO] start parsing data
+[2025-04-02 14:10:40] [INFO] Start Handling Command: PASS
+[2025-04-02 14:10:40] [INFO] Start Handling Command: NICK
+[2025-04-02 14:10:40] [INFO] end of read event
+[2025-04-02 14:10:41] [DEBUG] starting read event
+[2025-04-02 14:10:41] [DEBUG] processing read event
+[2025-04-02 14:10:41] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 14:10:41] [INFO] start parsing data
+[2025-04-02 14:10:41] [INFO] Start Handling Command: USER
+[2025-04-02 14:10:41] [INFO] end of read event
+[2025-04-02 14:10:42] [DEBUG] starting read event
+[2025-04-02 14:10:42] [DEBUG] processing read event
+[2025-04-02 14:10:42] [DEBUG] recieved data: 
+
+[2025-04-02 14:10:42] [INFO] start parsing data
+[2025-04-02 14:10:42] [INFO] end of read event
+[2025-04-02 14:10:59] [SERVER] Server initializing
+[2025-04-02 14:10:59] [SERVER] Server initialized
+[2025-04-02 14:11:01] [CLIENT] Client Accepted5
+[2025-04-02 14:11:02] [DEBUG] starting read event
+[2025-04-02 14:11:02] [DEBUG] processing read event
+[2025-04-02 14:11:02] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 14:11:02] [INFO] start parsing data
+[2025-04-02 14:11:02] [INFO] Start Handling Command: PASS
+[2025-04-02 14:11:02] [INFO] Start Handling Command: NICK
+[2025-04-02 14:11:02] [INFO] end of read event
+[2025-04-02 14:11:03] [DEBUG] starting read event
+[2025-04-02 14:11:03] [DEBUG] processing read event
+[2025-04-02 14:11:03] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 14:11:03] [INFO] start parsing data
+[2025-04-02 14:11:03] [INFO] Start Handling Command: USER
+[2025-04-02 14:14:05] [SERVER] Server initializing
+[2025-04-02 14:14:05] [SERVER] Server initialized
+[2025-04-02 14:14:07] [CLIENT] Client Accepted5
+[2025-04-02 14:14:13] [DEBUG] starting read event
+[2025-04-02 14:14:13] [DEBUG] processing read event
+[2025-04-02 14:14:13] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 14:14:13] [INFO] start parsing data
+[2025-04-02 14:14:13] [INFO] end of read event
+[2025-04-02 14:14:25] [DEBUG] starting read event
+[2025-04-02 14:14:25] [DEBUG] processing read event
+[2025-04-02 14:14:25] [DEBUG] recieved data: USER P P P P 
+
+[2025-04-02 14:14:25] [INFO] start parsing data
+[2025-04-02 14:14:25] [INFO] end of read event
+[2025-04-02 14:14:26] [DEBUG] starting read event
+[2025-04-02 14:14:26] [DEBUG] processing read event
+[2025-04-02 14:14:26] [DEBUG] recieved data: 
+
+[2025-04-02 14:14:26] [INFO] start parsing data
+[2025-04-02 14:14:26] [INFO] end of read event
+[2025-04-02 14:14:36] [DEBUG] starting read event
+[2025-04-02 14:14:36] [DEBUG] processing read event
+[2025-04-02 14:14:36] [DEBUG] recieved data: USER SIMO
+
+[2025-04-02 14:14:36] [INFO] start parsing data
+[2025-04-02 14:14:36] [INFO] end of read event
+[2025-04-02 14:14:49] [DEBUG] starting read event
+[2025-04-02 14:14:49] [DEBUG] processing read event
+[2025-04-02 14:14:49] [DEBUG] recieved data: USER SIMO * * LOL
+
+[2025-04-02 14:14:49] [INFO] start parsing data
+[2025-04-02 14:14:49] [INFO] end of read event
+[2025-04-02 14:14:59] [DEBUG] starting read event
+[2025-04-02 14:14:59] [DEBUG] processing read event
+[2025-04-02 14:14:59] [DEBUG] recieved data: NICK SIMO
+
+[2025-04-02 14:14:59] [INFO] start parsing data
+[2025-04-02 14:56:01] [SERVER] Server initializing
+[2025-04-02 14:56:01] [SERVER] Server initialized
+[2025-04-02 14:56:03] [CLIENT] Client Accepted5
+[2025-04-02 14:56:11] [DEBUG] starting read event
+[2025-04-02 14:56:11] [DEBUG] processing read event
+[2025-04-02 14:56:11] [DEBUG] recieved data: PASS Hello#123
+NICK SIM
+
+[2025-04-02 14:56:11] [INFO] start parsing data
+[2025-04-02 14:56:11] [INFO] end of read event
+[2025-04-02 14:56:20] [DEBUG] starting read event
+[2025-04-02 14:56:20] [DEBUG] processing read event
+[2025-04-02 14:56:20] [DEBUG] recieved data: USER P P P PUSER LOL LOL LOL LOL
+
+[2025-04-02 14:56:20] [INFO] start parsing data
+[2025-04-02 14:56:20] [INFO] end of read event
+[2025-04-02 14:56:29] [DEBUG] starting read event
+[2025-04-02 14:56:29] [DEBUG] processing read event
+[2025-04-02 14:56:29] [DEBUG] recieved data: NICK LOL
+
+[2025-04-02 14:56:29] [INFO] start parsing data
+[2025-04-02 14:57:16] [SERVER] Server initializing
+[2025-04-02 14:57:16] [SERVER] Server initialized
+[2025-04-02 14:57:18] [CLIENT] Client Accepted5
+[2025-04-02 14:57:23] [DEBUG] starting read event
+[2025-04-02 14:57:23] [DEBUG] processing read event
+[2025-04-02 14:57:23] [DEBUG] recieved data: PASS SIMO
+
+[2025-04-02 14:57:23] [INFO] start parsing data
+[2025-04-02 14:57:23] [INFO] end of read event
+[2025-04-02 14:57:32] [DEBUG] starting read event
+[2025-04-02 14:57:32] [DEBUG] processing read event
+[2025-04-02 14:57:32] [DEBUG] recieved data: PASS Hello#123
+
+[2025-04-02 14:57:32] [INFO] start parsing data
+[2025-04-02 14:57:32] [INFO] end of read event
+[2025-04-02 14:58:07] [DEBUG] starting read event
+[2025-04-02 14:58:07] [DEBUG] processing read event
+[2025-04-02 14:58:07] [DEBUG] recieved data: USER SIMO SIMO SIMO LOL
+
+[2025-04-02 14:58:07] [INFO] start parsing data
+[2025-04-02 14:58:07] [INFO] end of read event
+[2025-04-02 14:58:12] [DEBUG] starting read event
+[2025-04-02 14:58:12] [DEBUG] processing read event
+[2025-04-02 14:58:12] [DEBUG] recieved data: NICK LEROI
+
+[2025-04-02 14:58:12] [INFO] start parsing data
+[2025-04-02 14:58:12] [INFO] end of read event
+[2025-04-02 14:58:23] [DEBUG] starting read event
+[2025-04-02 14:58:23] [FATAL] :LEROI QUIT :Quit: Leaving
+
+[2025-04-02 14:58:23] [INFO] Connection closed
+[2025-04-02 14:58:29] [CLIENT] Client Accepted5
+[2025-04-02 14:58:43] [DEBUG] starting read event
+[2025-04-02 14:58:43] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 14:58:43] [INFO] Connection closed
+[2025-04-02 14:58:51] [CLIENT] Client Accepted5
+[2025-04-02 14:59:28] [DEBUG] starting read event
+[2025-04-02 14:59:28] [DEBUG] processing read event
+[2025-04-02 14:59:28] [DEBUG] recieved data: PASS Hello#123
+
+[2025-04-02 14:59:28] [INFO] start parsing data
+[2025-04-02 14:59:28] [INFO] end of read event
+[2025-04-02 14:59:35] [DEBUG] starting read event
+[2025-04-02 14:59:35] [DEBUG] processing read event
+[2025-04-02 14:59:35] [DEBUG] recieved data: NICK LEROI
+
+[2025-04-02 14:59:35] [INFO] start parsing data
+[2025-04-02 14:59:35] [INFO] end of read event
+[2025-04-02 14:59:44] [DEBUG] starting read event
+[2025-04-02 14:59:44] [DEBUG] processing read event
+[2025-04-02 14:59:44] [DEBUG] recieved data: USER LEROI * * LOL
+
+[2025-04-02 14:59:44] [INFO] start parsing data
+[2025-04-02 14:59:44] [INFO] end of read event
+[2025-04-02 14:59:48] [DEBUG] starting read event
+[2025-04-02 14:59:48] [DEBUG] processing read event
+[2025-04-02 14:59:48] [DEBUG] recieved data: NICK SIMO
+
+[2025-04-02 14:59:48] [INFO] start parsing data
+[2025-04-02 14:59:48] [INFO] end of read event
+[2025-04-02 14:59:58] [DEBUG] starting read event
+[2025-04-02 14:59:58] [DEBUG] processing read event
+[2025-04-02 14:59:58] [DEBUG] recieved data: JOIN #LEROI
+
+[2025-04-02 14:59:58] [INFO] start parsing data
+[2025-04-02 14:59:58] [CHANNEL] New channel created: #LEROI by SIMO
+[2025-04-02 14:59:58] [CHANNEL] Adding Client SIMO To channel #LEROI
+[2025-04-02 14:59:58] [INFO] end of read event
+[2025-04-02 15:00:05] [DEBUG] starting read event
+[2025-04-02 15:00:05] [FATAL] :SIMO QUIT :Quit: Leaving
+
+[2025-04-02 15:00:05] [INFO] Connection closed
+[2025-04-02 15:00:08] [CLIENT] Client Accepted5
+[2025-04-02 15:00:10] [DEBUG] starting read event
+[2025-04-02 15:00:10] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 15:00:10] [INFO] Connection closed

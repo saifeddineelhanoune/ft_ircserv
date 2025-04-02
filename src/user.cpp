@@ -5,7 +5,6 @@ void Server::cmdUser(int fd, std::vector<std::string>& args) {
         sendError(fd, "461", "USER", "Not enough parameters");
         return;
     }
-    
     clients[fd].setUser(args[1]);
     clients[fd].setUserauth();
     
@@ -19,10 +18,8 @@ void Server::cmdUser(int fd, std::vector<std::string>& args) {
         std::string host = "localhost"; // Would be better to get actual hostname
         
         // 001 RPL_WELCOME
-        clients[fd].response = ":" + serverName + " 001 " + nick + " :Welcome to the Internet Relay Network " 
-                             + nick + "!" + user + "@" + host + "\r\n";
+        clients[fd].response = "001 " + clients[fd].getNick() + " :Welcome to the IRC server\r\n";
         clients[fd].sendResponse();
-        
         // 002 RPL_YOURHOST
         clients[fd].response = ":" + serverName + " 002 " + nick + " :Your host is " + serverName 
                              + ", running version 1.0\r\n";

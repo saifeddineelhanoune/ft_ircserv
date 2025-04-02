@@ -1,6 +1,6 @@
 #include "../include/client.hpp"
 
-Client::Client(int _fd, sockaddr_in addr,Server *ss) : fd(_fd), _addr(addr), Auth(false), pass(false), user(false), nick(false) ,serv(ss){}
+Client::Client(int _fd, sockaddr_in addr,Server *ss) : fd(_fd), _addr(addr), Auth(false), pass(false), user(false), nick(false) ,serv(ss),response(""){}
 
 Client::~Client() {}
 
@@ -68,6 +68,7 @@ void    Client::sendResponse() {
     int ret = write(fd, response.c_str(), response.length());
     if (ret == -1) {
         std::cerr << "Error writing to client" << std::endl;
+        // (void)serv;
         serv->deleteClient(fd);
         // close(fd);
     }
