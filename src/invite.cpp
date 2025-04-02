@@ -14,7 +14,6 @@ void Server::cmdInvite(int fd, std::vector<std::string>& args) {
     std::string targetNick = args[1];
     std::string channelName = args[2];
     
-    // Check if channel exists
     if (channels.find(channelName) == channels.end()) {
         sendError(fd, "403", channelName, "No such channel");
         return;

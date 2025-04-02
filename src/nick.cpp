@@ -6,18 +6,30 @@ void Server::cmdNick(int fd, std::vector<std::string>& args) {
         return;
     }
     
-    // Check if nickname is already in use
+    std::string newNick = args[1];
+
     std::map<int, Client>::iterator it;
     for (it = clients.begin(); it != clients.end(); ++it) {
-        if (it->second.getNick() == args[1]) {
+        if (strcasecmp(it->second.getNick().c_str(), newNick.c_str()) == 0) {
             sendError(fd, "433", "NICK", "Nickname is already in use");
             return;
         }
     }
-    
-    clients[fd].setNick(args[1]);
-    clients[fd].response = ":" + clients[fd].getNick() + " NICK :" + args[1] + "\r\n";
-    //clients[fd].sendResponse();
-    if (clients[fd].getAuth() == false)
+
+    std::string oldNick = clients[fd].getNick();
+    clients[fd].setNick(newNick);
+
+    std::string response = ":" + oldNick + " NICK :" + newNick + "\r\n";
+    clients[fd].response = response;
+    clients[fd].sendResponse();
+
+    for (std::map<std::string, Channel>::iterator itc = channels.begin(); itc != channels.end(); itc++) {
+        if (itc->second.hasUser(&clients[fd])) {
+            broadcastToChannel(itc->first, response, fd);
+        }
+    }
+
+    if (!clients[fd].getAuth()) {
         clients[fd].setNickauth();
+    }
 }

@@ -173,3 +173,4 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
 //     clients[fd].response = ":" + std::string(serverName) + " 366 " + clients[fd].getNick() + " " + channelName + " :End of /NAMES list.\r\n";
 //     clients[fd].sendResponse();
 // }
+

@@ -2,7 +2,8 @@
 CXX = c++
 
 # Compiler flags
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -Iinclude -Ofast -g -fsanitize=address
+CXXFLAGS = -Wall -Wextra -Werror  -Iinclude -Ofast -g -fsanitize=address
+#-std=c++98
 
 # Directories
 SRC = src
