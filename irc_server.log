@@ -7596,3 +7596,691 @@ NICK mboutuil
 [2025-04-02 21:13:48] [INFO] start parsing data
 [2025-04-02 21:13:48] [ERROR] Invalid Command PONG
 [2025-04-02 21:13:48] [INFO] end of read event
+[2025-04-02 21:38:09] [SERVER] Server initializing
+[2025-04-02 21:38:09] [SERVER] Server initialized
+[2025-04-02 21:38:09] [SERVER] Server created on port 6666
+[2025-04-02 21:38:33] [CLIENT] Client Accepted5
+[2025-04-02 21:38:33] [DEBUG] starting read event
+[2025-04-02 21:38:33] [DEBUG] processing read event
+[2025-04-02 21:38:33] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-02 21:38:33] [INFO] start parsing data
+[2025-04-02 21:38:33] [INFO] start Handling Command PASS
+[2025-04-02 21:38:33] [INFO] end of read event
+[2025-04-02 21:38:33] [DEBUG] starting read event
+[2025-04-02 21:38:33] [DEBUG] processing read event
+[2025-04-02 21:38:33] [DEBUG] recieved data: NICK sel-hano
+
+[2025-04-02 21:38:33] [INFO] start parsing data
+[2025-04-02 21:38:33] [INFO] start Handling Command NICK
+[2025-04-02 21:38:33] [INFO] end of read event
+[2025-04-02 21:38:33] [DEBUG] starting read event
+[2025-04-02 21:38:33] [DEBUG] processing read event
+[2025-04-02 21:38:33] [DEBUG] recieved data: USER saif 0 * saifeddine
+
+[2025-04-02 21:38:33] [INFO] start parsing data
+[2025-04-02 21:38:33] [INFO] start Handling Command USER
+[2025-04-02 21:38:33] [INFO] end of read event
+[2025-04-02 21:38:33] [DEBUG] starting read event
+[2025-04-02 21:38:33] [DEBUG] processing read event
+[2025-04-02 21:38:33] [DEBUG] recieved data: JOIN #chan3,#empty 123
+
+[2025-04-02 21:38:33] [INFO] start parsing data
+[2025-04-02 21:38:33] [INFO] start Handling Command JOIN
+[2025-04-02 21:38:33] [CLIENT] Client sel-hano is joining channel #chan3,#empty
+[2025-04-02 21:38:33] [INFO] Joining channel #chan3,#empty
+[2025-04-02 21:38:33] [DEBUG] Parsed channels: 2, keys: 1
+[2025-04-02 21:38:33] [DEBUG] Channel: #chan3, Key: 123
+[2025-04-02 21:38:33] [DEBUG] Channel: #empty, Key: no key
+[2025-04-02 21:38:33] [CHANNEL] Channel list #chan3
+[2025-04-02 21:38:33] [DEBUG] Creating new channel: #chan3 with key: 123
+[2025-04-02 21:38:33] [CHANNEL] Name @sel-hano
+[2025-04-02 21:38:33] [CHANNEL] Name list @sel-hano
+[2025-04-02 21:38:33] [CHANNEL] End of names
+[2025-04-02 21:38:33] [DEBUG] Creating new channel: #empty with key: none
+[2025-04-02 21:38:33] [CHANNEL] Name @sel-hano
+[2025-04-02 21:38:33] [CHANNEL] Name list @sel-hano
+[2025-04-02 21:38:33] [CHANNEL] End of names
+[2025-04-02 21:38:33] [INFO] end of read event
+[2025-04-02 21:38:33] [DEBUG] starting read event
+[2025-04-02 21:38:33] [DEBUG] processing read event
+[2025-04-02 21:38:33] [DEBUG] recieved data: MODE #chan3 +sn
+
+[2025-04-02 21:38:33] [INFO] start parsing data
+[2025-04-02 21:38:33] [INFO] start Handling Command MODE
+[2025-04-02 21:38:33] [INFO] end of read event
+[2025-04-02 21:38:33] [DEBUG] starting read event
+[2025-04-02 21:38:33] [DEBUG] processing read event
+[2025-04-02 21:38:33] [DEBUG] recieved data: MODE #empty +sn
+
+[2025-04-02 21:38:33] [INFO] start parsing data
+[2025-04-02 21:38:33] [INFO] start Handling Command MODE
+[2025-04-02 21:38:33] [INFO] end of read event
+[2025-04-02 21:39:33] [DEBUG] starting read event
+[2025-04-02 21:39:33] [DEBUG] processing read event
+[2025-04-02 21:39:33] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:39:33] [INFO] start parsing data
+[2025-04-02 21:39:33] [ERROR] Invalid Command PONG
+[2025-04-02 21:39:33] [INFO] end of read event
+[2025-04-02 21:40:40] [DEBUG] starting read event
+[2025-04-02 21:40:40] [DEBUG] processing read event
+[2025-04-02 21:40:40] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:40:40] [INFO] start parsing data
+[2025-04-02 21:40:40] [ERROR] Invalid Command PONG
+[2025-04-02 21:40:40] [INFO] end of read event
+[2025-04-02 21:41:36] [DEBUG] starting read event
+[2025-04-02 21:41:37] [DEBUG] processing read event
+[2025-04-02 21:41:37] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:41:37] [INFO] start parsing data
+[2025-04-02 21:41:37] [ERROR] Invalid Command PONG
+[2025-04-02 21:41:37] [INFO] end of read event
+[2025-04-02 21:42:39] [DEBUG] starting read event
+[2025-04-02 21:42:39] [DEBUG] processing read event
+[2025-04-02 21:42:39] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:42:39] [INFO] start parsing data
+[2025-04-02 21:42:39] [ERROR] Invalid Command PONG
+[2025-04-02 21:42:39] [INFO] end of read event
+[2025-04-02 21:43:34] [DEBUG] starting read event
+[2025-04-02 21:43:34] [DEBUG] processing read event
+[2025-04-02 21:43:34] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:43:34] [INFO] start parsing data
+[2025-04-02 21:43:34] [ERROR] Invalid Command PONG
+[2025-04-02 21:43:34] [INFO] end of read event
+[2025-04-02 21:44:08] [SERVER] Server initializing
+[2025-04-02 21:44:08] [SERVER] Server initialized
+[2025-04-02 21:44:08] [SERVER] Server created on port 6666
+[2025-04-02 21:44:21] [CLIENT] Client Accepted5
+[2025-04-02 21:44:21] [DEBUG] starting read event
+[2025-04-02 21:44:21] [DEBUG] processing read event
+[2025-04-02 21:44:21] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-02 21:44:21] [INFO] start parsing data
+[2025-04-02 21:44:21] [INFO] start Handling Command PASS
+[2025-04-02 21:44:21] [INFO] end of read event
+[2025-04-02 21:44:21] [DEBUG] starting read event
+[2025-04-02 21:44:21] [DEBUG] processing read event
+[2025-04-02 21:44:21] [DEBUG] recieved data: NICK sel-hano
+
+[2025-04-02 21:44:21] [INFO] start parsing data
+[2025-04-02 21:44:21] [INFO] start Handling Command NICK
+[2025-04-02 21:44:21] [INFO] end of read event
+[2025-04-02 21:44:21] [DEBUG] starting read event
+[2025-04-02 21:44:21] [DEBUG] processing read event
+[2025-04-02 21:44:21] [DEBUG] recieved data: USER saif 0 * saifeddine
+
+[2025-04-02 21:44:21] [INFO] start parsing data
+[2025-04-02 21:44:21] [INFO] start Handling Command USER
+[2025-04-02 21:44:21] [INFO] end of read event
+[2025-04-02 21:44:21] [DEBUG] starting read event
+[2025-04-02 21:44:21] [DEBUG] processing read event
+[2025-04-02 21:44:21] [DEBUG] recieved data: JOIN #chan3,#empty 123
+
+[2025-04-02 21:44:21] [INFO] start parsing data
+[2025-04-02 21:44:21] [INFO] start Handling Command JOIN
+[2025-04-02 21:44:21] [CLIENT] Client sel-hano is joining channel #chan3,#empty
+[2025-04-02 21:44:21] [INFO] Joining channel #chan3,#empty
+[2025-04-02 21:44:21] [DEBUG] Parsed channels: 2, keys: 1
+[2025-04-02 21:44:21] [DEBUG] Channel: #chan3, Key: 123
+[2025-04-02 21:44:21] [DEBUG] Channel: #empty, Key: no key
+[2025-04-02 21:44:21] [CHANNEL] Channel list #chan3
+[2025-04-02 21:44:21] [DEBUG] Creating new channel: #chan3 with key: 123
+[2025-04-02 21:44:21] [CHANNEL] Name @sel-hano
+[2025-04-02 21:44:21] [CHANNEL] Name list @sel-hano
+[2025-04-02 21:44:21] [CHANNEL] End of names
+[2025-04-02 21:44:21] [DEBUG] Creating new channel: #empty with key: none
+[2025-04-02 21:44:21] [CHANNEL] Name @sel-hano
+[2025-04-02 21:44:21] [CHANNEL] Name list @sel-hano
+[2025-04-02 21:44:21] [CHANNEL] End of names
+[2025-04-02 21:44:21] [INFO] end of read event
+[2025-04-02 21:44:21] [DEBUG] starting read event
+[2025-04-02 21:44:21] [DEBUG] processing read event
+[2025-04-02 21:44:21] [DEBUG] recieved data: MODE #chan3 +sn
+
+[2025-04-02 21:44:21] [INFO] start parsing data
+[2025-04-02 21:44:21] [INFO] start Handling Command MODE
+[2025-04-02 21:44:21] [INFO] end of read event
+[2025-04-02 21:44:21] [DEBUG] starting read event
+[2025-04-02 21:44:21] [DEBUG] processing read event
+[2025-04-02 21:44:21] [DEBUG] recieved data: MODE #empty +sn
+
+[2025-04-02 21:44:21] [INFO] start parsing data
+[2025-04-02 21:44:21] [INFO] start Handling Command MODE
+[2025-04-02 21:44:21] [INFO] end of read event
+[2025-04-02 21:45:22] [DEBUG] starting read event
+[2025-04-02 21:45:22] [DEBUG] processing read event
+[2025-04-02 21:45:22] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:45:22] [INFO] start parsing data
+[2025-04-02 21:45:22] [INFO] start Handling Command PONG
+[2025-04-02 21:45:22] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 21:45:22] [INFO] end of read event
+[2025-04-02 21:46:29] [DEBUG] starting read event
+[2025-04-02 21:46:29] [DEBUG] processing read event
+[2025-04-02 21:46:29] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:46:29] [INFO] start parsing data
+[2025-04-02 21:46:29] [INFO] start Handling Command PONG
+[2025-04-02 21:46:29] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 21:46:29] [INFO] end of read event
+[2025-04-02 21:47:39] [DEBUG] starting read event
+[2025-04-02 21:47:39] [DEBUG] processing read event
+[2025-04-02 21:47:39] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:47:39] [INFO] start parsing data
+[2025-04-02 21:47:39] [INFO] start Handling Command PONG
+[2025-04-02 21:47:39] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 21:47:39] [INFO] end of read event
+[2025-04-02 21:48:22] [DEBUG] starting read event
+[2025-04-02 21:48:22] [DEBUG] processing read event
+[2025-04-02 21:48:22] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:48:22] [INFO] start parsing data
+[2025-04-02 21:48:22] [INFO] start Handling Command PONG
+[2025-04-02 21:48:22] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 21:48:22] [INFO] end of read event
+[2025-04-02 21:49:26] [DEBUG] starting read event
+[2025-04-02 21:49:26] [DEBUG] processing read event
+[2025-04-02 21:49:26] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:49:26] [INFO] start parsing data
+[2025-04-02 21:49:26] [INFO] start Handling Command PONG
+[2025-04-02 21:49:26] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 21:49:26] [INFO] end of read event
+[2025-04-02 21:50:30] [DEBUG] starting read event
+[2025-04-02 21:50:30] [DEBUG] processing read event
+[2025-04-02 21:50:30] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:50:30] [INFO] start parsing data
+[2025-04-02 21:50:30] [INFO] start Handling Command PONG
+[2025-04-02 21:50:30] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 21:50:30] [INFO] end of read event
+[2025-04-02 21:51:34] [DEBUG] starting read event
+[2025-04-02 21:51:34] [DEBUG] processing read event
+[2025-04-02 21:51:34] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:51:34] [INFO] start parsing data
+[2025-04-02 21:51:34] [INFO] start Handling Command PONG
+[2025-04-02 21:51:34] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 21:51:34] [INFO] end of read event
+[2025-04-02 21:52:38] [DEBUG] starting read event
+[2025-04-02 21:52:38] [DEBUG] processing read event
+[2025-04-02 21:52:38] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:52:38] [INFO] start parsing data
+[2025-04-02 21:52:38] [INFO] start Handling Command PONG
+[2025-04-02 21:52:38] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 21:52:38] [INFO] end of read event
+[2025-04-02 21:53:41] [DEBUG] starting read event
+[2025-04-02 21:53:41] [DEBUG] processing read event
+[2025-04-02 21:53:41] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:53:41] [INFO] start parsing data
+[2025-04-02 21:53:41] [INFO] start Handling Command PONG
+[2025-04-02 21:53:41] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 21:53:41] [INFO] end of read event
+[2025-04-02 21:54:24] [DEBUG] starting read event
+[2025-04-02 21:54:24] [DEBUG] processing read event
+[2025-04-02 21:54:24] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:54:24] [INFO] start parsing data
+[2025-04-02 21:54:24] [INFO] start Handling Command PONG
+[2025-04-02 21:54:24] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 21:54:24] [INFO] end of read event
+[2025-04-02 21:55:28] [DEBUG] starting read event
+[2025-04-02 21:55:28] [DEBUG] processing read event
+[2025-04-02 21:55:28] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:55:28] [INFO] start parsing data
+[2025-04-02 21:55:28] [INFO] start Handling Command PONG
+[2025-04-02 21:55:28] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 21:55:28] [INFO] end of read event
+[2025-04-02 21:56:32] [DEBUG] starting read event
+[2025-04-02 21:56:32] [DEBUG] processing read event
+[2025-04-02 21:56:32] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:56:32] [INFO] start parsing data
+[2025-04-02 21:56:32] [INFO] start Handling Command PONG
+[2025-04-02 21:56:32] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 21:56:32] [INFO] end of read event
+[2025-04-02 21:57:36] [DEBUG] starting read event
+[2025-04-02 21:57:36] [DEBUG] processing read event
+[2025-04-02 21:57:36] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:57:36] [INFO] start parsing data
+[2025-04-02 21:57:36] [INFO] start Handling Command PONG
+[2025-04-02 21:57:36] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 21:57:36] [INFO] end of read event
+[2025-04-02 21:58:40] [DEBUG] starting read event
+[2025-04-02 21:58:40] [DEBUG] processing read event
+[2025-04-02 21:58:40] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:58:40] [INFO] start parsing data
+[2025-04-02 21:58:40] [INFO] start Handling Command PONG
+[2025-04-02 21:58:40] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 21:58:40] [INFO] end of read event
+[2025-04-02 21:59:23] [DEBUG] starting read event
+[2025-04-02 21:59:23] [DEBUG] processing read event
+[2025-04-02 21:59:23] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 21:59:23] [INFO] start parsing data
+[2025-04-02 21:59:23] [INFO] start Handling Command PONG
+[2025-04-02 21:59:23] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 21:59:23] [INFO] end of read event
+[2025-04-02 22:00:27] [DEBUG] starting read event
+[2025-04-02 22:00:27] [DEBUG] processing read event
+[2025-04-02 22:00:27] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:00:27] [INFO] start parsing data
+[2025-04-02 22:00:27] [INFO] start Handling Command PONG
+[2025-04-02 22:00:27] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:00:27] [INFO] end of read event
+[2025-04-02 22:01:31] [DEBUG] starting read event
+[2025-04-02 22:01:31] [DEBUG] processing read event
+[2025-04-02 22:01:31] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:01:31] [INFO] start parsing data
+[2025-04-02 22:01:31] [INFO] start Handling Command PONG
+[2025-04-02 22:01:31] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:01:31] [INFO] end of read event
+[2025-04-02 22:02:35] [DEBUG] starting read event
+[2025-04-02 22:02:35] [DEBUG] processing read event
+[2025-04-02 22:02:35] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:02:35] [INFO] start parsing data
+[2025-04-02 22:02:35] [INFO] start Handling Command PONG
+[2025-04-02 22:02:35] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:02:35] [INFO] end of read event
+[2025-04-02 22:03:39] [DEBUG] starting read event
+[2025-04-02 22:03:39] [DEBUG] processing read event
+[2025-04-02 22:03:39] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:03:39] [INFO] start parsing data
+[2025-04-02 22:03:39] [INFO] start Handling Command PONG
+[2025-04-02 22:03:39] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:03:39] [INFO] end of read event
+[2025-04-02 22:04:22] [DEBUG] starting read event
+[2025-04-02 22:04:22] [DEBUG] processing read event
+[2025-04-02 22:04:22] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:04:22] [INFO] start parsing data
+[2025-04-02 22:04:22] [INFO] start Handling Command PONG
+[2025-04-02 22:04:22] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:04:22] [INFO] end of read event
+[2025-04-02 22:05:26] [DEBUG] starting read event
+[2025-04-02 22:05:26] [DEBUG] processing read event
+[2025-04-02 22:05:26] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:05:26] [INFO] start parsing data
+[2025-04-02 22:05:26] [INFO] start Handling Command PONG
+[2025-04-02 22:05:26] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:05:26] [INFO] end of read event
+[2025-04-02 22:06:30] [DEBUG] starting read event
+[2025-04-02 22:06:30] [DEBUG] processing read event
+[2025-04-02 22:06:30] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:06:30] [INFO] start parsing data
+[2025-04-02 22:06:30] [INFO] start Handling Command PONG
+[2025-04-02 22:06:30] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:06:30] [INFO] end of read event
+[2025-04-02 22:07:34] [DEBUG] starting read event
+[2025-04-02 22:07:34] [DEBUG] processing read event
+[2025-04-02 22:07:34] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:07:34] [INFO] start parsing data
+[2025-04-02 22:07:34] [INFO] start Handling Command PONG
+[2025-04-02 22:07:34] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:07:34] [INFO] end of read event
+[2025-04-02 22:08:38] [DEBUG] starting read event
+[2025-04-02 22:08:38] [DEBUG] processing read event
+[2025-04-02 22:08:38] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:08:38] [INFO] start parsing data
+[2025-04-02 22:08:38] [INFO] start Handling Command PONG
+[2025-04-02 22:08:38] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:08:38] [INFO] end of read event
+[2025-04-02 22:09:41] [DEBUG] starting read event
+[2025-04-02 22:09:41] [DEBUG] processing read event
+[2025-04-02 22:09:41] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:09:41] [INFO] start parsing data
+[2025-04-02 22:09:41] [INFO] start Handling Command PONG
+[2025-04-02 22:09:41] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:09:41] [INFO] end of read event
+[2025-04-02 22:10:24] [DEBUG] starting read event
+[2025-04-02 22:10:24] [DEBUG] processing read event
+[2025-04-02 22:10:24] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:10:24] [INFO] start parsing data
+[2025-04-02 22:10:24] [INFO] start Handling Command PONG
+[2025-04-02 22:10:24] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:10:24] [INFO] end of read event
+[2025-04-02 22:11:28] [DEBUG] starting read event
+[2025-04-02 22:11:28] [DEBUG] processing read event
+[2025-04-02 22:11:28] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:11:28] [INFO] start parsing data
+[2025-04-02 22:11:28] [INFO] start Handling Command PONG
+[2025-04-02 22:11:28] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:11:28] [INFO] end of read event
+[2025-04-02 22:12:32] [DEBUG] starting read event
+[2025-04-02 22:12:32] [DEBUG] processing read event
+[2025-04-02 22:12:32] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:12:32] [INFO] start parsing data
+[2025-04-02 22:12:32] [INFO] start Handling Command PONG
+[2025-04-02 22:12:32] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:12:32] [INFO] end of read event
+[2025-04-02 22:13:36] [DEBUG] starting read event
+[2025-04-02 22:13:36] [DEBUG] processing read event
+[2025-04-02 22:13:36] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:13:36] [INFO] start parsing data
+[2025-04-02 22:13:36] [INFO] start Handling Command PONG
+[2025-04-02 22:13:36] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:13:36] [INFO] end of read event
+[2025-04-02 22:14:40] [DEBUG] starting read event
+[2025-04-02 22:14:40] [DEBUG] processing read event
+[2025-04-02 22:14:40] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:14:40] [INFO] start parsing data
+[2025-04-02 22:14:40] [INFO] start Handling Command PONG
+[2025-04-02 22:14:40] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:14:40] [INFO] end of read event
+[2025-04-02 22:15:23] [DEBUG] starting read event
+[2025-04-02 22:15:23] [DEBUG] processing read event
+[2025-04-02 22:15:23] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:15:23] [INFO] start parsing data
+[2025-04-02 22:15:23] [INFO] start Handling Command PONG
+[2025-04-02 22:15:23] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:15:23] [INFO] end of read event
+[2025-04-02 22:16:27] [DEBUG] starting read event
+[2025-04-02 22:16:27] [DEBUG] processing read event
+[2025-04-02 22:16:27] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:16:27] [INFO] start parsing data
+[2025-04-02 22:16:27] [INFO] start Handling Command PONG
+[2025-04-02 22:16:27] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:16:27] [INFO] end of read event
+[2025-04-02 22:17:31] [DEBUG] starting read event
+[2025-04-02 22:17:31] [DEBUG] processing read event
+[2025-04-02 22:17:31] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:17:31] [INFO] start parsing data
+[2025-04-02 22:17:31] [INFO] start Handling Command PONG
+[2025-04-02 22:17:31] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:17:31] [INFO] end of read event
+[2025-04-02 22:18:35] [DEBUG] starting read event
+[2025-04-02 22:18:35] [DEBUG] processing read event
+[2025-04-02 22:18:35] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:18:35] [INFO] start parsing data
+[2025-04-02 22:18:35] [INFO] start Handling Command PONG
+[2025-04-02 22:18:35] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:18:35] [INFO] end of read event
+[2025-04-02 22:19:39] [DEBUG] starting read event
+[2025-04-02 22:19:39] [DEBUG] processing read event
+[2025-04-02 22:19:39] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:19:39] [INFO] start parsing data
+[2025-04-02 22:19:39] [INFO] start Handling Command PONG
+[2025-04-02 22:19:39] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:19:39] [INFO] end of read event
+[2025-04-02 22:20:22] [DEBUG] starting read event
+[2025-04-02 22:20:22] [DEBUG] processing read event
+[2025-04-02 22:20:22] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:20:22] [INFO] start parsing data
+[2025-04-02 22:20:22] [INFO] start Handling Command PONG
+[2025-04-02 22:20:22] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:20:22] [INFO] end of read event
+[2025-04-02 22:21:26] [DEBUG] starting read event
+[2025-04-02 22:21:26] [DEBUG] processing read event
+[2025-04-02 22:21:26] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:21:26] [INFO] start parsing data
+[2025-04-02 22:21:26] [INFO] start Handling Command PONG
+[2025-04-02 22:21:26] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:21:26] [INFO] end of read event
+[2025-04-02 22:22:30] [DEBUG] starting read event
+[2025-04-02 22:22:30] [DEBUG] processing read event
+[2025-04-02 22:22:30] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:22:30] [INFO] start parsing data
+[2025-04-02 22:22:30] [INFO] start Handling Command PONG
+[2025-04-02 22:22:30] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:22:30] [INFO] end of read event
+[2025-04-02 22:23:34] [DEBUG] starting read event
+[2025-04-02 22:23:34] [DEBUG] processing read event
+[2025-04-02 22:23:34] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:23:34] [INFO] start parsing data
+[2025-04-02 22:23:34] [INFO] start Handling Command PONG
+[2025-04-02 22:23:34] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:23:34] [INFO] end of read event
+[2025-04-02 22:24:38] [DEBUG] starting read event
+[2025-04-02 22:24:38] [DEBUG] processing read event
+[2025-04-02 22:24:38] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 22:24:38] [INFO] start parsing data
+[2025-04-02 22:24:38] [INFO] start Handling Command PONG
+[2025-04-02 22:24:38] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 22:24:38] [INFO] end of read event
+[2025-04-02 22:25:25] [DEBUG] starting read event
+[2025-04-02 22:25:25] [FATAL] :sel-hano QUIT :Quit: Leaving
+
+[2025-04-02 22:25:25] [INFO] Connection closed
+[2025-04-02 23:08:12] [SERVER] Server initializing
+[2025-04-02 23:08:12] [SERVER] Server initialized
+[2025-04-02 23:08:12] [SERVER] Server created on port 6666
+[2025-04-02 23:11:30] [SERVER] Server initializing
+[2025-04-02 23:11:30] [INFO] Server initialized
+[2025-04-02 23:11:30] [SERVER] Server created on port 6666
+[2025-04-02 23:11:30] [INFO] Server started on port Server started on port 6666
+[2025-04-02 23:12:02] [SERVER] Server initializing
+[2025-04-02 23:12:02] [INFO] Server initialized
+[2025-04-02 23:12:02] [SERVER] Server created on port 6666
+[2025-04-02 23:12:02] [INFO] Server started on port 6666
+[2025-04-02 23:12:37] [CLIENT] Client Accepted5
+[2025-04-02 23:12:37] [DEBUG] starting read event
+[2025-04-02 23:12:37] [DEBUG] processing read event
+[2025-04-02 23:12:37] [DEBUG] recieved data: PASS Password1!
+
+[2025-04-02 23:12:37] [INFO] start parsing data
+[2025-04-02 23:12:37] [INFO] start Handling Command PASS
+[2025-04-02 23:12:37] [INFO] end of read event
+[2025-04-02 23:12:37] [DEBUG] starting read event
+[2025-04-02 23:12:37] [DEBUG] processing read event
+[2025-04-02 23:12:37] [DEBUG] recieved data: NICK sel-hano
+
+[2025-04-02 23:12:37] [INFO] start parsing data
+[2025-04-02 23:12:37] [INFO] start Handling Command NICK
+[2025-04-02 23:12:37] [INFO] end of read event
+[2025-04-02 23:12:37] [DEBUG] starting read event
+[2025-04-02 23:12:37] [DEBUG] processing read event
+[2025-04-02 23:12:37] [DEBUG] recieved data: USER saif 0 * saifeddine
+
+[2025-04-02 23:12:37] [INFO] start parsing data
+[2025-04-02 23:12:37] [INFO] start Handling Command USER
+[2025-04-02 23:12:37] [INFO] end of read event
+[2025-04-02 23:12:37] [DEBUG] starting read event
+[2025-04-02 23:12:37] [DEBUG] processing read event
+[2025-04-02 23:12:37] [DEBUG] recieved data: JOIN #chan3,#empty 123
+
+[2025-04-02 23:12:37] [INFO] start parsing data
+[2025-04-02 23:12:37] [INFO] start Handling Command JOIN
+[2025-04-02 23:12:37] [CLIENT] Client sel-hano is joining channel #chan3,#empty
+[2025-04-02 23:12:37] [INFO] Joining channel #chan3,#empty
+[2025-04-02 23:12:37] [DEBUG] Parsed channels: 2, keys: 1
+[2025-04-02 23:12:37] [DEBUG] Channel: #chan3, Key: 123
+[2025-04-02 23:12:37] [DEBUG] Channel: #empty, Key: no key
+[2025-04-02 23:12:37] [CHANNEL] Channel list #chan3
+[2025-04-02 23:12:37] [DEBUG] Creating new channel: #chan3 with key: 123
+[2025-04-02 23:12:37] [CHANNEL] Name @sel-hano
+[2025-04-02 23:12:37] [CHANNEL] Name list @sel-hano
+[2025-04-02 23:12:37] [CHANNEL] End of names
+[2025-04-02 23:12:37] [DEBUG] Creating new channel: #empty with key: none
+[2025-04-02 23:12:37] [CHANNEL] Name @sel-hano
+[2025-04-02 23:12:37] [CHANNEL] Name list @sel-hano
+[2025-04-02 23:12:37] [CHANNEL] End of names
+[2025-04-02 23:12:37] [INFO] end of read event
+[2025-04-02 23:12:37] [DEBUG] starting read event
+[2025-04-02 23:12:37] [DEBUG] processing read event
+[2025-04-02 23:12:37] [DEBUG] recieved data: MODE #chan3 +sn
+MODE #empty +sn
+
+[2025-04-02 23:12:37] [INFO] start parsing data
+[2025-04-02 23:12:37] [INFO] start Handling Command MODE
+[2025-04-02 23:12:37] [INFO] start Handling Command MODE
+[2025-04-02 23:12:37] [INFO] end of read event
+[2025-04-02 23:13:26] [DEBUG] starting read event
+[2025-04-02 23:13:26] [DEBUG] processing read event
+[2025-04-02 23:13:26] [DEBUG] recieved data: PART #empty Leaving...
+
+[2025-04-02 23:13:26] [INFO] start parsing data
+[2025-04-02 23:13:26] [INFO] start Handling Command PART
+[2025-04-02 23:13:26] [INFO] end of read event
+[2025-04-02 23:13:30] [DEBUG] starting read event
+[2025-04-02 23:13:30] [DEBUG] processing read event
+[2025-04-02 23:13:30] [DEBUG] recieved data: PART #chan3 Leaving...
+
+[2025-04-02 23:13:30] [INFO] start parsing data
+[2025-04-02 23:13:30] [INFO] start Handling Command PART
+[2025-04-02 23:13:30] [INFO] end of read event
+[2025-04-02 23:13:37] [DEBUG] starting read event
+[2025-04-02 23:13:37] [DEBUG] processing read event
+[2025-04-02 23:13:37] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 23:13:37] [INFO] start parsing data
+[2025-04-02 23:13:37] [INFO] start Handling Command PONG
+[2025-04-02 23:13:37] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 23:13:37] [INFO] end of read event
+[2025-04-02 23:14:37] [DEBUG] starting read event
+[2025-04-02 23:14:37] [DEBUG] processing read event
+[2025-04-02 23:14:37] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 23:14:37] [INFO] start parsing data
+[2025-04-02 23:14:37] [INFO] start Handling Command PONG
+[2025-04-02 23:14:37] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 23:14:37] [INFO] end of read event
+[2025-04-02 23:15:27] [DEBUG] starting read event
+[2025-04-02 23:15:27] [DEBUG] processing read event
+[2025-04-02 23:15:27] [DEBUG] recieved data: JOIN #chan1, :#chan2, #chan3
+
+[2025-04-02 23:15:27] [INFO] start parsing data
+[2025-04-02 23:15:27] [INFO] start Handling Command JOIN
+[2025-04-02 23:15:27] [CLIENT] Client sel-hano is joining channel #chan1,
+[2025-04-02 23:15:27] [INFO] Joining channel #chan1,
+[2025-04-02 23:15:27] [DEBUG] Parsed channels: 1, keys: 1
+[2025-04-02 23:15:27] [DEBUG] Channel: #chan1, Key: :#chan2
+[2025-04-02 23:15:27] [CHANNEL] Channel list #chan1
+[2025-04-02 23:15:27] [DEBUG] Creating new channel: #chan1 with key: :#chan2
+[2025-04-02 23:15:27] [CHANNEL] Name @sel-hano
+[2025-04-02 23:15:27] [CHANNEL] Name list @sel-hano
+[2025-04-02 23:15:27] [CHANNEL] End of names
+[2025-04-02 23:15:27] [INFO] end of read event
+[2025-04-02 23:15:27] [DEBUG] starting read event
+[2025-04-02 23:15:27] [DEBUG] processing read event
+[2025-04-02 23:15:27] [DEBUG] recieved data: MODE #chan1 +sn
+
+[2025-04-02 23:15:27] [INFO] start parsing data
+[2025-04-02 23:15:27] [INFO] start Handling Command MODE
+[2025-04-02 23:15:27] [INFO] end of read event
+[2025-04-02 23:15:37] [DEBUG] starting read event
+[2025-04-02 23:15:37] [DEBUG] processing read event
+[2025-04-02 23:15:37] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 23:15:37] [INFO] start parsing data
+[2025-04-02 23:15:37] [INFO] start Handling Command PONG
+[2025-04-02 23:15:37] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 23:15:37] [INFO] end of read event
+[2025-04-02 23:16:12] [DEBUG] starting read event
+[2025-04-02 23:16:12] [DEBUG] processing read event
+[2025-04-02 23:16:12] [DEBUG] recieved data: JOIN #chan1,#chan2,#chan3
+
+[2025-04-02 23:16:12] [INFO] start parsing data
+[2025-04-02 23:16:12] [INFO] start Handling Command JOIN
+[2025-04-02 23:16:12] [CLIENT] Client sel-hano is joining channel #chan1,#chan2,#chan3
+[2025-04-02 23:16:12] [INFO] Joining channel #chan1,#chan2,#chan3
+[2025-04-02 23:16:12] [DEBUG] Parsed channels: 3, keys: 0
+[2025-04-02 23:16:12] [DEBUG] Channel: #chan1, Key: no key
+[2025-04-02 23:16:12] [DEBUG] Channel: #chan2, Key: no key
+[2025-04-02 23:16:12] [DEBUG] Channel: #chan3, Key: no key
+[2025-04-02 23:16:12] [CHANNEL] Channel list #chan1
+[2025-04-02 23:16:12] [WARNING] Invalid key for channel #chan1: expected ':#chan2', got ''
+[2025-04-02 23:16:12] [DEBUG] Creating new channel: #chan2 with key: none
+[2025-04-02 23:16:12] [CHANNEL] Name @sel-hano
+[2025-04-02 23:16:12] [CHANNEL] Name list @sel-hano
+[2025-04-02 23:16:12] [CHANNEL] End of names
+[2025-04-02 23:16:12] [DEBUG] Creating new channel: #chan3 with key: none
+[2025-04-02 23:16:12] [CHANNEL] Name @sel-hano
+[2025-04-02 23:16:12] [CHANNEL] Name list @sel-hano
+[2025-04-02 23:16:12] [CHANNEL] End of names
+[2025-04-02 23:16:12] [INFO] end of read event
+[2025-04-02 23:16:12] [DEBUG] starting read event
+[2025-04-02 23:16:12] [DEBUG] processing read event
+[2025-04-02 23:16:12] [DEBUG] recieved data: MODE #chan2 +sn
+
+[2025-04-02 23:16:12] [INFO] start parsing data
+[2025-04-02 23:16:12] [INFO] start Handling Command MODE
+[2025-04-02 23:16:12] [INFO] end of read event
+[2025-04-02 23:16:12] [DEBUG] starting read event
+[2025-04-02 23:16:12] [DEBUG] processing read event
+[2025-04-02 23:16:12] [DEBUG] recieved data: MODE #chan3 +sn
+
+[2025-04-02 23:16:12] [INFO] start parsing data
+[2025-04-02 23:16:12] [INFO] start Handling Command MODE
+[2025-04-02 23:16:12] [INFO] end of read event
+[2025-04-02 23:16:37] [DEBUG] starting read event
+[2025-04-02 23:16:37] [DEBUG] processing read event
+[2025-04-02 23:16:37] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 23:16:37] [INFO] start parsing data
+[2025-04-02 23:16:37] [INFO] start Handling Command PONG
+[2025-04-02 23:16:37] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 23:16:37] [INFO] end of read event
+[2025-04-02 23:17:37] [DEBUG] starting read event
+[2025-04-02 23:17:37] [DEBUG] processing read event
+[2025-04-02 23:17:37] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 23:17:37] [INFO] start parsing data
+[2025-04-02 23:17:37] [INFO] start Handling Command PONG
+[2025-04-02 23:17:37] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 23:17:37] [INFO] end of read event
+[2025-04-02 23:18:40] [DEBUG] starting read event
+[2025-04-02 23:18:40] [DEBUG] processing read event
+[2025-04-02 23:18:40] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 23:18:40] [INFO] start parsing data
+[2025-04-02 23:18:40] [INFO] start Handling Command PONG
+[2025-04-02 23:18:40] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 23:18:40] [INFO] end of read event
+[2025-04-02 23:19:37] [DEBUG] starting read event
+[2025-04-02 23:19:37] [DEBUG] processing read event
+[2025-04-02 23:19:37] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 23:19:37] [INFO] start parsing data
+[2025-04-02 23:19:37] [INFO] start Handling Command PONG
+[2025-04-02 23:19:37] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 23:19:37] [INFO] end of read event
+[2025-04-02 23:20:41] [DEBUG] starting read event
+[2025-04-02 23:20:41] [DEBUG] processing read event
+[2025-04-02 23:20:41] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 23:20:41] [INFO] start parsing data
+[2025-04-02 23:20:41] [INFO] start Handling Command PONG
+[2025-04-02 23:20:41] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 23:20:41] [INFO] end of read event
+[2025-04-02 23:21:44] [DEBUG] starting read event
+[2025-04-02 23:21:44] [DEBUG] processing read event
+[2025-04-02 23:21:44] [DEBUG] recieved data: PONG IRCServer-v1.0
+
+[2025-04-02 23:21:44] [INFO] start parsing data
+[2025-04-02 23:21:44] [INFO] start Handling Command PONG
+[2025-04-02 23:21:44] [DEBUG] Received PONG from sel-hano with token: IRCServer-v1.0
+[2025-04-02 23:21:44] [INFO] end of read event

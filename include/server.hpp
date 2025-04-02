@@ -72,6 +72,8 @@ class Server {
         void processChannelModes(int fd, const std::string& target, std::vector<std::string>& args);
         void processUserModes(int fd, const std::string& target, std::vector<std::string>& args);
         void cmdMode(int fd, std::vector<std::string>& args);
+        void cmdPing(int fd, std::vector<std::string>& args);
+        void cmdPong(int fd, std::vector<std::string>& args);
        
         void sendError(int client_fd, const std::string &code, const std::string &target, const std::string &message) {
             std::string response = std::string(":") + serverName + " " + code + " " + target + " :" + message + "\r\n";

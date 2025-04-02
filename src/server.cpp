@@ -12,11 +12,11 @@ Server::Server(std::string passwd, int port) {
     data.serverInfo.sin_port = htons(port);
 
     if (IsValidPass(passwd, data.passwd) == false) {
-        std::cerr << "Error: Invalid password" << std::endl;
+        Logger::error("Error: Invalid password");
         exit(1);
     }
     if (IsValidPort(port, data.port) == false) {
-        std::cerr << "Error: Invalid port" << std::endl;
+        Logger::error("Error: Invalid port");
         exit(1);
     }
 
@@ -31,8 +31,10 @@ Server::Server(std::string passwd, int port) {
     commands["INVITE"] = &Server::cmdInvite;
     commands["TOPIC"] = &Server::cmdTopic;
     commands["MODE"] = &Server::cmdMode;
+    commands["PING"] = &Server::cmdPing;
+    commands["PONG"] = &Server::cmdPong;
 
-    Logger::server("Server initialized");
+    Logger::info("Server initialized");
 }
 
 Server::~Server() {
@@ -102,7 +104,9 @@ void Server::createSocket() {
 }
 
 void Server::startListen() {
-    std::cout << "Server started on port " << data.port << std::endl;
+    std::ostringstream oss;
+    oss << "Server listening on port " << data.port;
+    Logger::info(oss.str());
     struct pollfd pfd;
     pfd.fd = data.socket;
     pfd.events = POLLIN;
