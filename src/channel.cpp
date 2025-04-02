@@ -1,6 +1,8 @@
 #include "../include/channel.hpp"
 #include "../include/client.hpp"
 
+Channel::Channel() : topic("Welcome to the channel!"), inviteOnly(false), topicRestricted(false), userLimit(0) {}
+
 void Channel::addUser(Client* client) {
     users.push_back(client);
 }

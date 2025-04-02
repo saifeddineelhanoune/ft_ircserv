@@ -1,38 +1,207 @@
 #include "../include/server.hpp"
 
-#include "../include/server.hpp"
+// C++98 compatible functor for checking whitespace
+struct IsSpace {
+    bool operator()(unsigned char c) const {
+        return std::isspace(c);
+    }
+};
 
-void Server::sendChannelNames(int fd, const std::string& channelName) {
-    // Get the list of users in the channel
-    std::vector<Client*>& users = this->channels[channelName].getUsers();
-    std::string namesList = "";
+// Process a single channel:key pair
+void Server::processChannelKeyPair(const std::string& pair, 
+                                 std::vector<std::string>& channelList,
+                                 std::vector<std::string>& keyList) {
+    std::string::size_type colonPos = pair.find(':');
     
-    // Build the list of names with appropriate prefixes
-    for (std::vector<Client*>::iterator it = users.begin(); it != users.end(); ++it) {
-        // Add @ prefix for channel operators
-        if (this->channels[channelName].isOperator((*it)->getFd())) {
-            namesList += "@";
-        }
-        namesList += (*it)->getNick();
+    if (colonPos != std::string::npos) {
+        // Channel with key (format: #channel:key)
+        std::string channel = pair.substr(0, colonPos);
+        std::string key = pair.substr(colonPos + 1);
         
-        // Add space between names unless it's the last name
-        std::vector<Client*>::iterator next = it;
-        next++;
-        if (next != users.end()) {
-            namesList += " ";
+        if (!channel.empty()) {
+            channelList.push_back(channel);
+            keyList.push_back(key);
+        }
+    } else {
+        // Channel without key
+        if (!pair.empty()) {
+            channelList.push_back(pair);
+        }
+    }
+}
+
+void Server::parseChannelsAndKeys(std::vector<std::string>& args, 
+                                 std::vector<std::string>& channelList,
+                                 std::vector<std::string>& keyList) {
+    // Get the channels argument
+    std::string channelsArg = args[1];
+    
+    // Remove any whitespace
+    channelsArg.erase(std::remove_if(channelsArg.begin(), channelsArg.end(), 
+                                    IsSpace()), 
+                     channelsArg.end());
+    
+    // Split by commas to get channel:key pairs
+    std::string::size_type pos = 0;
+    std::string::size_type lastPos = 0;
+    while ((pos = channelsArg.find(',', lastPos)) != std::string::npos) {
+        std::string pair = channelsArg.substr(lastPos, pos - lastPos);
+        processChannelKeyPair(pair, channelList, keyList);
+        lastPos = pos + 1;
+    }
+    
+    // Process the last pair
+    if (lastPos < channelsArg.length()) {
+        std::string pair = channelsArg.substr(lastPos);
+        processChannelKeyPair(pair, channelList, keyList);
+    }
+    
+    // For backward compatibility - parse separate key parameter if provided and no keys found in channel format
+    if (keyList.empty() && args.size() > 2) {
+        std::string keysArg = args[2];
+        keysArg.erase(std::remove_if(keysArg.begin(), keysArg.end(), IsSpace()), keysArg.end());
+        
+        pos = 0;
+        lastPos = 0;
+        while ((pos = keysArg.find(',', lastPos)) != std::string::npos) {
+            keyList.push_back(keysArg.substr(lastPos, pos - lastPos));
+            lastPos = pos + 1;
+        }
+        
+        if (lastPos < keysArg.length()) {
+            keyList.push_back(keysArg.substr(lastPos));
         }
     }
     
-    // Send RPL_NAMREPLY (353)
-    std::string namreply = ":" + serverName + " 353 " + clients[fd].getNick() + " = " + 
-                          channelName + " :" + namesList + "\r\n";
-    clients[fd].response = namreply;
-    clients[fd].sendResponse();
+    // Debug log
+    std::stringstream ss;
+    ss << channelList.size();
+    std::string sizeStr = ss.str();
+    ss.str("");
+    ss << keyList.size();
+    std::string keySizeStr = ss.str();
     
-    // Send RPL_ENDOFNAMES (366)
-    std::string endofnames = ":" + serverName + " 366 " + clients[fd].getNick() + " " + 
-                            channelName + " :End of /NAMES list\r\n";
-    clients[fd].response = endofnames;
+    Logger::debug("Parsed channels: " + sizeStr + ", keys: " + keySizeStr);
+    
+    for (size_t i = 0; i < channelList.size(); i++) {
+        std::string keyLog = (i < keyList.size()) ? keyList[i] : "no key";
+        Logger::debug("Channel: " + channelList[i] + ", Key: " + keyLog);
+    }
+}
+
+bool Server::checkChannelKey(int fd, const std::string& channelName, const std::string& providedKey, bool isNewChannel) {
+    // For a new channel, any key is valid as it will be set
+    if (isNewChannel) {
+        Logger::debug("Creating new channel: " + channelName + " with key: " + 
+                     (providedKey.empty() ? "none" : providedKey));
+        return true;
+    }
+    
+    // For existing channels, check if key matches
+    if (channels[channelName].getKey().empty()) {
+        // No key required
+        Logger::debug("Channel " + channelName + " has no key requirement");
+        return true;
+    } else if (!providedKey.empty() && providedKey == channels[channelName].getKey()) {
+        // Key matches
+        Logger::debug("Channel " + channelName + " key matches");
+        return true;
+    } else {
+        // Key doesn't match or wasn't provided
+        Logger::warning("Invalid key for channel " + channelName + 
+                       ": expected '" + channels[channelName].getKey() + 
+                       "', got '" + providedKey + "'");
+        sendError(fd, "475", channelName, "Cannot join channel (+k) - bad key");
+        return false;
+    }
+}
+
+bool Server::processChannel(int fd, const std::string& channelName, const std::string& key) {
+    // Check if channel exists
+    bool isNewChannel = channels.find(channelName) == channels.end();
+    
+    // Check if channel name is valid (starts with # or &)
+    if (channelName.empty() || (channelName[0] != '#' && channelName[0] != '&')) {
+        sendError(fd, "403", channelName, "No such channel");
+        return false;
+    }
+    
+    // Validate key for existing channels
+    if (!checkChannelKey(fd, channelName, key, isNewChannel)) {
+        return false;
+    }
+    
+    // Create new channel if it doesn't exist
+    if (isNewChannel) {
+        channels[channelName] = Channel();
+        if (!key.empty()) {
+            channels[channelName].setKey(key);
+        }
+    } else {
+        // Check if channel is invite-only
+        if (channels[channelName].isInviteOnly() && !channels[channelName].isInvited(fd)) {
+            sendError(fd, "473", channelName, "Cannot join channel (+i) - you must be invited");
+            return false;
+        }
+        
+        // Check if channel has user limit
+        if (channels[channelName].getUserLimit() > 0 && 
+            channels[channelName].getUsers().size() >= (size_t)channels[channelName].getUserLimit()) {
+            sendError(fd, "471", channelName, "Cannot join channel (+l) - channel is full");
+            return false;
+        }
+    }
+    
+    // Remove client from invite list if they were invited
+    if (channels[channelName].isInvited(fd)) {
+        channels[channelName].removeInvitedUser(fd);
+    }
+    
+    // Add client to channel
+    channels[channelName].addUser(&clients[fd]);
+    
+    // If this is a new channel, make the first user an operator
+    if (isNewChannel) {
+        channels[channelName].addOperator(fd);
+    }
+    
+    // Send JOIN message to all users in channel
+    std::string joinMsg = ":" + clients[fd].getNick() + " JOIN " + channelName + "\r\n";
+    broadcastToChannel(channelName, joinMsg, -1);
+    
+    // Send topic if exists
+    std::string topic = channels[channelName].getTopic();
+    if (!topic.empty()) {
+        clients[fd].response = ":" + serverName + " 332 " + clients[fd].getNick() + " " + channelName + " :" + topic + "\r\n";
+        clients[fd].sendResponse();
+    }
+    
+    // Send names list
+    sendChannelNames(fd, channelName);
+    
+    return true;
+}
+
+void Server::sendChannelNames(int fd, const std::string& channelName) {
+    std::string nameList = "";
+    std::vector<Client*>& users = channels[channelName].getUsers();
+    
+    for (size_t i = 0; i < users.size(); i++) {
+        if (channels[channelName].isOperator(users[i]->getFd())) {
+            nameList += "@" + users[i]->getNick();
+        } else {
+            nameList += users[i]->getNick();
+        }
+        Logger::channel("Name " + nameList);
+        if (i < users.size() - 1) {
+            nameList += " ";
+        }
+    }
+    Logger::channel("Name list " + nameList);
+    clients[fd].response = ":" + serverName + " 353 " + clients[fd].getNick() + " = " + channelName + " :" + nameList + "\r\n";
+    clients[fd].sendResponse();
+    Logger::channel("End of names");
+    clients[fd].response = ":" + serverName + " 366 " + clients[fd].getNick() + " " + channelName + " :End of /NAMES list\r\n";
     clients[fd].sendResponse();
 }
 
@@ -41,116 +210,38 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
         sendError(fd, "461", "JOIN", "Not enough parameters");
         return;
     }
-    
-    if (!clients[fd].getAuth()) {
-        sendError(fd, "451", "JOIN", "You have not registered");
+    Logger::client("Client " + clients[fd].getNick() + " is joining channel " + args[1]);
+    // Special case: JOIN 0 means leave all channels
+    if (args[1] == "0") {
+        std::map<std::string, Channel>::iterator it;
+        std::vector<std::string> channelsToLeave;
+        Logger::client("Client " + clients[fd].getNick() + " is leaving all channels");
+        Logger::info("Leaving all channels");
+        for (it = channels.begin(); it != channels.end(); ++it) {
+            if (it->second.hasUser(&clients[fd])) {
+                channelsToLeave.push_back(it->first);
+            }
+        }
+        
+        // Then leave each channel
+        for (size_t i = 0; i < channelsToLeave.size(); i++) {
+            std::string partMsg = ":" + clients[fd].getNick() + " PART " + channelsToLeave[i] + " :Leaving all channels\r\n";
+            broadcastToChannel(channelsToLeave[i], partMsg, -1);
+            channels[channelsToLeave[i]].removeUser(&clients[fd]);
+            Logger::channel("Channel " + channelsToLeave[i] + " removed user " + clients[fd].getNick());
+            if (channels[channelsToLeave[i]].isEmpty()) {
+                channels.erase(channelsToLeave[i]);
+            }
+        }
         return;
     }
-    
-    // Split channel list and key list
+    Logger::info("Joining channel " + args[1]);
     std::vector<std::string> channelList;
     std::vector<std::string> keyList;
-    
-    // Parse channel names (comma-separated)
-    std::string channels_str = args[1];
-    std::string::size_type pos = 0, lastPos = 0;
-    while ((pos = channels_str.find(",", lastPos)) != std::string::npos) {
-        channelList.push_back(channels_str.substr(lastPos, pos - lastPos));
-        lastPos = pos + 1;
-    }
-    channelList.push_back(channels_str.substr(lastPos));
-    
-    // Parse keys (comma-separated)
-    if (args.size() > 2) {
-        std::string keys = args[2];
-        pos = 0, lastPos = 0;
-        while ((pos = keys.find(",", lastPos)) != std::string::npos) {
-            keyList.push_back(keys.substr(lastPos, pos - lastPos));
-            lastPos = pos + 1;
-        }
-        keyList.push_back(keys.substr(lastPos));
-    }
-    
+    parseChannelsAndKeys(args, channelList, keyList);
+    Logger::channel("Channel list " + channelList[0]);
     for (size_t i = 0; i < channelList.size(); i++) {
-        std::string channelName = channelList[i];
         std::string key = (i < keyList.size()) ? keyList[i] : "";
-        
-        // Ensure channel name starts with #
-        if (channelName[0] != '#') {
-            channelName = "#" + channelName;
-        }
-        
-        // Check if channel exists
-        bool isNewChannel = (this->channels.find(channelName) == this->channels.end());
-        
-        // Check channel key if needed
-        if (!isNewChannel && !this->channels[channelName].getKey().empty()) {
-            if (key != this->channels[channelName].getKey()) {
-                sendError(fd, "475", channelName, "Cannot join channel (+k) - bad key");
-                continue;
-            }
-        }
-        
-        // Check invite-only status
-        if (!isNewChannel && this->channels[channelName].isInviteOnly()) {
-            if (!this->channels[channelName].isInvited(fd)) {
-                sendError(fd, "473", channelName, "Cannot join channel (+i) - you must be invited");
-                continue;
-            }
-            // Clear invite status once used
-            this->channels[channelName].removeInvitedUser(fd);
-        }
-        
-        // Check user limit
-        if (!isNewChannel && 
-            this->channels[channelName].getUserLimit() > 0 && 
-            this->channels[channelName].getUsers().size() >= (size_t)this->channels[channelName].getUserLimit()) {
-            sendError(fd, "471", channelName, "Cannot join channel (+l) - channel is full");
-            continue;
-        }
-        
-        // Create channel if it doesn't exist
-        if (isNewChannel) {
-            Logger::channel("New channel created: " + channelName + " by " + clients[fd].getNick());
-            Channel newChannel;
-            this->channels[channelName] = newChannel;
-        }
-        
-        // If user is already in the channel, don't add them again
-        if (this->channels[channelName].hasUser(&clients[fd])) {
-            Logger::warning("User " + clients[fd].getNick() + " tried to join " + channelName + " but is already in the channel");
-            continue;
-        }
-        
-        Logger::channel("Adding Client " + clients[fd].getNick() + " To channel " + channelName);
-        
-        // Add user to channel
-        this->channels[channelName].addUser(&clients[fd]);
-        
-        // Make the first user an operator
-        if (isNewChannel) {
-            this->channels[channelName].addOperator(fd);
-            Logger::channel("User " + clients[fd].getNick() + " is now an operator of " + channelName);
-        }
-        
-        // Send JOIN message to all users in the channel
-        std::string response = ":" + clients[fd].getNick() + "!" + clients[fd].getUser() + "@" + serverName + " JOIN :" + channelName + "\r\n";
-        broadcastToChannel(channelName, response, -1);
-        
-        // Send channel topic
-        std::string topic = this->channels[channelName].getTopic();
-        if (!topic.empty()) {
-            std::string topicResponse = ":" + serverName + " 332 " + clients[fd].getNick() + " " + channelName + " :" + topic + "\r\n";
-            clients[fd].response = topicResponse;
-            clients[fd].sendResponse();
-        } else {
-            // Send RPL_NOTOPIC if no topic is set (helpful for clients)
-            std::string noTopicResponse = ":" + serverName + " 331 " + clients[fd].getNick() + " " + channelName + " :No topic is set\r\n";
-            clients[fd].response = noTopicResponse;
-            clients[fd].sendResponse();
-        }
-        
-        // Send names list (users in the channel)
-        sendChannelNames(fd, channelName);
+        processChannel(fd, channelList[i], key);
     }
 }

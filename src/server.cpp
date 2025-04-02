@@ -77,27 +77,28 @@ Server::~Server() {
 void Server::createSocket() {
     data.socket = socket(AF_INET, SOCK_STREAM, 0);
     if (data.socket == -1) {
-        std::cerr << "Error creating socket" << std::endl;
+        Logger::error("Error creating socket");
         exit(1);
     }
 
     int opt = 1;
     if (setsockopt(data.socket, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt)) == -1) {
-        std::cerr << "Error setting socket options" << std::endl;
+        Logger::error("Error setting socket options");
         exit(1);
     }
 
     if (bind(data.socket, (struct sockaddr *)&data.serverInfo, sizeof(data.serverInfo)) == -1) {
-        std::cerr << "Error binding socket" << std::endl;
+        Logger::error("Error binding socket");
         exit(1);
     }
 
     if (listen(data.socket, 5) == -1) {
-        std::cerr << "Error listening on socket" << std::endl;
+        Logger::error("Error listening on socket");
         exit(1);
     }
-
-    std::cout << "Server created on port " << data.port << std::endl;
+    std::ostringstream oss;
+    oss << "Server created on port " << data.port;
+    Logger::server(oss.str());
 }
 
 void Server::startListen() {

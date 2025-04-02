@@ -37,6 +37,7 @@ class Server {
         std::map<int, Client> clients;
         std::map<std::string, Channel> channels;
         std::map<std::string, CommandHandler> commands;
+        bool checkChannelKey(int fd, const std::string& channelName, const std::string& providedKey, bool isNewChannel);
         void createSocket();
         void startListen();
         void broadcastToChannel(const std::string& channel, const std::string& message, int excludeFd);
@@ -45,6 +46,9 @@ class Server {
         void cmdNick(int fd, std::vector<std::string>& args);
         void cmdUser(int fd, std::vector<std::string>& args);
         void cmdPass(int fd, std::vector<std::string>& args);
+        void processChannelKeyPair(const std::string& pair, 
+                         std::vector<std::string>& channelList,
+                         std::vector<std::string>& keyList);
         void cmdJoin(int fd, std::vector<std::string>& args);
         void cmdPrivmsg(int fd, std::vector<std::string>& args);
         void cmdPart(int fd, std::vector<std::string>& args);
@@ -53,7 +57,6 @@ class Server {
         void cmdKick(int fd, std::vector<std::string>& args);
         void cmdInvite(int fd, std::vector<std::string>& args);
         void cmdTopic(int fd, std::vector<std::string>& args);
-        //mode helpers
         void handleInviteOnlyMode(const std::string& channelName, bool addMode);
         void handleTopicRestrictionMode(const std::string& channelName, bool addMode);
         void handleChannelKeyMode(int fd, const std::string& channelName, bool addMode, 
@@ -82,6 +85,11 @@ class Server {
         void welcomeClient();
         void WriteEvent(int fd);
         void ReadEvent(int fd);
+        // Add this to the private section of your Server class
+        void parseChannelsAndKeys(std::vector<std::string>& args, 
+                                std::vector<std::string>& channelList,
+                                std::vector<std::string>& keyList);
+        bool processChannel(int fd, const std::string& channelName, const std::string& key);
 };
 
 bool isStringDigits(std::string str);
