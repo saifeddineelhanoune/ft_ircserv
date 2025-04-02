@@ -4,5 +4,10 @@
 .vscode-test
 ./ircserv
 tester.sh
+<<<<<<< HEAD
 nc
 irc_server.log
+=======
+irc_server.log
+irc_test_logs/
+>>>>>>> 8de79b774023040b43b96efbc3f30f022c20bead

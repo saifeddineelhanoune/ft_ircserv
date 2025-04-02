@@ -20,7 +20,7 @@ class Channel {
         int userLimit;
         
     public:
-        Channel() : topic("Welcome to the channel!"), inviteOnly(false), topicRestricted(false), userLimit(0) {}
+        Channel();
         void removeInvitedUser(int fd);
         void addUser(Client* client);
         void removeUser(Client* client);

@@ -1,6 +1,7 @@
 {
     "files.associations": {
 <<<<<<< HEAD
+<<<<<<< HEAD
         "iosfwd": "cpp",
         "vector": "cpp",
         "iostream": "cpp",
@@ -70,6 +71,9 @@
         "unordered_map": "cpp",
         "utility": "cpp",
         "filesystem": "cpp"
+=======
+        "iosfwd": "cpp"
+>>>>>>> 8de79b774023040b43b96efbc3f30f022c20bead
 =======
         "iosfwd": "cpp"
 >>>>>>> 8de79b774023040b43b96efbc3f30f022c20bead
