@@ -4349,3 +4349,70 @@ NICK sel-hano
 [2025-04-02 13:25:13] [INFO] start parsing data
 [2025-04-02 13:25:13] [INFO] start Handling Command USER
 [2025-04-02 13:25:13] [INFO] end of read event
+[2025-04-02 13:36:11] [SERVER] Server initializing
+[2025-04-02 13:36:11] [SERVER] Server initialized
+[2025-04-02 13:36:24] [CLIENT] Client Accepted5
+[2025-04-02 13:36:26] [DEBUG] starting read event
+[2025-04-02 13:36:26] [DEBUG] processing read event
+[2025-04-02 13:36:26] [DEBUG] recieved data: 
+
+[2025-04-02 13:36:26] [INFO] start parsing data
+[2025-04-02 13:36:26] [INFO] end of read event
+[2025-04-02 13:36:26] [DEBUG] starting read event
+[2025-04-02 13:36:26] [DEBUG] processing read event
+[2025-04-02 13:36:26] [DEBUG] recieved data: 
+
+[2025-04-02 13:36:26] [INFO] start parsing data
+[2025-04-02 13:36:26] [INFO] end of read event
+[2025-04-02 13:36:28] [DEBUG] starting read event
+[2025-04-02 13:36:28] [DEBUG] processing read event
+[2025-04-02 13:36:28] [DEBUG] recieved data: 
+
+[2025-04-02 13:36:28] [INFO] start parsing data
+[2025-04-02 13:36:28] [INFO] end of read event
+[2025-04-02 13:36:28] [DEBUG] starting read event
+[2025-04-02 13:36:28] [DEBUG] processing read event
+[2025-04-02 13:36:28] [DEBUG] recieved data: 
+
+[2025-04-02 13:36:28] [INFO] start parsing data
+[2025-04-02 13:36:28] [INFO] end of read event
+[2025-04-02 13:36:28] [DEBUG] starting read event
+[2025-04-02 13:36:28] [DEBUG] processing read event
+[2025-04-02 13:36:28] [DEBUG] recieved data: 
+
+[2025-04-02 13:36:28] [INFO] start parsing data
+[2025-04-02 13:36:28] [INFO] end of read event
+[2025-04-02 13:36:28] [DEBUG] starting read event
+[2025-04-02 13:36:28] [DEBUG] processing read event
+[2025-04-02 13:36:28] [DEBUG] recieved data: 
+
+[2025-04-02 13:36:28] [INFO] start parsing data
+[2025-04-02 13:36:28] [INFO] end of read event
+[2025-04-02 13:36:28] [DEBUG] starting read event
+[2025-04-02 13:36:28] [DEBUG] processing read event
+[2025-04-02 13:36:28] [DEBUG] recieved data: 
+
+[2025-04-02 13:36:28] [INFO] start parsing data
+[2025-04-02 13:36:28] [INFO] end of read event
+[2025-04-02 13:36:29] [DEBUG] starting read event
+[2025-04-02 13:36:29] [DEBUG] processing read event
+[2025-04-02 13:36:29] [DEBUG] recieved data: 
+
+[2025-04-02 13:36:29] [INFO] start parsing data
+[2025-04-02 13:36:29] [INFO] end of read event
+[2025-04-02 13:36:29] [DEBUG] starting read event
+[2025-04-02 13:36:29] [DEBUG] processing read event
+[2025-04-02 13:36:29] [DEBUG] recieved data: 
+
+[2025-04-02 13:36:29] [INFO] start parsing data
+[2025-04-02 13:36:29] [INFO] end of read event
+[2025-04-02 13:36:29] [DEBUG] starting read event
+[2025-04-02 13:36:29] [DEBUG] processing read event
+[2025-04-02 13:36:29] [DEBUG] recieved data: 
+
+[2025-04-02 13:36:29] [INFO] start parsing data
+[2025-04-02 13:36:29] [INFO] end of read event
+[2025-04-02 13:36:30] [DEBUG] starting read event
+[2025-04-02 13:36:30] [FATAL] : QUIT :Quit: Leaving
+
+[2025-04-02 13:36:30] [INFO] Connection closed

@@ -17,7 +17,7 @@ void Server::welcomeClient()
     std::ostringstream oss;
     oss << fd_c;
     Logger::client("Client Accepted" + oss.str());
-    clients[fd_c] = Client(fd_c, client_addr);
+    clients[fd_c] = Client(fd_c, client_addr,this);
     sockaddr_in addr = clients[fd_c].getAddr();
     char host[NI_MAXHOST];
     char service[NI_MAXSERV];
@@ -42,6 +42,33 @@ void Server::broadcastToChannel(const std::string& channel, const std::string& m
         }
     }
 }
+
+void Server::deleteClient(int fd) {
+    std::map<int, Client>::iterator it = clients.find(fd);
+    if (it != clients.end()) {
+        Client* client = &it->second;
+
+        for (std::map<std::string, Channel>::iterator ch = channels.begin(); ch != channels.end(); ++ch) {
+            std::vector<Client*>& users = ch->second.getUsers();
+            
+            users.erase(std::remove(users.begin(), users.end(), client), users.end());
+        }
+
+        clients.erase(it);
+    }
+
+    std::vector<struct pollfd>::iterator pollIt = pollfds.begin();
+    while (pollIt != pollfds.end()) {
+        if (pollIt->fd == fd) {
+            pollIt = pollfds.erase(pollIt);
+        } else {
+            ++pollIt;
+        }
+    }
+
+    close(fd);
+}
+
 
 
 

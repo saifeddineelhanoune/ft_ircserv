@@ -8,6 +8,8 @@
 #include <netinet/in.h>
 #include "server.hpp"
 
+class Server;
+
 class Client
 {
     private :
@@ -19,11 +21,11 @@ class Client
         bool    nick;
         std::string Nick;
         std::string User;
-        // Server &serv;
+        Server *serv;
 
     public :
-        Client() : fd(0), Auth(false) {};
-        Client (int _fd, sockaddr_in addr);
+        Client() : fd(0), Auth(false) ,serv(NULL){};
+        Client (int _fd, sockaddr_in addr, Server *ss);
         ~Client();
         void    setNick(std::string _nick);
         void    setUser(std::string _user);

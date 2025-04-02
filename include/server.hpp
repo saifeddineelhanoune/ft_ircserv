@@ -76,6 +76,7 @@ class Server {
         }
         
     public:
+        void    deleteClient(int fd);
         void startServer();
         Server(std::string passwd, int port);
         ~Server();

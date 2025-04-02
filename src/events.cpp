@@ -16,9 +16,10 @@ void Server::ReadEvent(int fd)
         if (it != clients.end())
         {
             std::string response = ":" + it->second.getNick() + " QUIT :Quit: Leaving\r\n";
+            deleteClient(fd);
             Logger::fatal(response);
-            clients.erase(fd);
-            close(fd);
+            // clients.erase(fd);
+            // close(fd);
         }
         Logger::info("Connection closed");
         return;
