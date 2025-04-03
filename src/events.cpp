@@ -49,7 +49,6 @@ void Server::ReadEvent(int fd)
             Logger::debug("Processing command: " + command);
             handleCommands(fd, command);
         }
-        // clients[fd].getbuff().clear();
     }
     }
 
@@ -114,8 +113,6 @@ void    Server::handleCommands(int fd, std::string command)
             if (args[0] != "NICK")
             {
                 sendError(fd, "451", args[0], "You have not registered");
-                // clients[fd].response = "464 * :You must authenticate first\r\n";
-                // clients[fd].sendResponse();
                 return;
             }
         }

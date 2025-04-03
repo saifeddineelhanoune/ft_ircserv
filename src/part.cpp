@@ -18,7 +18,6 @@ void Server::cmdPart(int fd, std::vector<std::string>& args) {
         broadcastToChannel(channelName, response, -1);
         channels[channelName].removeUser(&clients[fd]);
         
-        // Remove channel if empty
         if (channels[channelName].isEmpty()) {
             channels.erase(channelName);
         }

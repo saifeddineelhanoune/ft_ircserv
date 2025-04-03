@@ -1,11 +1,8 @@
-# Compiler
+
 CXX = c++
 
-# Compiler flags
-CXXFLAGS = -Wall -Wextra -Werror  -Iinclude -Ofast -g -fsanitize=address
-#-std=c++98
+CXXFLAGS = -Wall -Wextra -Werror  -Iinclude -Ofast -std=c++98
 
-# Directories
 SRC = src
 
 SRC_DIR = $(wildcard $(SRC)/*.cpp) main.cpp

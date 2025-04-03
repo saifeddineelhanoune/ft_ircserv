@@ -28,7 +28,6 @@ void Server::welcomeClient()
     struct pollfd _fd;
     _fd.fd = fd_c;
     _fd.events = POLLIN;
-    // client[fd_c].auth = false;
     pollfds.push_back(_fd);
 }
 
@@ -62,7 +61,6 @@ void Server::deleteClient(int fd) {
             users.erase(std::remove(users.begin(), users.end(), client), users.end());
         }
         clients[fd].getbuff().clear();
-        // clients.erase(fd);
     }
 
     close(fd);

@@ -5,7 +5,6 @@
 #include <set>
 #include <string>
 
-// Forward declaration
 class Client;
 
 class Channel {

@@ -291,13 +291,11 @@ void Server::handleInviteOnlyMode(const std::string& channelName, bool addMode) 
 void Server::processUserModes(int fd, const std::string& target, std::vector<std::string>& args) {
     (void) target;
     if (args.size() < 3) {
-        // Just inform about current modes (most IRC clients expect this)
         clients[fd].response = ":" + serverName + " 221 " + clients[fd].getNick() + " +\r\n";
         clients[fd].sendResponse();
         return;
     }
     
-    // For now, we don't implement user modes as they aren't required
     clients[fd].response = ":" + serverName + " 221 " + clients[fd].getNick() + " +\r\n";
     clients[fd].sendResponse();
 }
