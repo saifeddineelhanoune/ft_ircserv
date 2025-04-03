@@ -20,8 +20,10 @@ void Server::cmdNick(int fd, std::vector<std::string>& args) {
     clients[fd].setNick(newNick);
 
     std::string response = ":" + oldNick + " NICK :" + newNick + "\r\n";
-    clients[fd].response = response;
-    clients[fd].sendResponse();
+    if (clients[fd].getAuth()){
+        clients[fd].response = response;
+        clients[fd].sendResponse();
+    }
 
     for (std::map<std::string, Channel>::iterator itc = channels.begin(); itc != channels.end(); itc++) {
         if (itc->second.hasUser(&clients[fd])) {

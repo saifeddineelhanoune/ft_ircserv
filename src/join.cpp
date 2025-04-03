@@ -210,12 +210,15 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
         return;
     }
     Logger::client("Client " + clients[fd].getNick() + " is joining channel " + args[1]);
+
     // Special case: JOIN 0 means leave all channels
     if (args[1] == "0") {
         std::map<std::string, Channel>::iterator it;
         std::vector<std::string> channelsToLeave;
+
         Logger::client("Client " + clients[fd].getNick() + " is leaving all channels");
         Logger::info("Leaving all channels");
+
         for (it = channels.begin(); it != channels.end(); ++it) {
             if (it->second.hasUser(&clients[fd])) {
                 channelsToLeave.push_back(it->first);
@@ -234,13 +237,24 @@ void Server::cmdJoin(int fd, std::vector<std::string>& args) {
         }
         return;
     }
+
     Logger::info("Joining channel " + args[1]);
+
     std::vector<std::string> channelList;
     std::vector<std::string> keyList;
     parseChannelsAndKeys(args, channelList, keyList);
-    Logger::channel("Channel list " + channelList[0]);
+    
     for (size_t i = 0; i < channelList.size(); i++) {
+        std::string channelName = channelList[i];
         std::string key = (i < keyList.size()) ? keyList[i] : "";
-        processChannel(fd, channelList[i], key);
+
+        // Check if the client is already in the channel
+        if (channels.find(channelName) != channels.end() && channels[channelName].hasUser(&clients[fd])) {
+            Logger::warning("Client " + clients[fd].getNick() + " is already in channel " + channelName);
+            sendError(fd, "443", channelName, "You're already in this channel");
+            continue;
+        }
+
+        processChannel(fd, channelName, key);
     }
 }
