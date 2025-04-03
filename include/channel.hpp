@@ -28,65 +28,33 @@ class Channel {
         bool isEmpty() const;
         std::vector<Client*>& getUsers();
         
-        const std::string& getTopic() const {
-            return topic;
-        }
-        
-        void setTopic(const std::string& newTopic) {
-            topic = newTopic;
-        }
+        const std::string& getTopic() const;
+        void setTopic(const std::string& newTopic);
+        bool isOperator(int clientFd) const;
 
-        bool isOperator(int clientFd) const {
-            return operators.find(clientFd) != operators.end();
-        }
+        void addOperator(int clientFd);
 
-        void addOperator(int clientFd) {
-            operators.insert(clientFd);
-        }
+        void removeOperator(int clientFd);
 
-        void removeOperator(int clientFd) {
-            operators.erase(clientFd);
-        }
+        bool isInviteOnly() const ;
 
-        bool isInviteOnly() const {
-            return inviteOnly;
-        }
+        void setInviteOnly(bool value);
 
-        void setInviteOnly(bool value) {
-            inviteOnly = value;
-        }
+        bool isTopicRestricted() const ;
 
-        bool isTopicRestricted() const {
-            return topicRestricted;
-        }
+        void setTopicRestricted(bool value) ;
 
-        void setTopicRestricted(bool value) {
-            topicRestricted = value;
-        }
+        const std::string& getKey() const ;
 
-        const std::string& getKey() const {
-            return key;
-        }
+        void setKey(const std::string& newKey) ;
 
-        void setKey(const std::string& newKey) {
-            key = newKey;
-        }
+        int getUserLimit() const ;
 
-        int getUserLimit() const {
-            return userLimit;
-        }
+        void setUserLimit(int limit);
 
-        void setUserLimit(int limit) {
-            userLimit = limit;
-        }
+        bool isInvited(int clientFd) const ;
 
-        bool isInvited(int clientFd) const {
-            return invitedUsers.find(clientFd) != invitedUsers.end();
-        }
-
-        void addInvitedUser(int clientFd) {
-            invitedUsers.insert(clientFd);
-        }
+        void addInvitedUser(int clientFd);
 };
 
 #endif
