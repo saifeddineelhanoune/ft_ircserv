@@ -9,12 +9,13 @@ void Server::ReadEvent(int fd)
     char buffer[1024];
     std::memset(buffer, 0, sizeof(buffer));
     Logger::debug("starting read event");
-
+    if (fd == -1)
+        return;
     int readed = read(fd, buffer, sizeof(buffer) - 1);
 
     if (readed <= 0)
     {
-        std::map<int,Client>::iterator it = clients.find(fd);
+        std::map<int, Client>::iterator it = clients.find(fd);
         if (it != clients.end())
         {
             std::string response = ":" + it->second.getNick() + " QUIT :Quit: Leaving\r\n";
@@ -31,24 +32,29 @@ void Server::ReadEvent(int fd)
     std::string& clientBuffer = clients[fd].getbuff();
 
     std::size_t pos;
-    while ((pos = clientBuffer.find_first_of("\r\n")) != std::string::npos) 
+    std::map<int,Client>::iterator it  = clients.find(fd);
+    if (it != clients.end())
+    {
+    while (!clientBuffer.empty()&& (pos = clientBuffer.find_first_of("\r\n")) != std::string::npos)
     {
         std::string command = clientBuffer.substr(0, pos);
-        clientBuffer.erase(0, pos + 1); 
+        clientBuffer.erase(0, pos + 2);
 
-        if (!command.empty() && command.back() == '\r')
+
+        if (!command.empty() && !command.empty() && command[command.length() - 1] == '\r')
             command.pop_back();
 
-        if (!command.empty()) 
+        if (!command.empty())
         {
             Logger::debug("Processing command: " + command);
             handleCommands(fd, command);
         }
+        // clients[fd].getbuff().clear();
+    }
     }
 
     Logger::info("end of read event");
 }
-
 
 
 void    Server::WriteEvent(int fd)

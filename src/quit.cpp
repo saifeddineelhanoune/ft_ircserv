@@ -12,7 +12,7 @@ void Server::cmdQuit(int fd, std::vector<std::string>& args) {
             it->second.removeUser(&clients[fd]);
         }
     }
-    
+    // deleteClient(fd);
     // Clean up empty channels
     it = channels.begin();
     while (it != channels.end()) {
@@ -22,7 +22,8 @@ void Server::cmdQuit(int fd, std::vector<std::string>& args) {
             ++it;
         }
     }
-    
-    clients.erase(fd);
+    // clients.erase(fd);
+    deleteClient(fd);
     close(fd);
+    
 }

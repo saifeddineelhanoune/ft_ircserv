@@ -288,7 +288,6 @@ void Server::handleInviteOnlyMode(const std::string& channelName, bool addMode) 
 }
 
 
-
 void Server::processUserModes(int fd, const std::string& target, std::vector<std::string>& args) {
     (void) target;
     if (args.size() < 3) {

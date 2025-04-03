@@ -65,10 +65,13 @@ void Client::setNickauth() {
 }
 
 void    Client::sendResponse() {
+    
     int ret = write(fd, response.c_str(), response.length());
-    if (ret == -1) {
+    if (ret <= 0) {
         std::cerr << "Error writing to client" << std::endl;
-        (void)serv;
+        // (void)serv;
+
+    // response.clear();
         serv->deleteClient(fd);
         // close(fd);
     }

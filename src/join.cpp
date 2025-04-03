@@ -167,7 +167,7 @@ bool Server::processChannel(int fd, const std::string& channelName, const std::s
     // Send JOIN message to all users in channel
     std::string joinMsg = ":" + clients[fd].getNick() + " JOIN " + channelName + "\r\n";
     broadcastToChannel(channelName, joinMsg, -1);
-    
+    displayChannelModes(fd,channelName,0);
     // Send topic if exists
     std::string topic = channels[channelName].getTopic();
     if (!topic.empty()) {

@@ -44,6 +44,14 @@ void Server::broadcastToChannel(const std::string& channel, const std::string& m
 }
 
 void Server::deleteClient(int fd) {
+    std::vector<struct pollfd>::iterator pollIt = pollfds.begin();
+    while (pollIt != pollfds.end()) {
+        if (pollIt->fd == fd) {
+            pollIt = pollfds.erase(pollIt);
+        } else {
+            ++pollIt;
+        }
+    }
     std::map<int, Client>::iterator it = clients.find(fd);
     if (it != clients.end()) {
         Client* client = &it->second;
@@ -53,18 +61,10 @@ void Server::deleteClient(int fd) {
             
             users.erase(std::remove(users.begin(), users.end(), client), users.end());
         }
-
-        clients.erase(it);
+        clients[fd].getbuff().clear();
+        // clients.erase(fd);
     }
 
-    std::vector<struct pollfd>::iterator pollIt = pollfds.begin();
-    while (pollIt != pollfds.end()) {
-        if (pollIt->fd == fd) {
-            pollIt = pollfds.erase(pollIt);
-        } else {
-            ++pollIt;
-        }
-    }
     close(fd);
 }
 
